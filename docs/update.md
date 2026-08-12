@@ -6,6 +6,7 @@ slug: /update
 # ⬆︎ 更新紀錄 `/update`
 ## #14 2026-08-12
 移除 Email + 首頁修改
+kaistudio update !
 
 ## #13 2026-08-02
 新增 ashin.HTML 相片館網頁
