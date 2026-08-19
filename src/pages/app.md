@@ -9,8 +9,8 @@ tags: []
 
 # 📱 KAI macOS 電腦裡有什麼 `/app`
 
-- 最後更新：2026-08-02 10:00
-- **總共 `46` 個 軟體**
+- 最後更新：2026-08-15 10:00
+- **總共 `51` 個 軟體**
 
 ## 這是我在 Mac 上的軟體清單
 
@@ -43,7 +43,6 @@ tags: []
 27. LocalSend : 傳輸檔案好工具
 28. Logic Pro : 蘋果自家 DAW，想刪除了！ (錄音老師推薦不要刪)
 29. Melodyne Element : 修音必備好用插件 建議別用，因為 M 晶片不支援 😭
-30. Microsoft Edge : 最近開放用 Google 登入，才開始使用的
 31. Microsoft Excel : 強大的試算表工具
 32. Microsoft PowerPoint : 簡報必備工具
 33. Microsoft Word : 業界標準文書軟體
