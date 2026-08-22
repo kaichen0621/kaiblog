@@ -41,7 +41,7 @@ export default function VerifyButton() {
           </div>
           <div className="admonition-content" style={{ marginTop: '0.5rem' }}>
             <p>
-              請先前往 <a href="https://opnform.com/forms/kai-studio-discord-yiqsu6" target="_blank" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>OpnForm 表單</a> 完成填寫。提交後系統會自動將您導回此頁面解鎖按鈕。
+              請先前往 <a href="/verify.html" target="_blank" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>OpnForm 表單</a> 完成填寫。提交後系統會自動將您導回此頁面解鎖按鈕。
             </p>
           </div>
         </div>
