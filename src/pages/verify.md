@@ -45,10 +45,9 @@ import VerifyButton from '@site/src/components/VerifyButton';
 
 ## 📝 認證表單
 
-請先點擊下方連結完成資料填寫：
-
-<VerifyButton />
-
+<p>
+  請先前往 <a href="/verify.html" target="_blank" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>OpnForm 表單</a> 完成填寫。提交後系統會自動將您導回此頁面解鎖按鈕。
+</p>
 
 
 :::info 審核說明

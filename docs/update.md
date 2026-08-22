@@ -4,6 +4,8 @@ slug: /update
 ---
 
 # ⬆︎ 更新紀錄 `/update`
+## #15 2026-08-22
+使用 自行架設的表單系統進行驗證 `/Verify`
 ## #14 2026-08-12
 移除 Email + 首頁修改
 kaistudio update !

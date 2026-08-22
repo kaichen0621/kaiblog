@@ -10,7 +10,6 @@ slug: /
 歡迎你來到 KAI BLOG !   
 這裡是我發貼文和分享經驗的地方。這個網站分為以下幾個區域：
 
-# [限時公開新網站！KAI STUDIO](https://kaistudio-tan.vercel.app/)
 
 ---
 ## [📝 最新](/blog)
@@ -70,7 +69,7 @@ BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格�
 
 
 ## 其他
-
+#### [限時公開新網站！KAI STUDIO](https://kaistudio-tan.vercel.app/)
 #### [🪩 Discord 社群驗證區](/verify)
 #### [🌐 網站更新紀錄](/docs/update)
 #### [📃 超強翻譜神器](/docs/scoreflow.v4)
