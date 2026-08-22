@@ -49,6 +49,7 @@ import VerifyButton from '@site/src/components/VerifyButton';
   請先前往 <a href="/verify.html" target="_blank" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>OpnForm 表單</a> 完成填寫。提交後系統會自動將您導回此頁面解鎖按鈕。
 </p>
 
+<VerifyButton />
 
 :::info 審核說明
 * 管理團隊會核對你的 **OpenForms 資料** 與 **Discord 帳號活動**。
