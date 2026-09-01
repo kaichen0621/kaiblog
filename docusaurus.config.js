@@ -55,14 +55,11 @@ const config = {
         indexPages: true,
       },
     ],
-
-    // --- Microsoft Clarity、Favicon 與 Google 網站名稱優化 ---
     () => ({
       name: 'custom-metadata',
       injectHtmlTags() {
         return {
           headTags: [
-            // 1. Microsoft Clarity 數據統計
             {
               tagName: 'script',
               innerHTML: `
@@ -73,7 +70,6 @@ const config = {
                 })(window, document, "clarity", "script", "vbv2g82ods");
               `,
             },
-            // 2. 修正 Google 搜尋顯示 subdomain 的問題（加上結構化資料告訴 Google 網站名稱）
             {
               tagName: 'script',
               attributes: { type: 'application/ld+json' },
@@ -84,7 +80,6 @@ const config = {
                 "url": "https://kaiblog.is-a.dev"
               }),
             },
-            // 3. 完整對應 Favicon 尺寸（修正失真與死圖問題）
             {
               tagName: 'link',
               attributes: {
@@ -115,7 +110,7 @@ const config = {
               tagName: 'link',
               attributes: {
                 rel: 'manifest',
-                href: '/img/favicon_io/site.webmanifest',
+                href: '/img/favicon_io/site.webmanifest?v=2',
               },
             },
           ],
@@ -131,22 +126,17 @@ const config = {
       colorMode: { respectPrefersColorScheme: false },
 
       navbar: {
-        // 這是導覽列的文字
         title: 'KAI BLOG',
         logo: {
           alt: 'Logo',
-          // 導覽列的 Logo 改用 512x512 圖檔，確保高解析度螢幕下清晰不模糊
-          src: 'img/favicon_io/android-chrome-512x512.png'
+          src: 'img/favicon_io/android-chrome-512x512.png',
         },
         items: [
           { to: '/blog', label: '📝 最新', position: 'left' },
           { to: '/blog/archive', label: '🗄️ 列表', position: 'left' },
           { to: '/random', label: '🎲 隨機', position: 'left' },
           { to: '/docs', label: '📚 筆記', position: 'left' },
-         // { to: '/videos', label: '🎬 影音 (Beta)', position: 'left' },
-          //{ to: '/mayday-sim', label: '🎫 搶票練習', position: 'left' },
           { to: '/app', label: '📱 應用程式', position: 'left' },
-          //{ to: '/email', label: '📩 聯絡我', position: 'left' },
           { to: '/about', label: '👤 關於', position: 'left' },
           { to: '/search', label: '🔍 全站搜尋', position: 'right' },
         ],
@@ -168,8 +158,6 @@ const config = {
             title: '個人資訊',
             items: [
               { label: '關於我', to: '/about' },
-              //{ label: '聯絡我', to: '/email' },
-              // { label: '愛用', to: '/use' },
               { label: 'APP', to: '/app' },
               { label: '更新紀錄', to: '/docs/update' },
             ],
