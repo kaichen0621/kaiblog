@@ -1,20 +1,15 @@
 /* ============================================================
 1. Variables & Global Styles
 ============================================================ */
-/* 引入 Chiron GoRound TC */
-@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound TC:wght@400;700&display=swap');
 
 :root {
-  /* 1. 設定全站字體 */
   --ifm-font-family-base: 'Chiron GoRound TC', -apple-system, sans-serif;
-  
-  /* 2. 字重設定：常規 400，粗體與標題 700 */
   --ifm-font-weight-base: 400;
   --ifm-font-weight-bold: 700;
   --ifm-heading-font-weight: 700;
   --ifm-code-font-size: 90%;
 
-  /* User Primary Color */
   --ifm-color-primary: #429EEE;
   --ifm-color-primary-dark: #3786ca;
   --ifm-color-primary-light: #5baef2;
@@ -25,7 +20,6 @@
   --card-shadow: none;
   --card-hover-shadow: none;
 
-  /* Progress Bar Config */
   --progress-color: #429EEE;
   --progress-color-alt: #0051ff;
   --progress-gradient-toggle: 1;
@@ -36,48 +30,33 @@ html[data-theme='dark'] {
   --hero-gradient: #1e293b;
   --glass-bg: #1e293b;
   --glass-border: #334155;
-  --card-shadow: none;
-  --card-hover-shadow: none;
 }
 
-/* 3. 全局套用變數 */
 body {
   font-family: var(--ifm-font-family-base);
   font-weight: var(--ifm-font-weight-base);
   -webkit-font-smoothing: antialiased;
 }
 
-/* 4. 確保粗體明確切換 */
 b, strong {
   font-weight: 700 !important;
 }
 
-
-.menu__link,
-.dropdown__link,
-a.link {
-  transition: 0.2s;
+/* Navbar & Links hover */
+.menu__link, .dropdown__link, a.link, .navbar__item {
   border-radius: 6px;
+  transition: all 0.2s ease;
 }
 
-.menu__link:hover,
-.dropdown__link:hover,
-a.link:hover {
-  background: rgba(66, 158, 238, 0.1);
-  color: var(--ifm-color-primary);
-}
-
-/* Navbar Item Button Style */
 .navbar__item {
   border-radius: 8px;
   margin: 0 4px;
   padding: 6px 12px;
   font-weight: 600;
-  transition: all 0.2s ease;
 }
 
-.navbar__item:hover,
-.navbar__link--active {
+.menu__link:hover, .dropdown__link:hover, a.link:hover,
+.navbar__item:hover, .navbar__link--active {
   background: rgba(66, 158, 238, 0.1);
   color: var(--ifm-color-primary) !important;
   text-decoration: none;
@@ -88,11 +67,34 @@ a.link:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 
+/* Liquid Glass Navbar */
+.navbar {
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+.navbar__inner {
+  height: 100%;
+  padding: var(--ifm-navbar-padding-vertical) var(--ifm-navbar-padding-horizontal) !important;
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  -webkit-backdrop-filter: blur(25px) !important;
+  backdrop-filter: blur(25px) !important;
+}
+
+[data-theme='dark'] .navbar__inner {
+  background-color: rgba(24, 24, 27, 0.45) !important;
+}
+
+.navbar-sidebar {
+  background-color: var(--ifm-navbar-background-color) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
 /* ============================================================
-2. Components
+2. Components (Embedded Media)
 ============================================================ */
-.youtube,
-.youtube-s {
+.youtube, .youtube-s {
   max-width: 960px;
   margin: 2rem auto;
   padding: 1.2rem;
@@ -105,23 +107,19 @@ a.link:hover {
   background: #2a3b43;
 }
 
-.youtube iframe,
-.youtube-s iframe {
+.youtube iframe, .youtube-s iframe {
   width: 100%;
   aspect-ratio: 16/9;
   border-radius: 10px;
   border: 0;
 }
 
-
-
 /* ============================================================
-4. Blog Post Images
+3. Blog Post Images & Media Containers
 ============================================================ */
 .blog-cover {
   width: 100%;
   border-radius: 12px;
-  box-shadow: none;
   margin: 1.5rem 0 2rem;
   display: block;
   transition: transform 0.35s cubic-bezier(0.2, 1, 0.3, 1);
@@ -130,25 +128,8 @@ a.link:hover {
 
 .blog-cover:hover {
   transform: translateY(-4px);
-  box-shadow: none;
 }
 
-[data-theme='dark'] .blog-cover {
-  box-shadow: none;
-  border-color: var(--glass-border);
-}
-
-/* ============================================================
-5. Responsive
-============================================================ */
-
-
-[data-theme='dark'] .photo-border,
-[data-theme='dark'] img.photo-border {
-  background: #2a3b43;
-}
-
-/* 圖片外框容器 */
 .photo-border {
   display: block;
   margin: 2rem auto;
@@ -160,36 +141,19 @@ a.link:hover {
   overflow: hidden;
 }
 
-/* 圖片本體樣式設定 */
-img.photo-border,
-.photo-border img {
+[data-theme='dark'] .photo-border,
+[data-theme='dark'] img.photo-border {
+  background: #2a3b43;
+}
+
+img.photo-border, .photo-border img {
   display: block;
   width: 100% !important;
-  /* 電腦端填滿寬度 */
   height: 400px !important;
-  /* 固定高度，避免滑太久 */
   object-fit: cover;
-  /* 核心：圖片會填滿空間且不變形（會稍微裁切邊緣，像封面照） */
   margin: 0 auto;
   border-radius: 8px;
   transition: transform 0.3s ease;
-}
-
-/* 手機端專用調整：產生「縮小」的美感並減少垂直空間 */
-@media (max-width: 768px) {
-  .photo-border {
-    padding: 0.8rem;
-    margin: 1.5rem auto;
-  }
-
-  img.photo-border,
-  .photo-border img {
-    width: 85% !important;
-    /* 手機端寬度縮小，左右留白較多 */
-    height: 180px !important;
-    /* 手機端高度大幅減少，完全不用滑 */
-    border-radius: 6px;
-  }
 }
 
 .photo-border p {
@@ -200,34 +164,37 @@ img.photo-border,
 }
 
 /* ============================================================
-6. Paywall TOC Hiding
+4. TOC Hiding & Paywall
 ============================================================ */
-/* Hide the label entry '🔐 付費解鎖！' from TOC completely */
+/* 合併「付費解鎖」與「停止開放下載」隱藏規則 */
 [class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"],
-[class*="tableOfContents"] [href*="付費解鎖"] {
+[class*="tableOfContents"] [href*="付費解鎖"],
+[class*="tableOfContents"] [href*="停止開放下載！"] {
   display: none !important;
 }
 
-/* Hide parent li of the label if exists */
 [class*="tableOfContents"] li:has([href*="付費解鎖"]),
-[class*="tableOfContents"] li:has([href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"]) {
+[class*="tableOfContents"] li:has([href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"]),
+[class*="tableOfContents"] li:has([href*="停止開放下載！"]) {
   display: none !important;
 }
 
-/* Automatically hide all items following the paywall when content is locked */
-html.lock-paid-content [class*="tableOfContents"] li:has([href*="付費解鎖"])~li,
-html.lock-paid-content [class*="tableOfContents"] li:has([href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"])~li {
+html.lock-paid-content [class*="tableOfContents"] li:has([href*="付費解鎖"]) ~ li,
+html.lock-paid-content [class*="tableOfContents"] li:has([href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"]) ~ li,
+html.lock-paid-content01 [class*="tableOfContents"] li:has([href*="停止開放下載！"]) ~ li,
+html.lock-paid-content01 [class*="tableOfContents"] li:has([href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"]) ~ li {
   display: none !important;
 }
 
-/* Fallback for older themes with flat lists */
-html.lock-paid-content [class*="tableOfContents"] [href*="付費解鎖"]~a,
-html.lock-paid-content [class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"]~a {
+html.lock-paid-content [class*="tableOfContents"] [href*="付費解鎖"] ~ a,
+html.lock-paid-content [class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"] ~ a,
+html.lock-paid-content01 [class*="tableOfContents"] [href*="停止開放下載！"] ~ a,
+html.lock-paid-content01 [class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"] ~ a {
   display: none !important;
 }
 
 /* ============================================================
-7. Custom Buttons
+5. Custom Buttons
 ============================================================ */
 .custom-btn {
   display: inline-flex;
@@ -241,7 +208,6 @@ html.lock-paid-content [class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%
   border-radius: 8px;
   text-decoration: none !important;
   transition: all 0.2s ease;
-  box-shadow: none;
   border: none;
   cursor: pointer;
   margin: 0.5rem 0;
@@ -249,7 +215,6 @@ html.lock-paid-content [class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%
 
 .custom-btn:hover {
   transform: translateY(-2px);
-  box-shadow: none;
   color: white !important;
   opacity: 0.9;
 }
@@ -258,17 +223,8 @@ html.lock-paid-content [class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%
   transform: translateY(0);
 }
 
-[data-theme='dark'] .custom-btn {
-  background: var(--ifm-color-primary);
-  box-shadow: none;
-}
-
-[data-theme='dark'] .custom-btn:hover {
-  box-shadow: none;
-}
-
 /* ============================================================
-8. Progress Section
+6. Progress Section
 ============================================================ */
 .progress-container {
   background: #f1f9ff;
@@ -283,7 +239,6 @@ html.lock-paid-content [class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(66, 158, 238, 0.1);
 }
-
 
 [data-theme='dark'] .progress-container {
   background: #1e293b;
@@ -332,19 +287,11 @@ html.lock-paid-content [class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%
   overflow: hidden;
 }
 
-/* 自動漸層疊加層 */
 .progress-bar-fill::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  /* 這裡自動產生比底色深/淺的質感 */
-  background: linear-gradient(to right,
-      rgba(255, 255, 255, 0.15),
-      rgba(0, 0, 0, 0.1));
-  /* 根據開關決定是否顯示 */
+  inset: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.1));
   opacity: var(--progress-gradient-toggle);
   pointer-events: none;
 }
@@ -369,68 +316,33 @@ html.lock-paid-content [class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%
 }
 
 /* ============================================================
-8. 舊版更新
+7. Article Tags & Utility Classes
 ============================================================ */
-/* Hide the label entry '⚠️ 已停止開放下載！' from TOC completely */
-[class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"],
-[class*="tableOfContents"] [href*="停止開放下載！"] {
-  display: none !important;
+/* 補回原本遺漏的特定標籤樣式 */
+.badge--secondary,
+a.tag_node_modules-\@docusaurus-theme-classic-lib-theme-Tag-styles-module,
+a[class*="tag_"] {
+  border-radius: 6px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* Hide parent li of the label if exists */
-[class*="tableOfContents"] li:has([href*="停止開放下載！"]),
-[class*="tableOfContents"] li:has([href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"]) {
-  display: none !important;
+a[class*="tag_"]:hover {
+  transform: translateY(-1px);
+  text-decoration: none;
 }
 
-/* Automatically hide all items following the paywall when content is locked */
-html.lock-paid-content01 [class*="tableOfContents"] li:has([href*="停止開放下載！"])~li,
-html.lock-paid-content01 [class*="tableOfContents"] li:has([href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"])~li {
-  display: none !important;
-}
+/* ============================================================
+8. Responsive (Mobile Adjustments)
+============================================================ */
+@media (max-width: 768px) {
+  .photo-border {
+    padding: 0.8rem;
+    margin: 1.5rem auto;
+  }
 
-/* Fallback for older themes with flat lists */
-html.lock-paid-content01 [class*="tableOfContents"] [href*="停止開放下載！"]~a,
-html.lock-paid-content01 [class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"]~a {
-  display: none !important;
-}
-
-/* ==========================================
-   1. 外殼完全透明，並將內襯墊（Padding）歸零
-      這樣內層的玻璃才能 100% 完美滿版
-   ========================================== */
-.navbar {
-  background: transparent !important;
-  background-color: transparent !important;
-  padding: 0 !important; /* 關鍵：消除外殼留白，解決切斷問題 */
-}
-
-/* ==========================================
-   2. 把液態玻璃效果與預設襯墊全部鎖在內層
-   ========================================== */
-.navbar__inner {
-  /* 完美的填滿外殼 */
-  height: 100%;
-  
-  /* 接收原本的襯墊變數，維持你原本 Logo 和按鈕的舒適間距 */
-  padding: var(--ifm-navbar-padding-vertical) var(--ifm-navbar-padding-horizontal) !important;
-  
-  /* 淺色模式：舒適的微透玻璃 */
-  background-color: rgba(255, 255, 255, 0.3) !important;
-  -webkit-backdrop-filter: blur(25px) !important;
-  backdrop-filter: blur(25px) !important;
-}
-
-/* 深色模式內層 */
-[data-theme='dark'] .navbar__inner {
-  background-color: rgba(24, 24, 27, 0.45) !important;
-}
-
-/* ==========================================
-   3. 手機版側邊欄本體：維持實色，確保收合動畫流暢
-   ========================================== */
-.navbar-sidebar {
-  background-color: var(--ifm-navbar-background-color) !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
+  img.photo-border, .photo-border img {
+    width: 85% !important;
+    height: 180px !important;
+    border-radius: 6px;
+  }
 }
