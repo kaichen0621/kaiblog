@@ -123,7 +123,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/docusaurusd.png',
-      colorMode: { respectPrefersColorScheme: false },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
 
       navbar: {
         title: 'KAI BLOG',
