@@ -7,8 +7,8 @@ const config = {
   favicon: 'img/favicon_io/favicon.ico',
   url: 'https://kaiblog.is-a.dev',
   baseUrl: '/',
-  organizationName: 'kai980621',
-  projectName: 'kaiblog',
+  organizationName: 'kaichen0621',
+  projectName: 'KAIBLOG',
   onBrokenLinks: 'warn',
   onBrokenAnchors: 'warn',
 
@@ -128,17 +128,17 @@ const config = {
       navbar: {
         title: 'KAI BLOG',
         logo: {
-          alt: 'Logo',
+          alt: 'logo',
           src: 'img/favicon_io/android-chrome-512x512.png',
         },
         items: [
-          { to: '/blog', label: '📝 最新', position: 'left' },
-          { to: '/blog/archive', label: '🗄️ 列表', position: 'left' },
-          { to: '/random', label: '🎲 隨機', position: 'left' },
-          { to: '/docs', label: '📚 筆記', position: 'left' },
-          { to: '/app', label: '📱 應用程式', position: 'left' },
-          { to: '/about', label: '👤 關於', position: 'left' },
-          { to: '/search', label: '🔍 全站搜尋', position: 'right' },
+          { to: '/blog', label: '貼文', position: 'left' },
+          { to: '/blog/archive', label: '列表', position: 'left' },
+          { to: '/random', label: '隨機', position: 'left' },
+          { to: '/docs', label: '筆記', position: 'left' },
+          { to: '/app', label: '程式', position: 'left' },
+          { to: '/about', label: '關於', position: 'left' },
+          { to: '/search', label: '搜尋', position: 'right' },
         ],
       },
 
@@ -166,6 +166,7 @@ const config = {
             title: '社群媒體',
             items: [
               { label: 'YouTube (KAI STUDIO)', href: 'https://youtube.com/@kaistudio-621' },
+              { label: 'Instagram (kai0621_ig)', href: 'https://www.instagram.com/kai0621_ig' },
             ],
           },
         ],
