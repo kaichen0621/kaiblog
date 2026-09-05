@@ -1,6 +1,6 @@
 ---
 title: 譜表屬性工具
-slug: staff
+slug: staff-tool
 date: 2026-01-14T04:30
 sidebar_position: 5
 sidebar_label: 譜表屬性工具
