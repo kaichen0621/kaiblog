@@ -7,7 +7,7 @@ export default function PaidContent({ children, id = 'default' }) {
   const [isInputFocused, setIsInputFocused] = useState(false);
   const contentRef = useRef(null);
   const localStorageKey = `kai_blog_unlocked_${id}`;
-  const CORRECT_PASSCODE = '0621';
+  const CORRECT_PASSCODE = 'iloveashin';
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
