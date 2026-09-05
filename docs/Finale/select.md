@@ -1,6 +1,6 @@
 ---
 title: 選取工具
-slug: select
+slug: select-tool
 date: 2026-01-13T04:30
 sidebar_position: 4
 sidebar_label: 選取工具
