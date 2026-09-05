@@ -21,10 +21,10 @@ date: 2026-01-10
 - [下載與安裝](/docs/Finale/download)
 - [建立新專案](/docs/Finale/create)
 - [快速音符輸入](/docs/Finale/note-input)
-- [選擇工具](/docs/Finale/select)
-- [譜表屬性工具](/docs/Finale/staff)
-- [小節屬性工具](/docs/Finale/Measure)
-- [調號/拍號屬性工具](/docs/Finale/key)
+- [選擇工具](/docs/Finale/select-tool)
+- [譜表屬性工具](/docs/Finale/staff-tool)
+- [小節屬性工具](/docs/Finale/measure-tool)
+- [調號/拍號屬性工具](/docs/Finale/key-tool)
 
 :::info 未來更新
 - 圓滑線
