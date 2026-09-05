@@ -20,6 +20,7 @@ slug: /
 - [達芬奇模板V2更新](/docs/resolve/resolvepackV2-update)
 - [達芬奇模板V3更新](/docs/resolve/resolvepackV3-update)
 - [達芬奇模板V4更新](/docs/resolve/resolvepackV4)
+
 ### 手機專區
 
 - [Google 輸入法大推](/docs/phone/google-input)
@@ -39,5 +40,10 @@ slug: /
 ### Docusaurus 筆記區
 - [選項卡](/docs/tabs)
 
+### 快速上手
+- [Dorico 速戰](/docs/dorico01)
+
 ### 網站更新紀錄
 - [更新紀錄](/docs/update)
+
+
