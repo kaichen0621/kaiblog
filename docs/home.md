@@ -38,11 +38,9 @@ slug: /
 
 ### macOS APP 推薦區
 - [首頁](/docs/macAPPS/index)
-### Docusaurus 筆記區
-- [選項卡](/docs/tabs)
 
 ### 快速上手
-- [Dorico 速戰](/docs/dorico01)
+- [Dorico 速戰](/docs/Learn/dorico01)
 
 ### 網站更新紀錄
 - [更新紀錄](/docs/update)
