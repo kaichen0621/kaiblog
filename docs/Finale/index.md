@@ -17,13 +17,14 @@ date: 2026-01-10
 為了讓大家更方便閱讀，因此將圖片放入下拉式選單
 :::
 這邊會不定期更新教學，先簡單列出來好了
-- [下載與安裝](./download.md)
-- [建立新專案](./create.md)
-- [快速音符輸入](./note-input.md)
-- [選擇工具](./select.md)
-- [譜表屬性工具](./staff.md)
-- [小節屬性工具](./Measure.md)
-- [調號/拍號屬性工具](./key.md)
+
+- [下載與安裝](/docs/Finale/download)
+- [建立新專案](/docs/Finale/create)
+- [快速音符輸入](/docs/Finale/note-input)
+- [選擇工具](/docs/Finale/select)
+- [譜表屬性工具](/docs/Finale/staff)
+- [小節屬性工具](/docs/Finale/Measure)
+- [調號/拍號屬性工具](/docs/Finale/key)
 
 :::info 未來更新
 - 圓滑線
@@ -40,8 +41,8 @@ date: 2026-01-10
 - 其他
 :::
 
----
+
 :::tip 其他
-稍等我未來更新謝謝
+稍等我未來 2027 年持續更新謝謝
 :::
 
