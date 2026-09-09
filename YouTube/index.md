@@ -1,6 +1,5 @@
 ---
 title: YouTube 影片專區
-slug: /
 ---
 
 
