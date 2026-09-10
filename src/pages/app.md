@@ -9,31 +9,31 @@ tags: []
 
 # 📱 KAI macOS 電腦裡有什麼 `/app`
 
-- 最後更新：2026-09-05 10:00
-- **總共 `48` 個 軟體**
+- 最後更新：2026-09-10 10:00
+- **總共 `49` 個 軟體**
 
 ## 這是我在 Mac 上的軟體清單
 
 # macOSAPP
 
 1. Addictive Drums 2 Demo : 好用鼓音源，五月天用
-2. After Effect : 製作特效軟體
-3. Media Encoder 2026 : 用 `Adobe` 的軟體匯出好像得用它
-4. Affinity : 製作縮圖常用
-5. Anytype : 超好用開源筆記軟體，載入速度極快、同步方便！
-6. Aria Player : Finale 的 音源工具之類的吧？
-7. Audacity : 免費開源超好用的音訊編輯器
-8. Brave Origin : 超好用的乾淨瀏覽器！只佔 433.8 MB 
-9. ClipGrab : 下載任何影片超好用！包含 B 站之類的
-10. Cubase 15 : 主要的編曲軟體，教學資源不錯
-11. DaVinci Resolve 21 : 找不到比他更好的調色與剪輯軟體了
-12. Discord : 聊天與語音頻道首選
-13. Dorico 6 : 最近想刪除的打譜軟體，超級難用，還是喜歡 musescore
-14. Finale 27 : 停止提供更新了，最近沒什麼在用
-15. Friction : 開源的 AE 替代品，跨平台
-16. GIMP : 曾老師教學的圖邊軟體，超好用！
-17. Groove Agent SE : Cubase 內建的鼓機
-18. Guitar Rig 7 : Kontakt 免費送的效果器，很高級很好用
+2. Addictive Keys Demo : 好用鋼琴音源，我覺得超好聽
+3. After Effect : 製作特效軟體
+4. Media Encoder 2026 : 用 `Adobe` 的軟體匯出好像得用它
+5. Affinity : 製作縮圖常用
+6. Anytype : 超好用開源筆記軟體，載入速度極快、同步方便！
+7. Aria Player : Finale 的 音源工具之類的吧？
+8. Audacity : 免費開源超好用的音訊編輯器
+9. Brave Origin : 超好用的乾淨瀏覽器！只佔 433.8 MB 
+10. ClipGrab : 下載任何影片超好用！包含 B 站之類的
+11. Cubase 15 : 主要的編曲軟體，教學資源不錯
+12. DaVinci Resolve 21 : 找不到比他更好的調色與剪輯軟體了
+13. DecentSampler : 免費的音源比大公司厲害！
+14. Discord : 聊天與語音頻道首選
+15. Dorico 6 : 最近想刪除的打譜軟體，超級難用，還是喜歡 musescore
+16. Finale 27 : 停止提供更新了，最近沒什麼在用，感覺到 macOS 29 就不能用了
+17. GIMP : 曾老師教學的圖邊軟體，超好用！
+18. Groove Agent SE : Cubase 內建的鼓機
 19. HALion Sonic : Cubase 內建音源，電量低
 20. HandBrake : 處理影片畫質開源好幫手！
 21. IINA : 開源萬能播放器，Mac 必裝
@@ -55,12 +55,13 @@ tags: []
 37. Numbers : 蘋果表格工具
 38. OBS : 強大的開源螢幕錄影與直播軟體
 39. Ollama : 在荒島時可用的離線 AI 工具，前提是電腦配置要好 … 想試試 Qwen
-40. OpenBVE : 開源模擬駕駛遊戲，最近跳轉到 BVE6 真開心
-41. Pages : 蘋果文件排版工具
-42. Parallels Desktop : Windows 虛擬機，效能強大
-43. Pearcleaner : 乾淨卸載 App 的利器
+40. Pages : 蘋果文件排版工具
+41. Parallels Desktop : Windows 虛擬機，效能強大
+42. Pearcleaner : 乾淨卸載 App 的利器
+43. Plugoff : 查看電腦所有音源，開源的超好用！
 44. Roblox : 我唯一玩的遊戲
 45. Steinberg Library Manager : 管理 VST 音色庫路徑與授權的工具
 46. Vorssaint : 開源強大的工具彙整工具，只能說太強大了
 47. Vovious : 調音準很方便，媲美 Melodyne
 48. VSCodium : 還是開源的文字編輯器好用
+49. WaveForm Free : 社團需求免費編曲軟體
