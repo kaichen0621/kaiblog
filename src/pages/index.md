@@ -39,13 +39,11 @@ slug: /
 ## 🛠️ 其他小技巧！
 
 * **RSS 訂閱**：你可以用 RSS 追蹤我
-    - 連結：
-    `https://kaiblog.is-a.dev`
+    - 連結：`https://kaiblog.is-a.dev`
 * **全站搜尋**：按下 `Ctrl + K` 即可搜尋關鍵字！
 * **聯繫我**：有任何建議，歡迎寫信至 `kaigithub0621@gmail.com`
-- **輸入：`npx vercel --prod` 可以上傳內容噎！**
 
----
+
 
 ## [🎬 達芬奇免費模板 😍](/docs/resolve/resolvepackV4)
 我更新 **ResolveV4Pack**
@@ -56,14 +54,12 @@ slug: /
 ## [📜 BlogBlog.Club](https://blogblog.club/)
  
 BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格，逃離演算法，拯救世界！  
-~~我每個月都會參加「BlogBlog 同樂會」。~~
-> 最近比較忙！
-
+我每個月都會參加「BlogBlog 同樂會」。
 
 ## 📺 YouTube 最新影片 🎉
 
-> **KAI STUDIO** (最後更新：2026-07-27)     
-訂閱人數：30
+> **KAI STUDIO** (最後更新：2026-09-18)     
+訂閱人數：32
 
 <div className="youtube-s">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ih9FuiLO71Y?si=vO3AcsppPhShcfY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>五月天 阿信相片館 | Mayday Ashin Gallery</title>
+  <title>雲端隨心相片館 | Personal Photo Gallery</title>
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,8 +23,10 @@
       const app = initializeApp(firebaseConfig);
       const db = getDatabase(app);
       window.cloudDB = { db, ref, set, remove, onValue, get };
+      window.dispatchEvent(new Event('cloud-ready'));
       console.log("✅ Firebase 連線成功");
     } catch (e) { 
+      window.dispatchEvent(new Event('cloud-error'));
       console.warn("❌ Firebase 初始化失敗", e); 
     }
   </script>
@@ -80,7 +82,7 @@
 
     .avatar-ring {
       width: 50px; height: 50px; border-radius: 50%; padding: 2px;
-      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366);
+      background: linear-gradient(45deg, #00f0ff, #7000ff, #ff007b);
       display: flex; align-items: center; justify-content: center; flex-shrink: 0;
     }
 
@@ -97,7 +99,7 @@
       text-decoration: none; transition: all 0.2s; white-space: nowrap;
     }
     .btn:hover { opacity: 0.85; }
-    .btn-primary { background: var(--accent); color: #fff; border: none; }
+    .btn-primary { background: var(--accent); color: #000; border: none; font-weight: 800; }
     .btn-active-edit { background: #ef4444 !important; color: #fff !important; border: none; }
 
     .controls-bar { display: flex; align-items: center; justify-content: space-between; padding: 1rem 0; gap: 0.75rem; flex-wrap: wrap; }
@@ -141,7 +143,7 @@
       width: 28px; height: 28px; border-radius: 6px; background: rgba(0, 0, 0, 0.75);
       border: 1px solid rgba(255, 255, 255, 0.2); color: #fff; font-size: 0.75rem; cursor: pointer;
     }
-    .action-icon-btn:hover { background: var(--accent); color: #fff; }
+    .action-icon-btn:hover { background: var(--accent); color: #000; }
     .action-icon-btn.danger:hover { background: #ef4444; color: #fff; }
 
     .edit-only { display: none !important; }
@@ -157,7 +159,6 @@
     .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-shrink: 0; }
     .modal-close { background: none; border: none; color: var(--text-main); font-size: 1.4rem; cursor: pointer; }
 
-    /* 內容獨立捲動，操作按鈕永遠留在視窗底部。 */
     .modal-form { display: flex; flex: 1; flex-direction: column; min-height: 0; }
     .modal-scroll { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding-right: 0.25rem; }
     .modal-footer { flex-shrink: 0; padding-top: 0.75rem; border-top: 1px solid var(--border-color); background: var(--bg-card); }
@@ -169,7 +170,6 @@
     .preview-box { width: 100%; height: 150px; border: 2px dashed var(--border-color); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 0.8rem; overflow: hidden; background: #000; }
     .preview-box img { width: 100%; height: 100%; object-fit: contain; }
 
-    /* Lightbox：文字區獨立捲動，操作按鈕固定在視窗底部。 */
     .lightbox-box { 
       background: var(--bg-card); 
       border-radius: 16px; 
@@ -205,7 +205,6 @@
     .lightbox-content { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding-right: 0.25rem; }
     .lightbox-actions { flex-shrink: 0; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid var(--border-color); background: var(--bg-card); }
 
-    /* 按鈕左右對稱雙排設計 */
     .download-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -213,7 +212,6 @@
       margin-top: 0.5rem;
     }
 
-    /* 愛心彈跳特效 */
     @keyframes heartBeat {
       0% { transform: scale(1); }
       25% { transform: scale(1.3); }
@@ -233,16 +231,31 @@
     .mobile-bottom-bar {
       display: none; position: fixed; bottom: 0; left: 0; right: 0;
       background: var(--bg-card); border-top: 1px solid var(--border-color);
-      padding: 0.5rem 1rem; z-index: 40; justify-content: space-around; align-items: center;
+      padding: 0.5rem max(0.75rem, env(safe-area-inset-right)) calc(0.5rem + env(safe-area-inset-bottom)) max(0.75rem, env(safe-area-inset-left));
+      z-index: 40; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.45rem;
     }
+
+    .sync-overlay { position: fixed; inset: 0; z-index: 200; display: flex; align-items: center; justify-content: center; padding: 1rem; background: var(--modal-bg); backdrop-filter: blur(8px); }
+    .sync-overlay[hidden] { display: none; }
+    .sync-status { width: min(100%, 320px); padding: 1.5rem; border: 1px solid var(--border-color); border-radius: 16px; background: var(--bg-card); text-align: center; box-shadow: var(--shadow); }
+    .spinner { width: 30px; height: 30px; margin: 0 auto 0.85rem; border: 3px solid var(--border-color); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.75s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .advanced-settings { margin-top: 0.5rem; border: 1px solid var(--border-color); border-radius: 8px; padding: 0.7rem; }
+    .advanced-settings summary { cursor: pointer; color: var(--text-sub); font-size: 0.8rem; font-weight: 700; }
+    .advanced-settings[open] summary { margin-bottom: 0.75rem; }
 
     @media (max-width: 640px) {
       .header-controls { display: none !important; }
-      .mobile-bottom-bar { display: flex; }
+      .mobile-bottom-bar { display: grid; }
+      .mobile-bottom-bar .btn { min-width: 0; padding: 0.55rem 0.25rem; font-size: 0.72rem; }
       .ig-grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
     }
 
     .tag-item { display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--border-color); }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.8rem; }
+    .meta-chip { padding: 0.28rem 0.5rem; border-radius: 999px; font-size: 0.72rem; color: var(--text-sub); background: var(--input-bg); border: 1px solid var(--border-color); }
+    .danger-zone { color: #fca5a5; border-color: rgba(239, 68, 68, 0.45); background: rgba(239, 68, 68, 0.08); }
+    .delete-warning { border-left: 3px solid #ef4444; padding: 0.75rem; background: rgba(239, 68, 68, 0.08); border-radius: 6px; font-size: 0.85rem; line-height: 1.6; color: var(--text-sub); }
   </style>
 </head>
 <body>
@@ -251,11 +264,11 @@
     <div class="container profile-nav">
       <div class="profile-info">
         <div class="avatar-ring">
-          <img class="avatar-img" src="./ashin.jpg" alt="Ashin" onerror="this.onerror=null; this.src='./ashin.png';" />
+          <img class="avatar-img" src="/ashin.jpg" alt="Gallery Avatar" />
         </div>
         <div class="profile-titles">
-          <h1>ashin_ig <span style="color: #38bdf8;">☑️</span></h1>
-          <p>五月天 阿信 | 相片特藏館</p>
+          <h1>my_photo_gallery <span style="color: #38bdf8;">☑️</span></h1>
+          <p>線上雲端相冊 | 喜愛相片典藏館</p>
         </div>
       </div>
 
@@ -272,11 +285,19 @@
   <main class="container">
     <div class="controls-bar">
       <div class="filter-tabs" id="filterTabs"></div>
-      <input type="text" id="searchInput" class="search-input" placeholder="搜尋內文..." />
+      <input type="text" id="searchInput" class="search-input" placeholder="搜尋標題或內文..." />
     </div>
 
     <div class="ig-grid" id="igGrid"></div>
   </main>
+
+  <div class="sync-overlay" id="syncOverlay" role="status" aria-live="polite">
+    <div class="sync-status">
+      <div class="spinner"></div>
+      <h2 style="font-size: 1rem; margin-bottom: 0.4rem;">正在同步相片館數據</h2>
+      <p id="syncMessage" style="font-size: 0.8rem; color: var(--text-sub);">請稍候，與雲端連線中...</p>
+    </div>
+  </div>
 
   <div class="mobile-bottom-bar">
     <button id="mbThemeBtn" class="btn">🌙 主題</button>
@@ -314,40 +335,53 @@
         <div class="modal-scroll">
           <div class="preview-box">
             <div id="previewHint" style="color: var(--text-sub); font-size: 0.8rem; text-align: center;">
-              💡 提示：按 <b>Cmd + V</b> 或 <b>Ctrl + V</b> 可直接貼上圖片
+              💡 提示：按 <b>Cmd + V</b> 或 <b>Ctrl + V</b> 可直接貼上剪貼簿圖片
             </div>
             <img id="previewImg" style="display: none;" />
           </div>
 
           <div class="form-group">
-            <label class="form-label">選擇標籤分類</label>
+            <label class="form-label">標籤分類</label>
             <select id="inputSource" class="form-control"></select>
           </div>
 
-        <div class="form-group">
-          <label class="form-label">方式 A：IG / 網路圖片網址 (快速預覽)</label>
-          <input type="text" id="inputDisplayUrl" class="form-control" placeholder="https://..." />
-        </div>
-
-        <div class="form-group">
-          <label class="form-label">方式 B：本機高畫質檔案 (供原圖下載)</label>
-          <input type="file" id="inputFile" accept="image/*" class="form-control" />
-        </div>
-
-        <div class="form-group">
-          <label class="form-label">相片標題 (選填)</label>
-          <input type="text" id="inputTitle" class="form-control" placeholder="可不填，預設抓內文" />
-        </div>
-
-        <div class="form-group">
-          <label class="form-label">貼文內文 / 歌詞</label>
-          <textarea id="inputQuote" class="form-control" rows="3" placeholder="輸入貼文內容..."></textarea>
-        </div>
+          <div class="form-group">
+            <label class="form-label">上傳者名稱 <span style="color: #ef4444;">*</span></label>
+            <input type="text" id="inputUploader" class="form-control" maxlength="40" placeholder="例如：小明" required />
+            <small style="display:block; margin-top:0.35rem; color:var(--text-sub); font-size:0.72rem;">會顯示在照片資訊中，並記住在這台裝置。</small>
+          </div>
 
           <div class="form-group">
-            <label class="form-label">IG 原始貼文網址 (選填)</label>
-            <input type="text" id="inputPostUrl" class="form-control" placeholder="https://www.instagram.com/p/..." />
+            <label class="form-label">選擇照片檔案</label>
+            <input type="file" id="inputFile" accept="image/*" class="form-control" />
           </div>
+
+          <div class="form-group">
+            <label class="form-label">相片標題（選填）</label>
+            <input type="text" id="inputTitle" class="form-control" placeholder="可不填，預設顯示內文" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">文字內容（選填）</label>
+            <textarea id="inputQuote" class="form-control" rows="3" placeholder="寫下照片說明、心得或記憶..."></textarea>
+          </div>
+
+          <details class="advanced-settings">
+            <summary>進階設定：雲端原檔、網路圖片或參考網頁（選填）</summary>
+            <div class="form-group">
+              <label class="form-label">雲端原始檔下載網址</label>
+              <input type="text" id="inputOriginalStorageUrl" class="form-control" placeholder="Google Drive、S3 或 Dropbox 等高畫質原檔連結" />
+              <small style="display:block; margin-top:0.35rem; color:var(--text-sub); font-size:0.72rem;">填入後點選「高畫質原圖」會下載此檔案；適合保存最高解析度。</small>
+            </div>
+            <div class="form-group">
+              <label class="form-label">網路圖片網址</label>
+              <input type="text" id="inputDisplayUrl" class="form-control" placeholder="https://..." />
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label">參考網頁 / 來源連結</label>
+              <input type="text" id="inputPostUrl" class="form-control" placeholder="https://..." />
+            </div>
+          </details>
         </div>
 
         <div class="modal-footer">
@@ -357,11 +391,37 @@
     </div>
   </div>
 
-  <!-- Lightbox Modal (雙下載按鈕 + 愛心) -->
+  <div class="modal" id="introModal">
+    <div class="modal-card" style="max-width: 420px;">
+      <div class="modal-header"><h3>歡迎來到線上相片館 👋</h3></div>
+      <div class="modal-scroll" style="font-size: 0.9rem; line-height: 1.7; color: var(--text-sub);">
+        <p>在這裡輕鬆收藏、分享與同步你喜愛的照片。</p>
+        <p style="margin-top: 0.7rem;">1. 切換到「編輯模式」<br>2. 按「新增」選取本機圖片，或直接用 <b>Ctrl+V</b> 貼上<br>3. 填寫說明並發布，所有數據將即時同步至雲端！</p>
+      </div>
+      <div class="modal-footer"><button id="closeIntroBtn" class="btn btn-primary" style="width: 100%; justify-content: center;">開始使用</button></div>
+    </div>
+  </div>
+
+  <!-- 刪除確認 Modal -->
+  <div class="modal" id="deleteModal" role="dialog" aria-modal="true" aria-labelledby="deleteModalTitle">
+    <div class="modal-card" style="max-width: 420px;">
+      <div class="modal-header"><h3 id="deleteModalTitle">刪除照片</h3><button class="modal-close" id="closeDeleteModal">&times;</button></div>
+      <div class="delete-warning">此操作會從雲端資料庫永久移除這張照片，無法復原。</div>
+      <p id="deleteItemName" style="margin:0.9rem 0; font-size:0.9rem; font-weight:700;"></p>
+      <label class="form-label" for="deleteConfirmInput">請輸入 <b>DELETE</b> 以確認刪除</label>
+      <input id="deleteConfirmInput" class="form-control" autocomplete="off" placeholder="DELETE" />
+      <div class="modal-footer" style="margin-top:0.75rem; display:flex; gap:0.5rem;">
+        <button id="cancelDeleteBtn" class="btn" style="flex:1;">取消</button>
+        <button id="confirmDeleteBtn" class="btn danger-zone" style="flex:1;" disabled>永久刪除</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
   <div class="modal" id="lightboxModal">
     <div class="lightbox-box">
       <div class="lightbox-img-container">
-        <img id="lbImg" src="" />
+        <img id="lbImg" src="" alt="Zoomed view" />
       </div>
       <div class="lightbox-details">
         <div class="lightbox-content">
@@ -371,14 +431,14 @@
           </div>
           <h2 id="lbTitle" style="font-size: 1.1rem; font-weight: 800; margin-bottom: 0.5rem;"></h2>
           <p id="lbQuote" style="font-size: 0.85rem; color: var(--text-sub); line-height: 1.5; white-space: pre-wrap;"></p>
+          <div class="meta-row" id="lbMeta"></div>
           <div id="lbStats" style="margin-top: 0.8rem; font-size: 0.85rem; color: var(--text-sub); display: flex; gap: 1rem; align-items: center;"></div>
         </div>
 
         <div class="lightbox-actions" style="display: flex; flex-direction: column; gap: 0.5rem;">
           <button id="lbHeartBtn" class="btn" style="justify-content: center; background: rgba(239, 68, 68, 0.1); border-color: #ef4444; color: #ef4444;">❤️ 按讚愛心</button>
-          <a id="lbPostLink" href="#" target="_blank" class="btn" style="justify-content: center;">🔗 開啟 IG 原始貼文</a>
+          <a id="lbPostLink" href="#" target="_blank" class="btn" style="justify-content: center;">🔗 開啟來源網頁</a>
           
-          <!-- 左右兩個下載按鈕 -->
           <div class="download-grid">
             <button id="lbDlPreviewBtn" class="btn">⚡️ 預覽圖</button>
             <button id="lbDlOriginalBtn" class="btn btn-primary">💎 高畫質原圖</button>
@@ -391,26 +451,33 @@
   <script>
     let isEditMode = false;
     let currentTheme = localStorage.getItem('ashin_gallery_theme') || 'dark';
-    let tags = JSON.parse(localStorage.getItem('ashin_gallery_tags')) || ['五月天阿信 IG'];
+    let tags = JSON.parse(localStorage.getItem('ashin_gallery_tags')) || ['預設相簿'];
     let items = JSON.parse(localStorage.getItem('ashin_gallery_items')) || [];
 
-    // 本地紀錄每個人已點讚過的照片 ID 陣列
     let userLikedItems = JSON.parse(localStorage.getItem('ashin_user_likes')) || [];
 
     let activeSource = 'all';
     let searchQuery = '';
     let currentUploadedBase64 = '';
     let currentLbItemId = null;
+    let pendingDeleteItemId = null;
+    const savedUploader = localStorage.getItem('ashin_gallery_uploader') || '';
 
     const igGrid = document.getElementById('igGrid');
     const filterTabs = document.getElementById('filterTabs');
     const uploadModal = document.getElementById('uploadModal');
     const tagModal = document.getElementById('tagModal');
     const lightboxModal = document.getElementById('lightboxModal');
+    const introModal = document.getElementById('introModal');
+    const syncOverlay = document.getElementById('syncOverlay');
     const previewImg = document.getElementById('previewImg');
     const previewHint = document.getElementById('previewHint');
 
-    function compressImage(fileOrBase64, maxWidth = 900, quality = 0.75) {
+    function escapeHTML(value = '') {
+      return String(value).replace(/[&<>'"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#039;', '"': '&quot;' })[char]);
+    }
+
+    function compressImage(fileOrBase64, maxWidth = 2560, quality = 0.88) {
       return new Promise((resolve) => {
         const img = new Image();
         img.onload = () => {
@@ -481,22 +548,29 @@
 
       if (window.cloudDB && window.cloudDB.db) {
         try {
-          for (let item of items) {
-            await window.cloudDB.set(window.cloudDB.ref(window.cloudDB.db, 'mayday_photos/' + item.id), item);
-          }
-          await window.cloudDB.set(window.cloudDB.ref(window.cloudDB.db, 'mayday_tags'), tags);
+          await Promise.all([
+            ...items.map(item => window.cloudDB.set(window.cloudDB.ref(window.cloudDB.db, 'mayday_photos/' + item.id), item)),
+            window.cloudDB.set(window.cloudDB.ref(window.cloudDB.db, 'mayday_tags'), tags)
+          ]);
         } catch (e) {
           console.error("Firebase 同步失敗", e);
+          throw e;
         }
       }
     }
 
-    // ⭐️ 限制一人只能按一次愛心 + 彈跳動畫
+    async function saveTags() {
+      try { localStorage.setItem('ashin_gallery_tags', JSON.stringify(tags)); } catch (e) {}
+      if (window.cloudDB && window.cloudDB.db) {
+        await window.cloudDB.set(window.cloudDB.ref(window.cloudDB.db, 'mayday_tags'), tags);
+      }
+    }
+
     window.toggleHeart = async function(id, event) {
       if (event) event.stopPropagation();
 
       if (userLikedItems.includes(id)) {
-        alert('❤️ 你已經點過這張照片的愛心囉！');
+        alert('❤️ 你已經按過這張照片的愛心囉！');
         return;
       }
 
@@ -507,7 +581,6 @@
       userLikedItems.push(id);
       try { localStorage.setItem('ashin_user_likes', JSON.stringify(userLikedItems)); } catch(e){}
 
-      // 動畫效果
       const heartBtn = document.getElementById('lbHeartBtn');
       if (heartBtn) {
         heartBtn.classList.add('heart-animated');
@@ -544,7 +617,7 @@
 
       igGrid.innerHTML = filtered.map(item => {
         const imgSrc = item.displayUrl || item.uploadUrl || 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80';
-        const displayTitle = item.title || item.quote || '無標題照片';
+        const displayTitle = item.title || item.quote || '相片作品';
 
         return `
           <div class="grid-tile" onclick="openLightbox('${item.id}')">
@@ -560,7 +633,7 @@
                 <span onclick="toggleHeart('${item.id}', event)">❤️ ${item.likes || 0}</span>
                 <span>📥 ${item.downloads || 0}</span>
               </div>
-              <div class="overlay-title">${displayTitle}</div>
+              <div class="overlay-title">${escapeHTML(displayTitle)}</div>
             </div>
           </div>
         `;
@@ -586,7 +659,7 @@
       if (newName && newName.trim() !== '') {
         tags[idx] = newName.trim();
         items.forEach(i => { if (i.source === oldName) i.source = newName.trim(); });
-        syncToFirebase();
+        syncToFirebase().catch(console.error);
         renderTabs();
         renderTagList();
         renderGrid();
@@ -599,20 +672,20 @@
         tags.splice(idx, 1);
         if (tags.length === 0) tags = ['預設相簿'];
         items.forEach(i => { if (i.source === tagToDelete) i.source = tags[0]; });
-        syncToFirebase();
+        syncToFirebase().catch(console.error);
         renderTabs();
         renderTagList();
         renderGrid();
       }
     };
 
-    document.getElementById('addTagBtn').onclick = () => {
+    document.getElementById('addTagBtn').onclick = async () => {
       const input = document.getElementById('newTagInput');
       const name = input.value.trim();
       if (name && !tags.includes(name)) {
         tags.push(name);
         input.value = '';
-        syncToFirebase();
+        try { await saveTags(); } catch (e) { alert('標籤同步失敗，請稍後再試。'); console.error(e); }
         renderTabs();
         renderTagList();
       }
@@ -624,7 +697,7 @@
       for (let i = 0; i < cItems.length; i++) {
         if (cItems[i].type.indexOf('image') !== -1) {
           const rawFile = cItems[i].getAsFile();
-          currentUploadedBase64 = await compressImage(rawFile);
+          currentUploadedBase64 = await compressImage(rawFile, 2560, 0.92);
           previewImg.src = currentUploadedBase64;
           previewImg.style.display = 'block';
           previewHint.style.display = 'none';
@@ -633,7 +706,15 @@
       }
     });
 
-    // ⭐️ 下載功能 (區分預覽圖 / 高畫質原圖)
+    document.getElementById('inputFile').addEventListener('change', async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      currentUploadedBase64 = await compressImage(file, 2560, 0.92);
+      previewImg.src = currentUploadedBase64;
+      previewImg.style.display = 'block';
+      previewHint.style.display = 'none';
+    });
+
     window.triggerDownload = async function(id, type = 'original') {
       const item = items.find(i => i.id === id);
       if (!item) return;
@@ -651,17 +732,17 @@
         updateLightboxStats(item);
       }
 
-      let downloadTarget = item.displayUrl;
-      if (type === 'original' && item.uploadUrl) {
-        downloadTarget = item.uploadUrl;
+      const downloadTarget = (type === 'original' ? (item.originalStorageUrl || item.uploadUrl) : item.displayUrl) || item.uploadUrl || item.displayUrl;
+      if (!downloadTarget) {
+        alert('這張照片沒有可下載的圖檔。');
+        return;
       }
 
-      const fileName = (item.title || 'ashin_photo') + (type === 'preview' ? '_thumb' : '') + '.jpg';
+      const fileName = (item.title || 'photo') + (type === 'preview' ? '_preview' : '') + '.jpg';
 
       const a = document.createElement('a');
       a.href = downloadTarget;
       a.download = fileName;
-      a.target = '_blank';
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
@@ -692,7 +773,12 @@
       document.getElementById('lbImg').src = imgSrc;
       document.getElementById('lbTitle').textContent = item.title || '';
       document.getElementById('lbQuote').textContent = item.quote || '';
-      document.getElementById('lbSource').textContent = item.source || 'Ashin IG';
+      document.getElementById('lbSource').textContent = item.source || '預設相簿';
+      const qualityLabel = item.originalStorageUrl ? '原始檔（雲端連結）' : '高畫質（最長邊 2560px）';
+      document.getElementById('lbMeta').innerHTML = `
+        <span class="meta-chip">👤 上傳者：${escapeHTML(item.uploader || '匿名')}</span>
+        <span class="meta-chip">📅 ${escapeHTML(item.date || '未紀錄')}</span>
+        <span class="meta-chip">🖼️ ${qualityLabel}</span>`;
       
       updateLightboxStats(item);
 
@@ -706,7 +792,6 @@
 
       document.getElementById('lbHeartBtn').onclick = () => window.toggleHeart(item.id);
       
-      // 綁定左右雙下載按鈕
       document.getElementById('lbDlPreviewBtn').onclick = () => window.triggerDownload(item.id, 'preview');
       document.getElementById('lbDlOriginalBtn').onclick = () => window.triggerDownload(item.id, 'original');
 
@@ -722,8 +807,10 @@
       document.getElementById('inputTitle').value = item.title || '';
       document.getElementById('inputQuote').value = item.quote || '';
       document.getElementById('inputDisplayUrl').value = item.displayUrl || '';
+      document.getElementById('inputOriginalStorageUrl').value = item.originalStorageUrl || '';
       document.getElementById('inputPostUrl').value = item.postUrl || '';
       document.getElementById('inputSource').value = item.source || tags[0];
+      document.getElementById('inputUploader').value = item.uploader || savedUploader;
 
       currentUploadedBase64 = item.uploadUrl || '';
       if (item.displayUrl || currentUploadedBase64) {
@@ -739,14 +826,28 @@
     };
 
     window.deleteItem = function(id) {
-      if (!confirm('確定刪除此相片？')) return;
-      items = items.filter(i => i.id !== id);
-      if (window.cloudDB && window.cloudDB.db) {
-        try { window.cloudDB.remove(window.cloudDB.ref(window.cloudDB.db, 'mayday_photos/' + id)); } catch(e){}
-      }
-      syncToFirebase();
-      renderGrid();
+      const item = items.find(i => i.id === id);
+      if (!item) return;
+      pendingDeleteItemId = id;
+      document.getElementById('deleteItemName').textContent = item.title || item.quote || '未命名照片';
+      document.getElementById('deleteConfirmInput').value = '';
+      document.getElementById('confirmDeleteBtn').disabled = true;
+      document.getElementById('deleteModal').classList.add('active');
+      document.getElementById('deleteConfirmInput').focus();
     };
+
+    async function confirmDelete() {
+      const id = pendingDeleteItemId;
+      if (!id || document.getElementById('deleteConfirmInput').value.trim() !== 'DELETE') return;
+      if (window.cloudDB && window.cloudDB.db) {
+        try { await window.cloudDB.remove(window.cloudDB.ref(window.cloudDB.db, 'mayday_photos/' + id)); } catch(e) { alert('雲端刪除失敗，請稍後重試。'); return; }
+      }
+      items = items.filter(i => i.id !== id);
+      try { localStorage.setItem('ashin_gallery_items', JSON.stringify(items)); } catch(e) {}
+      pendingDeleteItemId = null;
+      document.getElementById('deleteModal').classList.remove('active');
+      renderGrid();
+    }
 
     const toggleTheme = () => applyTheme(currentTheme === 'dark' ? 'light' : 'dark');
     const toggleMode = () => setEditMode(!isEditMode);
@@ -761,6 +862,7 @@
       document.getElementById('editItemId').value = '';
       document.getElementById('modalFormTitle').textContent = '新增照片貼文';
       currentUploadedBase64 = '';
+      document.getElementById('inputUploader').value = savedUploader;
       previewImg.style.display = 'none';
       previewHint.style.display = 'block';
       uploadModal.classList.add('active');
@@ -778,10 +880,22 @@
 
     document.getElementById('closeUploadModal').onclick = () => uploadModal.classList.remove('active');
     document.getElementById('closeTagModal').onclick = () => tagModal.classList.remove('active');
+    const closeDeleteModal = () => { pendingDeleteItemId = null; document.getElementById('deleteModal').classList.remove('active'); };
+    document.getElementById('closeDeleteModal').onclick = closeDeleteModal;
+    document.getElementById('cancelDeleteBtn').onclick = closeDeleteModal;
+    document.getElementById('deleteConfirmInput').oninput = (e) => { document.getElementById('confirmDeleteBtn').disabled = e.target.value.trim() !== 'DELETE'; };
+    document.getElementById('confirmDeleteBtn').onclick = confirmDelete;
     document.getElementById('closeLbBtn').onclick = () => {
       lightboxModal.classList.remove('active');
       currentLbItemId = null;
     };
+
+    function closeIntro() {
+      introModal.classList.remove('active');
+      try { localStorage.setItem('ashin_gallery_intro_seen', 'true'); } catch (e) {}
+    }
+
+    document.getElementById('closeIntroBtn').onclick = closeIntro;
 
     window.addEventListener('keydown', (e) => {
       if (e.key !== 'Escape') return;
@@ -793,6 +907,10 @@
         uploadModal.classList.remove('active');
       } else if (tagModal.classList.contains('active')) {
         tagModal.classList.remove('active');
+      } else if (introModal.classList.contains('active')) {
+        closeIntro();
+      } else if (document.getElementById('deleteModal').classList.contains('active')) {
+        closeDeleteModal();
       }
     });
 
@@ -810,18 +928,10 @@
       const id = document.getElementById('editItemId').value || ('item-' + Date.now());
       const fileInput = document.getElementById('inputFile');
 
-      // 原圖無損保留 vs 預覽圖輕量化
       if (fileInput.files[0]) {
         const rawFile = fileInput.files[0];
-        
-        // 1. 產生高畫質原圖 Base64
-        currentUploadedBase64 = await new Promise((resolve) => {
-          const reader = new FileReader();
-          reader.onload = (ev) => resolve(ev.target.result);
-          reader.readAsDataURL(rawFile);
-        });
+        currentUploadedBase64 = await compressImage(rawFile, 2560, 0.92);
 
-        // 2. 如果沒有填寫網路 URL，就自動產生輕量預覽圖
         if (!document.getElementById('inputDisplayUrl').value) {
           const compUrl = await compressImage(rawFile, 900, 0.75);
           document.getElementById('inputDisplayUrl').value = compUrl;
@@ -829,20 +939,12 @@
       }
 
       let displayUrl = cleanUrl(document.getElementById('inputDisplayUrl').value);
+      let originalStorageUrl = cleanUrl(document.getElementById('inputOriginalStorageUrl').value);
       let postUrl = cleanUrl(document.getElementById('inputPostUrl').value);
 
-      if (displayUrl.includes('instagram.com/p/') || displayUrl.includes('instagram.com/reel/')) {
-        if (!postUrl) postUrl = displayUrl;
-        displayUrl = ''; 
-      }
-
       if (!displayUrl && !currentUploadedBase64) {
-        if (postUrl) {
-          alert('💡 已儲存貼文連結！小提醒：建議貼上圖片檔才能直接顯示 preview 喔！');
-        } else {
-          alert('請至少提供圖片連結或貼上圖片！');
-          return;
-        }
+        alert('請選擇照片檔案、使用 Ctrl+V 貼上或提供圖片網址！');
+        return;
       }
 
       const existingItem = items.find(i => i.id === id);
@@ -851,17 +953,21 @@
         title: document.getElementById('inputTitle').value,
         quote: document.getElementById('inputQuote').value,
         source: document.getElementById('inputSource').value,
+        uploader: document.getElementById('inputUploader').value.trim(),
         displayUrl: displayUrl,
         uploadUrl: currentUploadedBase64,
+        originalStorageUrl,
         postUrl: postUrl,
         downloads: existingItem ? (existingItem.downloads || 0) : 0,
         likes: existingItem ? (existingItem.likes || 0) : 0,
-        date: new Date().toISOString().split('T')[0]
+        date: existingItem ? existingItem.date : new Date().toISOString().split('T')[0]
       };
 
       const idx = items.findIndex(i => i.id === id);
       if (idx !== -1) items[idx] = itemData;
       else items.unshift(itemData);
+
+      try { localStorage.setItem('ashin_gallery_uploader', itemData.uploader); } catch(e) {}
 
       await syncToFirebase();
       renderGrid();
@@ -894,7 +1000,7 @@
         await syncToFirebase();
         alert('✅ 已成功將所有照片、標籤與數據同步至雲端！');
       } catch (err) {
-        alert('❌ 同步失敗，請檢查網路連線或 Firebase 設定。');
+        alert('❌ 同步失敗，請檢查網路連線。');
         console.error(err);
       } finally {
         if (syncBtn) syncBtn.textContent = originalText;
@@ -910,40 +1016,79 @@
       renderTabs();
       setEditMode(false);
 
-      setTimeout(() => {
-        if (window.cloudDB && window.cloudDB.db) {
-          try {
-            window.cloudDB.onValue(window.cloudDB.ref(window.cloudDB.db, 'mayday_photos'), (snap) => {
-              const data = snap.val();
-              if (data) {
-                items = Object.values(data);
-                try { localStorage.setItem('ashin_gallery_items', JSON.stringify(items)); } catch(e){}
-                renderGrid();
-                if (currentLbItemId) {
-                  const updated = items.find(i => i.id === currentLbItemId);
-                  if (updated) updateLightboxStats(updated);
-                }
-              } else if (items.length > 0) {
-                syncToFirebase();
-              }
-            });
+      let photosReady = false;
+      let tagsReady = false;
+      let cloudHadPhotos = false;
+      let cloudHadTags = false;
+      let initialSyncFinished = false;
+      const syncTimeout = window.setTimeout(() => {
+        if (initialSyncFinished) return;
+        initialSyncFinished = true;
+        console.warn('同步逾時，改以本機資料繼續使用。');
+        syncOverlay.hidden = true;
+        if (!localStorage.getItem('ashin_gallery_intro_seen')) introModal.classList.add('active');
+      }, 12000);
 
-            window.cloudDB.onValue(window.cloudDB.ref(window.cloudDB.db, 'mayday_tags'), (snap) => {
-              const cloudTags = snap.val();
-              if (cloudTags && Array.isArray(cloudTags)) {
-                tags = cloudTags;
-                try { localStorage.setItem('ashin_gallery_tags', JSON.stringify(tags)); } catch(e){}
-                renderTabs();
-              } else if (tags.length > 0) {
-                syncToFirebase();
-              }
-            });
+      const finishInitialSync = async () => {
+        if (initialSyncFinished || !photosReady || !tagsReady) return;
+        initialSyncFinished = true;
+        window.clearTimeout(syncTimeout);
 
-          } catch(err){
-            console.error(err);
-          }
+        try {
+          if (!cloudHadPhotos || !cloudHadTags) await syncToFirebase();
+        } catch (err) {
+          console.error('首次同步失敗', err);
+        } finally {
+          syncOverlay.hidden = true;
+          if (!localStorage.getItem('ashin_gallery_intro_seen')) introModal.classList.add('active');
         }
-      }, 500);
+      };
+
+      const startCloudSync = () => {
+        if (!window.cloudDB || !window.cloudDB.db) return;
+        try {
+          window.cloudDB.onValue(window.cloudDB.ref(window.cloudDB.db, 'mayday_photos'), (snap) => {
+            const data = snap.val();
+            cloudHadPhotos = Boolean(data);
+            if (data) {
+              items = Object.values(data);
+              try { localStorage.setItem('ashin_gallery_items', JSON.stringify(items)); } catch(e){}
+              renderGrid();
+              if (currentLbItemId) {
+                const updated = items.find(i => i.id === currentLbItemId);
+                if (updated) updateLightboxStats(updated);
+              }
+            }
+            photosReady = true;
+            finishInitialSync();
+          }, (err) => { console.error('照片同步失敗', err); photosReady = true; finishInitialSync(); });
+
+          window.cloudDB.onValue(window.cloudDB.ref(window.cloudDB.db, 'mayday_tags'), (snap) => {
+            const cloudTags = snap.val();
+            cloudHadTags = Array.isArray(cloudTags) && cloudTags.length > 0;
+            if (cloudHadTags) {
+              tags = cloudTags;
+              try { localStorage.setItem('ashin_gallery_tags', JSON.stringify(tags)); } catch(e){}
+              renderTabs();
+            }
+            tagsReady = true;
+            finishInitialSync();
+          }, (err) => { console.error('標籤同步失敗', err); tagsReady = true; finishInitialSync(); });
+        } catch (err) {
+          console.error(err);
+          photosReady = tagsReady = true;
+          finishInitialSync();
+        }
+      };
+
+      if (window.cloudDB && window.cloudDB.db) startCloudSync();
+      else window.addEventListener('cloud-ready', startCloudSync, { once: true });
+      window.addEventListener('cloud-error', () => {
+        window.clearTimeout(syncTimeout);
+        initialSyncFinished = true;
+        syncOverlay.hidden = true;
+        if (!localStorage.getItem('ashin_gallery_intro_seen')) introModal.classList.add('active');
+      }, { once: true });
     });
   </script>
 </body>
