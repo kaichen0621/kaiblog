@@ -1,5 +1,4 @@
 ---
-title: KAI BLOG
 authors: [KAI]
 slug: /
 ---
@@ -62,7 +61,7 @@ BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格�
 訂閱人數：32
 
 <div className="youtube-s">
-<<iframe width="980" height="551" src="https://www.youtube.com/embed/hgL4u_FrZ6Y" title="哇啊啊怎麼死的？DAY 01 的刀刃球直播精華" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="980" height="551" src="https://www.youtube.com/embed/hgL4u_FrZ6Y" title="哇啊啊怎麼死的？DAY 01 的刀刃球直播精華" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <p style={{ textAlign: 'center', padding: '0 1rem', opacity: 0.7, margin: '1rem 0 0' }}>KAI丨哇啊啊怎麼死的？DAY 01 的刀刃球直播精華</p>
 
 </div>
