@@ -62,7 +62,7 @@ BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格�
 訂閱人數：32
 
 <div className="youtube-s">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ih9FuiLO71Y?si=vO3AcsppPhShcfY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtu.be/hgL4u_FrZ6Y?si=0yA6ebqLKijo641C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <p style={{ textAlign: 'center', padding: '0 1rem', opacity: 0.7, margin: '1rem 0 0' }}>KAI丨我在 ROBLOX 刀刃球開啟了跳舞模式？</p>
 
