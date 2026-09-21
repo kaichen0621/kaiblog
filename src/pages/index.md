@@ -1,4 +1,5 @@
 ---
+title: KAIBLOG
 authors: [KAI]
 slug: /
 ---
