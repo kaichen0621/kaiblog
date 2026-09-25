@@ -5,9 +5,9 @@ import styles from './styles.module.css';
 // 定義推薦影片庫
 const POPULAR_VIDEOS = [
   { title: 'KAI | 中秋連假隨機直播！DAY01', url: 'https://www.youtube.com/watch?v=zaT7QzLuTb0' },
-  { title: '精選推薦影片', url: 'https://www.youtube.com/watch?v=3CageRLzzTs' },
-  { title: '精選推薦影片', url: 'https://www.youtube.com/watch?v=hgL4u_FrZ6Y' },
-  { title: '精選推薦影片', url: 'https://www.youtube.com/watch?v=jKhop-3K-os' },
+  { title: 'RAP 玩刀刃球？DAY 02 刀刃球直播精華', url: 'https://www.youtube.com/watch?v=3CageRLzzTs' },
+  { title: '哇啊啊怎麼死的？DAY 01 的刀刃球直播精華', url: 'https://www.youtube.com/watch?v=hgL4u_FrZ6Y' },
+  { title: 'COMMING SOON', url: 'https://www.youtube.com/watch?v=jKhop-3K-os' },
   { title: '精選推薦影片', url: 'https://www.youtube.com/watch?v=UXBgBZzRg9k' },
   { title: '精選推薦影片', url: 'https://www.youtube.com/watch?v=1ONMcBTNGzY' },
   { title: '精選推薦影片', url: 'https://www.youtube.com/watch?v=Ih9FuiLO71Y' },
@@ -45,7 +45,7 @@ const POPULAR_VIDEOS = [
   { title: '精選推薦影片', url: 'https://www.youtube.com/watch?v=71uH-_huJBA' },
   { title: '精選推薦影片', url: 'https://www.youtube.com/watch?v=TeadhR_Yuj8' },
   { title: '精選推薦影片', url: 'https://www.youtube.com/watch?v=1naAnfNBRSY' },
-  { title: '精選推薦影片', url: 'https://www.youtube.com/watch?v=wyptLHEvedw' },
+  { title: 'Kai ｜Roblox 誰是殺手 2！低階PPT電腦也可以玩！', url: 'https://www.youtube.com/watch?v=wyptLHEvedw' },
 ];
 
 export default function PopularVideosPopup() {
