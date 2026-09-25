@@ -16,7 +16,24 @@ authors: [KAI]
 希望你能在這裡找到有趣的內容，也歡迎寫 Email 交流。
 網站持續更新中，記得回來看看最新的分享！
 
-- 有任何問題歡迎寄信到：```kaigithub0621@gmail.com```
+利益相關聲明：   
+為了使觀眾更好的判斷內容，不論 KAI 是否認為其內容獨立於贊助商，發布時都會披露利益相關情況。   
+【本期節目，無任何利益相關。】   
+【本期節目有片段合作植入。】   
+Discord群組： https://discord.gg/ze9rM8pEPy   
+播放清單：   
+►ROBLOX爆笑系列 播放清單：https://www.youtube.com/playlist?list=PLw0lv3mQaNYn3-FKEZLZJkygYxeAEnW0X   
+►隨時都有可能下架的直播存檔：https://youtube.com/playlist?list=PLORqhlO3IryQ&si=3IUEHp5EwHafMfde   
+✉️業務合作：kaiyt0621@gmail.com    
+✉️意見來信：kaigithub0621@gmail.com   
+
+勘誤專區：   
+尚無，等你發現！  
+
+時間軸：   
+也許之後會補上   
+
+- 有任何問題歡迎寄信到**主要信箱**：`kaigithub0621@gmail.com`
 
 > 或者可以在下面的留言板輸入想要問的問題喔（**暫時不開放**）
 
