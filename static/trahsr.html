@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台鐵六家線 & 高鐵時刻表即時查詢</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 min-h-screen text-slate-800 p-4 md:p-8">
+
+  <div class="max-w-7xl mx-auto space-y-6">
+    <!-- 標題與全域控制區 -->
+    <header class="bg-white p-6 rounded-xl shadow-md space-y-4">
+      <h1 class="text-2xl font-bold text-slate-900 border-b pb-3">雙鐵時刻表即時查詢系統（六家線 / 高鐵）</h1>
+      
+      <!-- 時間控制區 -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
+        <div>
+          <label class="block text-sm font-semibold mb-1 text-slate-600">選擇日期</label>
+          <input type="date" id="searchDate" class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-blue-500 outline-none">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold mb-1 text-slate-600">指定時間</label>
+          <input type="time" id="searchTime" class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-blue-500 outline-none">
+        </div>
+        <div>
+          <button id="btnRealtime" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded-lg transition">
+            ⏱️ 即時（當前時間）
+          </button>
+        </div>
+        <div>
+          <button id="btnSearch" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition">
+            🔍 查詢班次
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- 左右雙欄主要查詢區 -->
+    <main class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      
+      <!-- 左側：台鐵六家線 -->
+      <section class="bg-white p-6 rounded-xl shadow-md space-y-4 border-t-4 border-blue-600">
+        <div class="flex justify-between items-center border-b pb-3">
+          <h2 class="text-xl font-bold text-blue-700 flex items-center gap-2">
+            <span>🚆 台鐵六家線</span>
+          </h2>
+          <button id="btnSwapTra" class="text-sm bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1 rounded border border-slate-300">
+            🔄 去/回程切換
+          </button>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-500 mb-1">起程站</label>
+            <select id="traStart" class="w-full border rounded p-2 text-sm bg-white"></select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-500 mb-1">到達站</label>
+            <select id="traEnd" class="w-full border rounded p-2 text-sm bg-white"></select>
+          </div>
+        </div>
+
+        <!-- 台鐵班次清單 -->
+        <div class="space-y-2 min-h-[360px]" id="traList">
+          <div class="text-center text-slate-400 py-12">請點擊查詢載入資料...</div>
+        </div>
+
+        <!-- 頁碼 / 筆數控制 -->
+        <div class="flex justify-between items-center border-t pt-3">
+          <button id="traPrev" class="bg-slate-200 hover:bg-slate-300 text-slate-700 px-4 py-1.5 rounded disabled:opacity-40 text-sm font-medium">
+            ← 前一筆 (前7班)
+          </button>
+          <span id="traPageInfo" class="text-xs text-slate-500">第 1 頁</span>
+          <button id="traNext" class="bg-slate-200 hover:bg-slate-300 text-slate-700 px-4 py-1.5 rounded disabled:opacity-40 text-sm font-medium">
+            後一筆 (後7班) →
+          </button>
+        </div>
+      </section>
+
+      <!-- 右側：台灣高鐵 -->
+      <section class="bg-white p-6 rounded-xl shadow-md space-y-4 border-t-4 border-orange-500">
+        <div class="flex justify-between items-center border-b pb-3">
+          <h2 class="text-xl font-bold text-orange-600 flex items-center gap-2">
+            <span>🚅 台灣高鐵</span>
+          </h2>
+          <button id="btnSwapThsr" class="text-sm bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1 rounded border border-slate-300">
+            🔄 去/回程切換
+          </button>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-500 mb-1">起程站</label>
+            <select id="thsrStart" class="w-full border rounded p-2 text-sm bg-white"></select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-500 mb-1">到達站</label>
+            <select id="thsrEnd" class="w-full border rounded p-2 text-sm bg-white"></select>
+          </div>
+        </div>
+
+        <!-- 高鐵班次清單 -->
+        <div class="space-y-2 min-h-[360px]" id="thsrList">
+          <div class="text-center text-slate-400 py-12">請點擊查詢載入資料...</div>
+        </div>
+
+        <!-- 頁碼 / 筆數控制 -->
+        <div class="flex justify-between items-center border-t pt-3">
+          <button id="thsrPrev" class="bg-slate-200 hover:bg-slate-300 text-slate-700 px-4 py-1.5 rounded disabled:opacity-40 text-sm font-medium">
+            ← 前一筆 (前7班)
+          </button>
+          <span id="thsrPageInfo" class="text-xs text-slate-500">第 1 頁</span>
+          <button id="thsrNext" class="bg-slate-200 hover:bg-slate-300 text-slate-700 px-4 py-1.5 rounded disabled:opacity-40 text-sm font-medium">
+            後一筆 (後7班) →
+          </button>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="text-center text-xs text-slate-400 mt-8">
+      資料來源：交通部 TDX 運輸資料流通服務平台 API（即時動態與官方排定時刻表）
+    </footer>
+  </div>
+
+  <script>
+    // 1. 車站基礎字典 (台鐵六家線與高鐵主要車站代碼)
+    const TRA_LIUJIA_STATIONS = [
+      { id: "1020", name: "新竹" },
+      { id: "1030", name: "千甲" },
+      { id: "1040", name: "新莊" },
+      { id: "1050", name: "竹中" },
+      { id: "1070", name: "六家" }
+    ];
+
+    const THSR_STATIONS = [
+      { id: "0990", name: "南港" },
+      { id: "1000", name: "台北" },
+      { id: "1010", name: "板橋" },
+      { id: "1020", name: "桃園" },
+      { id: "1030", name: "新竹" },
+      { id: "1040", name: "苗栗" },
+      { id: "1050", name: "台中" },
+      { id: "1060", name: "彰化" },
+      { id: "1070", name: "雲林" },
+      { id: "1080", name: "嘉義" },
+      { id: "1090", name: "台南" },
+      { id: "1100", name: "左營" }
+    ];
+
+    // 分頁狀態 (一次顯示7班)
+    const PAGE_SIZE = 7;
+    let state = {
+      traFullData: [],
+      traIndex: 0,
+      thsrFullData: [],
+      thsrIndex: 0
+    };
+
+    // 初始化介面
+    document.addEventListener("DOMContentLoaded", () => {
+      initDropdowns();
+      setRealtime();
+      bindEvents();
+      fetchAllData();
+    });
+
+    function initDropdowns() {
+      const traStartEl = document.getElementById("traStart");
+      const traEndEl = document.getElementById("traEnd");
+      TRA_LIUJIA_STATIONS.forEach(s => {
+        traStartEl.add(new Option(s.name, s.id));
+        traEndEl.add(new Option(s.name, s.id));
+      });
+      traStartEl.value = "1020"; // 新竹
+      traEndEl.value = "1070";   // 六家
+
+      const thsrStartEl = document.getElementById("thsrStart");
+      const thsrEndEl = document.getElementById("thsrEnd");
+      THSR_STATIONS.forEach(s => {
+        thsrStartEl.add(new Option(s.name, s.id));
+        thsrEndEl.add(new Option(s.name, s.id));
+      });
+      thsrStartEl.value = "1030"; // 新竹
+      thsrEndEl.value = "1000";   // 台北
+    }
+
+    function setRealtime() {
+      const now = new Date();
+      const dateStr = now.toISOString().split("T")[0];
+      const hours = String(now.getHours()).padStart(2, "0");
+      const mins = String(now.getMinutes()).padStart(2, "0");
+      document.getElementById("searchDate").value = dateStr;
+      document.getElementById("searchTime").value = `${hours}:${mins}`;
+    }
+
+    function bindEvents() {
+      document.getElementById("btnRealtime").addEventListener("click", () => {
+        setRealtime();
+        fetchAllData();
+      });
+
+      document.getElementById("btnSearch").addEventListener("click", fetchAllData);
+
+      // 去/回程切換 (Swap)
+      document.getElementById("btnSwapTra").addEventListener("click", () => {
+        const s = document.getElementById("traStart");
+        const e = document.getElementById("traEnd");
+        [s.value, e.value] = [e.value, s.value];
+        fetchAllData();
+      });
+
+      document.getElementById("btnSwapThsr").addEventListener("click", () => {
+        const s = document.getElementById("thsrStart");
+        const e = document.getElementById("thsrEnd");
+        [s.value, e.value] = [e.value, s.value];
+        fetchAllData();
+      });
+
+      // 台鐵分頁控制
+      document.getElementById("traPrev").addEventListener("click", () => {
+        state.traIndex = Math.max(0, state.traIndex - PAGE_SIZE);
+        renderTraList();
+      });
+      document.getElementById("traNext").addEventListener("click", () => {
+        if (state.traIndex + PAGE_SIZE < state.traFullData.length) {
+          state.traIndex += PAGE_SIZE;
+          renderTraList();
+        }
+      });
+
+      // 高鐵分頁控制
+      document.getElementById("thsrPrev").addEventListener("click", () => {
+        state.thsrIndex = Math.max(0, state.thsrIndex - PAGE_SIZE);
+        renderThsrList();
+      });
+      document.getElementById("thsrNext").addEventListener("click", () => {
+        if (state.thsrIndex + PAGE_SIZE < state.thsrFullData.length) {
+          state.thsrIndex += PAGE_SIZE;
+          renderThsrList();
+        }
+      });
+    }
+
+    // 主查詢入口
+    async function fetchAllData() {
+      const date = document.getElementById("searchDate").value;
+      const time = document.getElementById("searchTime").value;
+
+      document.getElementById("traList").innerHTML = `<div class="text-center text-slate-400 py-12">查詢台鐵資料中...</div>`;
+      document.getElementById("thsrList").innerHTML = `<div class="text-center text-slate-400 py-12">查詢高鐵資料中...</div>`;
+
+      await Promise.all([
+        fetchTRAData(date, time),
+        fetchTHSRData(date, time)
+      ]);
+    }
+
+    // 2. 抓取台鐵六家線資料 (交通部 TDX Open API)
+    async function fetchTRAData(date, targetTime) {
+      const startId = document.getElementById("traStart").value;
+      const endId = document.getElementById("traEnd").value;
+
+      if (startId === endId) {
+        state.traFullData = [];
+        renderTraList("起點與終點不能相同");
+        return;
+      }
+
+      const url = `https://tdx.transportdata.tw/api/basic/v2/Rail/TRA/DailyTimetable/OD/OriginStationID/${startId}/DestinationStationID/${endId}/TrainDate/${date}?$format=JSON`;
+
+      try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error("API 響應錯誤");
+        const data = await response.json();
+
+        // 過濾並排序時間
+        const sorted = data.map(item => ({
+          trainNo: item.DailyTrainInfo.TrainNo,
+          trainTypeName: item.DailyTrainInfo.TrainTypeName.Zh_tw,
+          depTime: item.OriginStopTime.DepartureTime,
+          arrTime: item.DestinationStopTime.ArrivalTime
+        })).sort((a, b) => a.depTime.localeCompare(b.depTime));
+
+        state.traFullData = sorted;
+        
+        // 移動至指定時間後的第一個班次索引
+        const firstValidIndex = sorted.findIndex(item => item.depTime >= targetTime);
+        state.traIndex = firstValidIndex !== -1 ? firstValidIndex : Math.max(0, sorted.length - PAGE_SIZE);
+
+        renderTraList();
+      } catch (err) {
+        console.error(err);
+        renderTraList("無法取得台鐵資料，請稍後再試。");
+      }
+    }
+
+    // 3. 抓取高鐵資料 (交通部 TDX Open API)
+    async function fetchTHSRData(date, targetTime) {
+      const startId = document.getElementById("thsrStart").value;
+      const endId = document.getElementById("thsrEnd").value;
+
+      if (startId === endId) {
+        state.thsrFullData = [];
+        renderThsrList("起點與終點不能相同");
+        return;
+      }
+
+      const url = `https://tdx.transportdata.tw/api/basic/v2/Rail/THSR/DailyTimetable/OD/OriginStationID/${startId}/DestinationStationID/${endId}/TrainDate/${date}?$format=JSON`;
+
+      try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error("API 響應錯誤");
+        const data = await response.json();
+
+        const sorted = data.map(item => ({
+          trainNo: item.DailyTrainInfo.TrainNo,
+          trainTypeName: "高鐵",
+          depTime: item.OriginStopTime.DepartureTime,
+          arrTime: item.DestinationStopTime.ArrivalTime
+        })).sort((a, b) => a.depTime.localeCompare(b.depTime));
+
+        state.thsrFullData = sorted;
+
+        // 移動至指定時間後的第一個班次索引
+        const firstValidIndex = sorted.findIndex(item => item.depTime >= targetTime);
+        state.thsrIndex = firstValidIndex !== -1 ? firstValidIndex : Math.max(0, sorted.length - PAGE_SIZE);
+
+        renderThsrList();
+      } catch (err) {
+        console.error(err);
+        renderThsrList("無法取得高鐵資料，請稍後再試。");
+      }
+    }
+
+    // 4. 渲染台鐵列表 (展示7班與前後一筆控制)
+    function renderTraList(errorMsg = null) {
+      const listEl = document.getElementById("traList");
+      const prevBtn = document.getElementById("traPrev");
+      const nextBtn = document.getElementById("traNext");
+      const pageInfo = document.getElementById("traPageInfo");
+
+      if (errorMsg) {
+        listEl.innerHTML = `<div class="text-center text-red-500 py-12">${errorMsg}</div>`;
+        prevBtn.disabled = true;
+        nextBtn.disabled = true;
+        pageInfo.innerText = "";
+        return;
+      }
+
+      const total = state.traFullData.length;
+      if (total === 0) {
+        listEl.innerHTML = `<div class="text-center text-slate-400 py-12">今日無剩餘班次資料</div>`;
+        prevBtn.disabled = true;
+        nextBtn.disabled = true;
+        pageInfo.innerText = "0 / 0";
+        return;
+      }
+
+      const pageData = state.traFullData.slice(state.traIndex, state.traIndex + PAGE_SIZE);
+      
+      listEl.innerHTML = pageData.map(item => `
+        <div class="flex justify-between items-center p-3 bg-slate-50 hover:bg-blue-50 rounded-lg border border-slate-200 transition">
+          <div>
+            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-blue-100 text-blue-800 mr-2">${item.trainTypeName} ${item.trainNo}車次</span>
+          </div>
+          <div class="text-base font-bold text-slate-800">
+            ${item.depTime} <span class="text-xs font-normal text-slate-400 mx-1">~</span> ${item.arrTime}
+          </div>
+        </div>
+      `).join("");
+
+      // 更新按鈕與分頁資訊
+      prevBtn.disabled = state.traIndex === 0;
+      nextBtn.disabled = state.traIndex + PAGE_SIZE >= total;
+      
+      const currentEnd = Math.min(state.traIndex + PAGE_SIZE, total);
+      pageInfo.innerText = `顯示 ${state.traIndex + 1} - ${currentEnd} 班 (共 ${total} 班)`;
+    }
+
+    // 5. 渲染高鐵列表 (展示7班與前後一筆控制)
+    function renderThsrList(errorMsg = null) {
+      const listEl = document.getElementById("thsrList");
+      const prevBtn = document.getElementById("thsrPrev");
+      const nextBtn = document.getElementById("thsrNext");
+      const pageInfo = document.getElementById("thsrPageInfo");
+
+      if (errorMsg) {
+        listEl.innerHTML = `<div class="text-center text-red-500 py-12">${errorMsg}</div>`;
+        prevBtn.disabled = true;
+        nextBtn.disabled = true;
+        pageInfo.innerText = "";
+        return;
+      }
+
+      const total = state.thsrFullData.length;
+      if (total === 0) {
+        listEl.innerHTML = `<div class="text-center text-slate-400 py-12">今日無剩餘班次資料</div>`;
+        prevBtn.disabled = true;
+        nextBtn.disabled = true;
+        pageInfo.innerText = "0 / 0";
+        return;
+      }
+
+      const pageData = state.thsrFullData.slice(state.thsrIndex, state.thsrIndex + PAGE_SIZE);
+
+      listEl.innerHTML = pageData.map(item => `
+        <div class="flex justify-between items-center p-3 bg-slate-50 hover:bg-orange-50 rounded-lg border border-slate-200 transition">
+          <div>
+            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-orange-100 text-orange-800 mr-2">${item.trainNo} 次</span>
+          </div>
+          <div class="text-base font-bold text-slate-800">
+            ${item.depTime} <span class="text-xs font-normal text-slate-400 mx-1">~</span> ${item.arrTime}
+          </div>
+        </div>
+      `).join("");
+
+      // 更新按鈕與分頁資訊
+      prevBtn.disabled = state.thsrIndex === 0;
+      nextBtn.disabled = state.thsrIndex + PAGE_SIZE >= total;
+
+      const currentEnd = Math.min(state.thsrIndex + PAGE_SIZE, total);
+      pageInfo.innerText = `顯示 ${state.thsrIndex + 1} - ${currentEnd} 班 (共 ${total} 班)`;
+    }
+  </script>
+</body>
+</html>
