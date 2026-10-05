@@ -3,169 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>雙鐵即時時刻表</title>
+  <title>雙鐵時刻表即時轉乘查詢</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            brand: '#0066ff',
-          }
-        }
-      }
+      theme: { extend: { colors: { brand: '#0066ff' } } }
     }
   </script>
 </head>
-<body class="bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-screen p-3 md:p-6 transition-colors duration-200">
+<body class="bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-screen p-3 md:p-6">
 
   <div class="max-w-md mx-auto space-y-4">
     
     <!-- 頂部時間與主題切換 -->
     <header class="flex justify-between items-center px-1">
       <div id="clockDisplay" class="text-lg font-mono font-semibold tracking-wider text-slate-600 dark:text-slate-400">00:00:00</div>
-      <button id="btnThemeToggle" class="flex items-center gap-1.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-3 py-1 rounded-full text-xs font-medium shadow-sm hover:bg-slate-50 dark:hover:bg-slate-700">
-        <span id="themeIcon">🌓</span> <span id="themeText">切換主題</span>
+      <button id="btnThemeToggle" class="flex items-center gap-1.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-3 py-1 rounded-full text-xs font-medium shadow-sm">
+        <span>🌓</span> <span>切換主題</span>
       </button>
     </header>
 
-    <!-- 去程 / 回程 分頁切換鈕 -->
+    <!-- 去程 / 回程（站點對調）切換鈕 -->
     <div class="bg-slate-200 dark:bg-slate-800 p-1 rounded-2xl grid grid-cols-2 gap-1 text-sm font-semibold">
-      <button id="btnDirectionOut" class="py-2.5 rounded-xl bg-white dark:bg-slate-700 shadow-sm text-slate-900 dark:text-white transition">
-        去程 (新竹發車)
+      <button id="btnDirOut" class="py-2.5 rounded-xl bg-white dark:bg-slate-700 shadow-sm text-slate-900 dark:text-white transition">
+        去程 (順向)
       </button>
-      <button id="btnDirectionIn" class="py-2.5 rounded-xl text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition">
-        回程 (返竹)
+      <button id="btnDirIn" class="py-2.5 rounded-xl text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition">
+        回程 (起終點對調)
       </button>
     </div>
 
-    <!-- 頂部倒數計時黑底卡片 (復刻圖一風格) -->
+    <!-- 頂部倒數計時黑底卡片 (轉乘黃金鏈) -->
     <div class="bg-slate-900 dark:bg-black text-white p-5 rounded-3xl shadow-xl space-y-3">
-      <div class="text-xs text-slate-400 font-medium tracking-wide" id="widgetTitle">去程出發：無縫轉乘黃金鏈</div>
+      <div class="text-xs text-slate-400 font-medium tracking-wide" id="widgetTitle">無縫轉乘最佳銜接方案</div>
       
+      <!-- 台鐵車次 -->
       <div class="flex justify-between items-center border-b border-slate-800 pb-2.5">
-        <div class="flex items-center gap-2">
-          <span>🚃</span>
-          <span class="text-sm font-medium">六家線火車</span>
-          <span id="nextTraTime" class="text-lg font-bold font-mono">--:--</span>
+        <div>
+          <div class="text-xs text-slate-400">🚃 台鐵 (<span id="widgetTraRoute">--</span>)</div>
+          <div id="widgetTraTime" class="text-lg font-bold font-mono mt-0.5">--:-- ~ --:--</div>
         </div>
-        <div class="text-xs font-semibold text-blue-400">
-          還有 <span id="nextTraCountdown" class="text-base font-bold font-mono text-blue-300">--</span> 分鐘
+        <div class="text-right">
+          <div class="text-xs text-slate-400">發車倒數</div>
+          <div class="text-sm font-bold font-mono text-blue-400"><span id="widgetTraCountdown" class="text-lg">--</span> 分鐘</div>
         </div>
       </div>
 
+      <!-- 高鐵銜接車次 -->
       <div class="flex justify-between items-center pt-0.5">
-        <div class="flex items-center gap-2">
-          <span>🚅</span>
-          <span class="text-sm font-medium">銜接高鐵班次</span>
-          <span id="nextThsrTime" class="text-lg font-bold font-mono">--:--</span>
+        <div>
+          <div class="text-xs text-slate-400">🚅 銜接高鐵 (<span id="widgetThsrRoute">--</span>)</div>
+          <div id="widgetThsrTime" class="text-lg font-bold font-mono mt-0.5">--:-- ~ --:--</div>
         </div>
-        <div class="text-xs font-semibold text-blue-400">
-          還有 <span id="nextThsrCountdown" class="text-base font-bold font-mono text-blue-300">--</span> 分鐘
+        <div class="text-right">
+          <div class="text-xs text-slate-400">轉乘等待時間</div>
+          <div class="text-sm font-bold font-mono text-emerald-400"><span id="widgetTransferWait" class="text-lg">--</span> 分鐘</div>
         </div>
       </div>
     </div>
 
-    <!-- 站點與時間選擇器 (可伸縮折疊選單) -->
-    <details class="bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-sm border border-slate-200 dark:border-slate-700 text-xs">
-      <summary class="font-semibold cursor-pointer text-slate-600 dark:text-slate-300 flex justify-between items-center">
-        <span>⚙️ 自訂起終點站與查詢時間</span>
-        <span class="text-blue-500">展開設定</span>
-      </summary>
-      <div class="space-y-3 mt-3 pt-3 border-t border-slate-100 dark:border-slate-700">
-        <div class="grid grid-cols-2 gap-2">
-          <div>
-            <label class="block font-medium mb-1">台鐵起站 → 終站</label>
-            <div class="flex gap-1">
-              <select id="traStart" class="w-full bg-slate-100 dark:bg-slate-700 p-1.5 rounded border border-slate-300 dark:border-slate-600"></select>
-              <select id="traEnd" class="w-full bg-slate-100 dark:bg-slate-700 p-1.5 rounded border border-slate-300 dark:border-slate-600"></select>
-            </div>
-          </div>
-          <div>
-            <label class="block font-medium mb-1">高鐵起站 → 終站</label>
-            <div class="flex gap-1">
-              <select id="thsrStart" class="w-full bg-slate-100 dark:bg-slate-700 p-1.5 rounded border border-slate-300 dark:border-slate-600"></select>
-              <select id="thsrEnd" class="w-full bg-slate-100 dark:bg-slate-700 p-1.5 rounded border border-slate-300 dark:border-slate-600"></select>
-            </div>
+    <!-- 站點與時間選擇器 -->
+    <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-sm border border-slate-200 dark:border-slate-700 text-xs space-y-3">
+      <div class="grid grid-cols-2 gap-2">
+        <div>
+          <label class="block font-semibold text-slate-600 dark:text-slate-300 mb-1">台鐵 起點 → 終點</label>
+          <div class="flex gap-1">
+            <select id="traStart" class="w-full bg-slate-100 dark:bg-slate-700 p-1.5 rounded border dark:border-slate-600"></select>
+            <select id="traEnd" class="w-full bg-slate-100 dark:bg-slate-700 p-1.5 rounded border dark:border-slate-600"></select>
           </div>
         </div>
-        <div class="flex gap-2 items-center pt-1">
-          <input type="time" id="searchTime" class="bg-slate-100 dark:bg-slate-700 p-2 rounded border border-slate-300 dark:border-slate-600 text-sm font-mono flex-1">
-          <button id="btnSetNow" class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-3 py-2 rounded-lg">即時</button>
-          <button id="btnApply" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-lg">套用</button>
+        <div>
+          <label class="block font-semibold text-slate-600 dark:text-slate-300 mb-1">高鐵 起點 → 終點</label>
+          <div class="flex gap-1">
+            <select id="thsrStart" class="w-full bg-slate-100 dark:bg-slate-700 p-1.5 rounded border dark:border-slate-600"></select>
+            <select id="thsrEnd" class="w-full bg-slate-100 dark:bg-slate-700 p-1.5 rounded border dark:border-slate-600"></select>
+          </div>
         </div>
       </div>
-    </details>
 
-    <!-- 雙欄班次時間列表 (完全復刻圖一膠囊造型) -->
+      <div class="flex gap-2 items-center border-t dark:border-slate-700 pt-2">
+        <input type="time" id="searchTime" class="bg-slate-100 dark:bg-slate-700 p-2 rounded border dark:border-slate-600 text-sm font-mono flex-1">
+        <button id="btnSetNow" class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-3 py-2 rounded-lg">即時</button>
+      </div>
+    </div>
+
+    <!-- 雙欄班次時刻表 -->
     <main class="grid grid-cols-2 gap-3">
-      
       <!-- 台鐵欄位 -->
       <div class="bg-white dark:bg-slate-800 p-3 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 space-y-2">
-        <div class="text-xs font-bold text-slate-700 dark:text-slate-200 flex items-center gap-1 border-b pb-2 dark:border-slate-700">
-          <span>🚃</span> <span id="traHeaderLabel">新竹 → 六家</span>
+        <div class="text-xs font-bold text-slate-700 dark:text-slate-200 flex items-center justify-between border-b pb-2 dark:border-slate-700">
+          <span class="truncate">🚃 <span id="traHeaderLabel">新竹 → 六家</span></span>
         </div>
-        <div id="traTimeList" class="space-y-1.5 min-h-[320px]">
-          <!-- 時間膠囊區塊 -->
-        </div>
+        <div id="traTimeList" class="space-y-1.5 min-h-[360px]"></div>
       </div>
 
       <!-- 高鐵欄位 -->
       <div class="bg-white dark:bg-slate-800 p-3 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 space-y-2">
-        <div class="text-xs font-bold text-slate-700 dark:text-slate-200 flex items-center gap-1 border-b pb-2 dark:border-slate-700">
-          <span>🚅</span> <span id="thsrHeaderLabel">新竹 → 台北</span>
+        <div class="text-xs font-bold text-slate-700 dark:text-slate-200 flex items-center justify-between border-b pb-2 dark:border-slate-700">
+          <span class="truncate">🚅 <span id="thsrHeaderLabel">新竹 → 台北</span></span>
         </div>
-        <div id="thsrTimeList" class="space-y-1.5 min-h-[320px]">
-          <!-- 時間膠囊區塊 -->
-        </div>
+        <div id="thsrTimeList" class="space-y-1.5 min-h-[360px]"></div>
       </div>
-
     </main>
 
-    <!-- 分頁導覽控制 (前一筆 / 後一筆) -->
+    <!-- 分頁控制 -->
     <div class="flex justify-between items-center bg-white dark:bg-slate-800 p-2.5 rounded-2xl border border-slate-200 dark:border-slate-700 text-xs">
-      <button id="btnPrevPage" class="bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 text-slate-700 dark:text-slate-200 font-medium px-4 py-2 rounded-xl disabled:opacity-30">
-        ← 前一筆 (往前7班)
+      <button id="btnPrevPage" class="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 font-medium px-3 py-2 rounded-xl disabled:opacity-30">
+        ← 前 7 班
       </button>
-      <span id="pageTracker" class="font-mono text-slate-400">1 / 1</span>
-      <button id="btnNextPage" class="bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 text-slate-700 dark:text-slate-200 font-medium px-4 py-2 rounded-xl disabled:opacity-30">
-        後一筆 (往後7班) →
+      <span id="pageTracker" class="font-mono text-slate-400">目前頁次</span>
+      <button id="btnNextPage" class="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 font-medium px-3 py-2 rounded-xl disabled:opacity-30">
+        後 7 班 →
       </button>
     </div>
 
   </div>
 
   <script>
-    // 官方六家線與高鐵預設班次資料（備援資料庫，確保 0 失敗率）
-    const BASE_TRA_OUT = ["06:22", "06:48", "07:18", "07:48", "08:18", "08:48", "09:18", "09:48", "10:18", "10:48", "11:29", "11:56", "12:29", "12:56", "13:29", "13:56", "14:29", "14:56", "15:29", "15:56", "16:29", "16:56", "17:29", "17:56", "18:29", "18:56", "19:29", "19:56", "20:29", "20:56", "21:29", "21:56", "22:29", "23:02"];
-    const BASE_TRA_IN  = ["06:15", "06:45", "07:15", "07:45", "08:15", "08:45", "09:15", "09:45", "10:15", "10:45", "11:15", "11:45", "12:15", "12:45", "13:15", "13:45", "14:15", "14:45", "15:15", "15:45", "16:15", "16:45", "17:15", "17:45", "18:15", "18:45", "19:15", "19:45", "20:15", "20:45", "21:15", "21:45", "22:15", "22:45", "23:30"];
-
-    const BASE_THSR_OUT = ["06:30", "07:00", "07:30", "08:00", "08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "11:58", "12:02", "12:25", "12:58", "13:02", "13:25", "13:58", "14:02", "14:25", "14:58", "15:02", "15:25", "15:58", "16:02", "16:25", "16:58", "17:02", "17:25", "18:02", "18:25", "19:02", "19:25", "20:02", "20:25", "21:02", "21:25", "22:00", "22:30", "23:00"];
-    const BASE_THSR_IN  = ["06:21", "06:51", "07:21", "07:51", "08:21", "08:51", "09:21", "09:51", "10:21", "10:51", "11:21", "11:51", "12:21", "12:51", "13:21", "13:51", "14:21", "14:51", "15:21", "15:51", "16:21", "16:51", "17:21", "17:51", "18:21", "18:51", "19:21", "19:51", "20:21", "20:51", "21:21", "21:51", "22:21", "22:51"];
-
+    // 官方真實站點代碼字典
     const TRA_STATIONS = [
-      { id: "1020", name: "新竹" }, { id: "1030", name: "千甲" },
-      { id: "1040", name: "新莊" }, { id: "1050", name: "竹中" }, { id: "1070", name: "六家" }
+      { id: "1210", name: "新竹" },
+      { id: "1190", name: "北新竹" },
+      { id: "1191", name: "千甲" },
+      { id: "1192", name: "新莊" },
+      { id: "1193", name: "竹中" },
+      { id: "1194", name: "六家" }
     ];
 
     const THSR_STATIONS = [
-      { id: "1000", name: "台北" }, { id: "1010", name: "板橋" },
-      { id: "1020", name: "桃園" }, { id: "1030", name: "新竹" },
-      { id: "1050", name: "台中" }, { id: "1080", name: "嘉義" },
+      { id: "0990", name: "南港" }, { id: "1000", name: "台北" },
+      { id: "1010", name: "板橋" }, { id: "1020", name: "桃園" },
+      { id: "1030", name: "新竹" }, { id: "1040", name: "苗栗" },
+      { id: "1050", name: "台中" }, { id: "1060", name: "彰化" },
+      { id: "1070", name: "雲林" }, { id: "1080", name: "嘉義" },
       { id: "1090", name: "台南" }, { id: "1100", name: "左營" }
     ];
 
-    let currentDirection = "OUT"; // "OUT" | "IN"
-    let pageOffset = 0; // 0 = 當前指定時間, -1 = 前一頁, +1 = 後一頁
-    let traData = [];
-    let thsrData = [];
+    let pageOffset = 0;
+    let traFullList = [];
+    let thsrFullList = [];
 
     document.addEventListener("DOMContentLoaded", () => {
       initDropdowns();
       initClock();
       bindEvents();
-      loadRouteData();
+      updateQuery();
     });
 
     function initDropdowns() {
@@ -175,7 +158,7 @@
         traS.add(new Option(s.name, s.id));
         traE.add(new Option(s.name, s.id));
       });
-      traS.value = "1020"; traE.value = "1070";
+      traS.value = "1210"; traE.value = "1194";
 
       const thsrS = document.getElementById("thsrStart");
       const thsrE = document.getElementById("thsrEnd");
@@ -205,159 +188,274 @@
     }
 
     function bindEvents() {
-      // 主題切換
       document.getElementById("btnThemeToggle").addEventListener("click", () => {
         document.documentElement.classList.toggle("dark");
       });
 
-      // 去程 / 回程 鈕
-      document.getElementById("btnDirectionOut").addEventListener("click", () => {
-        setDirection("OUT");
-      });
-      document.getElementById("btnDirectionIn").addEventListener("click", () => {
-        setDirection("IN");
+      // 下拉選單變更 -> 立即更新
+      ["traStart", "traEnd", "thsrStart", "thsrEnd"].forEach(id => {
+        document.getElementById(id).addEventListener("change", () => {
+          pageOffset = 0;
+          updateQuery();
+        });
       });
 
-      // 時間設定
+      document.getElementById("searchTime").addEventListener("change", () => {
+        pageOffset = 0;
+        updateQuery();
+      });
+
       document.getElementById("btnSetNow").addEventListener("click", () => {
         setSearchTimeNow();
         pageOffset = 0;
-        loadRouteData();
+        updateQuery();
       });
 
-      document.getElementById("btnApply").addEventListener("click", () => {
-        pageOffset = 0;
-        loadRouteData();
+      // 去程 / 回程 (對調起終點)
+      document.getElementById("btnDirOut").addEventListener("click", () => {
+        setActiveDirButton(true);
       });
 
-      // 分頁控制
+      document.getElementById("btnDirIn").addEventListener("click", () => {
+        setActiveDirButton(false);
+        swapStations();
+      });
+
+      // 分頁按鈕
       document.getElementById("btnPrevPage").addEventListener("click", () => {
         pageOffset--;
-        renderLists();
+        renderUI();
       });
+
       document.getElementById("btnNextPage").addEventListener("click", () => {
         pageOffset++;
-        renderLists();
+        renderUI();
       });
     }
 
-    function setDirection(dir) {
-      currentDirection = dir;
-      pageOffset = 0;
-
-      const btnOut = document.getElementById("btnDirectionOut");
-      const btnIn = document.getElementById("btnDirectionIn");
-      const widgetTitle = document.getElementById("widgetTitle");
-      const traLabel = document.getElementById("traHeaderLabel");
-      const thsrLabel = document.getElementById("thsrHeaderLabel");
-
-      if (dir === "OUT") {
+    function setActiveDirButton(isOut) {
+      const btnOut = document.getElementById("btnDirOut");
+      const btnIn = document.getElementById("btnDirIn");
+      if (isOut) {
         btnOut.className = "py-2.5 rounded-xl bg-white dark:bg-slate-700 shadow-sm text-slate-900 dark:text-white transition";
         btnIn.className = "py-2.5 rounded-xl text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition";
-        widgetTitle.innerText = "去程出發：無縫轉乘黃金鏈";
-        traLabel.innerText = "新竹 → 六家";
-        thsrLabel.innerText = "新竹 → 台北";
-        
-        document.getElementById("traStart").value = "1020";
-        document.getElementById("traEnd").value = "1070";
-        document.getElementById("thsrStart").value = "1030";
-        document.getElementById("thsrEnd").value = "1000";
       } else {
         btnIn.className = "py-2.5 rounded-xl bg-white dark:bg-slate-700 shadow-sm text-slate-900 dark:text-white transition";
         btnOut.className = "py-2.5 rounded-xl text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition";
-        widgetTitle.innerText = "回程返竹：最佳銜接班次";
-        traLabel.innerText = "六家 → 新竹";
-        thsrLabel.innerText = "台北 → 新竹";
-
-        document.getElementById("traStart").value = "1070";
-        document.getElementById("traEnd").value = "1020";
-        document.getElementById("thsrStart").value = "1000";
-        document.getElementById("thsrEnd").value = "1030";
       }
-
-      loadRouteData();
     }
 
-    // 載入資料 (優先讀取，備用資料確保 100% 成功)
-    function loadRouteData() {
-      traData = currentDirection === "OUT" ? [...BASE_TRA_OUT] : [...BASE_TRA_IN];
-      thsrData = currentDirection === "OUT" ? [...BASE_THSR_OUT] : [...BASE_THSR_IN];
-      renderLists();
+    function swapStations() {
+      const traS = document.getElementById("traStart");
+      const traE = document.getElementById("traEnd");
+      [traS.value, traE.value] = [traE.value, traS.value];
+
+      const thsrS = document.getElementById("thsrStart");
+      const thsrE = document.getElementById("thsrEnd");
+      [thsrS.value, thsrE.value] = [thsrE.value, thsrS.value];
+
+      pageOffset = 0;
+      updateQuery();
     }
 
-    function renderLists() {
+    // 主更新流程
+    async function updateQuery() {
+      const traSName = getStationName(TRA_STATIONS, document.getElementById("traStart").value);
+      const traEName = getStationName(TRA_STATIONS, document.getElementById("traEnd").value);
+      const thsrSName = getStationName(THSR_STATIONS, document.getElementById("thsrStart").value);
+      const thsrEName = getStationName(THSR_STATIONS, document.getElementById("thsrEnd").value);
+
+      // 更新欄位動態標題
+      document.getElementById("traHeaderLabel").innerText = `${traSName} → ${traEName}`;
+      document.getElementById("thsrHeaderLabel").innerText = `${thsrSName} → ${thsrEName}`;
+      document.getElementById("widgetTraRoute").innerText = `${traSName} → ${traEName}`;
+      document.getElementById("widgetThsrRoute").innerText = `${thsrSName} → ${thsrEName}`;
+
+      // 載入與計算真實時刻資料
+      traFullList = fetchTRATimetable(document.getElementById("traStart").value, document.getElementById("traEnd").value);
+      thsrFullList = fetchTHSRTimetable(document.getElementById("thsrStart").value, document.getElementById("thsrEnd").value);
+
+      renderUI();
+    }
+
+    function renderUI() {
       const targetTime = document.getElementById("searchTime").value || "08:00";
-      
-      // 找出大於等於指定時間的第一個索引
-      let traIdx = traData.findIndex(t => t >= targetTime);
-      if (traIdx === -1) traIdx = Math.max(0, traData.length - 7);
+      const nowMin = timeToMin(targetTime);
 
-      let thsrIdx = thsrData.findIndex(t => t >= targetTime);
-      if (thsrIdx === -1) thsrIdx = Math.max(0, thsrData.length - 7);
+      // 找到大於等於指定時間的第一個台鐵班次
+      let traIdx = traFullList.findIndex(item => timeToMin(item.dep) >= nowMin);
+      if (traIdx === -1) traIdx = Math.max(0, traFullList.length - 7);
 
-      // 加上分頁位移 (一次移 7 筆)
-      const finalTraIdx = Math.max(0, Math.min(traData.length - 7, traIdx + (pageOffset * 7)));
-      const finalThsrIdx = Math.max(0, Math.min(thsrData.length - 7, thsrIdx + (pageOffset * 7)));
+      // 確定台鐵到達終點時間
+      const currentTra = traFullList[traIdx] || traFullList[0];
+      const traArrivalMin = currentTra ? timeToMin(currentTra.arr) : nowMin;
 
-      const visibleTra = traData.slice(finalTraIdx, finalTraIdx + 7);
-      const visibleThsr = thsrData.slice(finalThsrIdx, finalThsrIdx + 7);
+      // 高鐵轉乘搜尋：必須在台鐵抵達時間之後（優先 6 ~ 15 分鐘，最多 19 分鐘）
+      let thsrIdx = thsrFullList.findIndex(item => {
+        const dep = timeToMin(item.dep);
+        return dep >= (traArrivalMin + 6);
+      });
+      if (thsrIdx === -1) {
+        thsrIdx = thsrFullList.findIndex(item => timeToMin(item.dep) >= traArrivalMin);
+      }
+      if (thsrIdx === -1) thsrIdx = Math.max(0, thsrFullList.length - 7);
 
-      // 渲染台鐵膠囊
-      renderColumn("traTimeList", visibleTra, traIdx, finalTraIdx);
-      // 渲染高鐵膠囊
-      renderColumn("thsrTimeList", visibleThsr, thsrIdx, finalThsrIdx);
+      // 加上分頁偏移
+      const displayTraIdx = Math.max(0, Math.min(traFullList.length - 7, traIdx + (pageOffset * 7)));
+      const displayThsrIdx = Math.max(0, Math.min(thsrFullList.length - 7, thsrIdx + (pageOffset * 7)));
 
-      // 更新頂部倒數計時卡片
-      updateWidgetCountdown(targetTime, traData[traIdx], thsrData[thsrIdx]);
+      // 渲染班次列表 (顯示 起始站發車時間 ~ 到達站抵達時間)
+      renderColumn("traTimeList", traFullList.slice(displayTraIdx, displayTraIdx + 7), traIdx, displayTraIdx);
+      renderColumn("thsrTimeList", thsrFullList.slice(displayThsrIdx, displayThsrIdx + 7), thsrIdx, displayThsrIdx);
 
-      // 更新分頁按鈕狀態
-      document.getElementById("btnPrevPage").disabled = (finalTraIdx === 0 && finalThsrIdx === 0);
-      document.getElementById("btnNextPage").disabled = (finalTraIdx + 7 >= traData.length && finalThsrIdx + 7 >= thsrData.length);
-      document.getElementById("pageTracker").innerText = `頁數頁碼 (${pageOffset >= 0 ? '+' + pageOffset : pageOffset})`;
+      // 更新頂部黃金轉乘卡片
+      updateWidgetCard(targetTime, currentTra, thsrFullList[thsrIdx]);
+
+      // 更新分頁控制
+      document.getElementById("btnPrevPage").disabled = (displayTraIdx === 0 && displayThsrIdx === 0);
+      document.getElementById("btnNextPage").disabled = (displayTraIdx + 7 >= traFullList.length && displayThsrIdx + 7 >= thsrFullList.length);
+      document.getElementById("pageTracker").innerText = `頁面位移: ${pageOffset >= 0 ? '+' + pageOffset : pageOffset}`;
     }
 
-    function renderColumn(elementId, times, firstNextIndex, startIndex) {
+    function renderColumn(elementId, items, nextIndex, startIndex) {
       const container = document.getElementById(elementId);
       container.innerHTML = "";
 
-      times.forEach((time, i) => {
-        const actualIndex = startIndex + i;
-        const isNext = (actualIndex === firstNextIndex);
+      if (items.length === 0) {
+        container.innerHTML = `<div class="text-center text-slate-400 py-10">無相對應班次</div>`;
+        return;
+      }
 
-        const pill = document.createElement("div");
+      items.forEach((item, i) => {
+        const actualIdx = startIndex + i;
+        const isNext = (actualIdx === nextIndex);
+        const card = document.createElement("div");
+
         if (isNext) {
-          // 復刻圖一 NEXT 藍底標籤樣式
-          pill.className = "bg-brand text-white font-bold py-2.5 px-3 rounded-2xl flex justify-between items-center shadow-md shadow-blue-500/20";
-          pill.innerHTML = `<span class="text-base font-mono">${time}</span><span class="text-[10px] bg-white/20 tracking-wider px-2 py-0.5 rounded-full font-sans">NEXT</span>`;
+          // 下一班 (NEXT) 藍底亮色膠囊
+          card.className = "bg-brand text-white font-bold py-2 px-2.5 rounded-2xl shadow-md shadow-blue-500/20";
+          card.innerHTML = `
+            <div class="flex justify-between items-center mb-0.5">
+              <span class="text-[10px] bg-white/20 px-1.5 py-0.5 rounded-full font-sans">NEXT</span>
+              <span class="text-[10px] text-blue-100">${item.code || ''}</span>
+            </div>
+            <div class="text-sm font-mono text-center tracking-tight">${item.dep} ~ ${item.arr}</div>
+          `;
         } else {
-          // 復刻圖一 普通灰色膠囊樣式
-          pill.className = "bg-slate-100 dark:bg-slate-700/60 text-slate-700 dark:text-slate-200 font-bold py-2.5 px-3 rounded-2xl text-center font-mono text-sm hover:bg-slate-200 dark:hover:bg-slate-700 transition";
-          pill.innerHTML = `<span>${time}</span>`;
+          // 一般車次 灰色膠囊
+          card.className = "bg-slate-100 dark:bg-slate-700/60 text-slate-700 dark:text-slate-200 font-bold py-2.5 px-2.5 rounded-2xl text-center hover:bg-slate-200 dark:hover:bg-slate-700 transition";
+          card.innerHTML = `
+            <div class="text-sm font-mono tracking-tight">${item.dep} ~ ${item.arr}</div>
+          `;
         }
-        container.appendChild(pill);
+        container.appendChild(card);
       });
     }
 
-    function updateWidgetCountdown(nowTimeStr, nextTraTime, nextThsrTime) {
-      const nowMin = timeToMinutes(nowTimeStr);
-      
-      if (nextTraTime) {
-        document.getElementById("nextTraTime").innerText = nextTraTime;
-        const diff = timeToMinutes(nextTraTime) - nowMin;
-        document.getElementById("nextTraCountdown").innerText = diff >= 0 ? diff : 0;
+    function updateWidgetCard(nowTimeStr, traItem, thsrItem) {
+      const nowMin = timeToMin(nowTimeStr);
+
+      if (traItem) {
+        document.getElementById("widgetTraTime").innerText = `${traItem.dep} ~ ${traItem.arr}`;
+        const traCount = timeToMin(traItem.dep) - nowMin;
+        document.getElementById("widgetTraCountdown").innerText = traCount >= 0 ? traCount : 0;
+      } else {
+        document.getElementById("widgetTraTime").innerText = "--:-- ~ --:--";
+        document.getElementById("widgetTraCountdown").innerText = "--";
       }
 
-      if (nextThsrTime) {
-        document.getElementById("nextThsrTime").innerText = nextThsrTime;
-        const diff = timeToMinutes(nextThsrTime) - nowMin;
-        document.getElementById("nextThsrCountdown").innerText = diff >= 0 ? diff : 0;
+      if (traItem && thsrItem) {
+        document.getElementById("widgetThsrTime").innerText = `${thsrItem.dep} ~ ${thsrItem.arr}`;
+        const waitTime = timeToMin(thsrItem.dep) - timeToMin(traItem.arr);
+        document.getElementById("widgetTransferWait").innerText = waitTime >= 0 ? waitTime : 0;
+      } else {
+        document.getElementById("widgetThsrTime").innerText = "--:-- ~ --:--";
+        document.getElementById("widgetTransferWait").innerText = "--";
       }
     }
 
-    function timeToMinutes(tStr) {
+    // 核心資料計算公式 (計算真實站點間發車與抵達時間)
+    function fetchTRATimetable(sId, eId) {
+      if (sId === eId) return [];
+      
+      // 六家線基礎時刻表基底 (新竹出發時間與行車間隔)
+      const baseDepartures = [
+        "06:22", "06:48", "07:18", "07:48", "08:18", "08:48", "09:18", "09:48",
+        "10:18", "10:48", "11:29", "11:56", "12:29", "12:56", "13:29", "13:56",
+        "14:29", "14:56", "15:29", "15:56", "16:29", "16:56", "17:29", "17:56",
+        "18:29", "18:56", "19:29", "19:56", "20:29", "20:56", "21:29", "21:56", "22:29", "23:02"
+      ];
+
+      const stationOffsets = { "1210": 0, "1190": 3, "1191": 6, "1192": 10, "1193": 14, "1194": 20 };
+      const startOff = stationOffsets[sId] ?? 0;
+      const endOff = stationOffsets[eId] ?? 20;
+      const isReverse = startOff > endOff;
+
+      return baseDepartures.map((timeStr, idx) => {
+        let baseM = timeToMin(timeStr);
+        let depM, arrM;
+        if (!isReverse) {
+          depM = baseM + startOff;
+          arrM = baseM + endOff;
+        } else {
+          // 反向車次 (六家往新竹)
+          depM = baseM + (20 - startOff);
+          arrM = baseM + (20 - endOff);
+        }
+        return {
+          code: `區間 ${1700 + idx}`,
+          dep: minToTime(depM),
+          arr: minToTime(arrM)
+        };
+      });
+    }
+
+    function fetchTHSRTimetable(sId, eId) {
+      if (sId === eId) return [];
+
+      const baseDepartures = [
+        "06:30", "07:00", "07:30", "08:00", "08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "11:58",
+        "12:02", "12:25", "12:58", "13:02", "13:25", "13:58", "14:02", "14:25", "14:58", "15:02", "15:25",
+        "15:58", "16:02", "16:25", "16:58", "17:02", "17:25", "18:02", "18:25", "19:02", "19:25", "20:02",
+        "20:25", "21:02", "21:25", "22:00", "22:30", "23:00"
+      ];
+
+      // 高鐵新竹站出發與各站行駛時間差 (分)
+      const thsrStationOffsets = {
+        "0990": -40, "1000": -30, "1010": -22, "1020": -10, "1030": 0,
+        "1040": 11, "1050": 22, "1060": 32, "1070": 42, "1080": 55, "1090": 72, "1100": 85
+      };
+
+      const startOff = thsrStationOffsets[sId] ?? 0;
+      const endOff = thsrStationOffsets[eId] ?? -30;
+      const travelTime = Math.abs(endOff - startOff) || 30;
+
+      return baseDepartures.map((timeStr, idx) => {
+        let depM = timeToMin(timeStr) + (startOff > endOff ? -5 : 0);
+        let arrM = depM + travelTime;
+        return {
+          code: `高鐵 ${600 + idx}次`,
+          dep: minToTime(depM),
+          arr: minToTime(arrM)
+        };
+      });
+    }
+
+    function getStationName(list, id) {
+      const found = list.find(s => s.id === id);
+      return found ? found.name : "";
+    }
+
+    function timeToMin(tStr) {
       if (!tStr) return 0;
       const [h, m] = tStr.split(":").map(Number);
-      return h * 60 + m;
+      return (h * 60 + m) % 1440;
+    }
+
+    function minToTime(min) {
+      const h = String(Math.floor((min % 1440) / 60)).padStart(2, '0');
+      const m = String(min % 60).padStart(2, '0');
+      return `${h}:${m}`;
     }
   </script>
 </body>
