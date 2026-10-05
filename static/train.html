@@ -1,356 +1,577 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-TW" class="h-full bg-slate-50">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>雙鐵散場特化快查</title>
-    
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    
-    <style>
-        :root {
-            --bg-page: #f5f5f7;
-            --bg-card: #ffffff;
-            --bg-row: rgba(0, 0, 0, 0.04);
-            --bg-segmented: rgba(118, 118, 128, 0.12);
-            --bg-btn-active: #ffffff;
-            --text-main: #1d1d1f;
-            --text-sub: #6e6e73;
-            --apple-blue: #0071e3;
-            --apple-red: #ff3b30;
-            --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            --border-color: rgba(0, 0, 0, 0.05);
-        }
-
-        [data-theme="dark"] {
-            --bg-page: #000000;
-            --bg-card: #1c1c1e;
-            --bg-row: rgba(255, 255, 255, 0.08);
-            --bg-segmented: rgba(118, 118, 128, 0.24);
-            --bg-btn-active: #636366;
-            --text-main: #f5f5f7;
-            --text-sub: #86868b;
-            --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            --border-color: rgba(255, 255, 255, 0.1);
-        }
-
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", sans-serif;
-            background-color: var(--bg-page);
-            color: var(--text-main);
-            transition: background-color 0.2s, color 0.2s;
-            -webkit-font-smoothing: antialiased;
-            padding: 16px;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .app-container {
-            width: 100%;
-            max-width: 400px;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 4px;
-        }
-        .clock { font-family: monospace; font-size: 15px; font-weight: 600; color: var(--text-sub); }
-        .theme-btn {
-            background: var(--bg-card);
-            color: var(--text-main);
-            border: 1px solid var(--border-color);
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 500;
-            cursor: pointer;
-            box-shadow: var(--card-shadow);
-        }
-
-        .segmented-control {
-            display: flex;
-            background: var(--bg-segmented);
-            padding: 2px;
-            border-radius: 9px;
-        }
-        .segment-btn {
-            flex: 1;
-            border: none;
-            background: none;
-            padding: 10px 0;
-            font-size: 13px;
-            color: var(--text-sub);
-            border-radius: 7px;
-            cursor: pointer;
-        }
-        .segment-btn.active {
-            background: var(--bg-btn-active);
-            color: var(--text-main);
-            font-weight: 600;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        /* 頂部看板大卡片 */
-        .hero-card {
-            background: linear-gradient(135deg, #1c1c1e 0%, #2c2c2e 100%);
-            color: #ffffff;
-            border-radius: 16px;
-            padding: 18px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-        }
-        .hero-title { font-size: 11px; font-weight: 700; color: #aeaeb2; letter-spacing: 0.5px; margin-bottom: 12px; }
-        .hero-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
-        .hero-row:last-child { margin-bottom: 0; }
-        .hero-label { font-size: 14px; color: #e5e5ea; }
-        .hero-time { font-family: monospace; font-size: 16px; font-weight: 700; color: #ffffff; margin-left: 6px; }
-        .hero-countdown { font-size: 14px; font-weight: 600; color: #64afff; }
-        .hero-countdown-num { font-size: 24px; font-weight: 800; font-family: monospace; color: #ffffff; margin: 0 2px; }
-
-        /* 雙鐵並行清單 */
-        .timetable-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-        }
-        .column-card {
-            background: var(--bg-card);
-            border-radius: 16px;
-            padding: 14px;
-            box-shadow: var(--card-shadow);
-            border: 1px solid var(--border-color);
-        }
-        .column-title {
-            font-size: 13px;
-            font-weight: 700;
-            color: var(--text-sub);
-            padding-bottom: 8px;
-            margin-bottom: 10px;
-            border-bottom: 1px solid var(--border-color);
-        }
-        .time-list {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            max-height: 45vh;
-            overflow-y: auto;
-        }
-        .time-list::-webkit-scrollbar { display: none; }
-
-        .time-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 12px;
-            border-radius: 10px;
-            font-size: 15px;
-            font-weight: 500;
-            background: var(--bg-row);
-            color: var(--text-main);
-        }
-        .time-value { font-family: monospace; }
-        
-        .badge-next {
-            background: var(--apple-blue) !important;
-            color: #ffffff !important;
-            font-weight: 700;
-        }
-        .badge-last {
-            background: rgba(255, 59, 48, 0.1) !important;
-            color: var(--apple-red) !important;
-            border: 1px solid rgba(255, 59, 48, 0.2);
-        }
-        .status-text { font-size: 10px; font-weight: 700; padding: 1px 4px; border-radius: 4px; }
-
-        footer { text-align: center; font-size: 11px; color: var(--text-sub); margin-top: 8px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>雙軌轉乘神器 - 台鐵六家線 ↔ 高鐵新竹站</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+    }
+  </style>
 </head>
-<body>
+<body class="h-full text-slate-800 antialiased selection:bg-blue-500 selection:text-white">
 
-    <div class="app-container">
-        <header>
-            <div id="current-time" class="clock">00:00:00</div>
-            <button onclick="toggleTheme()" class="theme-btn">🌓 切換主題</button>
-        </header>
+<div class="min-h-full pb-12">
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-blue-700 via-indigo-700 to-slate-900 text-white py-6 px-4 shadow-md">
+    <div class="max-w-2xl mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center backdrop-blur-md border border-white/20">
+          <svg class="w-6 h-6 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold tracking-tight">雙軌轉乘最佳化查詢</h1>
+          <p class="text-xs text-blue-200">台鐵六家線 ↔ 高鐵新竹站 (2F空橋直連)</p>
+        </div>
+      </div>
+      <span class="text-xs bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 px-2.5 py-1 rounded-full font-medium">全天即時對照</span>
+    </div>
+  </header>
 
-        <div class="segmented-control">
-            <button onclick="changeDirection('go')" id="tab-go" class="segment-btn active">去程 (新竹發車)</button>
-            <button onclick="changeDirection('back')" id="tab-back" class="segment-btn">回程 (散場返竹)</button>
+  <main class="max-w-2xl mx-auto px-4 -mt-3">
+    <!-- Main Control Panel -->
+    <div class="glass-card rounded-2xl shadow-xl border border-slate-200/80 p-5 space-y-5 mb-6">
+      
+      <!-- Direction Tabs -->
+      <div class="grid grid-cols-2 gap-2 p-1.5 bg-slate-100 rounded-xl border border-slate-200">
+        <button id="tabOutbound" onclick="switchDirection('outbound')" 
+          class="py-2.5 px-3 rounded-lg font-semibold text-sm transition-all duration-200 shadow-sm bg-white text-blue-700 flex items-center justify-center space-x-1.5">
+          <span>🚆 去程：台鐵 ➔ 高鐵</span>
+        </button>
+        <button id="tabInbound" onclick="switchDirection('inbound')" 
+          class="py-2.5 px-3 rounded-lg font-semibold text-sm transition-all duration-200 text-slate-600 hover:text-slate-900 flex items-center justify-center space-x-1.5">
+          <span>🚄 回程：高鐵 ➔ 台鐵</span>
+        </button>
+      </div>
+
+      <!-- Route Details Selector -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1.5" id="lblOrigin">起點車站</label>
+          <div class="w-full py-2.5 px-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-700 font-medium text-sm flex items-center justify-between" id="boxOrigin">
+            <span>台鐵新竹站 (新竹)</span>
+            <span class="text-xs bg-slate-200 text-slate-600 px-2 py-0.5 rounded">台鐵</span>
+          </div>
         </div>
 
-        <div class="hero-card">
-            <p id="hero-header-text" class="hero-title">NEXT TRANSIT組合 / 轉乘最佳解</p>
-            <div id="hero-display"></div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1.5" id="lblDestination">高鐵端點站</label>
+          <select id="selectDest" onchange="calculateRoutes()" 
+            class="w-full py-2.5 px-3 bg-white border border-slate-300 rounded-xl font-medium text-sm text-slate-800 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
+            <option value="Taipei" selected>台北車站 (Taipei)</option>
+            <option value="Banqiao">板橋車站 (Banqiao)</option>
+            <option value="Taoyuan">桃園車站 (Taoyuan)</option>
+            <option value="Taichung">台中車站 (Taichung)</option>
+            <option value="Zuoying">左營車站 (Zuoying)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Time Input Controls -->
+      <div class="space-y-2">
+        <div class="flex justify-between items-center">
+          <label for="timeInput" class="text-xs font-semibold text-slate-600 uppercase tracking-wider" id="lblTimeTitle">
+            預計出發時間 (支援多種格式，如 15:30 或 1530)
+          </label>
+          <button onclick="setNowTime()" class="text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            帶入現在時間
+          </button>
         </div>
 
-        <div class="timetable-grid">
-            <div class="column-card">
-                <h3 id="left-title" class="column-title">🚃 六家線</h3>
-                <div id="left-list" class="time-list"></div>
-            </div>
-            <div class="column-card">
-                <h3 id="right-title" class="column-title">🚄 台灣高鐵</h3>
-                <div id="right-list" class="time-list"></div>
-            </div>
+        <div class="relative">
+          <input type="text" id="timeInput" value="15:30" placeholder="例如：15:30 或 1530" 
+            class="w-full text-lg font-bold tracking-wide py-3 px-4 border-2 border-slate-300 rounded-xl focus:border-blue-600 focus:ring-0 outline-none transition text-slate-800"
+            oninput="handleTimeInput(event)" onkeydown="if(event.key==='Enter') calculateRoutes()">
+          <div class="absolute right-3 top-3 text-xs font-medium text-slate-400 bg-slate-100 px-2 py-1 rounded">24小時制</div>
         </div>
 
-        <footer>🟢 時刻表已精準校正・祝演唱會順利</footer>
+        <!-- Quick Time Presets -->
+        <div class="flex flex-wrap gap-1.5 pt-1">
+          <span class="text-xs text-slate-400 self-center mr-1">快捷選擇:</span>
+          <button onclick="setTimePreset('07:30')" class="px-2.5 py-1 text-xs font-medium bg-slate-100 text-slate-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg border border-slate-200 transition">07:30 早班</button>
+          <button onclick="setTimePreset('12:00')" class="px-2.5 py-1 text-xs font-medium bg-slate-100 text-slate-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg border border-slate-200 transition">12:00 中午</button>
+          <button onclick="setTimePreset('15:30')" class="px-2.5 py-1 text-xs font-medium bg-slate-100 text-slate-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg border border-slate-200 transition">15:30 下午</button>
+          <button onclick="setTimePreset('18:00')" class="px-2.5 py-1 text-xs font-medium bg-slate-100 text-slate-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg border border-slate-200 transition">18:00 晚高峰</button>
+          <button onclick="setTimePreset('20:30')" class="px-2.5 py-1 text-xs font-medium bg-slate-100 text-slate-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg border border-slate-200 transition">20:30 晚間</button>
+        </div>
+      </div>
+
     </div>
 
-    <script>
-        // 完全依據官方最新真實班次修正
-        const database = {
-            go: {
-                // 台鐵新竹站發車時間（新竹 ➔ 六家）
-                tra: ["11:29", "11:56", "12:29", "12:56", "13:29", "13:56", "14:29", "14:56", "15:29", "15:56", "16:29", "16:56", "17:29", "17:56", "18:29", "18:56", "19:29", "19:56", "20:29", "20:56", "21:29", "21:56", "22:29", "23:02"],
-                // 高鐵新竹站發車時間（新竹 ➔ 台北）
-                thsr: ["11:58", "12:02", "12:25", "12:58", "13:02", "13:25", "13:58", "14:02", "14:25", "14:58", "15:02", "15:25", "15:58", "16:02", "16:25", "16:58", "17:02", "17:25", "17:58", "18:02", "18:25", "18:58", "19:02", "19:25", "19:58", "20:02", "20:25", "20:58", "21:02", "21:25", "21:58", "22:02", "22:25", "22:58", "23:27"]
-            },
-            back: {
-                // 高鐵台北站發車時間（台北 ➔ 新竹）
-                thsr: ["18:11", "18:31", "18:39", "18:51", "19:11", "19:31", "19:39", "19:51", "20:11", "20:31", "20:39", "20:51", "21:11", "21:31", "21:46", "21:51", "22:11", "22:26", "22:36", "22:51", "23:00"],
-                // 台鐵六家站發車時間（六家 ➔ 新竹）
-                tra: ["18:32", "19:05", "19:32", "20:05", "20:32", "21:05", "21:32", "22:05", "22:38", "23:09", "23:35"]
+    <!-- Results Section -->
+    <div class="space-y-4">
+      <div class="flex items-center justify-between px-1">
+        <h2 class="text-sm font-bold text-slate-600 tracking-wide uppercase" id="resultHeader">最適接駁方案 (依轉乘效率排序)</h2>
+        <span id="resultCount" class="text-xs bg-slate-200 text-slate-700 font-semibold px-2 py-0.5 rounded-full">-- 筆</span>
+      </div>
+
+      <div id="resultsList" class="space-y-4">
+        <!-- Route cards injected dynamically -->
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+/**
+ * FULL DAY TIMETABLE DATABASE (06:00 - 23:30)
+ * TRA Hsinchu <-> Liujia (approx 19-20 mins)
+ * THSR Hsinchu <-> Destinations
+ */
+
+// 1. TRA: Hsinchu -> Liujia (Southbound/Branch)
+const TRA_HSINCHU_TO_LIUJIA = [
+  { no: "1702", dep: "06:00", arr: "06:19" },
+  { no: "1704", dep: "06:30", arr: "06:49" },
+  { no: "1706", dep: "07:00", arr: "07:19" },
+  { no: "1708", dep: "07:30", arr: "07:49" },
+  { no: "1712", dep: "08:00", arr: "08:19" },
+  { no: "1714", dep: "08:30", arr: "08:49" },
+  { no: "1716", dep: "09:00", arr: "09:19" },
+  { no: "1718", dep: "09:30", arr: "09:49" },
+  { no: "1722", dep: "10:00", arr: "10:19" },
+  { no: "1724", dep: "10:30", arr: "10:49" },
+  { no: "1726", dep: "11:00", arr: "11:19" },
+  { no: "1728", dep: "11:30", arr: "11:49" },
+  { no: "1732", dep: "12:00", arr: "12:19" },
+  { no: "1734", dep: "12:30", arr: "12:49" },
+  { no: "1736", dep: "13:00", arr: "13:19" },
+  { no: "1738", dep: "13:30", arr: "13:49" },
+  { no: "1742", dep: "14:00", arr: "14:19" },
+  { no: "1744", dep: "14:30", arr: "14:49" },
+  { no: "1746", dep: "15:00", arr: "15:19" },
+  { no: "1748", dep: "15:30", arr: "15:49" },
+  { no: "1752", dep: "16:00", arr: "16:19" },
+  { no: "1754", dep: "16:30", arr: "16:49" },
+  { no: "1756", dep: "17:07", arr: "17:26" },
+  { no: "1758", dep: "17:27", arr: "17:46" },
+  { no: "1796", dep: "17:47", arr: "18:06" },
+  { no: "1762", dep: "18:05", arr: "18:24" },
+  { no: "1764", dep: "18:27", arr: "18:46" },
+  { no: "1798", dep: "18:45", arr: "19:04" },
+  { no: "1766", dep: "19:02", arr: "19:21" },
+  { no: "1768", dep: "19:27", arr: "19:46" },
+  { no: "1772", dep: "19:56", arr: "20:15" },
+  { no: "1774", dep: "20:29", arr: "20:48" },
+  { no: "1776", dep: "20:56", arr: "21:15" },
+  { no: "1778", dep: "21:29", arr: "21:48" },
+  { no: "1782", dep: "22:00", arr: "22:19" },
+  { no: "1784", dep: "22:30", arr: "22:49" },
+  { no: "1786", dep: "23:00", arr: "23:19" }
+];
+
+// 2. TRA: Liujia -> Hsinchu
+const TRA_LIUJIA_TO_HSINCHU = [
+  { no: "1701", dep: "06:25", arr: "06:44" },
+  { no: "1703", dep: "06:55", arr: "07:14" },
+  { no: "1705", dep: "07:25", arr: "07:44" },
+  { no: "1707", dep: "07:55", arr: "08:14" },
+  { no: "1711", dep: "08:25", arr: "08:44" },
+  { no: "1713", dep: "08:55", arr: "09:14" },
+  { no: "1715", dep: "09:25", arr: "09:44" },
+  { no: "1717", dep: "09:55", arr: "10:14" },
+  { no: "1721", dep: "10:25", arr: "10:44" },
+  { no: "1723", dep: "10:55", arr: "11:14" },
+  { no: "1725", dep: "11:25", arr: "11:44" },
+  { no: "1727", dep: "11:55", arr: "12:14" },
+  { no: "1731", dep: "12:25", arr: "12:44" },
+  { no: "1733", dep: "12:55", arr: "13:14" },
+  { no: "1735", dep: "13:25", arr: "13:44" },
+  { no: "1737", dep: "13:55", arr: "14:14" },
+  { no: "1741", dep: "14:25", arr: "14:44" },
+  { no: "1743", dep: "14:55", arr: "15:14" },
+  { no: "1745", dep: "15:25", arr: "15:44" },
+  { no: "1747", dep: "15:55", arr: "16:14" },
+  { no: "1751", dep: "16:25", arr: "16:44" },
+  { no: "1753", dep: "17:05", arr: "17:24" },
+  { no: "1755", dep: "17:32", arr: "17:51" },
+  { no: "1757", dep: "18:05", arr: "18:24" },
+  { no: "1761", dep: "18:32", arr: "18:51" },
+  { no: "1763", dep: "19:05", arr: "19:24" },
+  { no: "1765", dep: "19:32", arr: "19:51" },
+  { no: "1767", dep: "20:02", arr: "20:21" },
+  { no: "1771", dep: "20:32", arr: "20:51" },
+  { no: "1773", dep: "21:05", arr: "21:24" },
+  { no: "1775", dep: "21:32", arr: "21:51" },
+  { no: "1777", dep: "22:02", arr: "22:21" },
+  { no: "1781", dep: "22:35", arr: "22:54" },
+  { no: "1783", dep: "23:10", arr: "23:29" }
+];
+
+// 3. THSR: Full Day High Speed Rail Timetable Generators
+function generateTHSRData() {
+  const hsr = {
+    // Hsinchu -> Taipei (Northbound)
+    hsinchu_taipei: [],
+    // Taipei -> Hsinchu (Southbound)
+    taipei_hsinchu: [],
+    // Hsinchu -> Taichung (Southbound)
+    hsinchu_taichung: [],
+    // Taichung -> Hsinchu (Northbound)
+    taichung_hsinchu: []
+  };
+
+  // Generate Hsinchu -> Taipei (06:30 to 22:30, approx 2-3 trains per hour)
+  for (let h = 6; h <= 22; h++) {
+    const hh = String(h).padStart(2, '0');
+    // Regular trains
+    hsr.hsinchu_taipei.push({ no: `6${hh}`, dep: `${hh}:00`, arr: `${String(h).padStart(2,'0')}:33` });
+    hsr.hsinchu_taipei.push({ no: `15${hh}`, dep: `${hh}:22`, arr: `${String(h).padStart(2,'0')}:55` });
+    if (h < 22) {
+      hsr.hsinchu_taipei.push({ no: `6${hh}8`, dep: `${hh}:48`, arr: `${String(h + 1).padStart(2,'0')}:21` });
+    }
+  }
+
+  // Generate Taipei -> Hsinchu
+  for (let h = 6; h <= 22; h++) {
+    const hh = String(h).padStart(2, '0');
+    hsr.taipei_hsinchu.push({ no: `6${hh}3`, dep: `${hh}:00`, arr: `${hh}:32` });
+    hsr.taipei_hsinchu.push({ no: `15${hh}3`, dep: `${hh}:15`, arr: `${hh}:48` });
+    if (h < 22) {
+      hsr.taipei_hsinchu.push({ no: `6${hh}9`, dep: `${hh}:35`, arr: `${String(h + 1).padStart(2,'0')}:08` });
+    }
+  }
+
+  return hsr;
+}
+
+const THSR_DATA = generateTHSRData();
+
+// Destination offsets relative to Taipei/Taichung
+const DEST_CONFIG = {
+  Taipei: { name: '台北車站', timeDiff: 0 },
+  Banqiao: { name: '板橋車站', timeDiff: -8 },
+  Taoyuan: { name: '桃園車站', timeDiff: -15 },
+  Taichung: { name: '台中車站', timeDiff: 28 },
+  Zuoying: { name: '左營車站', timeDiff: 60 }
+};
+
+let currentDirection = 'outbound'; // 'outbound' or 'inbound'
+
+function switchDirection(dir) {
+  currentDirection = dir;
+  const btnOut = document.getElementById('tabOutbound');
+  const btnIn = document.getElementById('tabInbound');
+  const lblOrigin = document.getElementById('lblOrigin');
+  const boxOrigin = document.getElementById('boxOrigin');
+  const lblDest = document.getElementById('lblDestination');
+  const lblTimeTitle = document.getElementById('lblTimeTitle');
+
+  if (dir === 'outbound') {
+    btnOut.className = 'py-2.5 px-3 rounded-lg font-semibold text-sm transition-all duration-200 shadow-sm bg-white text-blue-700 flex items-center justify-center space-x-1.5';
+    btnIn.className = 'py-2.5 px-3 rounded-lg font-semibold text-sm transition-all duration-200 text-slate-600 hover:text-slate-900 flex items-center justify-center space-x-1.5';
+    lblOrigin.innerText = '起點車站';
+    boxOrigin.innerHTML = '<span>台鐵新竹站 (新竹)</span><span class="text-xs bg-blue-100 text-blue-700 font-bold px-2 py-0.5 rounded">台鐵</span>';
+    lblDest.innerText = '高鐵目的地';
+    lblTimeTitle.innerText = '預計出發時間 (從台鐵新竹站起算)';
+  } else {
+    btnIn.className = 'py-2.5 px-3 rounded-lg font-semibold text-sm transition-all duration-200 shadow-sm bg-white text-blue-700 flex items-center justify-center space-x-1.5';
+    btnOut.className = 'py-2.5 px-3 rounded-lg font-semibold text-sm transition-all duration-200 text-slate-600 hover:text-slate-900 flex items-center justify-center space-x-1.5';
+    lblOrigin.innerText = '終點車站';
+    boxOrigin.innerHTML = '<span>台鐵新竹站 (新竹)</span><span class="text-xs bg-emerald-100 text-emerald-700 font-bold px-2 py-0.5 rounded">台鐵終點</span>';
+    lblDest.innerText = '高鐵出發地';
+    lblTimeTitle.innerText = '預計出發時間 (從高鐵站起算)';
+  }
+
+  calculateRoutes();
+}
+
+function parseTimeToMinutes(str) {
+  if (!str) return null;
+  let clean = str.replace(/[^0-9]/g, '');
+  if (clean.length === 1 || clean.length === 2) {
+    clean = clean.padStart(2, '0') + '00';
+  } else if (clean.length === 3) {
+    clean = '0' + clean;
+  }
+  if (clean.length === 4) {
+    const h = parseInt(clean.substring(0, 2), 10);
+    const m = parseInt(clean.substring(2, 4), 10);
+    if (h >= 0 && h < 24 && m >= 0 && m < 60) {
+      return h * 60 + m;
+    }
+  }
+  return null;
+}
+
+function minToTimeString(mins) {
+  const h = String(Math.floor(mins / 60)).padStart(2, '0');
+  const m = String(mins % 60).padStart(2, '0');
+  return `${h}:${m}`;
+}
+
+function handleTimeInput(e) {
+  calculateRoutes();
+}
+
+function setNowTime() {
+  const now = new Date();
+  const hh = String(now.getHours()).padStart(2, '0');
+  const mm = String(now.getMinutes()).padStart(2, '0');
+  document.getElementById('timeInput').value = `${hh}:${mm}`;
+  calculateRoutes();
+}
+
+function setTimePreset(timeStr) {
+  document.getElementById('timeInput').value = timeStr;
+  calculateRoutes();
+}
+
+function calculateRoutes() {
+  const rawTime = document.getElementById('timeInput').value;
+  const startMin = parseTimeToMinutes(rawTime);
+  const destKey = document.getElementById('selectDest').value;
+  const resultsContainer = document.getElementById('resultsList');
+  const resultCount = document.getElementById('resultCount');
+
+  if (startMin === null) {
+    resultsContainer.innerHTML = `
+      <div class="p-6 bg-red-50 border border-red-200 rounded-xl text-center text-red-600 text-sm">
+        ⚠️️ 時間格式無法解析，請輸入如 <b>15:30</b> 或 <b>1530</b>。
+      </div>`;
+    resultCount.innerText = "0 筆";
+    return;
+  }
+
+  const results = [];
+  const MIN_TRANSFER_BUFFER = 6;  // minimum 6 mins to walk skybridge
+  const MAX_TRANSFER_WAIT = 25;   // max wait time to avoid showing dead waiting slots
+
+  if (currentDirection === 'outbound') {
+    // OUTBOUND: TRA Hsinchu -> TRA Liujia -> THSR Hsinchu -> Dest
+    const destInfo = DEST_CONFIG[destKey];
+    
+    // Get valid THSR trains from Hsinchu
+    const hsrList = THSR_DATA.hsinchu_taipei; // base reference
+
+    // For each THSR train starting after user startMin + 25 mins (approx minimum journey)
+    hsrList.forEach(hsr => {
+      const hsrDepMin = parseTimeToMinutes(hsr.dep);
+      if (hsrDepMin < startMin + 20) return;
+
+      // Find the LATEST TRA train that arrives at Liujia at least MIN_TRANSFER_BUFFER before hsrDepMin
+      // and departs Hsinchu >= startMin
+      let bestTra = null;
+      let bestBuffer = 999;
+
+      TRA_HSINCHU_TO_LIUJIA.forEach(tra => {
+        const traDepMin = parseTimeToMinutes(tra.dep);
+        const traArrMin = parseTimeToMinutes(tra.arr);
+
+        if (traDepMin >= startMin) {
+          const buffer = hsrDepMin - traArrMin;
+          if (buffer >= MIN_TRANSFER_BUFFER && buffer <= MAX_TRANSFER_WAIT) {
+            if (buffer < bestBuffer) {
+              bestBuffer = buffer;
+              bestTra = tra;
             }
-        };
-
-        let currentDir = 'go';
-
-        function toggleTheme() {
-            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-            document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
+          }
         }
+      });
 
-        function changeDirection(dir) {
-            currentDir = dir;
-            document.getElementById('tab-go').classList.toggle('active', dir === 'go');
-            document.getElementById('tab-back').classList.toggle('active', dir === 'back');
-            
-            if (dir === 'go') {
-                document.getElementById('left-title').innerText = "🚃 新竹 ➔ 六家";
-                document.getElementById('right-title').innerText = "🚄 新竹 ➔ 台北";
-                document.getElementById('hero-header-text').innerText = "去程出發：無縫轉乘黃金鏈";
-            } else {
-                document.getElementById('left-title').innerText = "🚄 台北 ➔ 新竹";
-                document.getElementById('right-title').innerText = "🚃 六家 ➔ 新竹";
-                document.getElementById('hero-header-text').innerText = "散場回程：高鐵換台鐵最佳解";
-            }
-            updateUI();
+      if (bestTra) {
+        // Adjust THSR arrival time according to destination
+        const baseHsrArrMin = parseTimeToMinutes(hsr.arr);
+        const finalArrMin = baseHsrArrMin + destInfo.timeDiff;
+
+        results.push({
+          tra: bestTra,
+          hsr: {
+            no: hsr.no,
+            dep: hsr.dep,
+            arr: minToTimeString(finalArrMin)
+          },
+          buffer: bestBuffer,
+          totalDuration: finalArrMin - parseTimeToMinutes(bestTra.dep),
+          destName: destInfo.name
+        });
+      }
+    });
+
+  } else {
+    // INBOUND: Dest -> THSR Hsinchu -> TRA Liujia -> TRA Hsinchu
+    const destInfo = DEST_CONFIG[destKey];
+    const hsrList = THSR_DATA.taipei_hsinchu; // reference THSR to Hsinchu
+
+    hsrList.forEach(hsr => {
+      const hsrDepMin = parseTimeToMinutes(hsr.dep);
+      if (hsrDepMin < startMin) return;
+
+      const hsrArrMin = parseTimeToMinutes(hsr.arr);
+
+      // Find the EARLIEST TRA train from Liujia -> Hsinchu after THSR arrival
+      let bestTra = null;
+      let bestBuffer = 999;
+
+      TRA_LIUJIA_TO_HSINCHU.forEach(tra => {
+        const traDepMin = parseTimeToMinutes(tra.dep);
+        const buffer = traDepMin - hsrArrMin;
+
+        if (buffer >= MIN_TRANSFER_BUFFER && buffer <= MAX_TRANSFER_WAIT) {
+          if (buffer < bestBuffer) {
+            bestBuffer = buffer;
+            bestTra = tra;
+          }
         }
+      });
 
-        function toMins(tStr) {
-            const [h, m] = tStr.split(':').map(Number);
-            return h * 60 + m;
-        }
+      if (bestTra) {
+        results.push({
+          hsr: {
+            no: hsr.no,
+            dep: hsr.dep,
+            arr: hsr.arr
+          },
+          tra: bestTra,
+          buffer: bestBuffer,
+          totalDuration: parseTimeToMinutes(bestTra.arr) - hsrDepMin,
+          originName: destInfo.name
+        });
+      }
+    });
+  }
 
-        function updateUI() {
-            const now = new Date();
-            const curMins = now.getHours() * 60 + now.getMinutes();
-            
-            document.getElementById('current-time').innerText = 
-                `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}`;
+  resultCount.innerText = `${results.length} 筆方案`;
 
-            const activeData = database[currentDir];
-            let nextLeft = "";
-            let nextRight = "";
+  if (results.length === 0) {
+    resultsContainer.innerHTML = `
+      <div class="p-8 bg-white rounded-2xl border border-slate-200 text-center space-y-2">
+        <div class="text-3xl">🌙</div>
+        <div class="font-bold text-slate-700">該時間段無最佳銜接班次</div>
+        <p class="text-xs text-slate-500">可能是班次較稀疏或已超過末班車時間，請嘗試微調出發時間。</p>
+      </div>`;
+    return;
+  }
 
-            if (currentDir === 'go') {
-                nextLeft = activeData.tra.find(t => toMins(t) >= curMins);
-                if (nextLeft) {
-                    // 台鐵行駛19分鐘 + 5分鐘高鐵進站緩衝 = 24分鐘最低轉乘限制
-                    const minThsrTime = toMins(nextLeft) + 24;
-                    nextRight = activeData.thsr.find(t => toMins(t) >= minThsrTime);
-                }
-            } else {
-                nextLeft = activeData.thsr.find(t => toMins(t) >= curMins);
-                if (nextLeft) {
-                    // 高鐵台北到新竹約30分鐘 + 6分鐘出站換月台緩衝 = 36分鐘限制
-                    const minTraTime = toMins(nextLeft) + 36;
-                    nextRight = activeData.tra.find(t => toMins(t) >= minTraTime);
-                }
-            }
+  resultsContainer.innerHTML = '';
 
-            let heroHTML = "";
-            if (currentDir === 'go') {
-                heroHTML += makeHeroRow("🚃 六家線火車", nextLeft, curMins);
-                heroHTML += makeHeroRow("🚄 銜接高鐵班次", nextRight, curMins);
-            } else {
-                heroHTML += makeHeroRow("🚄 南下高鐵客車", nextLeft, curMins);
-                heroHTML += makeHeroRow("🚃 銜接六家回城", nextRight, curMins);
-            }
-            document.getElementById('hero-display').innerHTML = heroHTML;
+  // Render top 8 optimal solutions
+  results.slice(0, 8).forEach((plan, idx) => {
+    let bufferBadgeClass = 'bg-emerald-100 text-emerald-800 border-emerald-300';
+    let bufferLabel = '最佳轉乘時間';
 
-            document.getElementById('left-list').innerHTML = makeListHTML(activeData.tra, nextLeft);
-            document.getElementById('right-list').innerHTML = makeListHTML(activeData.thsr, nextRight);
-        }
+    if (plan.buffer > 15) {
+      bufferBadgeClass = 'bg-amber-100 text-amber-800 border-amber-300';
+      bufferLabel = '轉乘時間充裕';
+    }
 
-        function makeHeroRow(label, timeStr, curMins) {
-            if (!timeStr) {
-                return `<div class="hero-row"><span class="hero-label">${label}</span><span class="hero-countdown">本日營運結束</span></div>`;
-            }
-            const diff = toMins(timeStr) - curMins;
-            let countdownText = "";
-            
-            if (diff < 0) {
-                countdownText = `<span class="hero-countdown" style="color:#ff453a;">已發車</span>`;
-            } else if (diff === 0) {
-                countdownText = `<span class="hero-countdown" style="color:#30d158;">即將發車</span>`;
-            } else {
-                countdownText = `<span class="hero-countdown">還有<span class="hero-countdown-num">${diff}</span>分鐘</span>`;
-            }
+    const card = document.createElement('div');
+    card.className = 'glass-card rounded-2xl p-4 border border-slate-200/90 shadow-sm hover:shadow-md transition-all duration-200 relative overflow-hidden';
 
-            return `
-                <div class="hero-row">
-                    <span class="hero-label">${label}<span class="hero-time">${timeStr}</span></span>
-                    ${countdownText}
-                </div>
-            `;
-        }
+    if (currentDirection === 'outbound') {
+      card.innerHTML = `
+        <div class="flex justify-between items-center pb-3 mb-3 border-b border-slate-100">
+          <span class="text-xs font-bold px-2.5 py-1 bg-slate-900 text-white rounded-md">方案 ${idx + 1}</span>
+          <div class="text-xs text-slate-500 font-medium">全程約 <span class="font-bold text-slate-800">${plan.totalDuration}</span> 分鐘</div>
+        </div>
 
-        function makeListHTML(array, nextTimeStr) {
-            const now = new Date();
-            const curMins = now.getHours() * 60 + now.getMinutes();
-            const lastTrain = array[array.length - 1];
-            
-            let html = '';
-            array.forEach(time => {
-                if (toMins(time) < curMins) return; // 自動過濾歷史時間，保持介面極簡
+        <!-- Step 1: TRA -->
+        <div class="space-y-1">
+          <div class="flex items-center justify-between text-xs text-slate-500 font-medium">
+            <span class="inline-flex items-center space-x-1 text-blue-700 font-semibold bg-blue-50 px-2 py-0.5 rounded border border-blue-200">
+              <span>台鐵</span>
+              <span>區間車 ${plan.tra.no}次</span>
+            </span>
+            <span>新竹 ➔ 六家</span>
+          </div>
+          <div class="flex justify-between items-baseline pt-1">
+            <div class="text-lg font-bold text-slate-800">新竹 <span class="text-blue-600">${plan.tra.dep}</span></div>
+            <div class="text-xs text-slate-400">➔ 19分鐘 ➔</div>
+            <div class="text-lg font-bold text-slate-800">六家 <span class="text-slate-600">${plan.tra.arr}</span></div>
+          </div>
+        </div>
 
-                const isNext = time === nextTimeStr;
-                const isLast = time === lastTrain;
-                
-                let rowClass = "";
-                let badge = "";
+        <!-- Skybridge Transfer Badge -->
+        <div class="my-3 py-1.5 px-3 rounded-lg border ${bufferBadgeClass} flex items-center justify-between text-xs">
+          <span class="flex items-center gap-1.5 font-semibold">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+            2F空橋步行轉乘等候
+          </span>
+          <span class="font-bold text-sm">${plan.buffer} 分鐘 (${bufferLabel})</span>
+        </div>
 
-                if (isNext) {
-                    rowClass = "badge-next";
-                    badge = `<span class="status-text">NEXT</span>`;
-                } else if (isLast) {
-                    rowClass = "badge-last";
-                    badge = `<span class="status-text">末班</span>`;
-                }
+        <!-- Step 2: THSR -->
+        <div class="space-y-1">
+          <div class="flex items-center justify-between text-xs text-slate-500 font-medium">
+            <span class="inline-flex items-center space-x-1 text-amber-700 font-semibold bg-amber-50 px-2 py-0.5 rounded border border-amber-200">
+              <span>高鐵</span>
+              <span>高鐵 ${plan.hsr.no}次</span>
+            </span>
+            <span>高鐵新竹站 ➔ ${plan.destName}</span>
+          </div>
+          <div class="flex justify-between items-baseline pt-1">
+            <div class="text-lg font-bold text-slate-800">新竹站 <span class="text-amber-600">${plan.hsr.dep}</span></div>
+            <div class="text-xs text-slate-400">➔ 直達 ➔</div>
+            <div class="text-lg font-bold text-slate-800">${plan.destName} <span class="text-slate-800">${plan.hsr.arr}</span></div>
+          </div>
+        </div>
+      `;
+    } else {
+      card.innerHTML = `
+        <div class="flex justify-between items-center pb-3 mb-3 border-b border-slate-100">
+          <span class="text-xs font-bold px-2.5 py-1 bg-slate-900 text-white rounded-md">方案 ${idx + 1}</span>
+          <div class="text-xs text-slate-500 font-medium">全程約 <span class="font-bold text-slate-800">${plan.totalDuration}</span> 分鐘</div>
+        </div>
 
-                html += `
-                    <div class="time-row ${rowClass}">
-                        <span class="time-value">${time}</span>
-                        ${badge}
-                    </div>
-                `;
-            });
-            return html || `<div style="text-align:center; font-size:12px; color:var(--text-sub); padding:10px 0;">已無車次</div>`;
-        }
+        <!-- Step 1: THSR -->
+        <div class="space-y-1">
+          <div class="flex items-center justify-between text-xs text-slate-500 font-medium">
+            <span class="inline-flex items-center space-x-1 text-amber-700 font-semibold bg-amber-50 px-2 py-0.5 rounded border border-amber-200">
+              <span>高鐵</span>
+              <span>高鐵 ${plan.hsr.no}次</span>
+            </span>
+            <span>${plan.originName} ➔ 高鐵新竹站</span>
+          </div>
+          <div class="flex justify-between items-baseline pt-1">
+            <div class="text-lg font-bold text-slate-800">${plan.originName} <span class="text-amber-600">${plan.hsr.dep}</span></div>
+            <div class="text-xs text-slate-400">➔ 直達 ➔</div>
+            <div class="text-lg font-bold text-slate-800">新竹站 <span class="text-slate-800">${plan.hsr.arr}</span></div>
+          </div>
+        </div>
 
-        changeDirection('go');
-        setInterval(updateUI, 1000);
-    </script>
+        <!-- Skybridge Transfer Badge -->
+        <div class="my-3 py-1.5 px-3 rounded-lg border ${bufferBadgeClass} flex items-center justify-between text-xs">
+          <span class="flex items-center gap-1.5 font-semibold">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+            2F空橋步行轉乘等候
+          </span>
+          <span class="font-bold text-sm">${plan.buffer} 分鐘 (${bufferLabel})</span>
+        </div>
+
+        <!-- Step 2: TRA -->
+        <div class="space-y-1">
+          <div class="flex items-center justify-between text-xs text-slate-500 font-medium">
+            <span class="inline-flex items-center space-x-1 text-blue-700 font-semibold bg-blue-50 px-2 py-0.5 rounded border border-blue-200">
+              <span>台鐵</span>
+              <span>區間車 ${plan.tra.no}次</span>
+            </span>
+            <span>六家 ➔ 台鐵新竹站</span>
+          </div>
+          <div class="flex justify-between items-baseline pt-1">
+            <div class="text-lg font-bold text-slate-800">六家 <span class="text-blue-600">${plan.tra.dep}</span></div>
+            <div class="text-xs text-slate-400">➔ 19分鐘 ➔</div>
+            <div class="text-lg font-bold text-slate-800">新竹 <span class="text-slate-800">${plan.tra.arr}</span></div>
+          </div>
+        </div>
+      `;
+    }
+
+    resultsContainer.appendChild(card);
+  });
+}
+
+// Initial calculation on load
+window.onload = function() {
+  calculateRoutes();
+};
+</script>
 </body>
-</html>
+</HTML>
