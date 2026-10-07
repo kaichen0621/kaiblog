@@ -349,38 +349,6 @@ a[class*="tag_"]:hover {
 
 
 /* ==========================================
-   iOS / macOS 設計系統與視覺變數
-   ========================================== */
-:root {
-  /* iOS 經典字體 */
-  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
-  --ifm-global-radius: 14px;
-  
-  /* 亮色模式色彩 */
-  --ios-bg: #f2f2f7;
-  --ios-card-bg: rgba(255, 255, 255, 0.8);
-  --ios-nav-bg: rgba(249, 249, 249, 0.75);
-  --ios-border: rgba(0, 0, 0, 0.08);
-  --ios-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-}
-
-[data-theme='dark'] {
-  /* 暗色模式色彩 (iOS 深色) */
-  --ios-bg: #000000;
-  --ios-card-bg: rgba(28, 28, 30, 0.75);
-  --ios-nav-bg: rgba(28, 28, 30, 0.75);
-  --ios-border: rgba(255, 255, 255, 0.12);
-  --ios-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
-}
-
-/* 全局背景與滾動體感 */
-body {
-  background-color: var(--ios-bg);
-  -webkit-font-smoothing: antialiased;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* ==========================================
    1. 頂部導覽列 (Navbar) - iOS 毛玻璃風格
    ========================================== */
 .navbar {
@@ -391,7 +359,8 @@ body {
   box-shadow: none;
   position: sticky;
   top: 0;
-  z-index: 100;
+  /* 降低 navbar 的 z-index，避免遮住滿版側邊選單 */
+  z-index: 10 !important; 
 }
 
 /* Navbar 按鈕圓角與點擊態 */
@@ -406,14 +375,26 @@ body {
 }
 
 /* ==========================================
-   2. 行動端側邊選單 (Sidebar Drawer)
+   2. 行動端側邊選單 (Sidebar Drawer 修復)
    ========================================== */
+/* 讓側邊選單置頂且不被 navbar 遮擋 */
 .navbar-sidebar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  z-index: 9999 !important; /* 確保在最上層 */
   background-color: var(--ios-nav-bg) !important;
-  backdrop-filter: blur(25px) saturate(180%);
-  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  backdrop-filter: blur(25px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
   border-right: 0.5px solid var(--ios-border);
   box-shadow: var(--ios-shadow);
+}
+
+/* 修正側邊欄頂部 Header 空間與關閉按鈕列 */
+.navbar-sidebar__brand {
+  background-color: transparent !important;
+  border-bottom: 0.5px solid var(--ios-border);
 }
 
 /* 側邊欄項目：iOS 分組選單樣式 */
@@ -433,60 +414,4 @@ body {
 .menu__link--active {
   background-color: rgba(120, 120, 128, 0.18) !important;
   font-weight: 600;
-}
-
-/* ==========================================
-   3. 文章內容與卡片化 (Cards Layout)
-   ========================================== */
-.main-wrapper {
-  padding: 12px;
-}
-
-/* 將 Markdown 文章包覆成 iOS 卡片樣式 */
-.theme-doc-markdown, 
-article {
-  background: var(--ios-card-bg);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border-radius: 18px;
-  padding: 20px 24px;
-  border: 0.5px solid var(--ios-border);
-  box-shadow: var(--ios-shadow);
-  margin-bottom: 20px;
-}
-
-/* iOS 標籤與 Code 區塊風格 */
-code {
-  border-radius: 6px;
-  padding: 2px 6px;
-  background-color: rgba(120, 120, 128, 0.15);
-  border: none;
-}
-
-/* 列表樣式微調 */
-ul, ol {
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 6px;
-}
-
-/* ==========================================
-   4. iOS 分隔線與搜尋框
-   ========================================== */
-hr {
-  background-color: var(--ios-border);
-  height: 0.5px;
-  border: none;
-  margin: 16px 0;
-}
-
-/* 搜尋按鈕 iOS 化 */
-.searchBox_node_modules-\@docusaurus-theme-classic-lib-theme-SearchBox-styles-module,
-.navbar__search-input {
-  border-radius: 10px !important;
-  background-color: rgba(118, 118, 128, 0.12) !important;
-  border: none !important;
-  backdrop-filter: blur(10px);
 }
