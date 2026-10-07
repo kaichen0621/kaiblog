@@ -1,11 +1,11 @@
 /* ============================================================
-1. 引入 Zen Maru Gothic 字體與基本設定
+1. 引入 LINE Seed TW 字體與基本設定
 ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap');
+@import url('https://fontsapi.zeoseven.com/741/main/result.css');
 
 :root {
-  /* 全局字體替換為 Zen Maru Gothic */
-  --ifm-font-family-base: 'Zen Maru Gothic', -apple-system, BlinkMacSystemFont, 'PingFang TC', sans-serif;
+  /* 全局字體替換為 LINE Seed TW */
+  --ifm-font-family-base: 'LINE Seed TW', -apple-system, BlinkMacSystemFont, 'PingFang TC', sans-serif;
   --ifm-font-weight-base: 400;
   --ifm-font-weight-bold: 700;
   --ifm-heading-font-weight: 700;
