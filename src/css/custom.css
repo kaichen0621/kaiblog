@@ -15,8 +15,8 @@
   --ifm-color-primary-light: #5baef2;
 
   --ios-bg: #f2f2f7;
-  --ios-card-bg: rgba(255, 255, 255, 0.9);
-  --ios-nav-bg: rgba(255, 255, 255, 0.85);
+  --ios-card-bg: #ffffff;
+  --ios-nav-bg: #ffffff;
   --ios-border: rgba(0, 0, 0, 0.08);
   --ios-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
@@ -26,7 +26,7 @@ html[data-theme='dark'] {
 
   --ios-bg: #000000;
   --ios-card-bg: #1c1c1e;
-  --ios-nav-bg: rgba(28, 28, 30, 0.85);
+  --ios-nav-bg: #1c1c1e;
   --ios-border: rgba(255, 255, 255, 0.12);
   --ios-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
 }
@@ -42,20 +42,16 @@ b, strong {
 }
 
 /* ============================================================
-2. 導覽列與側邊欄（純視覺換色，不動任何結構定位）
+2. 導覽列與側邊欄（純色背景，完全不使用 backdrop-filter）
 ============================================================ */
 .navbar {
   background-color: var(--ios-nav-bg) !important;
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
   border-bottom: 0.5px solid var(--ios-border);
   box-shadow: none !important;
 }
 
 .navbar-sidebar {
   background-color: var(--ios-nav-bg) !important;
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
 }
 
 .menu__link, .dropdown__link, .navbar__item {
@@ -100,7 +96,7 @@ hr {
 }
 
 /* ============================================================
-4. 自訂媒體與樣式（YouTube / Photo）
+4. 自訂元件 (YouTube / Photo / Progress / TOC)
 ============================================================ */
 .youtube, .youtube-s {
   max-width: 960px;
@@ -145,6 +141,35 @@ img.photo-border, .photo-border img {
   object-fit: cover;
   margin: 0 auto;
   border-radius: 8px;
+}
+
+.custom-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white !important;
+  background: var(--ifm-color-primary);
+  border-radius: 8px;
+  text-decoration: none !important;
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem 0;
+}
+
+/* 目錄隱藏專用規避條件 */
+[class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"],
+[class*="tableOfContents"] [href*="付費解鎖"],
+[class*="tableOfContents"] [href*="停止開放下載！"] {
+  display: none !important;
+}
+
+[class*="tableOfContents"] li:has([href*="付費解鎖"]),
+[class*="tableOfContents"] li:has([href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"]),
+[class*="tableOfContents"] li:has([href*="停止開放下載！"]) {
+  display: none !important;
 }
 
 @media (max-width: 768px) {
