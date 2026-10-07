@@ -1,12 +1,14 @@
 /* ============================================================
-1. 引入 LINE Seed TW 字體與基本設定
+1. 引入 LINE Seed TW 字體與加粗設定
 ============================================================ */
 @import url('https://fontsapi.zeoseven.com/741/main/result.css');
 
 :root {
   /* 全局字體替換為 LINE Seed TW */
   --ifm-font-family-base: 'LINE Seed TW', -apple-system, BlinkMacSystemFont, 'PingFang TC', sans-serif;
-  --ifm-font-weight-base: 400;
+  
+  /* 將基本字重調粗 (400 -> 600) */
+  --ifm-font-weight-base: 600;
   --ifm-font-weight-bold: 700;
   --ifm-heading-font-weight: 700;
 
@@ -19,12 +21,14 @@ html[data-theme='dark'] {
   --ifm-color-primary: #6bb4f4;
 }
 
-body {
+/* 強制所有內文、段落、選單提升字重 */
+body, p, li, span, a {
   font-family: var(--ifm-font-family-base);
+  font-weight: 600 !important;
   -webkit-font-smoothing: antialiased;
 }
 
-b, strong {
+h1, h2, h3, h4, h5, h6, b, strong {
   font-weight: 700 !important;
 }
 
@@ -33,7 +37,7 @@ b, strong {
 ============================================================ */
 .menu__link, .dropdown__link, .navbar__item {
   border-radius: 8px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .menu__link:hover, .navbar__item:hover, .navbar__link--active {
