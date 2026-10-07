@@ -28,7 +28,7 @@
   /* iOS 亮色變數 */
   --ios-bg: #f2f2f7;
   --ios-card-bg: rgba(255, 255, 255, 0.85);
-  --ios-nav-bg: rgba(255, 255, 255, 0.75);
+  --ios-nav-bg: rgba(255, 255, 255, 0.85);
   --ios-border: rgba(0, 0, 0, 0.08);
   --ios-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
@@ -42,7 +42,7 @@ html[data-theme='dark'] {
   /* iOS 暗色變數 */
   --ios-bg: #000000;
   --ios-card-bg: #1c1c1e;
-  --ios-nav-bg: rgba(28, 28, 30, 0.8);
+  --ios-nav-bg: rgba(28, 28, 30, 0.85);
   --ios-border: rgba(255, 255, 255, 0.12);
   --ios-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
 }
@@ -60,20 +60,24 @@ b, strong {
 }
 
 /* ============================================================
-2. Navbar & Liquid Glass Top Bar
+2. Navbar (父層保持乾淨，避免形成限制視窗)
 ============================================================ */
 .navbar {
+  background: transparent !important;
+  box-shadow: none !important;
+  position: sticky;
+  top: 0;
+  z-index: 1000 !important;
+  padding: 0 !important;
+  overflow: visible !important; /* 允許側邊欄溢出 */
+}
+
+/* 將毛玻璃效果移至內層，不影響 fixed 子元素 */
+.navbar__inner {
   background-color: var(--ios-nav-bg) !important;
   backdrop-filter: blur(20px) saturate(180%) !important;
   -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
   border-bottom: 0.5px solid var(--ios-border);
-  box-shadow: none;
-  position: sticky;
-  top: 0;
-  z-index: 10 !important; /* 確保保持在基礎頂層 */
-}
-
-.navbar__inner {
   padding: var(--ifm-navbar-padding-vertical) var(--ifm-navbar-padding-horizontal) !important;
 }
 
@@ -100,27 +104,34 @@ b, strong {
 }
 
 /* ============================================================
-3. 行動端側邊選單修復 (Fix Drawer Z-Index)
+3. 行動端側邊選單抽屜 (完全解放層級)
 ============================================================ */
-/* 點擊選單時出現的全螢幕黑色遮罩 */
 .navbar-sidebar__backdrop {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
   z-index: 9998 !important;
 }
 
-/* 側邊選單抽屜本體 */
 .navbar-sidebar {
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
   bottom: 0 !important;
+  height: 100vh !important;
+  height: 100dvh !important;
   width: 80vw !important;
-  max-width: 300px !important;
-  z-index: 9999 !important; /* 最高層級，徹底壓過主畫面文章 */
+  max-width: 320px !important;
+  z-index: 9999 !important;
   background-color: var(--ios-nav-bg) !important;
   backdrop-filter: blur(25px) saturate(180%) !important;
   -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
   border-right: 0.5px solid var(--ios-border);
   box-shadow: var(--ios-shadow);
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar-sidebar__brand {
@@ -131,13 +142,15 @@ b, strong {
 
 .navbar-sidebar__items {
   padding: 12px;
+  flex: 1;
+  overflow-y: auto;
 }
 
 .menu__link {
   border-radius: 10px;
   font-size: 16px;
   padding: 10px 14px;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 .menu__link--active {
@@ -147,15 +160,12 @@ b, strong {
 }
 
 /* ============================================================
-4. iOS 卡片化文章 (修正 Stacking Context)
+4. iOS 卡片化文章區塊
 ============================================================ */
 .main-wrapper {
   padding: 12px;
-  position: relative;
-  z-index: 1; /* 保持在底層 */
 }
 
-/* 文章卡片：暗色模式改用純色背景，避免 backdrop-filter 建立高層級 Context */
 .theme-doc-markdown, 
 article {
   background: var(--ios-card-bg) !important;
@@ -164,8 +174,6 @@ article {
   border: 0.5px solid var(--ios-border);
   box-shadow: var(--ios-shadow);
   margin-bottom: 20px;
-  position: relative;
-  z-index: 1;
 }
 
 code {
@@ -183,7 +191,7 @@ hr {
 }
 
 /* ============================================================
-5. Components (Embedded Media & Custom Styles)
+5. Components & Media
 ============================================================ */
 .youtube, .youtube-s {
   max-width: 960px;
@@ -254,7 +262,7 @@ img.photo-border, .photo-border img {
 }
 
 /* ============================================================
-7. Responsive (Mobile Adjustments)
+7. Responsive
 ============================================================ */
 @media (max-width: 768px) {
   .photo-border {
