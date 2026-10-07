@@ -1,5 +1,5 @@
 /* ============================================================
-1. Variables & Global Styles
+1. 全局字體與 iOS 視覺變數
 ============================================================ */
 @import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@400;700&display=swap');
 
@@ -8,38 +8,22 @@
   --ifm-font-weight-base: 400;
   --ifm-font-weight-bold: 700;
   --ifm-heading-font-weight: 700;
-  --ifm-code-font-size: 90%;
   --ifm-global-radius: 14px;
 
   --ifm-color-primary: #429EEE;
   --ifm-color-primary-dark: #3786ca;
   --ifm-color-primary-light: #5baef2;
 
-  --hero-gradient: #429EEE;
-  --glass-bg: #f8fafc;
-  --glass-border: #e2e8f0;
-  --card-shadow: none;
-  --card-hover-shadow: none;
-
-  --progress-color: #429EEE;
-  --progress-color-alt: #0051ff;
-  --progress-gradient-toggle: 1;
-
-  /* iOS 亮色變數 */
   --ios-bg: #f2f2f7;
-  --ios-card-bg: rgba(255, 255, 255, 0.85);
-  --ios-nav-bg: rgba(255, 255, 255, 0.8);
+  --ios-card-bg: rgba(255, 255, 255, 0.9);
+  --ios-nav-bg: rgba(255, 255, 255, 0.85);
   --ios-border: rgba(0, 0, 0, 0.08);
   --ios-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 html[data-theme='dark'] {
   --ifm-color-primary: #6bb4f4;
-  --hero-gradient: #1e293b;
-  --glass-bg: #1e293b;
-  --glass-border: #334155;
 
-  /* iOS 暗色變數 */
   --ios-bg: #000000;
   --ios-card-bg: #1c1c1e;
   --ios-nav-bg: rgba(28, 28, 30, 0.85);
@@ -49,10 +33,8 @@ html[data-theme='dark'] {
 
 body {
   font-family: var(--ifm-font-family-base);
-  font-weight: var(--ifm-font-weight-base);
   background-color: var(--ios-bg) !important;
   -webkit-font-smoothing: antialiased;
-  -webkit-overflow-scrolling: touch;
 }
 
 b, strong {
@@ -60,87 +42,34 @@ b, strong {
 }
 
 /* ============================================================
-2. Navbar (iOS 毛玻璃導覽列)
+2. 導覽列與側邊欄（純視覺換色，不動任何結構定位）
 ============================================================ */
 .navbar {
   background-color: var(--ios-nav-bg) !important;
-  backdrop-filter: blur(20px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
   border-bottom: 0.5px solid var(--ios-border);
   box-shadow: none !important;
-  position: sticky;
-  top: 0;
-  z-index: 100 !important;
 }
 
-.menu__link, .dropdown__link, a.link, .navbar__item {
+.navbar-sidebar {
+  background-color: var(--ios-nav-bg) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+.menu__link, .dropdown__link, .navbar__item {
   border-radius: 8px;
-  transition: all 0.2s ease;
   font-weight: 600;
 }
 
-.navbar__item {
-  margin: 0 4px;
-  padding: 6px 12px;
-}
-
-.menu__link:hover, .dropdown__link:hover, a.link:hover,
-.navbar__item:hover, .navbar__link--active {
+.menu__link:hover, .navbar__item:hover, .navbar__link--active {
   background: rgba(66, 158, 238, 0.1);
   color: var(--ifm-color-primary) !important;
-  text-decoration: none;
-}
-
-.navbar__item:active, .navbar__link:active {
-  opacity: 0.6;
 }
 
 /* ============================================================
-3. 行動端側邊選單 (原生結構 + iOS 毛玻璃視覺)
-============================================================ */
-/* 側邊欄展開時的背景黑色遮罩 */
-.navbar-sidebar__backdrop {
-  z-index: 998 !important;
-  background-color: rgba(0, 0, 0, 0.5) !important;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-}
-
-/* 側邊選單本體：不干涉定位，僅調視覺 */
-.navbar-sidebar {
-  z-index: 999 !important;
-  background-color: var(--ios-nav-bg) !important;
-  backdrop-filter: blur(25px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
-  border-right: 0.5px solid var(--ios-border);
-  box-shadow: var(--ios-shadow);
-}
-
-.navbar-sidebar__brand {
-  background-color: transparent !important;
-  border-bottom: 0.5px solid var(--ios-border);
-  box-shadow: none !important;
-}
-
-.navbar-sidebar__items {
-  padding: 12px;
-}
-
-.menu__link {
-  border-radius: 10px;
-  font-size: 16px;
-  padding: 10px 14px;
-  margin-bottom: 4px;
-}
-
-.menu__link--active {
-  background-color: rgba(66, 158, 238, 0.15) !important;
-  color: var(--ifm-color-primary) !important;
-  font-weight: 700;
-}
-
-/* ============================================================
-4. iOS 卡片化文章區塊
+3. iOS 卡片化文章區塊
 ============================================================ */
 .main-wrapper {
   padding: 12px;
@@ -171,7 +100,7 @@ hr {
 }
 
 /* ============================================================
-5. Custom Components (Media & Buttons)
+4. 自訂媒體與樣式（YouTube / Photo）
 ============================================================ */
 .youtube, .youtube-s {
   max-width: 960px;
@@ -191,14 +120,6 @@ hr {
   aspect-ratio: 16/9;
   border-radius: 10px;
   border: 0;
-}
-
-.blog-cover {
-  width: 100%;
-  border-radius: 12px;
-  margin: 1.5rem 0 2rem;
-  display: block;
-  border: 1px solid var(--glass-border);
 }
 
 .photo-border {
@@ -226,66 +147,6 @@ img.photo-border, .photo-border img {
   border-radius: 8px;
 }
 
-.custom-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 24px;
-  font-size: 1rem;
-  font-weight: 700;
-  color: white !important;
-  background: var(--ifm-color-primary);
-  border-radius: 8px;
-  text-decoration: none !important;
-  transition: all 0.2s ease;
-  border: none;
-  cursor: pointer;
-  margin: 0.5rem 0;
-}
-
-.custom-btn:hover {
-  transform: translateY(-2px);
-  color: white !important;
-  opacity: 0.9;
-}
-
-.custom-btn:active {
-  transform: translateY(0);
-}
-
-/* Progress Container */
-.progress-container {
-  background: #f1f9ff;
-  border: 1px solid #d0e8ff;
-  border-radius: 16px;
-  padding: 1.5rem;
-  margin: 2rem 0;
-  transition: all 0.3s ease;
-}
-
-[data-theme='dark'] .progress-container {
-  background: #1e293b;
-  border-color: #334155;
-}
-
-/* ============================================================
-6. TOC Hiding & Paywall
-============================================================ */
-[class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"],
-[class*="tableOfContents"] [href*="付費解鎖"],
-[class*="tableOfContents"] [href*="停止開放下載！"] {
-  display: none !important;
-}
-
-[class*="tableOfContents"] li:has([href*="付費解鎖"]),
-[class*="tableOfContents"] li:has([href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"]),
-[class*="tableOfContents"] li:has([href*="停止開放下載！"]) {
-  display: none !important;
-}
-
-/* ============================================================
-7. Responsive
-============================================================ */
 @media (max-width: 768px) {
   .photo-border {
     padding: 0.8rem;
