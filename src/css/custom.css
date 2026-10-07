@@ -42,7 +42,7 @@ b, strong {
 }
 
 /* ============================================================
-2. 導覽列與側邊欄（純色背景，完全不使用 backdrop-filter）
+2. 導覽列與側邊欄
 ============================================================ */
 .navbar {
   background-color: var(--ios-nav-bg) !important;
@@ -68,7 +68,7 @@ b, strong {
 3. iOS 卡片化文章區塊
 ============================================================ */
 .main-wrapper {
-  padding: 12px;
+  padding: 0;
 }
 
 .theme-doc-markdown, 
@@ -172,7 +172,20 @@ img.photo-border, .photo-border img {
   display: none !important;
 }
 
+/* ============================================================
+5. 行動端（Mobile）寬度優化
+============================================================ */
 @media (max-width: 768px) {
+  .container {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  article {
+    padding: 16px 14px !important;
+    border-radius: 14px;
+  }
+
   .photo-border {
     padding: 0.8rem;
     margin: 1.5rem auto;
