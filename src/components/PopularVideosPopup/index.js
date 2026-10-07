@@ -4,6 +4,7 @@ import styles from './styles.module.css';
 
 // 定義推薦影片庫
 const POPULAR_VIDEOS = [
+  { title: 'KEVIN丨能否贏下一場呢？', url: 'https://www.youtube.com/watch?v=8LLkRhkUqRE' },
   { title: 'KAI-LIVE | 中秋連假隨機直播！DAY01', url: 'https://www.youtube.com/watch?v=zaT7QzLuTb0' },
   { title: 'RAP 玩刀刃球？DAY 02 刀刃球直播精華', url: 'https://www.youtube.com/watch?v=3CageRLzzTs' },
   { title: '哇啊啊怎麼死的？DAY 01 的刀刃球直播精華', url: 'https://www.youtube.com/watch?v=hgL4u_FrZ6Y' },

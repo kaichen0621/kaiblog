@@ -8,8 +8,8 @@ description: "我的 Mac 軟體清單"
 
 # 📱 KAI macOS 電腦裡有什麼 `/app`
 
-- 最後更新：2026-10-01 20:00
-- **總共 `48` 個 軟體**
+- 最後更新：2026-10-07 20:00
+- **總共 `49` 個 軟體**
 
 ## 這是我在 Mac 上的軟體清單
 
@@ -37,29 +37,30 @@ description: "我的 Mac 軟體清單"
 20. Keka : 超好用壓縮工具！RAR 打得開～
 21. Keynote : 蘋果簡報工具
 22. Kontakt 8 : 強大的採樣音源主機
-23. Line : 必要但笨重的通訊軟體
-24. LocalSend : 傳輸檔案好工具
-25. Logic Pro : 蘋果自家 DAW，想刪除了！ (錄音老師推薦不要刪)
-26. Microsoft Excel : 強大的試算表工具
-27. Microsoft PowerPoint : 簡報必備工具
-28. Microsoft Word : 業界標準文書軟體
-29. Motrix : 免費速度快得下載器
-30. Musescore 4 : 開源打譜軟體
-31. Native Access : 官方的入庫管理工具
-32. Numbers : 蘋果表格工具
-33. OBS : 強大的開源螢幕錄影與直播軟體
-34. Obsidian : 確定從 Anytype 跳槽到這個了！
-35. Ollama : 在荒島時可用的離線 AI 工具，前提是電腦配置要好 … 想試試 Qwen
-36. Pages : 蘋果文件排版工具
-37. Parallels Desktop : Windows 虛擬機，效能強大
-38. Pearcleaner : 乾淨卸載 App 的利器
-39. Plugoff : 查看電腦所有音源，開源的超好用！
-40. Roblox : 我唯一玩的遊戲
-41. SmartSub : 生成字幕，還在研究
-42. Steinberg Library Manager : 管理 VST 音色庫路徑與授權的工具
-43. UVR 5 : 去人聲
-44. Vital : 免費合成器！
-45. Vorssaint : 開源強大的工具彙整工具，只能說太強大了
-46. Vovious : 調音準很方便，請別買了，用 [WiPitch](https://wiwi.blog/blog/wipitch)
-47. WaveLab 13 : 用來混音的，難用？
-48. Zed : 用來替代 VSCode ，更輕量、簡單！
+23. Kontakt Library Manager : 介面簡潔好用的管理音色工具
+24. Line : 必要但笨重的通訊軟體
+25. LocalSend : 傳輸檔案好工具
+26. Logic Pro : 蘋果自家 DAW，想刪除了！ (錄音老師推薦不要刪)
+27. Microsoft Excel : 試算表工具，好想刪除！
+28. Microsoft PowerPoint : 簡報工具，好想刪除！
+29. Microsoft Word : 文書軟體，好想刪除！
+30. Motrix : 免費速度快得下載器，等待 2.0
+31. Musescore 4 : 開源打譜軟體，簡單好用
+32. Native Access : Kontakt 官方的入庫管理工具
+33. Numbers : 蘋果表格工具
+34. OBS : 強大的開源螢幕錄影與直播軟體
+35. Obsidian : 確定從 Anytype 跳槽到這個了！
+36. Ollama : 在荒島時可用的離線 AI 工具，前提是電腦配置要好 … 想試試 Qwen
+37. Pages : 蘋果文件排版工具
+38. Parallels Desktop : Windows 虛擬機，效能強大
+39. Pearcleaner : 乾淨卸載 App 的利器
+40. Plugoff : 查看電腦所有音源，開源的，好想刪除！
+41. Roblox : 我唯一玩的遊戲
+42. Roblox Studio : 惡搞遊戲挺好用，我做的遊戲：[超級奧比](https://www.roblox.com/games/130801211879687/)
+43. SmartSub : 生成字幕，還在研究
+44. Steinberg Library Manager : 管理 VST 音色庫路徑與授權的工具
+45. UVR 5 : 去人聲
+46. Vital : 免費合成器！
+47. Vorssaint : 開源強大的工具彙整工具，只能說太強大了
+48. Vovious : 調音準很方便，請別買了，用 [WiPitch](https://wiwi.blog/blog/wipitch)
+49. Zed : 用來替代 VSCode ，更輕量、簡單！
