@@ -28,7 +28,7 @@
   /* iOS 亮色變數 */
   --ios-bg: #f2f2f7;
   --ios-card-bg: rgba(255, 255, 255, 0.85);
-  --ios-nav-bg: rgba(255, 255, 255, 0.85);
+  --ios-nav-bg: rgba(255, 255, 255, 0.8);
   --ios-border: rgba(0, 0, 0, 0.08);
   --ios-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
@@ -60,25 +60,17 @@ b, strong {
 }
 
 /* ============================================================
-2. Navbar (父層保持乾淨，避免形成限制視窗)
+2. Navbar (iOS 毛玻璃導覽列)
 ============================================================ */
 .navbar {
-  background: transparent !important;
-  box-shadow: none !important;
-  position: sticky;
-  top: 0;
-  z-index: 1000 !important;
-  padding: 0 !important;
-  overflow: visible !important; /* 允許側邊欄溢出 */
-}
-
-/* 將毛玻璃效果移至內層，不影響 fixed 子元素 */
-.navbar__inner {
   background-color: var(--ios-nav-bg) !important;
   backdrop-filter: blur(20px) saturate(180%) !important;
   -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
   border-bottom: 0.5px solid var(--ios-border);
-  padding: var(--ifm-navbar-padding-vertical) var(--ifm-navbar-padding-horizontal) !important;
+  box-shadow: none !important;
+  position: sticky;
+  top: 0;
+  z-index: 100 !important;
 }
 
 .menu__link, .dropdown__link, a.link, .navbar__item {
@@ -104,34 +96,24 @@ b, strong {
 }
 
 /* ============================================================
-3. 行動端側邊選單抽屜 (完全解放層級)
+3. 行動端側邊選單 (原生結構 + iOS 毛玻璃視覺)
 ============================================================ */
+/* 側邊欄展開時的背景黑色遮罩 */
 .navbar-sidebar__backdrop {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100vw !important;
-  height: 100vh !important;
-  z-index: 9998 !important;
+  z-index: 998 !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
+/* 側邊選單本體：不干涉定位，僅調視覺 */
 .navbar-sidebar {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  bottom: 0 !important;
-  height: 100vh !important;
-  height: 100dvh !important;
-  width: 80vw !important;
-  max-width: 320px !important;
-  z-index: 9999 !important;
+  z-index: 999 !important;
   background-color: var(--ios-nav-bg) !important;
   backdrop-filter: blur(25px) saturate(180%) !important;
   -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
   border-right: 0.5px solid var(--ios-border);
   box-shadow: var(--ios-shadow);
-  display: flex;
-  flex-direction: column;
 }
 
 .navbar-sidebar__brand {
@@ -142,8 +124,6 @@ b, strong {
 
 .navbar-sidebar__items {
   padding: 12px;
-  flex: 1;
-  overflow-y: auto;
 }
 
 .menu__link {
@@ -191,7 +171,7 @@ hr {
 }
 
 /* ============================================================
-5. Components & Media
+5. Custom Components (Media & Buttons)
 ============================================================ */
 .youtube, .youtube-s {
   max-width: 960px;
@@ -244,6 +224,48 @@ img.photo-border, .photo-border img {
   object-fit: cover;
   margin: 0 auto;
   border-radius: 8px;
+}
+
+.custom-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white !important;
+  background: var(--ifm-color-primary);
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem 0;
+}
+
+.custom-btn:hover {
+  transform: translateY(-2px);
+  color: white !important;
+  opacity: 0.9;
+}
+
+.custom-btn:active {
+  transform: translateY(0);
+}
+
+/* Progress Container */
+.progress-container {
+  background: #f1f9ff;
+  border: 1px solid #d0e8ff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  transition: all 0.3s ease;
+}
+
+[data-theme='dark'] .progress-container {
+  background: #1e293b;
+  border-color: #334155;
 }
 
 /* ============================================================
