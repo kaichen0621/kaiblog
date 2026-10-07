@@ -1,14 +1,15 @@
 /* ============================================================
 1. Variables & Global Styles
 ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound TC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@400;700&display=swap');
 
 :root {
-  --ifm-font-family-base: 'Chiron GoRound TC', -apple-system, sans-serif;
+  --ifm-font-family-base: 'Chiron GoRound TC', -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
   --ifm-font-weight-base: 400;
   --ifm-font-weight-bold: 700;
   --ifm-heading-font-weight: 700;
   --ifm-code-font-size: 90%;
+  --ifm-global-radius: 14px;
 
   --ifm-color-primary: #429EEE;
   --ifm-color-primary-dark: #3786ca;
@@ -23,6 +24,13 @@
   --progress-color: #429EEE;
   --progress-color-alt: #0051ff;
   --progress-gradient-toggle: 1;
+
+  /* iOS 亮色變數 */
+  --ios-bg: #f2f2f7;
+  --ios-card-bg: rgba(255, 255, 255, 0.85);
+  --ios-nav-bg: rgba(255, 255, 255, 0.75);
+  --ios-border: rgba(0, 0, 0, 0.08);
+  --ios-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 html[data-theme='dark'] {
@@ -30,29 +38,54 @@ html[data-theme='dark'] {
   --hero-gradient: #1e293b;
   --glass-bg: #1e293b;
   --glass-border: #334155;
+
+  /* iOS 暗色變數 */
+  --ios-bg: #000000;
+  --ios-card-bg: #1c1c1e;
+  --ios-nav-bg: rgba(28, 28, 30, 0.8);
+  --ios-border: rgba(255, 255, 255, 0.12);
+  --ios-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
 }
 
 body {
   font-family: var(--ifm-font-family-base);
   font-weight: var(--ifm-font-weight-base);
+  background-color: var(--ios-bg) !important;
   -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
 }
 
 b, strong {
   font-weight: 700 !important;
 }
 
-/* Navbar & Links hover */
+/* ============================================================
+2. Navbar & Liquid Glass Top Bar
+============================================================ */
+.navbar {
+  background-color: var(--ios-nav-bg) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border-bottom: 0.5px solid var(--ios-border);
+  box-shadow: none;
+  position: sticky;
+  top: 0;
+  z-index: 10 !important; /* 確保保持在基礎頂層 */
+}
+
+.navbar__inner {
+  padding: var(--ifm-navbar-padding-vertical) var(--ifm-navbar-padding-horizontal) !important;
+}
+
 .menu__link, .dropdown__link, a.link, .navbar__item {
-  border-radius: 6px;
+  border-radius: 8px;
   transition: all 0.2s ease;
+  font-weight: 600;
 }
 
 .navbar__item {
-  border-radius: 8px;
   margin: 0 4px;
   padding: 6px 12px;
-  font-weight: 600;
 }
 
 .menu__link:hover, .dropdown__link:hover, a.link:hover,
@@ -62,37 +95,95 @@ b, strong {
   text-decoration: none;
 }
 
-[data-theme='dark'] .navbar__item:hover,
-[data-theme='dark'] .navbar__link--active {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-/* Liquid Glass Navbar */
-.navbar {
-  background: transparent !important;
-  padding: 0 !important;
-}
-
-.navbar__inner {
-  height: 100%;
-  padding: var(--ifm-navbar-padding-vertical) var(--ifm-navbar-padding-horizontal) !important;
-  background-color: rgba(255, 255, 255, 0.3) !important;
-  -webkit-backdrop-filter: blur(25px) !important;
-  backdrop-filter: blur(25px) !important;
-}
-
-[data-theme='dark'] .navbar__inner {
-  background-color: rgba(24, 24, 27, 0.45) !important;
-}
-
-.navbar-sidebar {
-  background-color: var(--ifm-navbar-background-color) !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
+.navbar__item:active, .navbar__link:active {
+  opacity: 0.6;
 }
 
 /* ============================================================
-2. Components (Embedded Media)
+3. 行動端側邊選單修復 (Fix Drawer Z-Index)
+============================================================ */
+/* 點擊選單時出現的全螢幕黑色遮罩 */
+.navbar-sidebar__backdrop {
+  z-index: 9998 !important;
+}
+
+/* 側邊選單抽屜本體 */
+.navbar-sidebar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 80vw !important;
+  max-width: 300px !important;
+  z-index: 9999 !important; /* 最高層級，徹底壓過主畫面文章 */
+  background-color: var(--ios-nav-bg) !important;
+  backdrop-filter: blur(25px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
+  border-right: 0.5px solid var(--ios-border);
+  box-shadow: var(--ios-shadow);
+}
+
+.navbar-sidebar__brand {
+  background-color: transparent !important;
+  border-bottom: 0.5px solid var(--ios-border);
+  box-shadow: none !important;
+}
+
+.navbar-sidebar__items {
+  padding: 12px;
+}
+
+.menu__link {
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px 14px;
+  margin-bottom: 2px;
+}
+
+.menu__link--active {
+  background-color: rgba(66, 158, 238, 0.15) !important;
+  color: var(--ifm-color-primary) !important;
+  font-weight: 700;
+}
+
+/* ============================================================
+4. iOS 卡片化文章 (修正 Stacking Context)
+============================================================ */
+.main-wrapper {
+  padding: 12px;
+  position: relative;
+  z-index: 1; /* 保持在底層 */
+}
+
+/* 文章卡片：暗色模式改用純色背景，避免 backdrop-filter 建立高層級 Context */
+.theme-doc-markdown, 
+article {
+  background: var(--ios-card-bg) !important;
+  border-radius: 18px;
+  padding: 20px 24px;
+  border: 0.5px solid var(--ios-border);
+  box-shadow: var(--ios-shadow);
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+code {
+  border-radius: 6px;
+  padding: 2px 6px;
+  background-color: rgba(120, 120, 128, 0.15);
+  border: none;
+}
+
+hr {
+  background-color: var(--ios-border);
+  height: 0.5px;
+  border: none;
+  margin: 16px 0;
+}
+
+/* ============================================================
+5. Components (Embedded Media & Custom Styles)
 ============================================================ */
 .youtube, .youtube-s {
   max-width: 960px;
@@ -114,20 +205,12 @@ b, strong {
   border: 0;
 }
 
-/* ============================================================
-3. Blog Post Images & Media Containers
-============================================================ */
 .blog-cover {
   width: 100%;
   border-radius: 12px;
   margin: 1.5rem 0 2rem;
   display: block;
-  transition: transform 0.35s cubic-bezier(0.2, 1, 0.3, 1);
   border: 1px solid var(--glass-border);
-}
-
-.blog-cover:hover {
-  transform: translateY(-4px);
 }
 
 .photo-border {
@@ -153,20 +236,11 @@ img.photo-border, .photo-border img {
   object-fit: cover;
   margin: 0 auto;
   border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.photo-border p {
-  margin-top: .6rem;
-  font-size: 0.9rem;
-  color: #949597;
-  text-align: center;
 }
 
 /* ============================================================
-4. TOC Hiding & Paywall
+6. TOC Hiding & Paywall
 ============================================================ */
-/* 合併「付費解鎖」與「停止開放下載」隱藏規則 */
 [class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"],
 [class*="tableOfContents"] [href*="付費解鎖"],
 [class*="tableOfContents"] [href*="停止開放下載！"] {
@@ -179,160 +253,8 @@ img.photo-border, .photo-border img {
   display: none !important;
 }
 
-html.lock-paid-content [class*="tableOfContents"] li:has([href*="付費解鎖"]) ~ li,
-html.lock-paid-content [class*="tableOfContents"] li:has([href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"]) ~ li,
-html.lock-paid-content01 [class*="tableOfContents"] li:has([href*="停止開放下載！"]) ~ li,
-html.lock-paid-content01 [class*="tableOfContents"] li:has([href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"]) ~ li {
-  display: none !important;
-}
-
-html.lock-paid-content [class*="tableOfContents"] [href*="付費解鎖"] ~ a,
-html.lock-paid-content [class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"] ~ a,
-html.lock-paid-content01 [class*="tableOfContents"] [href*="停止開放下載！"] ~ a,
-html.lock-paid-content01 [class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"] ~ a {
-  display: none !important;
-}
-
 /* ============================================================
-5. Custom Buttons
-============================================================ */
-.custom-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 24px;
-  font-size: 1rem;
-  font-weight: 700;
-  color: white !important;
-  background: var(--ifm-color-primary);
-  border-radius: 8px;
-  text-decoration: none !important;
-  transition: all 0.2s ease;
-  border: none;
-  cursor: pointer;
-  margin: 0.5rem 0;
-}
-
-.custom-btn:hover {
-  transform: translateY(-2px);
-  color: white !important;
-  opacity: 0.9;
-}
-
-.custom-btn:active {
-  transform: translateY(0);
-}
-
-/* ============================================================
-6. Progress Section
-============================================================ */
-.progress-container {
-  background: #f1f9ff;
-  border: 1px solid #d0e8ff;
-  border-radius: 16px;
-  padding: 1.5rem;
-  margin: 2rem 0;
-  transition: all 0.3s ease;
-}
-
-.progress-container:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(66, 158, 238, 0.1);
-}
-
-[data-theme='dark'] .progress-container {
-  background: #1e293b;
-  border-color: #334155;
-}
-
-.progress-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.2rem;
-}
-
-.progress-title {
-  font-weight: 800;
-  font-size: 1.1rem;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.progress-percentage {
-  font-weight: 900;
-  color: var(--progress-color);
-  font-size: 1.2rem;
-}
-
-.progress-bar-bg {
-  background: rgba(0, 0, 0, 0.05);
-  height: 10px;
-  border-radius: 5px;
-  overflow: hidden;
-  margin-bottom: 1.5rem;
-}
-
-[data-theme='dark'] .progress-bar-bg {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.progress-bar-fill {
-  background-color: var(--progress-color);
-  height: 100%;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-}
-
-.progress-bar-fill::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.1));
-  opacity: var(--progress-gradient-toggle);
-  pointer-events: none;
-}
-
-.progress-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-
-.progress-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.95rem;
-  font-weight: 500;
-}
-
-.progress-item.done {
-  opacity: 0.6;
-  text-decoration: line-through;
-}
-
-/* ============================================================
-7. Article Tags & Utility Classes
-============================================================ */
-/* 補回原本遺漏的特定標籤樣式 */
-.badge--secondary,
-a.tag_node_modules-\@docusaurus-theme-classic-lib-theme-Tag-styles-module,
-a[class*="tag_"] {
-  border-radius: 6px;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-a[class*="tag_"]:hover {
-  transform: translateY(-1px);
-  text-decoration: none;
-}
-
-/* ============================================================
-8. Responsive (Mobile Adjustments)
+7. Responsive (Mobile Adjustments)
 ============================================================ */
 @media (max-width: 768px) {
   .photo-border {
@@ -345,73 +267,4 @@ a[class*="tag_"]:hover {
     height: 180px !important;
     border-radius: 6px;
   }
-}
-
-
-/* ==========================================
-   1. 頂部導覽列 (Navbar) - iOS 毛玻璃風格
-   ========================================== */
-.navbar {
-  background-color: var(--ios-nav-bg) !important;
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border-bottom: 0.5px solid var(--ios-border);
-  box-shadow: none;
-  position: sticky;
-  top: 0;
-  /* 降低 navbar 的 z-index，避免遮住滿版側邊選單 */
-  z-index: 10 !important; 
-}
-
-/* Navbar 按鈕圓角與點擊態 */
-.navbar__item, .navbar__link {
-  border-radius: 10px;
-  font-weight: 500;
-  transition: background-color 0.2s ease, opacity 0.2s ease;
-}
-
-.navbar__item:active, .navbar__link:active {
-  opacity: 0.6; /* iOS 經典點擊回饋 */
-}
-
-/* ==========================================
-   2. 行動端側邊選單 (Sidebar Drawer 修復)
-   ========================================== */
-/* 讓側邊選單置頂且不被 navbar 遮擋 */
-.navbar-sidebar {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  bottom: 0 !important;
-  z-index: 9999 !important; /* 確保在最上層 */
-  background-color: var(--ios-nav-bg) !important;
-  backdrop-filter: blur(25px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
-  border-right: 0.5px solid var(--ios-border);
-  box-shadow: var(--ios-shadow);
-}
-
-/* 修正側邊欄頂部 Header 空間與關閉按鈕列 */
-.navbar-sidebar__brand {
-  background-color: transparent !important;
-  border-bottom: 0.5px solid var(--ios-border);
-}
-
-/* 側邊欄項目：iOS 分組選單樣式 */
-.navbar-sidebar__items {
-  padding: 12px;
-}
-
-.menu__link {
-  border-radius: 10px;
-  font-size: 16px;
-  padding: 10px 14px;
-  margin-bottom: 2px;
-  transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-/* 選取中的項目（iOS 藍色/深灰高亮） */
-.menu__link--active {
-  background-color: rgba(120, 120, 128, 0.18) !important;
-  font-weight: 600;
 }
