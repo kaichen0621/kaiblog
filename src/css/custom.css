@@ -1,39 +1,26 @@
 /* ============================================================
-1. 全局字體與 iOS 視覺變數
+1. 引入 Zen Maru Gothic 字體與基本設定
 ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap');
 
 :root {
-  --ifm-font-family-base: 'Chiron GoRound TC', -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  /* 全局字體替換為 Zen Maru Gothic */
+  --ifm-font-family-base: 'Zen Maru Gothic', -apple-system, BlinkMacSystemFont, 'PingFang TC', sans-serif;
   --ifm-font-weight-base: 400;
   --ifm-font-weight-bold: 700;
   --ifm-heading-font-weight: 700;
-  --ifm-global-radius: 14px;
 
   --ifm-color-primary: #429EEE;
   --ifm-color-primary-dark: #3786ca;
   --ifm-color-primary-light: #5baef2;
-
-  --ios-bg: #f2f2f7;
-  --ios-card-bg: #ffffff;
-  --ios-nav-bg: #ffffff;
-  --ios-border: rgba(0, 0, 0, 0.08);
-  --ios-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 html[data-theme='dark'] {
   --ifm-color-primary: #6bb4f4;
-
-  --ios-bg: #000000;
-  --ios-card-bg: #1c1c1e;
-  --ios-nav-bg: #1c1c1e;
-  --ios-border: rgba(255, 255, 255, 0.12);
-  --ios-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
 }
 
 body {
   font-family: var(--ifm-font-family-base);
-  background-color: var(--ios-bg) !important;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -42,18 +29,8 @@ b, strong {
 }
 
 /* ============================================================
-2. 導覽列與側邊欄
+2. 導覽列與連結細節
 ============================================================ */
-.navbar {
-  background-color: var(--ios-nav-bg) !important;
-  border-bottom: 0.5px solid var(--ios-border);
-  box-shadow: none !important;
-}
-
-.navbar-sidebar {
-  background-color: var(--ios-nav-bg) !important;
-}
-
 .menu__link, .dropdown__link, .navbar__item {
   border-radius: 8px;
   font-weight: 600;
@@ -65,38 +42,7 @@ b, strong {
 }
 
 /* ============================================================
-3. iOS 卡片化文章區塊
-============================================================ */
-.main-wrapper {
-  padding: 0;
-}
-
-.theme-doc-markdown, 
-article {
-  background: var(--ios-card-bg) !important;
-  border-radius: 18px;
-  padding: 20px 24px;
-  border: 0.5px solid var(--ios-border);
-  box-shadow: var(--ios-shadow);
-  margin-bottom: 20px;
-}
-
-code {
-  border-radius: 6px;
-  padding: 2px 6px;
-  background-color: rgba(120, 120, 128, 0.15);
-  border: none;
-}
-
-hr {
-  background-color: var(--ios-border);
-  height: 0.5px;
-  border: none;
-  margin: 16px 0;
-}
-
-/* ============================================================
-4. 自訂元件 (YouTube / Photo / Progress / TOC)
+3. 自訂元件 (YouTube / Photo / Progress / TOC)
 ============================================================ */
 .youtube, .youtube-s {
   max-width: 960px;
@@ -172,20 +118,7 @@ img.photo-border, .photo-border img {
   display: none !important;
 }
 
-/* ============================================================
-5. 行動端（Mobile）寬度優化
-============================================================ */
 @media (max-width: 768px) {
-  .container {
-    padding-left: 8px !important;
-    padding-right: 8px !important;
-  }
-
-  article {
-    padding: 16px 14px !important;
-    border-radius: 14px;
-  }
-
   .photo-border {
     padding: 0.8rem;
     margin: 1.5rem auto;
