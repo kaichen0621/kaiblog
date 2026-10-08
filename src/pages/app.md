@@ -6,10 +6,12 @@ description: "我的 Mac 軟體清單"
 ---
 
 
+
+
 # 📱 KAI macOS 電腦裡有什麼 `/app`
 
-- 最後更新：2026-10-07 20:00
-- **總共 `49` 個 軟體**
+- 最後更新：2026-10-09 20:00
+- **總共 `53` 個 軟體**
 
 ## 這是我在 Mac 上的軟體清單
 
@@ -28,39 +30,39 @@ description: "我的 Mac 軟體清單"
 11. DaVinci Resolve 21 : 找不到比他更好的調色與剪輯軟體了
 12. Discord : 聊天與語音頻道首選
 13. Dorico 6 : 最近想刪除的打譜軟體，超級難用，還是喜歡 musescore
-14. Finale 27 : 停止提供更新了，最近沒什麼在用，感覺到 macOS 29 就不能用了
-15. Groove Agent SE : Cubase 內建的鼓機
-16. HALion Sonic : Cubase 內建音源，電量低
-17. HandBrake : 處理影片畫質開源好幫手！
-18. IINA : 開源萬能播放器，Mac 必裝
-19. iZotope RX 12 : 處理人聲超級好用的工具，最近砸到第12版了
-20. Keka : 超好用壓縮工具！RAR 打得開～
-21. Keynote : 蘋果簡報工具
-22. Kontakt 8 : 強大的採樣音源主機
-23. Kontakt Library Manager : 介面簡潔好用的管理音色工具
-24. Line : 必要但笨重的通訊軟體
-25. LocalSend : 傳輸檔案好工具
-26. Logic Pro : 蘋果自家 DAW，想刪除了！ (錄音老師推薦不要刪)
-27. Microsoft Excel : 試算表工具，好想刪除！
-28. Microsoft PowerPoint : 簡報工具，好想刪除！
-29. Microsoft Word : 文書軟體，好想刪除！
-30. Motrix : 免費速度快得下載器，等待 2.0
-31. Musescore 4 : 開源打譜軟體，簡單好用
-32. Native Access : Kontakt 官方的入庫管理工具
-33. Numbers : 蘋果表格工具
-34. OBS : 強大的開源螢幕錄影與直播軟體
-35. Obsidian : 確定從 Anytype 跳槽到這個了！
-36. Ollama : 在荒島時可用的離線 AI 工具，前提是電腦配置要好 … 想試試 Qwen
-37. Pages : 蘋果文件排版工具
-38. Parallels Desktop : Windows 虛擬機，效能強大
-39. Pearcleaner : 乾淨卸載 App 的利器
-40. Plugoff : 查看電腦所有音源，開源的，好想刪除！
-41. Roblox : 我唯一玩的遊戲
-42. Roblox Studio : 惡搞遊戲挺好用，我做的遊戲：[超級奧比](https://www.roblox.com/games/130801211879687/)
-43. SmartSub : 生成字幕，還在研究
-44. Steinberg Library Manager : 管理 VST 音色庫路徑與授權的工具
-45. UVR 5 : 去人聲
-46. Vital : 免費合成器！
-47. Vorssaint : 開源強大的工具彙整工具，只能說太強大了
-48. Vovious : 調音準很方便，請別買了，用 [WiPitch](https://wiwi.blog/blog/wipitch)
-49. Zed : 用來替代 VSCode ，更輕量、簡單！
+16. Finale 27 : 停止提供更新了，最近沒什麼在用，感覺到 macOS 29 就不能用了
+17. Groove Agent SE : Cubase 內建的鼓機
+18. HALion Sonic : Cubase 內建音源，電量低
+19. HandBrake : 處理影片畫質開源好幫手！
+20. IINA : 開源萬能播放器，Mac 必裝
+21. iZotope RX 12 : 處理人聲超級好用的工具，最近砸到第12版了
+22. Keka : 超好用壓縮工具！RAR 打得開～
+23. Keynote : 蘋果簡報工具
+24. Kontakt 8 : 強大的採樣音源主機
+25. Kontakt Library Manager : 介面簡潔好用的管理音色工具
+26. Line : 必要但笨重的通訊軟體
+27. LocalSend : 傳輸檔案好工具
+28. Logic Pro : 蘋果自家 DAW，想刪除了！ (錄音老師推薦不要刪)
+29. Microsoft Excel : 試算表工具，好想刪除！
+30. Microsoft PowerPoint : 簡報工具，好想刪除！
+31. Microsoft Word : 文書軟體，好想刪除！
+32. Motrix : 免費速度快得下載器，2.0 超級好用
+33. Musescore 4 : 開源打譜軟體，簡單好用
+34. Native Access : Kontakt 官方的入庫管理工具
+35. Numbers : 蘋果表格工具
+36. OBS : 強大的開源螢幕錄影與直播軟體
+37. Obsidian : 確定從 Anytype 跳槽到這個了！
+38. Ollama : 在荒島時可用的離線 AI 工具，前提是電腦配置要好 … 想試試 Qwen
+39. OpenScreen : 錄影騎士還可以，但是常當機
+40. Pages : 蘋果文件排版工具
+41. Parallels Desktop : Windows 虛擬機，效能強大
+42. Pearcleaner : 乾淨卸載 App 的利器
+45. Roblox : 我唯一玩的遊戲
+46. Roblox Studio : 惡搞遊戲挺好用，我做的遊戲：[超級奧比](https://www.roblox.com/games/130801211879687/)
+47. SmartSub : 生成字幕，還在研究
+48. Steinberg Library Manager : 管理 VST 音色庫路徑與授權的工具
+49. UVR 5 : 去人聲
+50. Vital : 免費合成器！
+51. Vorssaint : 開源強大的工具彙整工具，只能說太強大了
+52. Vovious : 調音準很方便，請別買了，用 [WiPitch](https://wiwi.blog/blog/wipitch)
+53. Zed : 用來替代 VSCode ，更輕量、簡單！
