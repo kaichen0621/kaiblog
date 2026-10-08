@@ -118,8 +118,28 @@
 
 .footer {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 1rem;
+}
+
+.dontShowOption {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: #666;
+  cursor: pointer;
+  user-select: none;
+}
+
+:global([data-theme='dark']) .dontShowOption {
+  color: #aaa;
+}
+
+.dontShowOption input[type='checkbox'] {
+  cursor: pointer;
+  accent-color: #2563eb;
 }
 
 .doneButton {
