@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from '@docusaurus/router';
 import styles from './styles.module.css';
 
-// 定義推薦影片庫
 const POPULAR_VIDEOS = [
   { title: 'KEVIN丨能否贏下一場呢？', url: 'https://www.youtube.com/watch?v=8LLkRhkUqRE' },
   { title: 'KAI-LIVE | 中秋連假隨機直播！DAY01', url: 'https://www.youtube.com/watch?v=zaT7QzLuTb0' },
@@ -49,13 +48,21 @@ const POPULAR_VIDEOS = [
   { title: 'Kai ｜Roblox 誰是殺手 2！低階PPT電腦也可以玩！', url: 'https://www.youtube.com/watch?v=wyptLHEvedw' },
 ];
 
+const STORAGE_KEY = 'hide_popular_videos_popup';
+
 export default function PopularVideosPopup() {
   const [isVisible, setIsVisible] = useState(false);
   const [selectedVideo, setSelectedVideo] = useState(null);
+  const [dontShowAgain, setDontShowAgain] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
     if (location.pathname !== '/') return;
+
+    if (typeof window !== 'undefined') {
+      const isHidden = localStorage.getItem(STORAGE_KEY) === 'true';
+      if (isHidden) return;
+    }
 
     const randomIndex = Math.floor(Math.random() * POPULAR_VIDEOS.length);
     setSelectedVideo(POPULAR_VIDEOS[randomIndex]);
@@ -67,13 +74,24 @@ export default function PopularVideosPopup() {
     return () => clearTimeout(timer);
   }, [location.pathname]);
 
+  const handleToggleDontShow = (e) => {
+    const checked = e.target.checked;
+    setDontShowAgain(checked);
+    if (typeof window !== 'undefined') {
+      if (checked) {
+        localStorage.setItem(STORAGE_KEY, 'true');
+      } else {
+        localStorage.removeItem(STORAGE_KEY);
+      }
+    }
+  };
+
   const closePopup = () => {
     setIsVisible(false);
   };
 
   if (!isVisible || !selectedVideo) return null;
 
-  // 從 YouTube 網址提取影片 ID 以獲取縮圖
   const getVideoId = (url) => {
     const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
     const match = url.match(regExp);
@@ -103,6 +121,14 @@ export default function PopularVideosPopup() {
         </a>
 
         <div className={styles.footer}>
+          <label className={styles.dontShowOption}>
+            <input
+              type="checkbox"
+              checked={dontShowAgain}
+              onChange={handleToggleDontShow}
+            />
+            <span>不再顯示推薦</span>
+          </label>
           <button className={styles.doneButton} onClick={closePopup}>
             關閉
           </button>
