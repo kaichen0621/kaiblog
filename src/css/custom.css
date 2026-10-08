@@ -1,11 +1,7 @@
-/* ============================================================
-1. 引入 jf open 粉圓 (Huninn) 字體與設定
-============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Huninn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@400;700&display=swap');
 
 :root {
-  /* 全局字體替換為 Huninn (jf open 粉圓) */
-  --ifm-font-family-base: 'Huninn', -apple-system, BlinkMacSystemFont, 'PingFang TC', sans-serif;
+  --ifm-font-family-base: 'Chiron GoRound TC', -apple-system, sans-serif;
   --ifm-font-weight-base: 400;
   --ifm-font-weight-bold: 700;
   --ifm-heading-font-weight: 700;
@@ -28,12 +24,9 @@ b, strong {
   font-weight: 700 !important;
 }
 
-/* ============================================================
-2. 導覽列與連結細節
-============================================================ */
 .menu__link, .dropdown__link, .navbar__item {
   border-radius: 8px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .menu__link:hover, .navbar__item:hover, .navbar__link--active {
@@ -41,9 +34,6 @@ b, strong {
   color: var(--ifm-color-primary) !important;
 }
 
-/* ============================================================
-3. 自訂元件 (YouTube / Photo / Progress / TOC)
-============================================================ */
 .youtube, .youtube-s {
   max-width: 960px;
   margin: 2rem auto;
@@ -105,7 +95,6 @@ img.photo-border, .photo-border img {
   margin: 0.5rem 0;
 }
 
-/* 目錄隱藏專用規避條件 */
 [class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"],
 [class*="tableOfContents"] [href*="付費解鎖"],
 [class*="tableOfContents"] [href*="停止開放下載！"] {
