@@ -69,6 +69,7 @@ BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格�
 
 
 ## 其他
+#### [B3一段考複習單字](https://hchs-en1.netlify.app)
 #### [限時公開新網站！KAI STUDIO](https://kaistudio-tan.vercel.app/)
 #### [🪩 Discord 社群驗證區](/verify)
 #### [🌐 網站更新紀錄](/docs/update)
