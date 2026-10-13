@@ -8,7 +8,7 @@ pagination_previous: null
 authors: [KAI]
 ---
 
-## 我的網站工具
+
 #### [B3一段考複習單字](https://hchs-en1.netlify.app)
 
 這網站可以讓你必勝學校的單字填空，把握基本分！
@@ -24,7 +24,7 @@ authors: [KAI]
 
 #### [📃 超強翻譜神器](/docs/scoreflow.v4)
 超強的翻譜工具，可使用踏板或者眼睛跟頭翻譜
-#### [達芬奇模板 V4]()
+#### [達芬奇模板 V4](/docs/resolve/resolvepackV4)
 達芬奇的模板，即將推出V5!!!
 #### <a href="/mayday-sim">🎫 搶票專區</a>
 
