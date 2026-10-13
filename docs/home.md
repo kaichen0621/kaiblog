@@ -4,6 +4,8 @@ slug: /
 ---
 
 歡迎來到 **筆記區** 📘  
+## 我的所有網站工具
+[https://kaiblog.is-a.dev/docs/tools](/docs/tools)
 ### 工具
 
 - [超強翻譜神器 V2](/docs/scoreflow.v2)
@@ -19,7 +21,7 @@ slug: /
 - [達芬奇模板V1更新](/docs/resolve/resolvepackV1-update)
 - [達芬奇模板V2更新](/docs/resolve/resolvepackV2-update)
 - [達芬奇模板V3更新](/docs/resolve/resolvepackV3-update)
-- [達芬奇模板V4更新](/docs/resolve/resolvepackV4)
+- [達芬奇模板V4更新](/docs/resolve/resolve.V4)
 
 ### 手機專區
 
