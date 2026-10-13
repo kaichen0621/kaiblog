@@ -1,4 +1,14 @@
-## 工具
+---
+slug: tools
+title: 我的網站工具
+date: 2026-10-13T16:00
+description: "把所有工具都聚集在這裡了"
+pagination_next: null
+pagination_previous: null
+authors: [KAI]
+---
+
+## 我的網站工具
 #### [B3一段考複習單字](https://hchs-en1.netlify.app)
 
 這網站可以讓你必勝學校的單字填空，把握基本分！
