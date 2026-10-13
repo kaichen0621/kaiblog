@@ -1,5 +1,5 @@
 ---
-slug: resolvepackV4
+slug: resolve.V4
 title: 達芬奇模板V4
 sidebar_position: 5
 sidebar_label: 達芬奇模板V4重磅更新
