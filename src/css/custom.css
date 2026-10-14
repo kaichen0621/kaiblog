@@ -6,16 +6,17 @@
   --ifm-font-weight-bold: 700;
   --ifm-heading-font-weight: 700;
 
-  --ifm-color-primary: #38bdf8;       /* 改用更亮眼的霓虹天空藍 */
-  --ifm-color-primary-dark: #0ea5e9;
-  --ifm-color-primary-light: #7dd3fc;
-  --ifm-code-font-size: 95%;
+  /* 你要求的指定藍色 */
+  --ifm-color-primary: #429EEE;
+  --ifm-color-primary-dark: #3786ca;
+  --ifm-color-primary-light: #5baef2;
 }
 
+/* 深色模式下的藍色稍微調淡、柔和一點 */
 html[data-theme='dark'] {
-  --ifm-color-primary: #38bdf8;
-  --ifm-background-color: #0b0f19;    /* 深色模式改用更有科技感的極夜藍黑 */
-  --ifm-background-surface: #111827;
+  --ifm-color-primary: #6bb4f4;
+  --ifm-color-primary-dark: #429EEE;
+  --ifm-color-primary-light: #93cbfc;
 }
 
 body {
@@ -26,109 +27,84 @@ body {
 
 b, strong {
   font-weight: 700 !important;
-  color: var(--ifm-color-primary);
 }
 
-/* 1. 酷炫毛玻璃頂部導覽列 */
-.navbar {
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  background-color: rgba(255, 255, 255, 0.85) !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
-}
-
-html[data-theme='dark'] .navbar {
-  background-color: rgba(11, 15, 25, 0.8) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
+/* 導覽列與選單圓角化（保持原本穩定結構） */
 .menu__link, .dropdown__link, .navbar__item {
-  border-radius: 10px;
+  border-radius: 8px;
   font-weight: 600;
-  transition: all 0.2s ease;
 }
 
 .menu__link:hover, .navbar__item:hover, .navbar__link--active {
-  background: rgba(56, 189, 248, 0.12);
+  background: rgba(66, 158, 238, 0.12);
   color: var(--ifm-color-primary) !important;
 }
 
-/* 2. 內文排版升級：呼吸感與精緻標題 */
+/* 內文排版與呼吸感 */
 .markdown div > p, .markdown p {
-  margin-bottom: 1.6rem;
-  line-height: 1.95;
+  margin-bottom: 1.5rem;
+  line-height: 1.9;
 }
 
 .markdown h2 {
   font-weight: 700;
-  position: relative;
-  padding-left: 0.8rem;
   border-left: 4px solid var(--ifm-color-primary);
-  margin-top: 2.8rem;
-  margin-bottom: 1.2rem;
+  padding-left: 0.6rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-/* 3. 程式碼與區塊微調（科技感圓角與陰影） */
+/* 程式碼區塊圓角 */
 code {
   border-radius: 6px;
   padding: 0.2rem 0.4rem;
-  border: 1px solid rgba(125, 125, 125, 0.2);
 }
 
 [class*="codeBlockContainer"] {
-  border-radius: 14px;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(125, 125, 125, 0.15);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* 4. 質感 YouTube 嵌入區塊 */
+/* YouTube 嵌入區塊 */
 .youtube, .youtube-s {
   max-width: 960px;
-  margin: 2.5rem auto;
-  padding: 1rem;
-  background: linear-gradient(135deg, rgba(56, 189, 248, 0.08), rgba(56, 189, 248, 0.02));
-  border: 1px solid rgba(56, 189, 248, 0.2);
-  border-radius: 18px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+  margin: 2rem auto;
+  padding: 1.2rem;
+  background: rgba(66, 158, 238, 0.08);
+  border-radius: 14px;
+  border: 1px solid rgba(66, 158, 238, 0.15);
 }
 
 [data-theme='dark'] .youtube,
 [data-theme='dark'] .youtube-s {
-  background: linear-gradient(135deg, rgba(56, 189, 248, 0.12), rgba(17, 24, 39, 0.6));
-  border: 1px solid rgba(56, 189, 248, 0.25);
+  background: rgba(107, 180, 244, 0.1);
+  border: 1px solid rgba(107, 180, 244, 0.2);
 }
 
 .youtube iframe, .youtube-s iframe {
   width: 100%;
   aspect-ratio: 16/9;
-  border-radius: 12px;
+  border-radius: 10px;
   border: 0;
 }
 
-/* 5. 潮流相片框效果（微浮動與光暈） */
+/* 照片框樣式 */
 .photo-border {
   display: block;
-  margin: 2.5rem auto;
-  padding: 0.8rem;
-  background: rgba(56, 189, 248, 0.05);
-  border: 1px solid rgba(56, 189, 248, 0.2);
-  border-radius: 20px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: rgba(66, 158, 238, 0.08);
+  border-radius: 16px;
   max-width: 100%;
   box-sizing: border-box;
   overflow: hidden;
-  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
-}
-
-.photo-border:hover {
-  transform: translateY(-4px);
+  border: 1px solid rgba(66, 158, 238, 0.15);
 }
 
 [data-theme='dark'] .photo-border,
 [data-theme='dark'] img.photo-border {
-  background: rgba(17, 24, 39, 0.8);
-  border: 1px solid rgba(56, 189, 248, 0.3);
+  background: rgba(107, 180, 244, 0.1);
+  border: 1px solid rgba(107, 180, 244, 0.2);
 }
 
 img.photo-border, .photo-border img {
@@ -137,34 +113,33 @@ img.photo-border, .photo-border img {
   height: 400px !important;
   object-fit: cover;
   margin: 0 auto;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
-/* 6. 霓虹科技感自訂按鈕 */
+/* 自訂按鈕 */
 .custom-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 28px;
+  padding: 10px 24px;
   font-size: 1rem;
   font-weight: 700;
-  color: #fff !important;
-  background: linear-gradient(135deg, #38bdf8, #0284c7);
-  border-radius: 12px;
+  color: white !important;
+  background: var(--ifm-color-primary);
+  border-radius: 8px;
   text-decoration: none !important;
   border: none;
   cursor: pointer;
-  margin: 0.8rem 0;
-  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
-  transition: all 0.25s ease;
+  margin: 0.5rem 0;
+  box-shadow: 0 4px 12px rgba(66, 158, 238, 0.3);
+  transition: transform 0.2s ease;
 }
 
 .custom-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.6);
 }
 
-/* 7. 隱藏特定目錄項目 */
+/* 隱藏特定目錄項目 */
 [class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"],
 [class*="tableOfContents"] [href*="付費解鎖"],
 [class*="tableOfContents"] [href*="停止開放下載！"] {
@@ -177,16 +152,16 @@ img.photo-border, .photo-border img {
   display: none !important;
 }
 
-/* 8. 手機版優化 */
+/* 手機版適應 */
 @media (max-width: 768px) {
   .photo-border {
-    padding: 0.6rem;
-    margin: 1.8rem auto;
+    padding: 0.8rem;
+    margin: 1.5rem auto;
   }
 
   img.photo-border, .photo-border img {
-    width: 90% !important;
-    height: 200px !important;
-    border-radius: 8px;
+    width: 85% !important;
+    height: 180px !important;
+    border-radius: 6px;
   }
 }
