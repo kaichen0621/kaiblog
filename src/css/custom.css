@@ -25,6 +25,7 @@ b, strong {
   font-weight: 700 !important;
 }
 
+/* 導覽列與選單圓角化 */
 .menu__link, .dropdown__link, .navbar__item {
   border-radius: 8px;
   font-weight: 600;
@@ -35,6 +36,31 @@ b, strong {
   color: var(--ifm-color-primary) !important;
 }
 
+/* 內文排版與呼吸感優化 */
+.markdown div > p, .markdown p {
+  margin-bottom: 1.5rem;
+  line-height: 1.9;
+}
+
+.markdown h2 {
+  font-weight: 700;
+  border-bottom: 2px solid rgba(66, 158, 238, 0.2);
+  padding-bottom: 0.3rem;
+  margin-top: 2.5rem;
+}
+
+/* 程式碼區塊與行內代碼微調 */
+code {
+  border-radius: 6px;
+  padding: 0.2rem 0.4rem;
+}
+
+[class*="codeBlockContainer"] {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* YouTube 嵌入區塊 */
 .youtube, .youtube-s {
   max-width: 960px;
   margin: 2rem auto;
@@ -55,6 +81,7 @@ b, strong {
   border: 0;
 }
 
+/* 照片框樣式 */
 .photo-border {
   display: block;
   margin: 2rem auto;
@@ -80,6 +107,7 @@ img.photo-border, .photo-border img {
   border-radius: 8px;
 }
 
+/* 自訂按鈕 */
 .custom-btn {
   display: inline-flex;
   align-items: center;
@@ -96,6 +124,7 @@ img.photo-border, .photo-border img {
   margin: 0.5rem 0;
 }
 
+/* 隱藏特定目錄項目 */
 [class*="tableOfContents"] [href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"],
 [class*="tableOfContents"] [href*="付費解鎖"],
 [class*="tableOfContents"] [href*="停止開放下載！"] {
@@ -108,6 +137,7 @@ img.photo-border, .photo-border img {
   display: none !important;
 }
 
+/* 手機版適應 */
 @media (max-width: 768px) {
   .photo-border {
     padding: 0.8rem;
