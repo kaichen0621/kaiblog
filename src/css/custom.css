@@ -73,7 +73,11 @@ html[data-theme='dark'] .navbar--fixed-top {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4) !important;
 }
 
+/* ============================================================
+🔥 手機版：液態玻璃側邊欄 (終極完整模糊修正)
+============================================================ */
 @media (max-width: 996px) {
+  /* 徹底清空所有預設底色，確保上方 Logo 區也有完整毛玻璃效果 */
   .navbar-sidebar,
   .navbar-sidebar__brand,
   .navbar-sidebar__items,
@@ -91,15 +95,16 @@ html[data-theme='dark'] .navbar--fixed-top {
     bottom: 0 !important;
     width: 85vw !important;
     height: 100vh !important;
-    border-radius: 0 28px 28px 0 !important;
+    border-radius: 0 !important; /* 修正：讓側邊欄完美貼齊螢幕頂部與邊緣，不留突兀圓角 */
     margin: 0 !important;
 
-    backdrop-filter: blur(30px) saturate(180%) brightness(1.05) !important;
-    -webkit-backdrop-filter: blur(30px) saturate(200%) brightness(1.05) !important;
+    /* 超強毛玻璃模糊處理，連上方看得到的穿透問題一併解決 */
+    backdrop-filter: blur(35px) saturate(200%) brightness(1.05) !important;
+    -webkit-backdrop-filter: blur(35px) saturate(200%) brightness(1.05) !important;
 
-    background: rgba(255, 255, 255, 1) !important;
-    border-right: 1.5px solid rgba(255, 255, 255, 1) !important;
-    box-shadow: 15px 0 50px rgba(0, 0, 0, 0.1) !important;
+    background: rgba(255, 255, 255, 0.85) !important;
+    border-right: 1.5px solid rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 15px 0 50px rgba(0, 0, 0, 0.15) !important;
 
     transform: translateX(-100%);
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
@@ -108,9 +113,9 @@ html[data-theme='dark'] .navbar--fixed-top {
   }
 
   [data-theme='dark'] .navbar-sidebar {
-    background: rgba(15, 15, 18, 1) !important;
-    border-right: 1.5px solid rgba(255, 255, 255, 0) !important;
-    box-shadow: 15px 0 50px rgba(0, 0, 0, 0.5) !important;
+    background: rgba(15, 15, 18, 0.85) !important;
+    border-right: 1.5px solid rgba(255, 255, 255, 0.05) !important;
+    box-shadow: 15px 0 50px rgba(0, 0, 0, 0.6) !important;
   }
 
   .navbar-sidebar--show .navbar-sidebar {
@@ -123,15 +128,16 @@ html[data-theme='dark'] .navbar--fixed-top {
     left: 0 !important;
     width: 100vw !important;
     height: 100vh !important;
-    background: rgba(0, 0, 0, 0.3) !important;
-    backdrop-filter: blur(4px) !important;
-    -webkit-backdrop-filter: blur(4px) !important;
+    background: rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
     z-index: 20 !important;
   }
 
   .navbar-sidebar__brand {
+    background: transparent !important;
     border-bottom: 1px solid rgba(128, 128, 128, 0.1);
-    padding: 1rem 1.5rem;
+    padding: 1.2rem 1.5rem;
   }
 
   .navbar-sidebar .menu__link {
@@ -246,4 +252,22 @@ html[data-theme='dark'] :is(.path-box, .path-box-tab) {
   background: #020617;
   border-color: #1e293b;
   color: #e5e7eb;
+}
+
+/* ============================================================
+✨ 自訂元件與付費解鎖專用毛玻璃效果 (還原精緻模糊區塊)
+============================================================ */
+.blur-content-box {
+  position: relative;
+  border-radius: 16px;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(66, 158, 238, 0.2);
+}
+
+html[data-theme='dark'] .blur-content-box {
+  background: rgba(20, 20, 22, 0.6);
+  border: 1px solid rgba(107, 180, 244, 0.2);
 }
