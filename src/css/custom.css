@@ -186,21 +186,6 @@ html[data-theme='dark'] .gray {
   color: #949597;
 }
 
-/* 只針對文章內標準的 h2 標題加上美化左側條，避免影響到自訂元件 */
-.markdown > h2,
-.theme-doc-markdown > h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  border-left: 5px solid var(--ifm-color-primary);
-  padding-left: 0.8rem;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-  background: rgba(66, 158, 238, 0.04);
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
-  border-radius: 0 8px 8px 0;
-}
-
 main ul:not(.breadcrumbs) {
   margin: 0 0 2rem;
   padding-left: 2rem;
