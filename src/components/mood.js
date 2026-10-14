@@ -6,7 +6,8 @@ export default function MoodButton() {
     "「財力根本不重要，是奧客的人就會是奧客。」",
     "「創作 vs. 執行，今天選哪一個？」",
     "「以上我沒有結論，只是無聊時的腦內碎碎唸。」",
-    "「會珍惜的人就是會珍惜。」"
+    "「最美的願望，一定最瘋狂」",
+    "「如果你，忘了我，就讓風，代替我」"
   ];
 
   const [currentQuote, setCurrentQuote] = useState("點擊下方按鈕，抽今天的隨機碎碎唸 🎲");
