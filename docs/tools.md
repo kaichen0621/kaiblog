@@ -8,9 +8,9 @@ pagination_previous: null
 authors: [KAI]
 ---
 
-#### <a href="/macrolab.html">MacroLab</a>
+####  <a href="/macrolab.html">MacroLab</a>
 可創建達芬奇模板
-#### <a href="/musicgen.html">靈感生成器</a>
+####  <a href="/musicgen.html">靈感生成器</a>
 可生成靈感的生成器
 #### [B3一段考複習單字](https://hchs-en1.netlify.app)
 
