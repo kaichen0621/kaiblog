@@ -8,7 +8,10 @@ pagination_previous: null
 authors: [KAI]
 ---
 
-
+#### <a href="/macrolab.html">MacroLab</a>
+可創建達芬奇模板
+#### <a href="/musicgen.html">靈感生成器</a>
+可生成靈感的生成器
 #### [B3一段考複習單字](https://hchs-en1.netlify.app)
 
 這網站可以讓你必勝學校的單字填空，把握基本分！
@@ -24,8 +27,10 @@ authors: [KAI]
 
 #### [📃 超強翻譜神器](/docs/scoreflow.v4)
 超強的翻譜工具，可使用踏板或者眼睛跟頭翻譜
-#### [達芬奇模板 V4](/docs/resolve/resolvepackV4)
+
+#### [達芬奇模板 V4](/docs/resolve/resolve.V4)
 達芬奇的模板，即將推出V5!!!
+
 #### <a href="/mayday-sim">🎫 搶票專區</a>
 
 有需要五月天搶票的話，還要來這邊練習，但可能會不太怎麼樣
@@ -38,3 +43,10 @@ authors: [KAI]
 #### <a href="/ashin.html">五月天阿信相片館</a>
 
 放了滿滿阿信的照片...😭想你了
+#### <a href="/listen.html">大學節奏訓練館</a>
+
+我自記練習時開發的，大學考試基礎節奏大進步
+
+#### <a href="/edtype.html">打字練習工具</a>
+
+我自記練習時開發的，幫助快速打字！
