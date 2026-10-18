@@ -14,7 +14,7 @@ slug: /
 
 ### 教學資源區
 
-- [113-1 科技音樂教學進度](/docs/Tutorial/113tech-music)
+- [113-1 科技音樂教學進度](/docs/resource/113tech-music)
 
 ### DaVinci Resolve 教學區
 

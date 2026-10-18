@@ -4,6 +4,8 @@ slug: /update
 ---
 
 # ⬆︎ 更新紀錄 `/update`
+## #19 2026-10-18
+新增 Resource 頁面
 ## #18 2026-10-02
 更新 Github 裡面的 README.md 檔案
 ## #17 2026-09-25

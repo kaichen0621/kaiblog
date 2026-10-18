@@ -43,7 +43,20 @@ const config = {
     ],
   ],
 
+
+
+
   plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'resource',              // 👈 必須給一個獨一無二的 id
+        path: 'resource',            // 👈 對應你剛建的 music 資料夾
+        routeBasePath: 'resource',   // 👈 網址會變成你的網址/music
+        sidebarPath: './musicsidebars.js',
+      },
+    ],
+
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
@@ -146,6 +159,7 @@ const config = {
           { to: '/use', label: '愛用', position: 'left' },
           { to: '/now', label: '近況', position: 'left' },
           { to: '/about', label: '關於', position: 'left' },
+          { to: '/article', label: '資源', position: 'right' },
           { to: '/search', label: '搜尋', position: 'right' },
         ],
       },
