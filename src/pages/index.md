@@ -31,25 +31,31 @@ slug: /
 
 ## 頁面回歸
 先恭喜這兩個頁面讓我重新使用他們
+
 ## [近況](/now)
 有空寫一下最近發生的事情
 ## [使用](/use)
 介紹我認為好用的工具，與 `應用程式` 不同的是，工具不是應用程式🤣
 
+
+## [資源？文章？](/resource)
+
+敬請期待我的新區域～
+
 ## 🛠️ 其他小技巧！
 
-* **RSS 訂閱**：你可以用 RSS 追蹤我
+* **RSS 訂閱**：你可以用 RSS 訂閱我
     - 連結：`https://kaiblog.is-a.dev`
 * **全站搜尋**：按下 `Ctrl + K` 即可搜尋關鍵字！
 * **聯繫我**：有任何建議，歡迎寫信至 `kaigithub0621@gmail.com`
 
 
 
-## [🎬 達芬奇免費模板 😍](/docs/resolve/resolvepackV4)
+## [🎬 達芬奇免費模板 😍](/docs/resolve/resolve.V4)
 我更新 **ResolveV4Pack**
 最新的下載在 itch.io 速度超級快！
 替達芬奇製作出許多模板，均為免費模板！
-
+#### 先別急著下載，V5 即將登場
 
 ## [📜 BlogBlog.Club](https://blogblog.club/)
  
@@ -68,13 +74,4 @@ BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格�
 </div>
 
 
-## 其他
-#### [B3一段考複習單字](https://hchs-en1.netlify.app)
-#### [限時公開新網站！KAI STUDIO](https://kaistudio-tan.vercel.app/)
-#### [🪩 Discord 社群驗證區](/verify)
-#### [🌐 網站更新紀錄](/docs/update)
-#### [📃 超強翻譜神器](/docs/scoreflow.v4)
-#### <a href="/mayday-sim">🎫 搶票專區</a>
-#### <a href="/random-spin.html">💞 隨機轉盤</a>
-#### <a href="/Train_EMU.html">🚝 TRAIN_EMU</a>
-#### <a href="/ashin.html">五月天阿信相片館</a>
+### [🌐 網站更新紀錄](/docs/update)

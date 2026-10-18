@@ -159,7 +159,7 @@ const config = {
           { to: '/use', label: '愛用', position: 'left' },
           { to: '/now', label: '近況', position: 'left' },
           { to: '/about', label: '關於', position: 'left' },
-          { to: '/article', label: '資源', position: 'right' },
+          { to: '/resource', label: '資源', position: 'right' },
           { to: '/search', label: '搜尋', position: 'right' },
         ],
       },
