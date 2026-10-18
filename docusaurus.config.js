@@ -28,6 +28,7 @@ const config = {
         },
         docs: {
           sidebarPath: './sidebars.js',
+          //routeBasePath: '/', // 👈 把 docs 的預設前綴路徑直接拿掉！
         },
         blog: {
           showReadingTime: true,
@@ -189,6 +190,8 @@ const config = {
         sidebar: {
           hideable: true,
           autoCollapseCategories: true,
+
+
         },
       },
     }),
