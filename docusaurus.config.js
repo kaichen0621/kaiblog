@@ -138,9 +138,12 @@ const config = {
         items: [
           { to: '/blog', label: '貼文', position: 'left' },
           { to: '/blog/archive', label: '列表', position: 'left' },
-          { to: '/random', label: '隨機', position: 'left' },
           { to: '/docs', label: '筆記', position: 'left' },
+          { to: '/docs/tools', label: '工具', position: 'left' },
+          { to: '/random', label: '隨機', position: 'left' },
           { to: '/app', label: '程式', position: 'left' },
+          { to: '/use', label: '愛用', position: 'left' },
+          { to: '/now', label: '近況', position: 'left' },
           { to: '/about', label: '關於', position: 'left' },
           { to: '/search', label: '搜尋', position: 'right' },
         ],

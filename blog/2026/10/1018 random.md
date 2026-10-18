@@ -1,0 +1,27 @@
+---
+slug: mayday-no4
+title: MAYDAY ETUDES NO.04
+date: 2026-10-18T18:00
+description: 這次又來了哈哈哈
+draft: true
+---
+哈囉大家好，還記得之前的隨機文章嗎？忘記的 --> [看這裡](/blog/random02)
+
+### 這次的[舊文章](/blog/digital-perform-RC)
+
+根據文章內容，提取以下關鍵字：
+ * 科技音樂
+ * 成果發表
+ * MAYDAY ETUDES NO.03
+ * 編曲版
+ * 合成器
+ * 空間效果
+ * 動態處理
+ * 音樂工程
+ * PDF
+ * 生日解鎖碼
+ * No.04
+ * 製作
+
+
+ 抱歉身為雙子座我有選擇障礙，不然選 成果發表 好了

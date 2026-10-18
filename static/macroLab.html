@@ -3,10 +3,11 @@
   @import url(https://fonts.googleapis.com/css?family=Google+Sans+Text);
   html {
     font-family: 'Google Sans Text', 'Google Sans';
-    font-size: 14px;
+    font-size: 15px;
     color-scheme: light dark;
     background: light-dark(white, black);
     color: light-dark(black, white);
+
   }
 </style>
 
@@ -113,7 +114,7 @@ if ('serviceWorker' in navigator) {
 
         --accent: 139 92 246;         /* #8b5cf6 Violet */
         --accent-glow: rgba(139, 92, 246, 0.4);
-        
+
         --glass-bg: rgba(30, 41, 59, 0.4);
         --glass-border: rgba(255, 255, 255, 0.05);
         --glass-input: rgba(15, 23, 42, 0.6);
@@ -127,13 +128,13 @@ if ('serviceWorker' in navigator) {
         --surface-800: 255 255 255; /* White Panels */
         --surface-700: 203 213 225; /* #cbd5e1 (Slate 300) Borders */
         --surface-600: 148 163 184; /* #94a3b8 (Slate 400) Muted */
-        
+
         /* Darkened for better contrast in light mode */
         --surface-500: 71 85 105;   /* #475569 (Slate 600) Text */
         --surface-400: 51 65 85;    /* #334155 (Slate 700) Darker Text */
         --surface-300: 30 41 59;    /* #1e293b (Slate 800) Headings */
         --surface-200: 15 23 42;    /* #0f172a (Slate 900) Darkest/Highlight */
-        
+
         --surface-100: 15 23 42;    /* Slate 900 (Blackish) */
         --surface-50:  2 6 23;      /* Slate 950 (Blackest) */
 
@@ -141,7 +142,7 @@ if ('serviceWorker' in navigator) {
         --primary-hover: 3 105 161;   /* #0369a1 (Sky 700) */
         --primary-active: 12 74 110;  /* #0c4a6e (Sky 900) */
         --primary-glow: rgba(2, 132, 199, 0.15);
-        
+
         --glass-bg: rgba(255, 255, 255, 0.65);
         --glass-border: rgba(0, 0, 0, 0.08);
         --glass-input: rgba(245, 248, 252, 0.8);
@@ -162,19 +163,19 @@ if ('serviceWorker' in navigator) {
         height: 6px;
       }
       ::-webkit-scrollbar-track {
-        background: transparent; 
+        background: transparent;
       }
       ::-webkit-scrollbar-thumb {
-        background: rgb(var(--surface-700)); 
+        background: rgb(var(--surface-700));
         border-radius: 2px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: rgb(var(--surface-600)); 
+        background: rgb(var(--surface-600));
       }
       ::-webkit-scrollbar-corner {
         background: transparent;
       }
-      
+
       .glass-panel {
         background: var(--glass-bg);
         backdrop-filter: blur(16px);
@@ -182,7 +183,7 @@ if ('serviceWorker' in navigator) {
         border: 1px solid var(--glass-border);
         transition: background 0.3s ease, border-color 0.3s ease;
       }
-      
+
       .glass-input {
         background: var(--glass-input);
         border: 1px solid var(--glass-border);
@@ -193,7 +194,7 @@ if ('serviceWorker' in navigator) {
         border-color: rgb(var(--primary));
         box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.3);
       }
-      
+
       [data-theme='light'] .glass-input:focus {
          box-shadow: 0 0 0 1px rgba(2, 132, 199, 0.2);
       }
