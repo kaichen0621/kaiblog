@@ -8,7 +8,7 @@ pagination_previous: null
 authors: [KAI]
 ---
 
-####  <a href="/macrolab.html">MacroLab</a>
+####  <a href="/macroLab.html">MacroLab</a>
 可創建達芬奇模板
 ####  <a href="/musicgen.html">靈感生成器</a>
 可生成靈感的生成器
