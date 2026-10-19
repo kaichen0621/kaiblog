@@ -576,3 +576,5 @@ https://i.imgur.com/Q9beyPF.jpg
 
 好的，這一次的大雞腿探秘就到這裡。有不正確的地方，請阿信、士杰等老師指正。
 
+
+#### 原文連結：https://www.ptt.cc/bbs/MayDay/M.1560255790.A.EA4.html
