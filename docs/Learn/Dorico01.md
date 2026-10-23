@@ -1,7 +1,7 @@
 ---
 slug: dorico01
 title: Dorico 快速上手 DAY01
-sidebar_position: 1
+sidebar_position: 2
 sidebar_label: Dorico DAY01
 authors: [KAI]
 tags: [DAYS]
