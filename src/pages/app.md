@@ -8,12 +8,11 @@ description: "我的 Mac 軟體清單"
 
 # 📱 KAI macOS 電腦裡有什麼 `/app`
 
-- 最後更新：2026-10-18 01:00
-- **總共 `55` 個 軟體**
+- 最後更新：2026-10-23 01:00
+- **總共 `53` 個 軟體**
 
 ## 這是我在 Mac 上的軟體清單
 
-# macOSAPP
 
 1. Addictive Drums 2 Demo : 好用鼓音源，五月天用
 2. Addictive Keys Demo : 好用鋼琴音源，我覺得超好聽
@@ -39,34 +38,32 @@ description: "我的 Mac 軟體清單"
 22. Keynote : 蘋果簡報工具
 23. Kontakt 8 : 強大的採樣音源主機
 24. Kontakt Library Manager : 介面簡潔好用的管理音色工具
-25. LightCraft : 修圖萬用的 Adobe 替代品之一
-26. Line : 必要但笨重的通訊軟體
-27. LocalSend : 傳輸檔案好工具
-28. Logic Pro : 蘋果自家 DAW，想刪除了！ (錄音老師推薦不要刪)
-29. Microsoft Excel : 試算表工具，好想刪除！
-30. Microsoft PowerPoint : 簡報工具，好想刪除！
-31. Microsoft Word : 文書軟體，好想刪除！
-32. Motrix : 免費速度快得下載器，2.0 超級好用
-33. Musescore 4 : 開源打譜軟體，簡單好用
-34. Native Access : Kontakt 官方的入庫管理工具
-35. Numbers : 蘋果表格工具
-36. OBS : 強大的開源螢幕錄影與直播軟體
-37. Obsidian : 確定從 Anytype 跳槽到這個了！
-38. OpenScreen : 錄影騎士還可以，但是常當機
-39. Pages : 蘋果文件排版工具
-40. Parallels Desktop : Windows 虛擬機，效能強大
-41. Pearcleaner : 乾淨卸載 App 的利器
-42. PhotoCraft : PS 開源替代品
-43. PdfCraft : AP 開源替代品
-44. Roblox : 我唯一玩的遊戲
-45. Roblox Studio : 惡搞遊戲挺好用，我做的遊戲：[超級奧比](https://www.roblox.com/games/130801211879687/)
-46. RustDesk : 遠端桌面工具
-47. SmartSub : 生成字幕，還在研究
-48. SoundCraft : 這個不知道能不能跟 Audacity 4 比
-49. Steinberg Library Manager : 管理 VST 音色庫路徑與授權的工具
-50. UVR 5 : 去人聲
-51. Vital : 免費合成器！
-52. Vorssaint : 開源強大的工具彙整工具，只能說太強大了
-53. Vovious : 調音準很方便，請別買了，用 [WiPitch](https://wiwi.blog/blog/wipitch)
-54. XO : 把我電腦的所有鼓的 Sample 變成資料庫，方便找類似的酷工具
-55. Zed : 用來替代 VSCode ，更輕量、簡單！
+25. Line : 必要但笨重的通訊軟體
+26. LocalSend : 傳輸檔案好工具
+27. Logic Pro : 蘋果自家 DAW，想刪除了！ (錄音老師推薦不要刪)
+28. Microsoft Excel : 試算表工具，好想刪除！
+29. Microsoft PowerPoint : 簡報工具，好想刪除！
+30. Microsoft Word : 文書軟體，好想刪除！
+31. Motrix : 免費速度快得下載器，2.0 超級好用
+32. Musescore 4 : 開源打譜軟體，簡單好用
+33. Native Access : Kontakt 官方的入庫管理工具
+34. Numbers : 蘋果表格工具
+35. OBS : 強大的開源螢幕錄影與直播軟體
+36. Obsidian : 確定從 Anytype 跳槽到這個了！
+37. OpenScreen : 錄影騎士還可以，但是常當機
+38. Pages : 蘋果文件排版工具
+39. Parallels Desktop : Windows 虛擬機，效能強大
+40. Pearcleaner : 乾淨卸載 App 的利器
+41. PdfCraft : AP 開源替代品
+42. PlugPane : 清理插件的工具
+43. Roblox : 我唯一玩的遊戲
+44. RustDesk : 遠端桌面工具
+45. SoundCraft : 這個不知道能不能跟 Audacity 4 比
+46. Steinberg Library Manager : 管理 VST 音色庫路徑與授權的工具
+47. UVR 5 : 去人聲
+48. Vibe : 生成字幕超好用
+49. Vital : 免費合成器！
+50. Vorssaint : 開源強大的工具彙整工具，只能說太強大了
+51. Vovious : 調音準很方便，請別買了，用 [WiPitch](https://wiwi.blog/blog/wipitch)
+52. XO : 把我電腦的所有鼓的 Sample 變成資料庫，方便找類似的酷工具
+53. Zed : 用來替代 VSCode ，更輕量、簡單！
