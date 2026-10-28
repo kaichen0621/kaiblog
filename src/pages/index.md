@@ -75,3 +75,6 @@ BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格�
 
 
 ### [🌐 網站更新紀錄](/docs/update)
+### <a href="/BVE.html">BVE Route Studio</a>
+
+開發 BVE 超好用工具！

@@ -4,6 +4,8 @@ slug: /update
 ---
 
 # ⬆︎ 更新紀錄 `/update`
+## #20 2026-10-28
+新增 BVE Route Studio !
 ## #19 2026-10-18
 新增 Resource 頁面
 ## #18 2026-10-02
