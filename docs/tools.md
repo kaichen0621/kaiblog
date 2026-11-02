@@ -15,13 +15,15 @@ authors: [KAI]
 可創建達芬奇模板
 ####  <a href="/musicgen.html">靈感生成器</a>
 可生成靈感的生成器
-#### [B3一段考複習單字](https://hchs-en1.netlify.app)
+####  <a href="/vocab-quiz.html">B3一段考複習單字</a>
 
 這網站可以讓你必勝學校的單字填空，把握基本分！
-#### [限時公開新網站！KAI STUDIO](https://kaistudio-tan.vercel.app/)
+#### [限時公開新網站！KAI STUDIO](https://kaistudio2.vercel.app/)
 
 這裡會放教學影片或者一些教學性質相關的文章
 
+> kaistudio-tan 版已不支援
+> 
 #### [🪩 Discord 社群驗證區](/verify)
 
 如果你有加入我們 DC，這裡可以讓你驗證並進來討論
