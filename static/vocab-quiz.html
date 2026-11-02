@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="theme-color" content="#000000">
+  <title>英文單字複習｜B5 L1–L2</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --app-height: 100dvh;
+      --vv-top: 0px;
+      --screen-bg: #000000;
+      --white: #FFFFFF;
+      --line: #FFFFFF;
+      --green: #00C853;
+      --red: #FF1744;
+    }
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #000000; }
+    body {
+      color: #FFFFFF;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      -webkit-text-size-adjust: 100%;
+      overscroll-behavior: none;
+    }
+    button, input { font: inherit; color: #FFFFFF; }
+    button {
+      min-height: 48px;
+      padding: 11px 16px;
+      border: 2px solid #FFFFFF;
+      border-radius: 9px;
+      background: #000000;
+      color: #FFFFFF;
+      font-size: 17px;
+      font-weight: 750;
+      cursor: pointer;
+      touch-action: manipulation;
+    }
+    button:focus-visible, input:focus-visible { outline: 3px solid #FFFFFF; outline-offset: 3px; }
+    button:disabled { opacity: .55; cursor: default; }
+    [hidden] { display: none !important; }
+
+    .app-shell {
+      position: fixed;
+      top: var(--vv-top);
+      left: 0;
+      width: 100%;
+      height: var(--app-height);
+      min-height: 0;
+      overflow: hidden;
+      background: var(--screen-bg);
+      color: #FFFFFF;
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+    body.correct-state .app-shell { background: var(--green); }
+    body.wrong-state .app-shell { background: var(--red); }
+
+    .screen { width: 100%; height: 100%; min-height: 0; }
+    .home-screen {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 28px 24px;
+      overflow-y: auto;
+    }
+    .eyebrow { margin: 0; font-size: 13px; font-weight: 800; letter-spacing: .16em; }
+    .home-title { margin: 0; max-width: 650px; font-size: clamp(36px, 9vw, 64px); line-height: 1.08; font-weight: 900; letter-spacing: -.035em; }
+    .home-subtitle { margin: 0; font-size: clamp(18px, 4.8vw, 23px); line-height: 1.55; font-weight: 650; }
+    .home-info { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 2px; font-size: 15px; line-height: 1.5; }
+    .home-info span { border: 1px solid #FFFFFF; border-radius: 999px; padding: 6px 11px; }
+    .start-button { margin-top: 8px; width: min(100%, 340px); min-height: 58px; font-size: 20px; }
+    .home-footnote { margin: 0; font-size: 13px; line-height: 1.6; }
+
+    .quiz-screen { display: flex; flex-direction: column; overflow: hidden; }
+    .quiz-topbar {
+      flex: 0 0 53px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 0 20px;
+      border-bottom: 1px solid #FFFFFF;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .025em;
+    }
+    .question-area { flex: 0 0 auto; width: 100%; padding: 0 10px; }
+    #questionCanvas { display: block; width: 100%; height: auto; color: #FFFFFF; }
+    .answer-zone { flex: 0 0 auto; padding: 2px 16px 0; }
+    .answer-form { width: 100%; display: flex; align-items: stretch; gap: 8px; }
+    .answer-input {
+      flex: 1 1 auto;
+      width: 0;
+      min-width: 0;
+      height: 54px;
+      border: 2px solid #FFFFFF;
+      border-radius: 9px;
+      background: #000000;
+      color: #FFFFFF;
+      padding: 0 14px;
+      font-size: 20px;
+      font-weight: 650;
+      outline: none;
+      box-shadow: none;
+      caret-color: #FFFFFF;
+    }
+    .answer-input::placeholder { color: #FFFFFF; opacity: 1; }
+    .submit-button { flex: 0 0 auto; min-width: 104px; height: 54px; }
+    .skip-button { display: block; width: 100%; min-height: 43px; margin-top: 8px; border-width: 1px; font-size: 15px; }
+    .quiz-footer { flex: 1 1 auto; min-height: 22px; display: flex; align-items: flex-end; justify-content: center; padding: 8px 16px 14px; }
+    .quiz-footer p { margin: 0; font-size: 12px; line-height: 1.45; text-align: center; }
+
+    .feedback {
+      flex: 1 1 auto;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px;
+      padding: 8px 20px 16px;
+      overflow-y: auto;
+    }
+    .feedback-status { margin: 0; font-size: clamp(24px, 6vw, 34px); line-height: 1.15; font-weight: 900; }
+    .answer-word { margin: 0; font-size: clamp(27px, 7vw, 38px); line-height: 1.15; font-weight: 900; overflow-wrap: anywhere; }
+    .definition-label { margin: 2px 0 0; font-size: 13px; font-weight: 800; letter-spacing: .08em; }
+    .definition-text { margin: 0; font-size: clamp(20px, 5vw, 25px); line-height: 1.4; font-weight: 750; }
+    .feedback-extra { margin: 0; font-size: 14px; line-height: 1.5; }
+    .next-button { width: 100%; margin-top: auto; min-height: 52px; }
+
+    .finish-screen {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 18px;
+      padding: 28px 24px;
+      overflow-y: auto;
+    }
+    .finish-title { margin: 0; font-size: clamp(36px, 9vw, 58px); line-height: 1.08; font-weight: 900; }
+    .finish-score { margin: 0; font-size: clamp(26px, 7vw, 42px); font-weight: 850; }
+    .finish-detail { margin: 0; font-size: 18px; line-height: 1.6; }
+    .restart-button { width: 100%; max-width: 360px; min-height: 56px; margin-top: 8px; }
+
+    body.keyboard-open .quiz-topbar { flex-basis: 42px; font-size: 12px; }
+    body.keyboard-open .question-area { padding-left: 8px; padding-right: 8px; }
+    body.keyboard-open .answer-zone { padding-top: 0; }
+    body.keyboard-open .skip-button,
+    body.keyboard-open .quiz-footer { display: none; }
+    body.keyboard-open .feedback { display: none; }
+
+    @media (min-width: 680px) {
+      .home-screen, .finish-screen { padding-left: max(36px, calc((100vw - 620px) / 2)); padding-right: max(36px, calc((100vw - 620px) / 2)); }
+      .quiz-screen { max-width: 760px; margin: 0 auto; border-left: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF; }
+      .question-area { padding: 0 20px; }
+      .answer-zone { padding-left: 24px; padding-right: 24px; }
+      .feedback { padding-left: 28px; padding-right: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="app-shell" id="appShell">
+    <section class="screen home-screen" id="homeScreen" aria-labelledby="homeTitle">
+      <p class="eyebrow">VOCABULARY TRAINING · B5 L1–L2</p>
+      <h1 class="home-title" id="homeTitle">英文單字<br>複習測驗</h1>
+      <p class="home-subtitle">從英文上下文找出最適合的單字。<br>每一輪隨機抽出 10 題，不重複。</p>
+      <div class="home-info" aria-label="測驗資訊">
+        <span>45 個單字</span><span>每輪 10 題</span><span>答完立即看中譯</span>
+      </div>
+      <button class="start-button" id="startButton" type="button">開始遊戲 / START</button>
+      <p class="home-footnote">答題不分大小寫。可以按鍵盤 Enter 送出答案；跳過也會顯示正確單字與中文釋義。</p>
+    </section>
+
+    <section class="screen quiz-screen" id="quizScreen" hidden aria-label="單字測驗">
+      <header class="quiz-topbar">
+        <span>B5 L1–L2 · VOCAB QUIZ</span>
+        <span id="progressLabel">QUESTION 01 / 10</span>
+      </header>
+      <div class="question-area" id="questionArea">
+        <canvas id="questionCanvas" aria-label="英文情境句子與字母提示"></canvas>
+      </div>
+      <div class="answer-zone" id="answerZone">
+        <form class="answer-form" id="answerForm" autocomplete="off">
+          <input class="answer-input" id="answerInput" name="answer" type="text" inputmode="text" enterkeyhint="done" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" placeholder="輸入英文單字" aria-label="輸入英文單字" required>
+          <button class="submit-button" id="submitButton" type="submit">確認答案</button>
+        </form>
+        <button class="skip-button" id="skipButton" type="button">跳過本題 / SKIP</button>
+      </div>
+      <section class="feedback" id="feedback" hidden aria-live="polite">
+        <p class="feedback-status" id="feedbackStatus">答對了！</p>
+        <p class="answer-word" id="answerWord">solitary</p>
+        <p class="definition-label">中文釋義 / MEANING</p>
+        <p class="definition-text" id="definitionText">獨自的、孤獨的</p>
+        <p class="feedback-extra" id="feedbackExtra"></p>
+        <button class="next-button" id="nextButton" type="button">下一題 / NEXT</button>
+      </section>
+      <footer class="quiz-footer" id="quizFooter"><p>依照英文上下文推理填空 · 按 Enter 可送出</p></footer>
+    </section>
+
+    <section class="screen finish-screen" id="finishScreen" hidden aria-labelledby="finishTitle">
+      <p class="eyebrow">ROUND COMPLETE</p>
+      <h1 class="finish-title" id="finishTitle">本輪完成！</h1>
+      <p class="finish-score" id="finishScore">答對 0 / 10</p>
+      <p class="finish-detail" id="finishDetail">再練一輪，讓單字記得更牢。</p>
+      <button class="restart-button" id="restartButton" type="button">再玩一輪 / PLAY AGAIN</button>
+    </section>
+  </main>
+
+  <script>
+    'use strict';
+
+    // 題庫共 45 字。提示會依單字長度自動產生，避免原始遮罩的字母數不一致。
+    const WORDS = [
+      { word: 'solitary', meaning: '獨自的、孤獨的', star: true, sentence: 'He lived a ________ life in a remote cabin far away from the city.' },
+      { word: 'shatter', meaning: '粉碎、擊碎', star: true, sentence: 'A sudden loud explosion can ______ all the glass windows.' },
+      { word: 'subsequent', meaning: '隨後的、後來的', star: true, sentence: 'In ______ years, the small village grew into a booming city.' },
+      { word: 'truthful', meaning: '誠實的、真實的', star: false, sentence: 'His ______ account of the accident helped the police find the truth.' },
+      { word: 'unconventional', meaning: '非傳統的、獨特的', star: true, sentence: 'Her ______ teaching methods surprised parents but worked well.' },
+      { word: 'validity', meaning: '有效性、正確性', star: true, sentence: 'Scientists challenged the ______ of the unverified data.' },
+      { word: 'verify', meaning: '證實、核實', star: false, sentence: 'Researchers need more evidence to ______ their initial hypothesis.' },
+      { word: 'acceptance', meaning: '接受、接納', star: false, sentence: 'She was overjoyed to receive an ______ letter from the college.' },
+      { word: 'attempt', meaning: '嘗試、企圖', star: false, sentence: 'He failed on his first ______, but he refused to give up.' },
+      { word: 'biography', meaning: '傳記', star: true, sentence: 'I am reading a fascinating ______ of Steve Jobs.' },
+      { word: 'contemporary', meaning: '當代的、同時代的', star: true, sentence: 'The museum exhibits a large collection of ______ art.' },
+      { word: 'complicated', meaning: '複雜的', star: false, sentence: 'The math problem was so ______ that nobody could solve it.' },
+      { word: 'compose', meaning: '組成、作曲、撰寫', star: false, sentence: 'Mozart began to ______ brilliant music at a very young age.' },
+      { word: 'comment', meaning: '評論、意見', star: false, sentence: 'The spokesperson refused to ______ on the ongoing controversy.' },
+      { word: 'compelling', meaning: '引人入勝的、強有力的', star: true, sentence: 'The lawyer presented a ______ argument that convinced the jury.' },
+      { word: 'candidate', meaning: '候選人', star: false, sentence: 'She is currently the strongest ______ for the managerial role.' },
+      { word: 'credibility', meaning: '可信度、信用', star: true, sentence: 'Scandals severely damaged the politician’s political ______.' },
+      { word: 'cite', meaning: '引用、舉例', star: false, sentence: 'Please ______ all your research sources at the end of the paper.' },
+      { word: 'depict', meaning: '描繪、描述', star: true, sentence: 'The artist used vivid colors to ______ life in an ancient town.' },
+      { word: 'declaration', meaning: '宣告、宣言', star: true, sentence: 'The nation made a formal ______ of independence.' },
+      { word: 'define', meaning: '定義、解釋', star: false, sentence: 'It is difficult to ______ happiness in simple terms.' },
+      { word: 'deceive', meaning: '欺騙、瞞過', star: false, sentence: 'Do not let his friendly smile ______ you into trusting him.' },
+      { word: 'encounter', meaning: '遭遇、偶遇', star: false, sentence: 'Hikers might ______ wild animals when walking in deep woods.' },
+      { word: 'essence', meaning: '本質、精華', star: false, sentence: 'Speed and accuracy are the ______ of emergency medical care.' },
+      { word: 'extensive', meaning: '廣泛的、大量的', star: true, sentence: 'The storm caused ______ damage to houses along the coast.' },
+      { word: 'evaluate', meaning: '評估、評價', star: false, sentence: 'Teachers use tests to ______ students’ learning progress.' },
+      { word: 'flawed', meaning: '有瑕疵的', star: true, sentence: 'His argument was deeply ______ and easily refuted.' },
+      { word: 'indecision', meaning: '優柔寡斷、猶豫不決', star: true, sentence: 'Her constant ______ caused the team to miss the deadline.' },
+      { word: 'illustrate', meaning: '說明、畫插圖', star: false, sentence: 'The professor used a diagram to ______ the scientific concept.' },
+      { word: 'justify', meaning: '證明……是正當的', star: false, sentence: 'Nothing can ______ violent actions against innocent people.' },
+      { word: 'journalism', meaning: '新聞業、新聞工作', star: true, sentence: 'She decided to pursue a career in investigative ______.' },
+      { word: 'misleading', meaning: '誤導的', star: true, sentence: 'The advert contained ______ information about the product.' },
+      { word: 'mainstream', meaning: '主流的', star: false, sentence: 'Eco-friendly energy has now entered ______ culture.' },
+      { word: 'necessity', meaning: '必需品、必要性', star: false, sentence: 'Smartphones have become an absolute ______ in daily life.' },
+      { word: 'notable', meaning: '顯著的、值得注意的', star: true, sentence: 'There was a ______ improvement in his test scores.' },
+      { word: 'outstanding', meaning: '傑出的、優秀的', star: true, sentence: 'She received an award for her ______ academic achievements.' },
+      { word: 'objective', meaning: '客觀的／目標', star: true, sentence: 'Judges must remain completely ______ when making decisions.' },
+      { word: 'plain', meaning: '樸素的、清楚的', star: false, sentence: 'She wore a ______ white shirt with no extra decorations.' },
+      { word: 'penetrating', meaning: '透徹的、刺骨的', star: true, sentence: 'He analyzed the complex issue with ______ insight.' },
+      { word: 'publish', meaning: '出版、發行', star: false, sentence: 'The researchers plan to ______ their findings in a scientific journal.' },
+      { word: 'prediction', meaning: '預測', star: false, sentence: 'Meteorologists made an accurate weather ______ for tomorrow.' },
+      { word: 'prior', meaning: '先前的、較早的', star: false, sentence: 'No ______ experience is needed for this entry-level job.' },
+      { word: 'political', meaning: '政治的', star: false, sentence: 'She is deeply involved in local ______ campaigns.' },
+      { word: 'panic', meaning: '恐慌', star: false, sentence: 'When the alarm rang, people ran out in extreme ______.' },
+      { word: 'renowned', meaning: '著名的、馳名的', star: true, sentence: 'He is a ______ scientist known around the world.' }
+    ];
+
+    const $ = (id) => document.getElementById(id);
+    const homeScreen = $('homeScreen');
+    const quizScreen = $('quizScreen');
+    const finishScreen = $('finishScreen');
+    const canvas = $('questionCanvas');
+    const canvasContext = canvas.getContext('2d');
+    const questionArea = $('questionArea');
+    const answerForm = $('answerForm');
+    const answerInput = $('answerInput');
+    const feedback = $('feedback');
+    const progressLabel = $('progressLabel');
+
+    let round = [];
+    let index = 0;
+    let score = 0;
+    let answers = [];
+    let hasFeedback = false;
+    let keyboardOpen = false;
+
+    function shuffleCopy(items) {
+      const result = [...items];
+      for (let i = result.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [result[i], result[j]] = [result[j], result[i]];
+      }
+      return result;
+    }
+
+    function clueFor(word) {
+      if (word.length <= 2) return word[0] + '_'.repeat(Math.max(0, word.length - 1));
+      return word[0] + '_'.repeat(word.length - 2) + word[word.length - 1];
+    }
+
+    function showScreen(screen) {
+      homeScreen.hidden = screen !== homeScreen;
+      quizScreen.hidden = screen !== quizScreen;
+      finishScreen.hidden = screen !== finishScreen;
+    }
+
+    function clearFeedbackState() {
+      document.body.classList.remove('correct-state', 'wrong-state');
+    }
+
+    function startRound() {
+      round = shuffleCopy(WORDS).slice(0, 10);
+      index = 0;
+      score = 0;
+      answers = [];
+      hasFeedback = false;
+      clearFeedbackState();
+      showScreen(quizScreen);
+      renderQuestion();
+    }
+
+    function wrapWords(ctx, text, maxWidth) {
+      const words = text.split(/\s+/);
+      const lines = [];
+      let line = '';
+      for (const word of words) {
+        const candidate = line ? line + ' ' + word : word;
+        if (line && ctx.measureText(candidate).width > maxWidth) {
+          lines.push(line);
+          line = word;
+        } else {
+          line = candidate;
+        }
+      }
+      if (line) lines.push(line);
+      return lines;
+    }
+
+    function drawQuestion() {
+      if (quizScreen.hidden || !round[index]) return;
+      const item = round[index];
+      const styles = getComputedStyle(questionArea);
+      const availableWidth = questionArea.clientWidth - parseFloat(styles.paddingLeft || '0') - parseFloat(styles.paddingRight || '0');
+      const width = Math.max(280, Math.round(availableWidth || window.innerWidth));
+      const compact = keyboardOpen;
+      const scale = Math.min(window.devicePixelRatio || 1, 3);
+      const pad = compact ? 17 : 22;
+      const sentenceFont = compact ? Math.max(18, Math.min(21, width * 0.052)) : Math.max(20, Math.min(27, width * 0.057));
+      const lineHeight = compact ? sentenceFont * 1.30 : sentenceFont * 1.34;
+      const maxTextWidth = width - pad * 2;
+
+      canvasContext.setTransform(1, 0, 0, 1, 0, 0);
+      canvasContext.font = `800 ${compact ? 12 : 13}px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif`;
+      const headingY = compact ? 21 : 27;
+      const dividerY = compact ? 32 : 40;
+      const sentenceY = compact ? 57 : 72;
+      canvasContext.font = `650 ${sentenceFont}px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif`;
+      const lines = wrapWords(canvasContext, item.sentence, maxTextWidth);
+      const hintY = sentenceY + lines.length * lineHeight + (compact ? 21 : 26);
+      const height = Math.ceil(hintY + (compact ? 27 : 32));
+
+      canvas.width = Math.round(width * scale);
+      canvas.height = Math.round(height * scale);
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+      canvasContext.setTransform(scale, 0, 0, scale, 0, 0);
+      canvasContext.clearRect(0, 0, width, height);
+      canvasContext.fillStyle = '#FFFFFF';
+      canvasContext.textBaseline = 'alphabetic';
+      canvasContext.textAlign = 'left';
+      canvasContext.font = `800 ${compact ? 12 : 13}px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif`;
+      canvasContext.fillText(`QUESTION ${String(index + 1).padStart(2, '0')} / 10`, pad, headingY);
+      if (item.star) {
+        canvasContext.textAlign = 'right';
+        canvasContext.font = `800 ${compact ? 12 : 13}px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif`;
+        canvasContext.fillText('★︎ HIGH-FREQUENCY', width - pad, headingY);
+        canvasContext.textAlign = 'left';
+      }
+      canvasContext.fillRect(pad, dividerY, width - pad * 2, 1);
+      canvasContext.font = `650 ${sentenceFont}px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif`;
+      lines.forEach((line, i) => canvasContext.fillText(line, pad, sentenceY + i * lineHeight));
+
+      canvasContext.font = `800 ${compact ? 11 : 12}px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif`;
+      canvasContext.fillText('LETTER CLUE', pad, hintY);
+      canvasContext.font = `800 ${compact ? 17 : 19}px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace`;
+      canvasContext.fillText(clueFor(item.word), pad + (compact ? 94 : 105), hintY + 1);
+      canvasContext.textAlign = 'left';
+      progressLabel.textContent = `QUESTION ${String(index + 1).padStart(2, '0')} / 10`;
+    }
+
+    function renderQuestion() {
+      hasFeedback = false;
+      clearFeedbackState();
+      feedback.hidden = true;
+      $('answerZone').hidden = false;
+      $('quizFooter').hidden = false;
+      answerForm.hidden = false;
+      answerInput.disabled = false;
+      answerInput.value = '';
+      answerInput.setAttribute('aria-label', '輸入英文單字');
+      drawQuestion();
+    }
+
+    function submitAnswer(event) {
+      if (event) event.preventDefault();
+      if (hasFeedback) return;
+      const value = answerInput.value.trim().toLowerCase();
+      if (!value) {
+        answerInput.focus({ preventScroll: true });
+        return;
+      }
+      finishQuestion(value === round[index].word.toLowerCase(), false);
+    }
+
+    function skipQuestion() {
+      if (hasFeedback) return;
+      finishQuestion(false, true);
+    }
+
+    function finishQuestion(isCorrect, skipped) {
+      const item = round[index];
+      hasFeedback = true;
+      answers.push({ word: item.word, correct: isCorrect, skipped });
+      if (isCorrect) score++;
+      answerInput.blur();
+      keyboardOpen = false;
+      document.body.classList.remove('keyboard-open');
+      document.body.classList.toggle('correct-state', isCorrect);
+      document.body.classList.toggle('wrong-state', !isCorrect);
+      $('answerZone').hidden = true;
+      $('quizFooter').hidden = true;
+      feedback.hidden = false;
+      $('feedbackStatus').textContent = isCorrect ? '答對了！' : (skipped ? '已跳過本題' : '答錯了');
+      $('answerWord').textContent = item.word + (item.star ? ' ★︎' : '');
+      $('definitionText').textContent = item.meaning;
+      $('feedbackExtra').textContent = isCorrect ? '正確！繼續保持。' : (skipped ? '這題先記起來，下一題繼續。' : `你的答案：${answerInput.value.trim()}`);
+      $('nextButton').textContent = index === round.length - 1 ? '查看本輪成績 / RESULTS' : '下一題 / NEXT';
+      $('appShell').scrollTop = 0;
+    }
+
+    function nextQuestion() {
+      if (!hasFeedback) return;
+      if (index >= round.length - 1) {
+        showResults();
+        return;
+      }
+      index++;
+      renderQuestion();
+    }
+
+    function showResults() {
+      clearFeedbackState();
+      showScreen(finishScreen);
+      $('finishScore').textContent = `答對 ${score} / ${round.length}`;
+      const wrongCount = round.length - score;
+      $('finishDetail').textContent = wrongCount === 0
+        ? '全數答對！再玩一輪，換一組隨機題目。'
+        : `本輪答錯或跳過 ${wrongCount} 題。再練一輪，鞏固這些單字。`;
+    }
+
+    function updateViewport() {
+      const vv = window.visualViewport;
+      const height = vv ? vv.height : window.innerHeight;
+      const top = vv ? vv.offsetTop : 0;
+      document.documentElement.style.setProperty('--app-height', `${Math.max(220, Math.round(height))}px`);
+      document.documentElement.style.setProperty('--vv-top', `${Math.max(0, Math.round(top))}px`);
+      const inputFocused = document.activeElement === answerInput;
+      keyboardOpen = Boolean(vv && inputFocused && (window.innerHeight - vv.height > 100));
+      document.body.classList.toggle('keyboard-open', keyboardOpen);
+      if (!quizScreen.hidden && !hasFeedback) drawQuestion();
+    }
+
+    $('startButton').addEventListener('click', startRound);
+    $('restartButton').addEventListener('click', startRound);
+    answerForm.addEventListener('submit', submitAnswer);
+    $('skipButton').addEventListener('click', skipQuestion);
+    $('nextButton').addEventListener('click', nextQuestion);
+    answerInput.addEventListener('focus', () => {
+      // 等待 visualViewport 更新後再進入緊湊排版，確保題目仍完整留在畫面上方。
+      requestAnimationFrame(updateViewport);
+      setTimeout(updateViewport, 80);
+    });
+    answerInput.addEventListener('blur', () => setTimeout(updateViewport, 50));
+    window.addEventListener('resize', updateViewport, { passive: true });
+    window.addEventListener('orientationchange', updateViewport, { passive: true });
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener('resize', updateViewport, { passive: true });
+      window.visualViewport.addEventListener('scroll', updateViewport, { passive: true });
+    }
+    if ('ResizeObserver' in window) {
+      new ResizeObserver(() => {
+        if (!quizScreen.hidden && !hasFeedback) drawQuestion();
+      }).observe(questionArea);
+    }
+
+    // 開發時可直接在瀏覽器 Console 執行：VOCAB_QUIZ_CHECK() 檢查題庫。
+    window.VOCAB_QUIZ_CHECK = () => ({
+      count: WORDS.length,
+      uniqueWords: new Set(WORDS.map(item => item.word)).size,
+      invalid: WORDS.filter(item => !item.word || !item.meaning || !item.sentence || !item.sentence.includes('______')).map(item => item.word)
+    });
+    updateViewport();
+  </script>
+</body>
+</html>
