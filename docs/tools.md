@@ -7,6 +7,11 @@ pagination_next: null
 pagination_previous: null
 authors: [KAI]
 ---
+####  <a href="/vocab-quiz-b5l3.html">B5L3L4二段複習單字</a>
+
+這網站可以讓你必勝學校的單字填空，把握基本分！
+
+
 ### <a href="/BVE.html">BVE Route Studio</a>
 
 開發 BVE 超好用工具！
@@ -15,7 +20,7 @@ authors: [KAI]
 可創建達芬奇模板
 ####  <a href="/musicgen.html">靈感生成器</a>
 可生成靈感的生成器
-####  <a href="/vocab-quiz.html">B3一段考複習單字</a>
+####  <a href="/vocab-quiz.html">B5L1L2一段考複習單字</a>
 
 這網站可以讓你必勝學校的單字填空，把握基本分！
 #### [限時公開新網站！KAI STUDIO](https://kaistudio2.vercel.app/)
