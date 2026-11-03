@@ -1,4 +1,4 @@
-baseURL = "https://kaistudio2.vercel.app/"
+baseURL = "https://kaiblog.is-a.dev/"
 locale = "zh-tw"
 defaultContentLanguage = "zh-tw"
 title = "KAI STUDIO"
