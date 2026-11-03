@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="h-full w-full select-none overflow-hidden">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>雙人心動 2048 互動版</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap');
+    
+    * {
+      font-family: 'Fredoka', system-ui, -apple-system, sans-serif;
+      touch-action: manipulation;
+    }
+
+    /* Theme Styles */
+    .theme-light {
+      --bg-main: #fbf8f3;
+      --panel-bg: #f3ece0;
+      --board-bg: #bbada0;
+      --cell-bg: #ccc0b3;
+      --text-main: #776e65;
+      --border-color: #e6ded3;
+    }
+
+    .theme-dark {
+      --bg-main: #181824;
+      --panel-bg: #222235;
+      --board-bg: #32324a;
+      --cell-bg: #404060;
+      --text-main: #ececff;
+      --border-color: #2e2e48;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-main);
+    }
+
+    .panel-bg { background-color: var(--panel-bg); border-color: var(--border-color); }
+    .board-bg { background-color: var(--board-bg); }
+    .cell-bg { background-color: var(--cell-bg); }
+
+    /* Tile Styling */
+    .tile-2 { background-color: #eee4da; color: #776e65; }
+    .tile-4 { background-color: #ede0c8; color: #776e65; }
+    .tile-8 { background-color: #f2b179; color: #ffffff; }
+    .tile-16 { background-color: #f59563; color: #ffffff; }
+    .tile-32 { background-color: #f67c5f; color: #ffffff; }
+    .tile-64 { background-color: #f65e3b; color: #ffffff; }
+    .tile-128 { background-color: #edcf72; color: #ffffff; box-shadow: 0 0 10px #edcf72; }
+    .tile-256 { background-color: #edcc61; color: #ffffff; box-shadow: 0 0 15px #edcc61; }
+    .tile-512 { background-color: #edc850; color: #ffffff; box-shadow: 0 0 20px #edc850; }
+    .tile-1024 { background-color: #edc53f; color: #ffffff; box-shadow: 0 0 25px #edc53f; }
+    .tile-2048 { background-color: #eec22e; color: #ffffff; box-shadow: 0 0 30px #eec22e; }
+
+    /* Portal Tile Special Glow */
+    .tile-portal {
+      background: linear-gradient(135deg, #ec4899, #8b5cf6);
+      color: #ffffff;
+      animation: portalPulse 1.5s infinite alternate;
+    }
+
+    @keyframes portalPulse {
+      0% { box-shadow: 0 0 8px #ec4899; }
+      100% { box-shadow: 0 0 20px #8b5cf6, 0 0 30px #ec4899; }
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0.8); opacity: 0; }
+      70% { transform: scale(1.08); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .animate-pop { animation: pop 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+
+    /* Heart Particle Effect */
+    .heart-particle {
+      position: absolute;
+      pointer-events: none;
+      animation: floatUp 1.2s ease-out forwards;
+      font-size: 1.5rem;
+      z-index: 100;
+    }
+
+    @keyframes floatUp {
+      0% { opacity: 1; transform: translateY(0) scale(0.8) rotate(0deg); }
+      100% { opacity: 0; transform: translateY(-80px) scale(1.5) rotate(20deg); }
+    }
+  </style>
+</head>
+<body class="theme-light h-full w-full flex flex-col justify-between overflow-hidden relative">
+
+  <!-- PLAYER 1 (TOP - FACING PLAYER 2) -->
+  <div id="p1-container" class="flex-1 flex flex-col justify-between p-2 relative rotate-180 transition-transform duration-300 border-b border-black/5">
+    <!-- Header -->
+    <div class="flex items-center justify-between gap-2 px-1">
+      <div class="flex items-center gap-2">
+        <span class="px-2 py-0.5 bg-amber-500 text-white rounded-full text-xs font-bold">P1 玩家</span>
+        <div class="text-xs font-bold">得分 <span id="p1-score" class="text-base font-black text-amber-600">0</span></div>
+      </div>
+      <!-- Energy & Heart Portal Gauge -->
+      <div class="flex-1 max-w-[140px]">
+        <div class="flex justify-between text-[10px] font-bold mb-0.5">
+          <span>💖 心動能量</span>
+          <span id="p1-energy-txt">0/100</span>
+        </div>
+        <div class="w-full bg-black/10 rounded-full h-2 overflow-hidden">
+          <div id="p1-energy-bar" class="bg-gradient-to-r from-amber-400 to-rose-500 h-full w-0 transition-all duration-300"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portal Top Indicator -->
+    <div class="text-center text-[10px] font-bold text-rose-500 tracking-wider my-0.5 flex items-center justify-center gap-1 opacity-80">
+      <i class="fa-solid fa-cloud-arrow-up animate-bounce"></i> 向上滑動傳送方塊至 P2 <i class="fa-solid fa-cloud-arrow-up animate-bounce"></i>
+    </div>
+
+    <!-- Board Wrapper -->
+    <div class="flex-1 flex items-center justify-center">
+      <div class="board-bg relative w-[260px] h-[260px] p-2 rounded-2xl shadow-inner">
+        <!-- 4x4 Grid Background -->
+        <div class="grid grid-cols-4 grid-rows-4 gap-2 w-full h-full">
+          <div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div>
+          <div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div>
+          <div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div>
+          <div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div>
+        </div>
+        <!-- Dynamic Tiles -->
+        <div id="p1-tiles" class="absolute inset-2 grid grid-cols-4 grid-rows-4 gap-2 pointer-events-none"></div>
+      </div>
+    </div>
+
+    <!-- Interactive Actions -->
+    <div class="flex justify-around gap-1 mt-1">
+      <button onclick="sendPortalTile(0)" id="p1-btn-portal" class="opacity-40 flex-1 py-1.5 panel-bg border rounded-xl text-center active:scale-95 transition shadow-sm">
+        <span class="text-xs font-bold text-rose-500"><i class="fa-solid fa-wand-magic-sparkles"></i> 跨屏傳送</span>
+        <span class="block text-[9px] opacity-75 font-semibold">消耗 30⚡</span>
+      </button>
+      <button onclick="triggerRomanceTask()" class="flex-1 py-1.5 panel-bg border rounded-xl text-center active:scale-95 transition shadow-sm">
+        <span class="text-xs font-bold text-amber-500"><i class="fa-solid fa-heart-circle-bolt"></i> 甜蜜任務</span>
+        <span class="block text-[9px] opacity-75 font-semibold">真心話卡片</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- MIDDLE CONTROLS & HIGH-FIVE BAR -->
+  <div class="h-12 panel-bg border-y flex items-center justify-between px-2 shrink-0 z-30 shadow-md relative">
+    <button onclick="toggleRotateP1()" class="px-2 py-1 rounded-lg border text-[11px] font-bold flex items-center gap-1 active:scale-95 transition">
+      <i class="fa-solid fa-arrows-rotate"></i> <span id="rot-lbl">面對面</span>
+    </button>
+    
+    <!-- DUAL HIGH-FIVE HEART BUTTON -->
+    <div class="flex-1 flex justify-center items-center px-2">
+      <button id="highfive-btn" onclick="handleHighFiveTouch()" class="w-full max-w-[160px] py-1 bg-gradient-to-r from-rose-400 via-pink-500 to-rose-400 text-white rounded-full font-black text-xs shadow-md active:scale-95 transition flex items-center justify-center gap-1.5 border border-white/40">
+        <i class="fa-solid fa-heart animate-pulse"></i> 雙人合體擊掌 <i class="fa-solid fa-heart animate-pulse"></i>
+      </button>
+    </div>
+
+    <div class="flex items-center gap-1">
+      <button onclick="toggleGameMode()" id="mode-btn" class="px-2 py-1 bg-amber-500 text-white rounded-lg text-[11px] font-bold active:scale-95 transition">
+        ⚔️ 對戰
+      </button>
+      <button onclick="toggleTheme()" class="p-1.5 rounded-lg border text-xs active:scale-95 transition"><i id="theme-icon" class="fa-solid fa-moon"></i></button>
+      <button onclick="showModal('rule-modal')" class="p-1.5 rounded-lg border text-xs active:scale-95 transition"><i class="fa-solid fa-circle-question"></i></button>
+    </div>
+  </div>
+
+  <!-- PLAYER 2 (BOTTOM) -->
+  <div id="p2-container" class="flex-1 flex flex-col justify-between p-2 relative transition-transform duration-300">
+    <!-- Interactive Actions -->
+    <div class="flex justify-around gap-1 mb-1">
+      <button onclick="sendPortalTile(1)" id="p2-btn-portal" class="opacity-40 flex-1 py-1.5 panel-bg border rounded-xl text-center active:scale-95 transition shadow-sm">
+        <span class="text-xs font-bold text-rose-500"><i class="fa-solid fa-wand-magic-sparkles"></i> 跨屏傳送</span>
+        <span class="block text-[9px] opacity-75 font-semibold">消耗 30⚡</span>
+      </button>
+      <button onclick="triggerRomanceTask()" class="flex-1 py-1.5 panel-bg border rounded-xl text-center active:scale-95 transition shadow-sm">
+        <span class="text-xs font-bold text-amber-500"><i class="fa-solid fa-heart-circle-bolt"></i> 甜蜜任務</span>
+        <span class="block text-[9px] opacity-75 font-semibold">真心話卡片</span>
+      </button>
+    </div>
+
+    <!-- Board Wrapper -->
+    <div class="flex-1 flex items-center justify-center">
+      <div class="board-bg relative w-[260px] h-[260px] p-2 rounded-2xl shadow-inner">
+        <!-- 4x4 Grid Background -->
+        <div class="grid grid-cols-4 grid-rows-4 gap-2 w-full h-full">
+          <div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div>
+          <div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div>
+          <div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div>
+          <div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div><div class="cell-bg rounded-xl"></div>
+        </div>
+        <!-- Dynamic Tiles -->
+        <div id="p2-tiles" class="absolute inset-2 grid grid-cols-4 grid-rows-4 gap-2 pointer-events-none"></div>
+      </div>
+    </div>
+
+    <!-- Portal Bottom Indicator -->
+    <div class="text-center text-[10px] font-bold text-rose-500 tracking-wider my-0.5 flex items-center justify-center gap-1 opacity-80">
+      <i class="fa-solid fa-cloud-arrow-up animate-bounce"></i> 向下滑動傳送方塊至 P1 <i class="fa-solid fa-cloud-arrow-up animate-bounce"></i>
+    </div>
+
+    <!-- Header -->
+    <div class="flex items-center justify-between gap-2 px-1">
+      <div class="flex items-center gap-2">
+        <span class="px-2 py-0.5 bg-rose-500 text-white rounded-full text-xs font-bold">P2 玩家</span>
+        <div class="text-xs font-bold">得分 <span id="p2-score" class="text-base font-black text-rose-600">0</span></div>
+      </div>
+      <!-- Energy & Heart Portal Gauge -->
+      <div class="flex-1 max-w-[140px]">
+        <div class="flex justify-between text-[10px] font-bold mb-0.5">
+          <span>💖 心動能量</span>
+          <span id="p2-energy-txt">0/100</span>
+        </div>
+        <div class="w-full bg-black/10 rounded-full h-2 overflow-hidden">
+          <div id="p2-energy-bar" class="bg-gradient-to-r from-rose-400 to-pink-600 h-full w-0 transition-all duration-300"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROMANCE TASK / 真心話 MODAL -->
+  <div id="task-modal" class="hidden fixed inset-0 bg-black/75 backdrop-blur-md flex items-center justify-center p-4 z-50">
+    <div class="panel-bg border-2 border-pink-400 rounded-3xl p-5 max-w-xs w-full shadow-2xl text-center animate-pop">
+      <div class="text-3xl mb-1">💖</div>
+      <h3 class="font-black text-lg text-rose-500 mb-2">心動甜蜜任務！</h3>
+      <div id="task-card-content" class="my-4 p-3 bg-pink-500/10 rounded-2xl border border-pink-300 text-xs font-bold leading-relaxed text-rose-700 dark:text-pink-300">
+        任務載入中...
+      </div>
+      <p class="text-[10px] opacity-75 mb-3">完成挑戰後，點擊下方確認按鈕領取加分與能量！</p>
+      <button onclick="completeRomanceTask()" class="w-full py-2.5 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-black rounded-2xl shadow-lg active:scale-95 transition">
+        完成任務，領取獎勵 💕
+      </button>
+    </div>
+  </div>
+
+  <!-- GAME RULES MODAL -->
+  <div id="rule-modal" class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 z-50">
+    <div class="panel-bg border rounded-3xl p-5 max-w-xs w-full shadow-2xl flex flex-col justify-between">
+      <div>
+        <div class="flex justify-between items-center border-b pb-2 mb-3">
+          <h3 class="font-black text-base flex items-center gap-2 text-rose-500"><i class="fa-solid fa-heart"></i> 雙人甜蜜互動說明</h3>
+          <button onclick="hideModal('rule-modal')" class="text-sm p-1"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="space-y-2.5 text-xs leading-relaxed">
+          <p><b>1. 🌌 跨界蟲洞傳送：</b>向頂部(P1)或底部(P2)滑動，方塊會直接<b>飛躍螢幕傳送到對方棋盤</b>！</p>
+          <p><b>2. 💖 雙人合體擊掌：</b>同時按下中央的「雙人擊掌」按鈕，觸發愛心特效並大加分！</p>
+          <p><b>3. 💌 心動真心話卡片：</b>合成大數字時觸發互動挑戰，親密互動增加戀愛樂趣！</p>
+          <p><b>4. 🤝 模式選擇：</b>可選擇【對戰】率先達 2048 獲勝，或【雙人同心】共同累計高分！</p>
+        </div>
+      </div>
+      <button onclick="hideModal('rule-modal')" class="w-full mt-4 py-2.5 bg-rose-500 text-white font-black rounded-2xl shadow active:scale-95 transition">開始心動遊戲</button>
+    </div>
+  </div>
+
+  <!-- WINNER / RESULT MODAL -->
+  <div id="win-modal" class="hidden fixed inset-0 bg-black/80 backdrop-blur-md flex items-center justify-center p-4 z-50">
+    <div class="panel-bg border rounded-3xl p-6 max-w-xs w-full text-center shadow-2xl animate-pop">
+      <div class="text-4xl mb-2">🎉</div>
+      <h3 id="win-title" class="text-xl font-black mb-1 text-rose-500">雙人同心達成！</h3>
+      <p id="win-reason" class="text-xs opacity-80 mb-4">累積完美默契！</p>
+      <button onclick="initGame(); hideModal('win-modal');" class="w-full py-2.5 bg-rose-500 text-white font-black rounded-2xl shadow active:scale-95 transition">再玩一局 💕</button>
+    </div>
+  </div>
+
+  <script>
+    // Audio Synthesizer
+    class HeartSound {
+      constructor() { this.ctx = null; this.muted = false; }
+      init() { if (!this.ctx) { const AC = window.AudioContext || window.webkitAudioContext; if (AC) this.ctx = new AC(); } }
+      play(freq, type='sine', dur=0.1) {
+        if (this.muted || !this.ctx) return;
+        try {
+          const osc = this.ctx.createOscillator(), gain = this.ctx.createGain();
+          osc.type = type; osc.frequency.setValueAtTime(freq, this.ctx.currentTime);
+          gain.gain.setValueAtTime(0.12, this.ctx.currentTime);
+          gain.gain.linearRampToValueAtTime(0.01, this.ctx.currentTime + dur);
+          osc.connect(gain); gain.connect(this.ctx.destination);
+          osc.start(); osc.stop(this.ctx.currentTime + dur);
+        } catch(e){}
+      }
+      slide() { this.play(240, 'sine', 0.05); }
+      merge(val) { this.play(300 + Math.log2(val || 2) * 40, 'triangle', 0.12); }
+      highfive() { [329, 392, 523, 659].forEach((f, i) => setTimeout(() => this.play(f, 'sine', 0.18), i * 80)); }
+      portal() { [400, 600, 800].forEach((f, i) => setTimeout(() => this.play(f, 'sine', 0.1), i * 60)); }
+    }
+
+    const sound = new HeartSound();
+    let isDarkMode = false, p1Rotated = true, gameOver = false, isCoopMode = false;
+    let lastP1TouchTime = 0, lastP2TouchTime = 0;
+
+    const ROMANCE_TASKS = [
+      "💋 請看著對方的眼睛 3 秒，並給予一個真心誇獎！",
+      "🤏 捏捏對方的臉龐或揉揉手掌，幫對方加油！",
+      "🗣️ 互講一句心裡話或分享最近一件開心的小事。",
+      "🤝 雙手重疊！下一輪滑動時請兩人用一隻手合作進行！",
+      "🥤 懲罰/福利時間：給對方餵一口飲料或小零食！",
+      "📸 請對著對方做一個最可愛的表情或比個愛心！"
+    ];
+
+    const players = [
+      { score: 0, energy: 0, grid: [], tilesEl: 'p1-tiles' },
+      { score: 0, energy: 0, grid: [], tilesEl: 'p2-tiles' }
+    ];
+
+    function initGame() {
+      gameOver = false;
+      players.forEach((p, idx) => {
+        p.score = 0; p.energy = 0;
+        p.grid = Array(4).fill(0).map(() => Array(4).fill(0));
+        spawnTile(idx); spawnTile(idx);
+        renderBoard(idx); updateUI(idx);
+      });
+    }
+
+    function spawnTile(pIdx) {
+      const empties = [];
+      const g = players[pIdx].grid;
+      for(let r=0; r<4; r++) for(let c=0; c<4; c++) if(g[r][c]===0) empties.push({r,c});
+      if(empties.length > 0) {
+        const pick = empties[Math.floor(Math.random() * empties.length)];
+        g[pick.r][pick.c] = Math.random() < 0.85 ? 2 : 4;
+      }
+    }
+
+    function renderBoard(pIdx) {
+      const el = document.getElementById(players[pIdx].tilesEl);
+      el.innerHTML = '';
+      const g = players[pIdx].grid;
+
+      for(let r=0; r<4; r++) {
+        for(let c=0; c<4; c++) {
+          const val = g[r][c];
+          if(val !== 0) {
+            const tile = document.createElement('div');
+            tile.className = `w-full h-full rounded-xl flex items-center justify-center font-black transition-all animate-pop ${getTileClass(val)}`;
+            tile.innerText = val;
+            tile.style.fontSize = val > 512 ? '1.1rem' : '1.3rem';
+            el.appendChild(tile);
+          } else {
+            el.appendChild(document.createElement('div'));
+          }
+        }
+      }
+    }
+
+    function getTileClass(val) {
+      if (val <= 2048) return `tile-${val}`;
+      return 'tile-portal';
+    }
+
+    function handleSwipe(pIdx, dir) {
+      if(gameOver) return;
+      sound.init();
+      const p = players[pIdx];
+
+      // Check if sliding towards the cross-screen portal boundary
+      // P1 slides UP (top row = boundary) or P2 slides UP/DOWN
+      let isPortalSwipe = (pIdx === 0 && dir === 'UP') || (pIdx === 1 && dir === 'DOWN');
+
+      let moved = false;
+      let scoreAdd = 0, energyAdd = 0, maxVal = 0;
+
+      let rots = { UP: 3, RIGHT: 2, DOWN: 1, LEFT: 0 }[dir];
+      for(let i=0; i<rots; i++) rotateClockwise(p.grid);
+
+      for(let r=0; r<4; r++) {
+        const res = slideRow(p.grid[r]);
+        p.grid[r] = res.row;
+        if(res.moved) moved = true;
+        scoreAdd += res.score;
+        energyAdd += res.energy;
+        if(res.max > maxVal) maxVal = res.max;
+      }
+
+      for(let i=0; i<(4-rots)%4; i++) rotateClockwise(p.grid);
+
+      // Handle Portal Tile Transfer to opponent board
+      if(isPortalSwipe) {
+        checkAndTransferBoundaryTile(pIdx);
+      }
+
+      if(moved) {
+        sound.slide();
+        p.score += scoreAdd;
+        p.energy = Math.min(100, p.energy + (energyAdd > 0 ? energyAdd : 3));
+        if(maxVal > 0) sound.merge(maxVal);
+
+        spawnTile(pIdx);
+        renderBoard(pIdx);
+        updateUI(pIdx);
+
+        // Check Milestone for Romance Task Trigger
+        if(maxVal >= 128 && Math.random() < 0.4) {
+          triggerRomanceTask();
+        }
+
+        if(hasTile(p.grid, 2048)) triggerWin(pIdx, '率先合成出心動 2048！');
+      }
+    }
+
+    function checkAndTransferBoundaryTile(pIdx) {
+      const oppIdx = 1 - pIdx;
+      const myGrid = players[pIdx].grid;
+      const oppGrid = players[oppIdx].grid;
+
+      // Top row for P1 (row 0), Bottom row for P2 (row 3)
+      const rowIdx = (pIdx === 0) ? 0 : 3;
+      const oppRowIdx = (pIdx === 0) ? 3 : 0;
+
+      for(let c=0; c<4; c++) {
+        const val = myGrid[rowIdx][c];
+        if(val > 0 && Math.random() < 0.5) { // 50% chance tile passes through portal
+          // find empty spot in opp boundary row
+          const oppEmpties = [];
+          for(let oc=0; oc<4; oc++) if(oppGrid[oppRowIdx][oc] === 0) oppEmpties.push(oc);
+          if(oppEmpties.length > 0) {
+            const pickC = oppEmpties[Math.floor(Math.random() * oppEmpties.length)];
+            oppGrid[oppRowIdx][pickC] = val;
+            myGrid[rowIdx][c] = 0;
+            sound.portal();
+            createHeartParticle(window.innerWidth/2, window.innerHeight/2);
+            renderBoard(oppIdx);
+            break;
+          }
+        }
+      }
+    }
+
+    function slideRow(row) {
+      let moved = false, score = 0, energy = 0, max = 0;
+      let filtered = row.filter(v => v !== 0);
+      let res = [];
+
+      for(let i=0; i<filtered.length; i++) {
+        if(i < filtered.length - 1 && filtered[i] === filtered[i+1]) {
+          const nv = filtered[i] * 2;
+          res.push(nv);
+          score += nv;
+          energy += Math.floor(Math.log2(nv) * 2);
+          if(nv > max) max = nv;
+          i++; moved = true;
+        } else {
+          res.push(filtered[i]);
+        }
+      }
+      while(res.length < 4) res.push(0);
+      for(let i=0; i<4; i++) if(row[i] !== res[i]) moved = true;
+      return { row: res, moved, score, energy, max };
+    }
+
+    function rotateClockwise(g) {
+      const copy = JSON.parse(JSON.stringify(g));
+      for(let r=0; r<4; r++) for(let c=0; c<4; c++) g[c][3-r] = copy[r][c];
+    }
+
+    function hasTile(g, val) { return g.some(r => r.some(v => v === val)); }
+
+    function sendPortalTile(pIdx) {
+      const p = players[pIdx], oppIdx = 1 - pIdx, opp = players[oppIdx];
+      if(p.energy < 30) return;
+
+      const cands = [];
+      for(let r=0; r<4; r++) for(let c=0; c<4; c++) if(p.grid[r][c] > 0) cands.push({r,c,val:p.grid[r][c]});
+      if(cands.length === 0) return;
+
+      const pick = cands[Math.floor(Math.random() * cands.length)];
+      p.grid[pick.r][pick.c] = 0;
+
+      const oppEmpties = [];
+      for(let r=0; r<4; r++) for(let c=0; c<4; c++) if(opp.grid[r][c]===0) oppEmpties.push({r,c});
+      if(oppEmpties.length > 0) {
+        const target = oppEmpties[Math.floor(Math.random() * oppEmpties.length)];
+        opp.grid[target.r][target.c] = pick.val;
+      }
+
+      p.energy -= 30;
+      sound.portal();
+      createHeartParticle(window.innerWidth/2, window.innerHeight/2);
+      renderBoard(pIdx); renderBoard(oppIdx);
+      updateUI(pIdx); updateUI(oppIdx);
+    }
+
+    function handleHighFiveTouch() {
+      sound.init(); sound.highfive();
+      players.forEach(p => { p.score += 200; p.energy = Math.min(100, p.energy + 25); });
+      updateUI(0); updateUI(1);
+
+      // Heart burst particles
+      for(let i=0; i<8; i++) {
+        setTimeout(() => {
+          createHeartParticle(
+            (window.innerWidth/2) + (Math.random()*120 - 60),
+            (window.innerHeight/2) + (Math.random()*60 - 30)
+          );
+        }, i * 60);
+      }
+    }
+
+    function createHeartParticle(x, y) {
+      const el = document.createElement('div');
+      el.className = 'heart-particle';
+      el.innerText = ['💖', '💕', '💗', '✨', '💋'][Math.floor(Math.random()*5)];
+      el.style.left = `${x}px`;
+      el.style.top = `${y}px`;
+      document.body.appendChild(el);
+      setTimeout(() => el.remove(), 1200);
+    }
+
+    function triggerRomanceTask() {
+      const card = ROMANCE_TASKS[Math.floor(Math.random() * ROMANCE_TASKS.length)];
+      document.getElementById('task-card-content').innerText = card;
+      showModal('task-modal');
+    }
+
+    function completeRomanceTask() {
+      sound.init(); sound.highfive();
+      players.forEach(p => { p.score += 300; p.energy = Math.min(100, p.energy + 40); });
+      updateUI(0); updateUI(1);
+      hideModal('task-modal');
+    }
+
+    function updateUI(pIdx) {
+      const p = players[pIdx], pNum = pIdx + 1;
+      document.getElementById(`p${pNum}-score`).innerText = p.score;
+      document.getElementById(`p${pNum}-energy-txt`).innerText = `${p.energy}/100`;
+      document.getElementById(`p${pNum}-energy-bar`).style.width = `${p.energy}%`;
+
+      const btn = document.getElementById(`p${pNum}-btn-portal`);
+      if(p.energy >= 30) btn.classList.remove('opacity-40');
+      else btn.classList.add('opacity-40');
+    }
+
+    function triggerWin(pIdx, reason) {
+      gameOver = true; sound.highfive();
+      document.getElementById('win-title').innerText = isCoopMode ? '雙人完美默契達成！' : `玩家 ${pIdx + 1} 獲得勝出！`;
+      document.getElementById('win-reason').innerText = reason;
+      showModal('win-modal');
+    }
+
+    function setupInput() {
+      players.forEach((p, idx) => {
+        const container = document.getElementById(`p${idx+1}-container`);
+        let sX = 0, sY = 0;
+
+        container.addEventListener('touchstart', e => {
+          if(e.touches.length === 1) { sX = e.touches[0].clientX; sY = e.touches[0].clientY; }
+        }, {passive: false});
+
+        container.addEventListener('touchmove', e => e.preventDefault(), {passive: false});
+
+        container.addEventListener('touchend', e => {
+          if(!sX || !sY) return;
+          let dX = e.changedTouches[0].clientX - sX;
+          let dY = e.changedTouches[0].clientY - sY;
+          if(Math.abs(dX) < 20 && Math.abs(dY) < 20) return;
+
+          if(idx === 0 && p1Rotated) { dX = -dX; dY = -dY; }
+
+          let dir = Math.abs(dX) > Math.abs(dY) ? (dX > 0 ? 'RIGHT' : 'LEFT') : (dY > 0 ? 'DOWN' : 'UP');
+          handleSwipe(idx, dir);
+          sX = 0; sY = 0;
+        });
+      });
+
+      // Keyboard support
+      window.addEventListener('keydown', e => {
+        const k = e.key.toLowerCase();
+        if(k === 'w') handleSwipe(0, 'UP');
+        if(k === 's') handleSwipe(0, 'DOWN');
+        if(k === 'a') handleSwipe(0, 'LEFT');
+        if(k === 'd') handleSwipe(0, 'RIGHT');
+
+        if(k === 'arrowup') handleSwipe(1, 'UP');
+        if(k === 'arrowdown') handleSwipe(1, 'DOWN');
+        if(k === 'arrowleft') handleSwipe(1, 'LEFT');
+        if(k === 'arrowright') handleSwipe(1, 'RIGHT');
+      });
+    }
+
+    function toggleGameMode() {
+      isCoopMode = !isCoopMode;
+      document.getElementById('mode-btn').innerText = isCoopMode ? '🤝 合作' : '⚔️ 對戰';
+    }
+
+    function toggleRotateP1() {
+      p1Rotated = !p1Rotated;
+      const el = document.getElementById('p1-container');
+      const lbl = document.getElementById('rot-lbl');
+      if(p1Rotated) { el.classList.add('rotate-180'); lbl.innerText = '面對面'; }
+      else { el.classList.remove('rotate-180'); lbl.innerText = '同方向'; }
+    }
+
+    function toggleTheme() {
+      isDarkMode = !isDarkMode;
+      document.body.className = `${isDarkMode ? 'theme-dark' : 'theme-light'} h-full w-full flex flex-col justify-between transition-colors duration-300`;
+      document.getElementById('theme-icon').className = isDarkMode ? 'fa-solid fa-sun text-amber-400' : 'fa-solid fa-moon';
+    }
+
+    function showModal(id) { document.getElementById(id).classList.remove('hidden'); }
+    function hideModal(id) { document.getElementById(id).classList.add('hidden'); }
+
+    window.onload = function() {
+      setupInput();
+      initGame();
+      showModal('rule-modal');
+    };
+  </script>
+</body>
+</html>

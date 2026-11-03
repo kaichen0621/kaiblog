@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HOOK LAB｜隨機作曲靈感</title>
+<style>
+:root{--bg:#0b0e13;--panel:#141922;--line:#293444;--text:#f4f7fb;--muted:#9ba9bb;--blue:#429eee;--soft:#172b3d}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 20% 0%,#17283b 0,transparent 45%),var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif}
+main{max-width:1040px;margin:auto;padding:26px 18px 44px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{font-size:11px;letter-spacing:2.5px;color:var(--blue);font-weight:800}.pill{font-size:11px;color:#b9c7d8;border:1px solid var(--line);border-radius:99px;padding:7px 10px}
+h1{font-size:clamp(32px,5vw,48px);letter-spacing:-1.5px;margin:14px 0 7px}.sub{color:var(--muted);line-height:1.7;margin:0 0 24px;font-size:14px}.grid{display:grid;grid-template-columns:275px 1fr;gap:16px}.panel{background:linear-gradient(145deg,#171d27,#11151c);border:1px solid var(--line);border-radius:18px;padding:19px;min-width:0}.panel h2{font-size:15px;margin:0 0 17px}.field{margin:0 0 17px}.field label{display:flex;justify-content:space-between;font-size:13px;margin-bottom:8px;color:#dce5f1}.muted{color:var(--muted);font-size:12px}input,select{width:100%;background:#0b1017;color:var(--text);border:1px solid #354253;border-radius:10px;padding:10px;font:inherit}input[type=range]{padding:0;accent-color:var(--blue);border:0}button{font:inherit;cursor:pointer}.primary{width:100%;padding:14px 12px;border:0;border-radius:12px;background:var(--blue);color:#071421;font-weight:800;font-size:15px}.secondary{padding:10px 12px;background:#1b2430;border:1px solid #364253;border-radius:10px;color:var(--text)}.toggle{display:flex;align-items:center;gap:9px;font-size:13px;color:#dce5f1;margin:12px 0}.toggle input{width:16px;accent-color:var(--blue)}.resultHead{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:14px}.eyebrow{font-size:10px;letter-spacing:2px;color:var(--muted)}.resultHead h2{font-size:22px;margin:5px 0 0}.meta{display:flex;gap:6px;flex-wrap:wrap}.meta span{font-size:11px;padding:7px 9px;border:1px solid var(--line);border-radius:9px;color:#c5d2e2}.section{margin-top:18px}.sectionHead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}.sectionHead h3{font-size:13px;margin:0}.sectionHead span{font-size:11px;color:var(--muted)}.part{border:1px solid var(--line);background:#0d1219;border-radius:13px;padding:12px;margin-top:9px}.partTitle{display:flex;justify-content:space-between;align-items:center;margin-bottom:7px;font-size:13px;font-weight:700}.partTitle small{font-size:10px;color:var(--muted);font-weight:400}.staffbox{overflow-x:auto}.staff{width:100%;min-width:450px;display:block}.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}.chip{font-size:12px;background:#121b26;border:1px solid #2d3b4d;padding:7px 8px;border-radius:8px}.chip b{color:#8dcaff}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}.actions .secondary{flex:1}.hint{font-size:11px;color:var(--muted);line-height:1.65;margin:13px 0 0}.advanced{margin-top:15px;border-top:1px solid var(--line);padding-top:12px}.advanced summary{font-size:12px;color:#bdcad9;cursor:pointer}.advanced .field{margin-top:13px}.status{font-size:11px;color:var(--muted);line-height:1.6;margin-top:13px}.empty{color:var(--muted);font-size:12px}.footer{text-align:center;color:#657386;font-size:10px;margin-top:22px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.panel{padding:16px}.resultHead{flex-direction:column}main{padding:20px 12px 34px}}
+</style></head>
+<body><main>
+<div class="top"><div><div class="brand">KAI STUDIO · SONGWRITING TOOL</div><div class="muted" style="margin-top:4px">RANDOM SONG IDEA GENERATOR</div></div><span class="pill">無休止符 · 主唱友善 · 真隨機</span></div>
+<h1>HOOK LAB<span style="color:var(--blue)">.</span></h1>
+<p class="sub">不只抽幾個音——一鍵生成一首歌的旋律草稿。預設無調性、音域集中、短句好哼；節奏用四分、八分、十六分音符與連結線變化，完全不放休止符。</p>
+<div class="grid">
+<section class="panel"><h2>快速設定</h2>
+<div class="field"><label for="length">每段音符數 <span id="lengthVal">6 個</span></label><input id="length" type="range" min="4" max="10" value="6"></div>
+<div class="field"><label for="tempo">速度 <span id="tempoVal">100 BPM</span></label><input id="tempo" type="range" min="65" max="160" value="100"></div>
+<div class="field"><label for="feel">歌曲感覺</label><select id="feel"><option value="pop">流行副歌｜好記、短句</option><option value="anthem">熱血大合唱</option><option value="gentle">溫柔抒情</option><option value="rock">搖滾推進</option><option value="surprise">完全隨機</option></select></div>
+<button class="primary" id="song">✦ 一鍵隨機生成一首歌</button>
+<div class="actions"><button class="secondary" id="reroll">只換副歌旋律</button><button class="secondary" id="play">▶ 播放整首</button></div>
+<details class="advanced"><summary>進階設定（可不開）</summary>
+<div class="field"><label for="tonality">音高規則</label><select id="tonality"><option value="free">無調性／自由音高（預設）</option><option value="major">指定大調音階</option><option value="minor">指定小調音階</option><option value="pent">五聲音階</option></select></div>
+<div class="field"><label for="key">調性（音階模式才使用）</label><select id="key"><option>C</option><option>G</option><option>D</option><option>A</option><option>F</option><option>B♭</option><option>E♭</option></select></div>
+<label class="toggle"><input id="ties" type="checkbox" checked> 偶爾使用連結線延長同音</label>
+</details>
+<p class="hint">預設每段只有 4–10 個音。旋律大多在相鄰音與小跳進間移動，避免主唱頻繁大跳；先找一句能哼的，再由你決定要不要發展。</p>
+</section>
+<section class="panel">
+<div class="resultHead"><div><div class="eyebrow">YOUR RANDOM SONG</div><h2 id="songTitle">等待生成你的歌曲</h2></div><div class="meta"><span id="tempoMeta">100 BPM</span><span id="keyMeta">自由音高</span><span id="rangeMeta">主唱舒適音域</span></div></div>
+<div id="songParts"><div class="empty">按下「一鍵隨機生成一首歌」，就會產生主歌、預副歌、副歌與橋段的旋律草稿。</div></div>
+<div class="actions"><button class="secondary" id="copy">複製整首旋律資料</button><button class="secondary" id="midiInfo">如何放進 DAW？</button></div>
+<div class="status" id="status">每次生成都會重新抽取旋律與節奏。網頁使用瀏覽器合成音色，不需額外音源。</div>
+</section></div><div class="footer">HOOK LAB · 每次隨機，保留你的創作主導權。</div></main>
+<script>
+const $=id=>document.getElementById(id);
+const names=['C','C♯','D','E♭','E','F','F♯','G','A♭','A','B♭','B'];
+const semis={C:0,G:7,D:2,A:9,F:5,'B♭':10,'E♭':3};
+const scales={major:[0,2,4,5,7,9,11],minor:[0,2,3,5,7,8,10],pent:[0,2,4,7,9]};
+let songData=[],ctx=null,nodes=[];
+const rand=a=>a[Math.floor(Math.random()*a.length)],ri=(a,b)=>Math.floor(Math.random()*(b-a+1))+a;
+$('length').oninput=()=> $('lengthVal').textContent=$('length').value+' 個';
+$('tempo').oninput=()=> $('tempoVal').textContent=$('tempo').value+' BPM';
+function pitchName(m){return names[(m%12+12)%12]+(Math.floor(m/12)-1)}
+function allowedPitches(){
+ let mode=$('tonality').value;if(mode==='free')return null;
+ let root=semis[$('key').value]||0;return scales[mode].map(n=>(n+root)%12);
+}
+function makePitch(prev,feel,allowed){
+ let pool=[];
+ // Typical lead-vocal range: MIDI 60–76, avoid octave leaps and keep melodic contour singable.
+ for(let m=60;m<=76;m++)if(!allowed||allowed.includes(m%12))pool.push(m);
+ if(prev==null)return rand(pool.filter(m=>m>=64&&m<=72));
+ let candidates=pool.filter(m=>Math.abs(m-prev)<= (feel==='anthem'?7:5));
+ if(!candidates.length)candidates=pool.filter(m=>Math.abs(m-prev)<=7);
+ if(feel==='gentle')candidates=candidates.filter(m=>Math.abs(m-prev)<=3);
+ if(feel==='pop'&&Math.random()<.35)candidates=candidates.filter(m=>Math.abs(m-prev)<=2);
+ if(feel==='rock'&&Math.random()<.3)candidates=candidates.filter(m=>Math.abs(m-prev)<=5);
+ return rand(candidates.length?candidates:pool);
+}
+function makeRhythm(n,feel){
+ // Durations in sixteenth-note units: 1=16th, 2=8th, 4=quarter, 6=dotted quarter, 8=half.
+ const patterns=feel==='gentle'?[[4,4,8,4],[4,6,2,4,4],[8,4,4,4],[4,4,4,4,4,4]]:
+ feel==='rock'?[[2,2,4,2,2,4],[4,2,2,4,4],[2,2,2,2,4,4],[4,4,2,2,4]]:
+ [[4,2,2,4,4],[2,2,4,4,4],[4,4,2,2,4],[2,2,2,2,4,4],[4,6,2,4,4],[4,4,4,8]];
+ let arr=[];while(arr.length<n){let p=rand(patterns);for(let d of p){if(arr.length<n)arr.push(d)}}
+ arr=arr.slice(0,n);
+ // Add an occasional tied note: the next note repeats the same pitch and is tied to it.
+ return arr;
+}
+function makePhrase(label,n,feel,prevEnd,allowed,chorus=false){
+ let pitches=[],rhythms=makeRhythm(n,feel),prev=prevEnd;
+ for(let i=0;i<n;i++){
+   let p;
+   if(chorus&&i>=2&&Math.random()<.28)p=pitches[i-2]; // motif recall
+   else if(i===n-1&&chorus)p=rand([prev,prev-2,prev+2,prev-3,prev+3]);
+   else p=makePitch(prev,feel,allowed);
+   p=Math.max(60,Math.min(76,p));
+   if(allowed&&!allowed.includes(p%12)){let near=[];for(let m=60;m<=76;m++)if(allowed.includes(m%12)&&Math.abs(m-p)<=2)near.push(m);if(near.length)p=rand(near)}
+   pitches.push(p);prev=p;
+ }
+ let tiePairs=[];
+ if($('ties').checked&&n>=4){for(let i=0;i<n-1;i++)if(Math.random()<.13){pitches[i+1]=pitches[i];tiePairs.push(i);i++;}}
+ return {label,notes:pitches.map((m,i)=>({m,d:rhythms[i],tieFrom:tiePairs.includes(i-1),tieTo:tiePairs.includes(i)})),feel};
+}
+function generateSong(onlyChorus=false){
+ let feel=$('feel').value;if(feel==='surprise')feel=rand(['pop','anthem','gentle','rock']);
+ const allowed=allowedPitches(),n=+$('length').value;
+ if(onlyChorus&&songData.length){let prev=songData[0].notes.at(-1).m;songData[0]=makePhrase('副歌',n,feel,prev,allowed,true);render();return}
+ let a=makePhrase('主歌',n,feel,null,allowed,false);
+ let b=makePhrase('預副歌',Math.max(4,n-1),feel,a.notes.at(-1).m,allowed,false);
+ let c=makePhrase('副歌 Hook',n,feel,b.notes.at(-1).m,allowed,true);
+ let d=makePhrase('橋段',Math.max(4,n-2),feel,c.notes.at(-1).m,allowed,false);
+ songData=[c,a,b,d]; // chorus first because hook is the core idea
+ render();
+}
+function rhythmLabel(d){return ({1:'十六分音符',2:'八分音符',3:'附點八分音符',4:'四分音符',6:'附點四分音符',8:'二分音符'})[d]||`${d}/16`;}
+function drawStaff(phrase){
+ const NS='http://www.w3.org/2000/svg',W=Math.max(480,phrase.notes.length*43+75),H=148;
+ let svg=document.createElementNS(NS,'svg');svg.setAttribute('viewBox',`0 0 ${W} ${H}`);svg.setAttribute('class','staff');
+ const el=(tag,attrs,text)=>{let e=document.createElementNS(NS,tag);Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,v));if(text!==undefined)e.textContent=text;svg.appendChild(e);return e};
+ for(let i=0;i<5;i++){let y=32+i*15;el('line',{x1:28,y1:y,x2:W-12,y2:y,stroke:'#364253','stroke-width':1})}
+ el('text',{x:2,y:74,fill:'#b6c6d8','font-size':31},'𝄞');
+ let coords=[];
+ phrase.notes.forEach((note,i)=>{let x=50+i*43,y=91-(note.m-67)*4.2;y=Math.max(17,Math.min(102,y));coords.push({x,y,note});
+ el('ellipse',{cx:x,cy:y,rx:6.2,ry:4.4,fill:'#83c8ff',transform:`rotate(-20 ${x} ${y})`});
+ if(note.d<=4)el('line',{x1:x+5,y1:y,x2:x+5,y2:y-24,stroke:'#83c8ff','stroke-width':1.6});
+ if(note.d===1||note.d===2)el('path',{d:`M ${x+5} ${y-24} q 12 4 5 13`,fill:'none',stroke:'#83c8ff','stroke-width':2});
+ el('text',{x:x-9,y:124,fill:'#d6e4f3','font-size':10},pitchName(note.m));
+ });
+ // Curved tie arcs between identical consecutive notes.
+ phrase.notes.forEach((note,i)=>{if(note.tieTo&&coords[i+1]){let a=coords[i],b=coords[i+1];el('path',{d:`M ${a.x+4} ${a.y+7} Q ${(a.x+b.x)/2} ${Math.max(a.y,b.y)+23} ${b.x-4} ${b.y+7}`,fill:'none',stroke:'#8dcaff','stroke-width':1.7})}});
+ return svg;
+}
+function render(){
+ let allowed=allowedPitches();$('tempoMeta').textContent=$('tempo').value+' BPM';$('keyMeta').textContent=allowed?$('key').value+' '+$('tonality').value:'自由音高';$('rangeMeta').textContent='音域約 '+pitchName(Math.min(...songData.flatMap(p=>p.notes.map(n=>n.m))))+'–'+pitchName(Math.max(...songData.flatMap(p=>p.notes.map(n=>n.m))));
+ $('songTitle').textContent=rand(['還沒命名的歌','下一首歌的雛形','新的副歌靈感','把這句唱出來']);
+ const wrap=$('songParts');wrap.innerHTML='';
+ songData.forEach((p,index)=>{let box=document.createElement('div');box.className='part';let title=document.createElement('div');title.className='partTitle';title.innerHTML=`<span>${p.label}</span><small>${p.notes.length} 個音符</small>`;box.appendChild(title);let staffbox=document.createElement('div');staffbox.className='staffbox';staffbox.appendChild(drawStaff(p));box.appendChild(staffbox);let chips=document.createElement('div');chips.className='chips';p.notes.forEach((n,i)=>{let ch=document.createElement('span');ch.className='chip';ch.innerHTML=`${i+1}. <b>${pitchName(n.m)}</b> · ${rhythmLabel(n.d)}${n.tieTo?' ↗ 連結':''}`;chips.appendChild(ch)});box.appendChild(chips);wrap.appendChild(box)});
+ $('status').textContent=`已生成 ${songData.length} 段旋律。沒有休止符；節奏以四分、八分、十六分音符等時值組成，偶爾以連結線延長同音。`;
+}
+function stop(){nodes.forEach(n=>{try{n.stop()}catch(e){}});nodes=[]}
+async function play(){
+ stop();if(!songData.length)return;let AC=window.AudioContext||window.webkitAudioContext;if(!AC){$('status').textContent='瀏覽器不支援 Web Audio。';return}
+ ctx=ctx||new AC();await ctx.resume();let t=ctx.currentTime+.08,bpm=+$('tempo').value,unit=60/bpm/4;
+ songData.forEach((part,pi)=>{part.notes.forEach((n,i)=>{let dur=n.d*unit,osc=ctx.createOscillator(),gain=ctx.createGain();osc.type='triangle';osc.frequency.value=440*Math.pow(2,(n.m-69)/12);gain.gain.setValueAtTime(.001,t);gain.gain.linearRampToValueAtTime(.17,t+.02);gain.gain.setTargetAtTime(.001,t+Math.max(.03,dur-.04),.03);osc.connect(gain);gain.connect(ctx.destination);osc.start(t);osc.stop(t+dur+.05);nodes.push(osc);t+=dur});t+=unit*4});
+ $('status').textContent='正在播放整首旋律草稿。旋律音域刻意集中，適合拿來試唱，再依你的音域調整。';
+}
+$('song').onclick=()=>generateSong(false);$('reroll').onclick=()=>generateSong(true);$('play').onclick=play;
+$('copy').onclick=async()=>{let text=songData.map(p=>p.label+'\n'+p.notes.map((n,i)=>`${i+1}. ${pitchName(n.m)} | ${rhythmLabel(n.d)}${n.tieTo?'（與下一音連結）':''}`).join('\n')).join('\n\n');try{await navigator.clipboard.writeText(text);$('status').textContent='已複製旋律資料。';}catch(e){$('status').textContent=text}};
+$('midiInfo').onclick=()=>{$('status').textContent='目前版本可複製音符與節奏資料、播放聽感；尚未直接匯出 MIDI。下一版可加入 MIDI 匯出，方便拖進 Cubase、Logic Pro 或 Ableton。'};
+$('tonality').onchange=()=>{if(songData.length)render()};
+$('key').onchange=()=>{if(songData.length&&$('tonality').value!=='free')render()};
+generateSong(false);
+</script></body></html>

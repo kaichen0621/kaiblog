@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAI STUDIO Discord 入群申請</title>
+    <style>
+        :root {
+            --bg-color: #121316;
+            --card-bg: #1e1f24;
+            --text-primary: #ffffff;
+            --text-secondary: #9ea3b0;
+            --accent-color: #00b0ff;
+            --accent-hover: #0091ea;
+            --danger-color: #ff5252;
+            --border-color: #2a2b32;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-primary); height: 100vh; display: flex; justify-content: center; align-items: center; overflow: hidden; position: relative; }
+
+        .step-container { width: 100%; max-width: 520px; padding: 24px; display: none; flex-direction: column; animation: fadeIn 0.3s ease; }
+        .step-container.active { display: flex; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 12px; line-height: 1.3; }
+        p.desc { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 24px; line-height: 1.5; }
+        .required-star { color: var(--danger-color); margin-left: 4px; }
+
+        input[type="text"], textarea, select {
+            width: 100%; background: #18191c; border: 2px solid var(--border-color);
+            border-radius: 8px; padding: 14px 16px; color: var(--text-primary); font-size: 1.05rem; outline: none; transition: border-color 0.2s;
+        }
+        input[type="text"]:focus, textarea:focus, select:focus { border-color: var(--accent-color); }
+        textarea { resize: none; height: 120px; }
+
+        .checkbox-group { display: flex; flex-direction: column; gap: 10px; }
+        .custom-option {
+            display: flex; align-items: center; background: #18191c; border: 1px solid var(--border-color);
+            padding: 12px 16px; border-radius: 8px; cursor: pointer; transition: all 0.2s;
+        }
+        .custom-option:hover { border-color: var(--accent-color); }
+        .custom-option input { width: 18px; height: 18px; margin-right: 12px; accent-color: var(--accent-color); }
+
+        .btn-next {
+            background-color: var(--accent-color); color: #fff; border: none; padding: 12px 28px;
+            border-radius: 6px; font-size: 1rem; font-weight: 600; cursor: pointer; align-self: flex-start; margin-top: 20px; transition: background 0.2s;
+        }
+        .btn-next:hover { background-color: var(--accent-hover); }
+
+        .toast {
+            position: fixed; bottom: 24px; right: 24px; background: #1e1f24; border: 1px solid var(--danger-color);
+            border-radius: 8px; padding: 16px 20px; display: none; flex-direction: column; gap: 4px; z-index: 100;
+        }
+        .toast-title { color: var(--danger-color); font-size: 0.9rem; font-weight: bold; }
+        .toast-msg { color: var(--text-secondary); font-size: 0.85rem; }
+
+        .nav-controls { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 6px; }
+        .nav-btn { background: #18191c; border: 1px solid var(--border-color); color: var(--text-primary); width: 36px; height: 36px; border-radius: 6px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <form id="multiStepForm">
+        <!-- Step 0: Welcome -->
+        <div class="step-container active" data-step="0">
+            <h1>歡迎加入 KAI STUDIO Discord 社群</h1>
+            <p class="desc">這是一個審核制社群，資料僅供管理團隊核對使用，不用一分鐘即可填寫完畢。</p>
+            <button type="button" class="btn-next" onclick="nextStep()">開始填寫</button>
+        </div>
+
+        <!-- Step 1: 小名/暱稱 -->
+        <div class="step-container" data-step="1">
+            <h1>小名/暱稱<span class="required-star">*</span></h1>
+            <p class="desc">僅供稱呼，可非真實姓名</p>
+            <input type="text" id="nickname" placeholder="例如：小明" required>
+            <button type="button" class="btn-next" onclick="nextStep()">繼續</button>
+        </div>
+
+        <!-- Step 2: Discord 使用者名稱 -->
+        <div class="step-container" data-step="2">
+            <h1>Discord 使用者名稱<span class="required-star">*</span></h1>
+            <p class="desc">請填寫您的 Discord User ID 或 Username</p>
+            <input type="text" id="discord_username" placeholder="例如：kai" required>
+            <button type="button" class="btn-next" onclick="nextStep()">繼續</button>
+        </div>
+
+        <!-- Step 3: 興趣愛好 -->
+        <div class="step-container" data-step="3">
+            <h1>興趣愛好</h1>
+            <p class="desc">可複選您感興趣的領域</p>
+            <div class="checkbox-group">
+                <label class="custom-option"><input type="checkbox" name="interests" value="音樂製作">音樂製作</label>
+                <label class="custom-option"><input type="checkbox" name="interests" value="程式開發">程式開發</label>
+                <label class="custom-option"><input type="checkbox" name="interests" value="影片剪輯">影片剪輯</label>
+                <label class="custom-option"><input type="checkbox" name="interests" value="鐵道模擬">鐵道模擬</label>
+            </div>
+            <button type="button" class="btn-next" onclick="nextStep()">繼續</button>
+        </div>
+
+        <!-- Step 4: 加入動機 -->
+        <div class="step-container" data-step="4">
+            <h1>加入動機<span class="required-star">*</span></h1>
+            <p class="desc">請簡述您想加入社群的原因</p>
+            <textarea id="motivation" placeholder="請輸入動機..." required></textarea>
+            <button type="button" class="btn-next" onclick="nextStep()">繼續</button>
+        </div>
+
+        <!-- Step 5: 技術問題處理方式 -->
+        <div class="step-container" data-step="5">
+            <h1>遇到技術問題時，您會如何處理？<span class="required-star">*</span></h1>
+            <p class="desc">請選擇您最接近的習慣</p>
+            <select id="tech_problem" required>
+                <option value="" disabled selected>請選擇...</option>
+                <option value="視情況而定">視情況而定</option>
+                <option value="直接向社群提問">直接向社群提問</option>
+                <option value="先自行 Google / 查閱文件">先自行 Google / 查閱文件</option>
+            </select>
+            <button type="button" class="btn-next" onclick="nextStep()">繼續</button>
+        </div>
+
+        <!-- Step 6: 社群參與傾向 -->
+        <div class="step-container" data-step="6">
+            <h1>您在社群中更傾向於？<span class="required-star">*</span></h1>
+            <p class="desc">了解您的參與習慣</p>
+            <select id="community_role" required>
+                <option value="" disabled selected>請選擇...</option>
+                <option value="兩者皆可">兩者皆可</option>
+                <option value="積極參與討論">積極參與討論</option>
+                <option value="潛水觀望">潛水觀望</option>
+            </select>
+            <button type="button" class="btn-next" onclick="nextStep()">繼續</button>
+        </div>
+
+        <!-- Step 7: 守則同意與最終點擊提交 -->
+        <div class="step-container" data-step="7">
+            <h1>社群守則同意與提交<span class="required-star">*</span></h1>
+            <p class="desc">請勾選同意條款並點擊「確認送出表單」，系統將儲存您的回應並自動導回驗證頁面。</p>
+            <label class="custom-option" style="margin-bottom: 15px;">
+                <input type="checkbox" id="rules_agree" required> 我已詳細閱讀並同意遵守社群守則
+            </label>
+            <button type="button" class="btn-next" style="background-color: #00c853;" onclick="submitForm()">🚀 確認送出表單並跳轉</button>
+        </div>
+    </form>
+
+    <!-- Error Toast -->
+    <div id="toast" class="toast">
+        <div class="toast-title">⊗ Validation Error</div>
+        <div id="toast-msg" class="toast-msg">請完成必填欄位</div>
+    </div>
+
+    <!-- 右下角切換控制 -->
+    <div class="nav-controls">
+        <button class="nav-btn" onclick="prevStep()">▲</button>
+        <button class="nav-btn" onclick="nextStep()">▼</button>
+    </div>
+
+    <script>
+        let currentStep = 0;
+        const totalSteps = 8;
+
+        // 填入你的 Docusaurus 驗證頁面完整網址
+        const REDIRECT_URL = 'https://kaiblog.is-a.dev/verify?status=success';
+
+        function showStep(step) {
+            document.querySelectorAll('.step-container').forEach(el => el.classList.remove('active'));
+            document.querySelector(`.step-container[data-step="${step}"]`).classList.add('active');
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-msg').textContent = message;
+            toast.style.display = 'flex';
+            setTimeout(() => { toast.style.display = 'none'; }, 3000);
+        }
+
+        function validateStep(step) {
+            if (step === 1 && !document.getElementById('nickname').value.trim()) { showToast('請填寫小名/暱稱'); return false; }
+            if (step === 2 && !document.getElementById('discord_username').value.trim()) { showToast('請填寫 Discord 使用者名稱'); return false; }
+            if (step === 4 && !document.getElementById('motivation').value.trim()) { showToast('請填寫加入動機'); return false; }
+            if (step === 5 && !document.getElementById('tech_problem').value) { showToast('請選擇技術問題處理方式'); return false; }
+            if (step === 6 && !document.getElementById('community_role').value) { showToast('請選擇社群參與傾向'); return false; }
+            if (step === 7 && !document.getElementById('rules_agree').checked) { showToast('需勾選同意社群守則才能送出'); return false; }
+            return true;
+        }
+
+        function nextStep() {
+            if (currentStep > 0 && !validateStep(currentStep)) return;
+            if (currentStep < totalSteps - 1) {
+                currentStep++;
+                showStep(currentStep);
+            }
+        }
+
+        function prevStep() {
+            if (currentStep > 0) {
+                currentStep--;
+                showStep(currentStep);
+            }
+        }
+
+        function submitForm() {
+            if (!validateStep(7)) return;
+
+            // 1. 完整收集全部 7 個問題的回答
+            const interests = Array.from(document.querySelectorAll('input[name="interests"]:checked')).map(cb => cb.value);
+            const formData = {
+                id: Math.random().toString(36).substring(2, 8),
+                nickname: document.getElementById('nickname').value,
+                discord_username: document.getElementById('discord_username').value,
+                interests: interests,
+                motivation: document.getElementById('motivation').value,
+                tech_problem: document.getElementById('tech_problem').value,
+                community_role: document.getElementById('community_role').value,
+                submitted_at: new Date().toLocaleString()
+            };
+
+            // 2. 將提交資料存入 LocalStorage
+            let history = JSON.parse(localStorage.getItem('kai_studio_form_submissions') || '[]');
+            history.push(formData);
+            localStorage.setItem('kai_studio_form_submissions', JSON.stringify(history));
+
+            // 3. 帶參數跳轉回 Docusaurus 頁面解鎖按鈕
+            window.location.href = REDIRECT_URL;
+        }
+
+        // Enter 鍵快速跳下一頁
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                if (currentStep === totalSteps - 1) submitForm();
+                else nextStep();
+            }
+        });
+    </script>
+</body>
+</html>

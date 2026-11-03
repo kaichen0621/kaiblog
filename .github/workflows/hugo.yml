@@ -1,0 +1,123 @@
+
+name: Deploy Hugo to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      HUGO_VERSION: "0.158.0"
+      HUGO_ENVIRONMENT: production
+
+    steps:
+      # 取得網站原始碼與 PaperMod 主題
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      # 安裝符合 PaperMod 要求的 Hugo Extended
+      - name: Install Hugo
+        run: |
+          wget -q -O "${{ runner.temp }}/hugo.deb" \
+            "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
+
+          sudo dpkg -i "${{ runner.temp }}/hugo.deb"
+          hugo version
+
+      # 安裝 Dart Sass
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+
+      # 安裝 Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # 安裝前端依賴
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
+            npm ci
+          fi
+
+      # 設定 GitHub Pages
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      # 清除舊檔案，重新建置正式網站
+      - name: Build Hugo
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+        run: |
+          echo "Removing old generated files..."
+
+          rm -rf public
+
+          echo "Building production website..."
+
+          hugo --gc --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+          echo "Hugo build completed."
+
+      # 檢查是否仍有 localhost 網址
+      - name: Check localhost links
+        run: |
+          if grep -R -q -E \
+            'https?://localhost:1313' \
+            public --include='*.html'; then
+
+            echo "::error::Found localhost links in HTML"
+
+            grep -R -l -E \
+              'https?://localhost:1313' \
+              public --include='*.html' | head -20
+
+            exit 1
+          fi
+
+          echo "No localhost links found."
+
+      # 上傳網站成品
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    name: Deploy website
+    runs-on: ubuntu-latest
+    needs: build
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      # 發布到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

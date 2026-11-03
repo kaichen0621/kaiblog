@@ -1,0 +1,80 @@
+---
+title: KAIBLOG
+authors: [KAI]
+slug: /
+---
+
+# <span className="blue-title">歡迎來到 KAI BLOG !</span>
+嗨，我是 **KAI** 
+
+歡迎你來到 KAI BLOG !   
+這裡是我發貼文和分享經驗的地方。這個網站分為以下幾個區域：
+
+
+---
+## [📝 最新](/blog)
+你可以把這裡想像成我的社群媒體頁面，從 2026 年起，主要會把一些文章發在這裡。  
+在新版的 `Docusaurus` 當中，該頁面只能顯示最新的五篇文章，有點可惜！
+
+### [🖨️ 所有貼文列表](/blog/archive)
+這裡放了我所有寫過的 `Blog` ，請不要介意寫得很爛，因為有時候真的沒空啦！
+
+## [📋 筆記](/docs)
+這裡會是記錄筆記的地方，有時候我想要公開就會不定期有新內容喔！   
+
+
+## [🎲 隨機](/random)
+**按一下會有隨機貼文，看看運氣好不好有沒有機會抽到曾老師**
+
+## [📱 應用程式](/app)
+這裡會顯示我在 Mac 上的軟體清單，看看有沒有你喜歡的
+
+## 頁面回歸
+先恭喜這兩個頁面讓我重新使用他們
+
+## [近況](/now)
+有空寫一下最近發生的事情
+## [使用](/use)
+介紹我認為好用的工具，與 `應用程式` 不同的是，工具不是應用程式🤣
+
+
+## [資源？文章？](/resource)
+
+敬請期待我的新區域～
+
+## 🛠️ 其他小技巧！
+
+* **RSS 訂閱**：你可以用 RSS 訂閱我
+    - 連結：`https://kaiblog.is-a.dev`
+* **全站搜尋**：按下 `Ctrl + K` 即可搜尋關鍵字！
+* **聯繫我**：有任何建議，歡迎寫信至 `kaigithub0621@gmail.com`
+
+
+
+## [🎬 達芬奇免費模板 😍](/docs/resolve/resolve.V4)
+我更新 **ResolveV4Pack**
+最新的下載在 itch.io 速度超級快！
+替達芬奇製作出許多模板，均為免費模板！
+#### 先別急著下載，V5 即將登場
+
+## [📜 BlogBlog.Club](https://blogblog.club/)
+ 
+BlogBlog.Club 是 `WIWI` 的最新專案，他希望大家一起來寫部落格，逃離演算法，拯救世界！  
+我每個月都會參加「BlogBlog 同樂會」。
+
+## 📺 YouTube 最新影片 🎉
+
+> **KAI STUDIO** (最後更新：2026-09-18)     
+訂閱人數：32
+
+<div className="youtube-s">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zaT7QzLuTb0?si=OqPPc6gbRPYIMvH-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p style={{ textAlign: 'center', padding: '0 1rem', opacity: 0.7, margin: '1rem 0 0' }}>KAI | 中秋連假隨機直播！DAY01</p>
+
+</div>
+
+
+### [🌐 網站更新紀錄](/docs/update)
+### <a href="/BVE.html">BVE Route Studio</a>
+
+開發 BVE 超好用工具！

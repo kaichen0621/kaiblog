@@ -1,0 +1,84 @@
+
+{{/* 收集 blog、posts、docs 的文章 */}}
+{{ $urls := slice }}
+
+{{ range site.RegularPages }}
+  {{ if in (slice "blog" "posts" "docs") .Section }}
+    {{ $urls = $urls | append .RelPermalink }}
+  {{ end }}
+{{ end }}
+
+<div id="random-page">
+  <h2>正在挑選文章...</h2>
+
+  <p id="random-status">
+    從日記、貼文與文件中隨機挑選
+  </p>
+
+  <div class="random-loading">
+    <span></span>
+  </div>
+</div>
+
+<style>
+#random-page {
+  text-align: center;
+  padding: 65px 0;
+}
+
+#random-page h2 {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+#random-status {
+  color: var(--secondary);
+}
+
+.random-loading {
+  width: 140px;
+  height: 3px;
+  margin: 30px auto;
+  background: var(--tertiary);
+  overflow: hidden;
+}
+
+.random-loading span {
+  display: block;
+  width: 40%;
+  height: 100%;
+  background: #429EEE;
+  animation: random-loading 1s infinite alternate;
+}
+
+@keyframes random-loading {
+  from { transform: translateX(0); }
+  to { transform: translateX(210%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .random-loading span {
+    animation: none;
+  }
+}
+</style>
+
+<script>
+(function () {
+  const articles = {{ $urls | jsonify | safeJS }};
+  const status = document.getElementById("random-status");
+
+  if (!articles.length) {
+    status.textContent = "目前沒有可閱讀的文章。";
+    document.querySelector(".random-loading").hidden = true;
+    return;
+  }
+
+  const index = Math.floor(Math.random() * articles.length);
+
+  setTimeout(function () {
+    window.location.replace(articles[index]);
+  }, 1200);
+})();
+</script>

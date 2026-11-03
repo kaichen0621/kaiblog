@@ -1,5 +1,7 @@
-# Website
+## 目前連結
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+https://kaistudio2.vercel.app/
 
-網址連結：https://kaiblog.is-a.dev/
+## 未來更新
+
+https://kaichen0621.github.io/kaistudio/
