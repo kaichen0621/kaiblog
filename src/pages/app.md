@@ -14,6 +14,7 @@ description: "我的 Mac 軟體清單"
 ## 這是我在 Mac 上的軟體清單
 
 
+
 1. Addictive Drums 2 Demo : 好用鼓音源，五月天用
 2. Addictive Keys Demo : 好用鋼琴音源，我覺得超好聽
 3. Affinity : 製作縮圖常用
