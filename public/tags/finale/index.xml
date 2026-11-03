@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Finale on KAI STUDIO</title><link>http://localhost:1313/tags/finale/</link><description>Recent content in Finale on KAI STUDIO</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Sat, 10 Jan 2026 23:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/finale/index.xml" rel="self" type="application/rss+xml"/><item><title>Finale 教學首頁</title><link>http://localhost:1313/docs/index/</link><pubDate>Sat, 10 Jan 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/docs/index/</guid><description>&lt;h1 id="finale-教學"&gt;Finale 教學&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Finale on KAI STUDIO</title><link>https://kaistudio2.vercel.app/tags/finale/</link><description>Recent content in Finale on KAI STUDIO</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Sat, 10 Jan 2026 23:00:00 +0000</lastBuildDate><atom:link href="https://kaistudio2.vercel.app/tags/finale/index.xml" rel="self" type="application/rss+xml"/><item><title>Finale 教學首頁</title><link>https://kaistudio2.vercel.app/docs/index/</link><pubDate>Sat, 10 Jan 2026 23:00:00 +0000</pubDate><guid>https://kaistudio2.vercel.app/docs/index/</guid><description>&lt;h1 id="finale-教學"&gt;Finale 教學&lt;/h1&gt;
 &lt;p&gt;哈囉歡迎來到 Finale 教學&lt;/p&gt;
 &lt;p&gt;:::danger 互動式教學！
 為了讓大家更方便閱讀，因此將圖片放入下拉式選單
 :::
 這邊會不定期更新教學，先簡單列出來好了&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://localhost:1313/docs/Finale/download"&gt;下載與安裝&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:1313/docs/Finale/create"&gt;建立新專案&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:1313/docs/Finale/note-input"&gt;快速音符輸入&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:1313/docs/Finale/select-tool"&gt;選擇工具&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:1313/docs/Finale/staff-tool"&gt;譜表屬性工具&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:1313/docs/Finale/measure-tool"&gt;小節屬性工具&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:1313/docs/Finale/key-tool"&gt;調號/拍號屬性工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kaistudio2.vercel.app/docs/Finale/download"&gt;下載與安裝&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kaistudio2.vercel.app/docs/Finale/create"&gt;建立新專案&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kaistudio2.vercel.app/docs/Finale/note-input"&gt;快速音符輸入&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kaistudio2.vercel.app/docs/Finale/select-tool"&gt;選擇工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kaistudio2.vercel.app/docs/Finale/staff-tool"&gt;譜表屬性工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kaistudio2.vercel.app/docs/Finale/measure-tool"&gt;小節屬性工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kaistudio2.vercel.app/docs/Finale/key-tool"&gt;調號/拍號屬性工具&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;:::info 未來更新&lt;/p&gt;
 &lt;ul&gt;
