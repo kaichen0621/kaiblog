@@ -20,6 +20,8 @@ TocOpen: false
 ## 聯絡我
 - Email: kaigithub0621@gmail.com
 - Signal: kai.621
+連結：
+https://signal.me/#eu/AGOhTBYudVOaZ5j1qL2tcSVstuC8gEKT0cOu9CE_PGRZzlZrx6tOuZddntk2ROND
 - Discord群組： https://discord.gg/ze9rM8pEPy   
 
 ### Youtube 播放清單：   
