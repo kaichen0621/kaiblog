@@ -1594,20 +1594,20 @@ kaistudio update !&lt;/p&gt;
 &lt;h2 id="13-2026-08-02"&gt;#13 2026-08-02&lt;/h2&gt;
 &lt;p&gt;新增 ashin.HTML 相片館網頁&lt;/p&gt;
 &lt;h2 id="12-2026-07-30"&gt;#12 2026-07-30&lt;/h2&gt;
-&lt;p&gt;更換網頁顯示字體：Chiron GoRound TC&lt;/p&gt;</description></item><item><title>近況</title><link>https://kaiblog.is-a.dev/now/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/now/</guid><description>&lt;h1 id="近況"&gt;近況&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;這裡會放我平常的一些簡短紀錄&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;更換網頁顯示字體：Chiron GoRound TC&lt;/p&gt;</description></item><item><title>近況</title><link>https://kaiblog.is-a.dev/now/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/now/</guid><description>&lt;h3 id="近況"&gt;近況&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;這裡會放我平常的一些簡短紀錄&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;📅 最後更新：2026-10-07&lt;/p&gt;
-&lt;h1 id="最新動態-"&gt;最新動態 ⚡️&lt;/h1&gt;
-&lt;h3 id="20261017"&gt;2026.10.17&lt;/h3&gt;
+&lt;h3 id="最新動態-"&gt;最新動態 ⚡️&lt;/h3&gt;
+&lt;h4 id="20261017"&gt;2026.10.17&lt;/h4&gt;
 &lt;p&gt;終於可以唱到 G#4 了！運氣好的話可以到 A4&lt;/p&gt;
-&lt;h3 id="20261007"&gt;2026.10.07&lt;/h3&gt;
+&lt;h4 id="20261007"&gt;2026.10.07&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;第一次音樂會第一場彩排，都我做事
 這邊列出一些：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;10.23檢場&lt;/p&gt;
+&lt;p&gt;11.06檢場&lt;/p&gt;
 &lt;p&gt;下半場：鋼琴半開&lt;/p&gt;
 &lt;p&gt;8&lt;br&gt;
 檢場 &lt;br&gt;
@@ -1737,9 +1737,10 @@ window.location.replace(articles[index]);
 &lt;/script&gt;</description></item><item><title>關於我</title><link>https://kaiblog.is-a.dev/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/about/</guid><description>&lt;h2 id="歡迎來到-kai-blog-about"&gt;歡迎來到 KAI BLOG &lt;code&gt;/about&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;這個網站是我的個人創作與學習紀錄平台。&lt;br&gt;
 在這裡，你可以找到：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;- 軟體與科技筆記：一些我在學習軟體和科技小技巧的整理。
-- 創作與作品展示：我的小作品、音樂、實驗性創作。
-- 個人日記？(應該不會有人想看吧...)🤣🤣🤣
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;希望你能在這裡找到有趣的內容，也歡迎寫 Email 交流。
+&lt;ul&gt;
+&lt;li&gt;軟體與科技筆記：一些我在學習軟體和科技小技巧的整理。&lt;/li&gt;
+&lt;li&gt;創作與作品展示：我的小作品、音樂、實驗性創作。&lt;/li&gt;
+&lt;li&gt;個人日記？(應該不會有人想看吧&amp;hellip;)🤣🤣🤣&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;希望你能在這裡找到有趣的內容
 網站持續更新中，記得回來看看最新的分享！&lt;/p&gt;</description></item></channel></rss>
