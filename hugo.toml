@@ -23,6 +23,7 @@ summaryLength = 140
 # 自定義文章永久連結格式為 `/:title/`
 [permalinks]
   post = "/:title/"
+  blog = "/blog/:slug/"
 
 
   [menu]
