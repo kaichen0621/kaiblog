@@ -2,6 +2,7 @@
 slug: about
 title: 關於我
 authors: [KAI]
+TocOpen: false
 ---
 
 ## 歡迎來到 KAI BLOG `/about`
