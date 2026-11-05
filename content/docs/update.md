@@ -4,6 +4,8 @@ slug: /update
 ---
 
 # ⬆︎ 更新紀錄 `/update`
+## #21 2026-11-03
+更改主題 Docsaurus to HUGO
 ## #20 2026-10-28
 新增 BVE Route Studio !
 ## #19 2026-10-18
