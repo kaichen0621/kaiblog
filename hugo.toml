@@ -147,7 +147,7 @@ summaryLength = 140
   StartYear = 2026
   EndYear = 2026
   [params.assets]
-      favicon = "/img/KAI_LOGO_B.png"
+      favicon = "/favicon.ico"
       favicon16x16 = "/img/KAI_LOGO_B.png"
       favicon32x32 = "/img/KAI_LOGO_B.png"
 
