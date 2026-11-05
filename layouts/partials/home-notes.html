@@ -1,0 +1,67 @@
+<div id="home-sticky-note" class="sticky-note-banner" style="display: none;">
+  <div class="note-content-wrapper">
+    <span class="note-badge">便利貼</span>
+    <p id="note-text-display"></p>
+    <a href="/notes" class="note-more-link">動態牆 &rarr;</a>
+  </div>
+</div>
+
+<style>
+.sticky-note-banner {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  padding: 12px 18px;
+  margin: 10px 0 20px 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+}
+.dark .sticky-note-banner {
+  background: rgba(40, 40, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.note-content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+.note-badge {
+  background: #007aff;
+  color: white;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+#note-text-display {
+  margin: 0;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.note-more-link {
+  color: #007aff;
+  text-decoration: none;
+  font-weight: 500;
+  white-space: nowrap;
+}
+</style>
+
+<script>
+fetch('/notes.txt')
+  .then(res => res.text())
+  .then(data => {
+    // 取得 --- 上面的第一行內容
+    const parts = data.split('---');
+    if (parts.length > 0) {
+      const nowContent = parts[0].trim();
+      if (nowContent) {
+        document.getElementById('note-text-display').innerText = nowContent;
+        document.getElementById('home-sticky-note').style.display = 'block';
+      }
+    }
+  });
+</script>
