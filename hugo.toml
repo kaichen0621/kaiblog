@@ -1,7 +1,7 @@
 baseURL = "https://kaiblog.is-a.dev/"
 locale = "zh-tw"
 defaultContentLanguage = "zh-tw"
-title = "KAI STUDIO"
+title = "KAI BLOG"
 theme = "PaperMod"
 
 enableInlineShortcodes = true
@@ -96,7 +96,7 @@ summaryLength = 140
 [params]
 
   env = "production"
-  description = "KAI STUDIO 官方Youtube 筆記資源等詳細資訊"
+  description = "KAI BLOG 撰寫每日筆記"
   author = "Kai"
   defaultTheme = "auto"
   ShowCodeCopyButtons = true
@@ -110,15 +110,15 @@ summaryLength = 140
   comments = true
 
   [params.homeInfoParams]
-    Title = "歡迎來到 KAI STUDIO"
+    Title = "歡迎來到 KAI BLOG"
     Content = """
 往下滑看看吧
-**2026.10**
+**2026.11**
 """
 
   # 網站左上角標籤配置
   [params.label]
-    text = "KAI STUDIO"
+    text = "KAI BLOG"
     icon = "/img/KAI_LOGO_B.png"
     iconHeight = 35
 
