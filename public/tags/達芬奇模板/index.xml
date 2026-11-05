@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>達芬奇模板 on KAI STUDIO</title><link>https://kaiblog.is-a.dev/tags/%E9%81%94%E8%8A%AC%E5%A5%87%E6%A8%A1%E6%9D%BF/</link><description>Recent content in 達芬奇模板 on KAI STUDIO</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Sun, 05 Apr 2026 08:00:00 +0000</lastBuildDate><atom:link href="https://kaiblog.is-a.dev/tags/%E9%81%94%E8%8A%AC%E5%A5%87%E6%A8%A1%E6%9D%BF/index.xml" rel="self" type="application/rss+xml"/><item><title>達芬奇模板V4</title><link>https://kaiblog.is-a.dev/docs/resolve/resolve.v4/</link><pubDate>Sun, 05 Apr 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/docs/resolve/resolve.v4/</guid><description>&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>達芬奇模板 on KAI STUDIO</title><link>http://localhost:1313/tags/%E9%81%94%E8%8A%AC%E5%A5%87%E6%A8%A1%E6%9D%BF/</link><description>Recent content in 達芬奇模板 on KAI STUDIO</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Sun, 05 Apr 2026 08:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E9%81%94%E8%8A%AC%E5%A5%87%E6%A8%A1%E6%9D%BF/index.xml" rel="self" type="application/rss+xml"/><item><title>達芬奇模板V4</title><link>http://localhost:1313/docs/resolve/resolve.v4/</link><pubDate>Sun, 05 Apr 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/docs/resolve/resolve.v4/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;發布時間：04-05&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1 id="達芬奇模板v4"&gt;達芬奇模板V4&lt;/h1&gt;
@@ -33,7 +33,7 @@
 &lt;li&gt;
 &lt;p&gt;方式二：將 KAISTUDIO.drfx 拖曳到以下資料夾：&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>達芬奇模板V1</title><link>https://kaiblog.is-a.dev/docs/resolve/resolvepackv1-update/</link><pubDate>Wed, 31 Dec 2025 08:30:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/docs/resolve/resolvepackv1-update/</guid><description>&lt;p&gt;import PaidContent01 from &amp;lsquo;@site/src/components/PaidContent01&amp;rsquo;;&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>達芬奇模板V1</title><link>http://localhost:1313/docs/resolve/resolvepackv1-update/</link><pubDate>Wed, 31 Dec 2025 08:30:00 +0000</pubDate><guid>http://localhost:1313/docs/resolve/resolvepackv1-update/</guid><description>&lt;p&gt;import PaidContent01 from &amp;lsquo;@site/src/components/PaidContent01&amp;rsquo;;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;發布時間：12-13
 :::warning 警告 ！！！
@@ -81,7 +81,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Windows 路徑：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-MarkDown" data-lang="MarkDown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;C:\Users\使用者名稱\AppData\Roaming\Blackmagic Design\DaVinci Resolve\Fusion\Templates
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>達芬奇模板V3</title><link>https://kaiblog.is-a.dev/docs/resolve/resolvepackv3-update/</link><pubDate>Tue, 28 Jan 2025 08:30:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/docs/resolve/resolvepackv3-update/</guid><description>&lt;p&gt;import PaidContent01 from &amp;lsquo;@site/src/components/PaidContent01&amp;rsquo;;&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>達芬奇模板V3</title><link>http://localhost:1313/docs/resolve/resolvepackv3-update/</link><pubDate>Tue, 28 Jan 2025 08:30:00 +0000</pubDate><guid>http://localhost:1313/docs/resolve/resolvepackv3-update/</guid><description>&lt;p&gt;import PaidContent01 from &amp;lsquo;@site/src/components/PaidContent01&amp;rsquo;;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;發布時間：01-28&lt;/li&gt;
 &lt;/ul&gt;
@@ -110,7 +110,7 @@
 &lt;li&gt;閃光 /發光模板&lt;/li&gt;
 &lt;li&gt;雜訊轉場 / 各式豪華轉場&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;And so much more !&lt;/p&gt;</description></item><item><title>達芬奇模板V2</title><link>https://kaiblog.is-a.dev/docs/resolve/resolvepackv2-update/</link><pubDate>Fri, 03 Jan 2025 08:30:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/docs/resolve/resolvepackv2-update/</guid><description>&lt;p&gt;import PaidContent01 from &amp;lsquo;@site/src/components/PaidContent01&amp;rsquo;;&lt;/p&gt;
+&lt;p&gt;And so much more !&lt;/p&gt;</description></item><item><title>達芬奇模板V2</title><link>http://localhost:1313/docs/resolve/resolvepackv2-update/</link><pubDate>Fri, 03 Jan 2025 08:30:00 +0000</pubDate><guid>http://localhost:1313/docs/resolve/resolvepackv2-update/</guid><description>&lt;p&gt;import PaidContent01 from &amp;lsquo;@site/src/components/PaidContent01&amp;rsquo;;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;發布時間：01-03&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;

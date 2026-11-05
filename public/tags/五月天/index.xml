@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>五月天 on KAI STUDIO</title><link>https://kaiblog.is-a.dev/tags/%E4%BA%94%E6%9C%88%E5%A4%A9/</link><description>Recent content in 五月天 on KAI STUDIO</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Sat, 11 Apr 2026 08:00:00 +0000</lastBuildDate><atom:link href="https://kaiblog.is-a.dev/tags/%E4%BA%94%E6%9C%88%E5%A4%A9/index.xml" rel="self" type="application/rss+xml"/><item><title>太陽之子 鋼琴版</title><link>https://kaiblog.is-a.dev/blog/2026/04/sun/</link><pubDate>Sat, 11 Apr 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/2026/04/sun/</guid><description>&lt;p&gt;import PaidContent from &amp;lsquo;@site/src/components/PaidContent&amp;rsquo;;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>五月天 on KAI STUDIO</title><link>http://localhost:1313/tags/%E4%BA%94%E6%9C%88%E5%A4%A9/</link><description>Recent content in 五月天 on KAI STUDIO</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Sat, 11 Apr 2026 08:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E4%BA%94%E6%9C%88%E5%A4%A9/index.xml" rel="self" type="application/rss+xml"/><item><title>太陽之子 鋼琴版</title><link>http://localhost:1313/blog/sun/</link><pubDate>Sat, 11 Apr 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/sun/</guid><description>&lt;p&gt;import PaidContent from &amp;lsquo;@site/src/components/PaidContent&amp;rsquo;;&lt;/p&gt;
 &lt;h2 id="久違的更新"&gt;久違的更新&lt;/h2&gt;
 &lt;p&gt;花了我 &lt;code&gt;2小時&lt;/code&gt;的時間製作：太陽之子 鋼琴版&lt;/p&gt;
 &lt;PaidContent id="sun-piano"&gt;
@@ -23,7 +23,7 @@
 &lt;li&gt;達芬奇剪輯&lt;/li&gt;
 &lt;li&gt;Affinity 縮圖製作
 :::&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>MAYDAY Etude No.1</title><link>https://kaiblog.is-a.dev/blog/2026/03/mayday1/</link><pubDate>Mon, 16 Mar 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/2026/03/mayday1/</guid><description>&lt;p&gt;import PaidContent from &amp;lsquo;@site/src/components/PaidContent&amp;rsquo;;&lt;/p&gt;
+&lt;/ol&gt;</description></item><item><title>MAYDAY Etude No.1</title><link>http://localhost:1313/blog/mayday1/</link><pubDate>Mon, 16 Mar 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mayday1/</guid><description>&lt;p&gt;import PaidContent from &amp;lsquo;@site/src/components/PaidContent&amp;rsquo;;&lt;/p&gt;
 &lt;h2 id="no01-終於來了"&gt;No.01 終於來了&lt;/h2&gt;
 &lt;p&gt;花了我一週的時間製作：MAYDAY Etude No.01&lt;br&gt;
 &lt;code&gt;使用軟體：Finale&lt;/code&gt;&lt;/p&gt;
@@ -32,7 +32,7 @@
 &lt;p&gt;&lt;a href="https://www.mediafire.com/file/8pe205nawbqh0bm/MAYDAY1.pdf/file" className="custom-btn" target="_blank"&gt;🔒 前往下載&lt;/a&gt;&lt;/p&gt;
 &lt;/PaidContent&gt;
 &lt;p&gt;請不要擔心有病毒&lt;/p&gt;
-&lt;h1 id="no03-製作中"&gt;No.03 製作中&lt;/h1&gt;</description></item><item><title>MAYDAY Etude No.2</title><link>https://kaiblog.is-a.dev/blog/2026/03/mayday2/</link><pubDate>Sun, 15 Mar 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/2026/03/mayday2/</guid><description>&lt;p&gt;import PaidContent from &amp;lsquo;@site/src/components/PaidContent&amp;rsquo;;&lt;/p&gt;
+&lt;h1 id="no03-製作中"&gt;No.03 製作中&lt;/h1&gt;</description></item><item><title>MAYDAY Etude No.2</title><link>http://localhost:1313/blog/mayday2/</link><pubDate>Sun, 15 Mar 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mayday2/</guid><description>&lt;p&gt;import PaidContent from &amp;lsquo;@site/src/components/PaidContent&amp;rsquo;;&lt;/p&gt;
 &lt;h2 id="久違的更新"&gt;久違的更新&lt;/h2&gt;
 &lt;p&gt;花了我一週的時間製作：MAYDAY Etude No.02&lt;br&gt;
 為了上手 Dorico 也是拼了&lt;/p&gt;
@@ -40,7 +40,7 @@
 &lt;PaidContent id="mayday-etude-02"&gt;
 &lt;p&gt;&lt;a href="https://www.mediafire.com/file/eu9nen3txsu05er/MAYDAY2.pdf/file" className="custom-btn" target="_blank"&gt;🔒 前往下載&lt;/a&gt;&lt;/p&gt;
 &lt;/PaidContent&gt;
-&lt;h1 id="no01-等等我"&gt;No.01 等等我&lt;/h1&gt;</description></item><item><title>五月天除夕陪你守歲</title><link>https://kaiblog.is-a.dev/blog/2026/02/chuxi-mayday/</link><pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/2026/02/chuxi-mayday/</guid><description>&lt;h1 id="五月天-2026-除夕陪你守歲精彩筆記"&gt;五月天 2026 除夕陪你守歲：精彩筆記&lt;/h1&gt;
+&lt;h1 id="no01-等等我"&gt;No.01 等等我&lt;/h1&gt;</description></item><item><title>五月天除夕陪你守歲</title><link>http://localhost:1313/blog/chuxi-mayday/</link><pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate><guid>http://localhost:1313/blog/chuxi-mayday/</guid><description>&lt;h1 id="五月天-2026-除夕陪你守歲精彩筆記"&gt;五月天 2026 除夕陪你守歲：精彩筆記&lt;/h1&gt;
 &lt;div class="youtube-s"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/NU6eY7RYkbo?si=_ZcWsW9gB6klgHXq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;五月天陪你守歲2026&lt;/p&gt;
@@ -56,14 +56,14 @@
 &lt;li&gt;&lt;strong&gt;冠佑的小粉絲 Henry&lt;/strong&gt;：一位名叫 Henry 的小朋友上台互動，當被問到最喜歡誰時，他回答是冠佑，讓冠佑非常驚喜且有品味。 [&lt;a href="http://www.youtube.com/watch?v=NU6eY7RYkbo&amp;amp;t=440"&gt;07:20&lt;/a&gt;]&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;給歌迷的溫馨承諾&lt;/strong&gt;：阿信溫柔地告訴小朋友，人生中還有很多功課要做，但來到五月天的演唱會不需要做任何準備，甚至不需要螢光棒，只要人來到現場，就是最重要的貴賓。 [&lt;a href="http://www.youtube.com/watch?v=NU6eY7RYkbo&amp;amp;t=521"&gt;08:41&lt;/a&gt;]&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;感性演唱與祝福&lt;/strong&gt;：影片最後在音樂聲中總結，帶給歌迷滿滿的感動與新年祝福。 [&lt;a href="http://www.youtube.com/watch?v=NU6eY7RYkbo&amp;amp;t=547"&gt;09:07&lt;/a&gt;]&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>五月天螢光棒超厲害</title><link>https://kaiblog.is-a.dev/blog/2026/02/mayday-highlight/</link><pubDate>Fri, 13 Feb 2026 12:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/2026/02/mayday-highlight/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>五月天螢光棒超厲害</title><link>http://localhost:1313/blog/mayday-highlight/</link><pubDate>Fri, 13 Feb 2026 12:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mayday-highlight/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
 &lt;p&gt;今天看到手機上的 &lt;code&gt;相信音樂 APP&lt;/code&gt; ，第一個念頭想把他刪了，因為說真的&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;試験の準備をしなければならない人は、メーデーコンサートに行くことができません。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;{/* truncate */}&lt;/p&gt;
 &lt;h2 id="懷念"&gt;懷念&lt;/h2&gt;
-&lt;p&gt;但是當我看到裡面 &lt;strong&gt;去線上&lt;/strong&gt; 的功能的時候，我就有興趣了 ！ 裡面可以看五月天的線上跨年演唱會，重點是&lt;strong&gt;可以跟螢光棒連動&lt;/strong&gt;超厲害，雖然說藍牙有延遲 &lt;strong&gt;比不上現場&lt;/strong&gt; ，但是至少 &lt;del&gt;阿信音是準的，聲音說好聽的&lt;/del&gt; 很嗨，搭配我的藍牙音響，真不錯&lt;/p&gt;</description></item><item><title>2026，新年快樂!</title><link>https://kaiblog.is-a.dev/blog/2026/01/happy-new-year/</link><pubDate>Thu, 01 Jan 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/2026/01/happy-new-year/</guid><description>&lt;h1 id="新年快樂一起飛向-2026-"&gt;新年快樂！一起飛向 2026 ✨&lt;/h1&gt;
+&lt;p&gt;但是當我看到裡面 &lt;strong&gt;去線上&lt;/strong&gt; 的功能的時候，我就有興趣了 ！ 裡面可以看五月天的線上跨年演唱會，重點是&lt;strong&gt;可以跟螢光棒連動&lt;/strong&gt;超厲害，雖然說藍牙有延遲 &lt;strong&gt;比不上現場&lt;/strong&gt; ，但是至少 &lt;del&gt;阿信音是準的，聲音說好聽的&lt;/del&gt; 很嗨，搭配我的藍牙音響，真不錯&lt;/p&gt;</description></item><item><title>2026，新年快樂!</title><link>http://localhost:1313/blog/happy-new-year/</link><pubDate>Thu, 01 Jan 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/happy-new-year/</guid><description>&lt;h1 id="新年快樂一起飛向-2026-"&gt;新年快樂！一起飛向 2026 ✨&lt;/h1&gt;
 &lt;p&gt;2025 年的最後一刻，你我或許都在螢幕前按下最後一個儲存、完成最後一封信，或是靜靜聽著直播跨年的倒數。我們一起邁入了 &lt;strong&gt;2026 年&lt;/strong&gt; !&lt;/p&gt;
 &lt;p&gt;{/* truncate */}&lt;/p&gt;
 &lt;h2 id="-五月天-fly-to-2026跨年夜的音樂"&gt;🎵 五月天 &lt;em&gt;FLY TO 2026&lt;/em&gt;：跨年夜的音樂&lt;/h2&gt;

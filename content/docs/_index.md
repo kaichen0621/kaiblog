@@ -9,9 +9,9 @@ description: "所有文件與筆記"
 [https://kaiblog.is-a.dev/docs/tools](/docs/tools)
 ### 工具
 
-- [超強翻譜神器 V2](/docs/scoreflow.v2)
+- [超強翻譜神器 V2](/docs/tools/scoreflow.v2/)
 (V3 為失敗品 ，暫時不公開)
-- [超強翻譜神器 V4](/docs/scoreflow.v4)
+- [超強翻譜神器 V4](/docs/tools/scoreflow.v4/)
 
 ### 教學資源區
 
