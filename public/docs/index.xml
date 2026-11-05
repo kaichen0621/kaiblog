@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>文件 on KAI STUDIO</title><link>http://localhost:1313/docs/</link><description>Recent content in 文件 on KAI STUDIO</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Fri, 23 Oct 2026 16:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Dorico 快速上手 DAY02</title><link>http://localhost:1313/docs/learn/dorico02/</link><pubDate>Fri, 23 Oct 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/docs/learn/dorico02/</guid><description>&lt;p&gt;今天（2026-10-23）是學習 Dorico 的第二天，距離上次已經有了整整一個多月的時間&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>文件 on KAI BLOG</title><link>http://localhost:1313/docs/</link><description>Recent content in 文件 on KAI BLOG</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Fri, 23 Oct 2026 16:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Dorico 快速上手 DAY02</title><link>http://localhost:1313/docs/learn/dorico02/</link><pubDate>Fri, 23 Oct 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/docs/learn/dorico02/</guid><description>&lt;p&gt;今天（2026-10-23）是學習 Dorico 的第二天，距離上次已經有了整整一個多月的時間&lt;/p&gt;
 &lt;p&gt;簡單的介紹：&lt;/p&gt;
 &lt;h2 id="setup-page"&gt;Setup Page&lt;/h2&gt;
 &lt;div className="photo-border"&gt;
@@ -284,7 +284,15 @@ As time goes by流行鋼琴樂譜輸入。二聲部、三連音、圓滑線、�
 &lt;p&gt;自從 Google 鍵盤 (Gboard) 發布過沒多久後，Google 竟然把原本的 Google 注音輸入法下架了！不過其實至少到『目前』，Gboard 中的注音輸入法比起原本的注音輸入法還有一段差距，許多簡單的操作在 Gboard 上比較複雜。&lt;/p&gt;
 &lt;p&gt;當然 Gboard 提供更多功能就是了…&lt;/p&gt;
 &lt;p&gt;Google 注音輸入法 APK 下載&lt;/p&gt;
-&lt;p&gt;強烈建議請先下載，再安裝，不要直接點選連結開啟安裝&lt;/p&gt;</description></item><item><title>下載及安裝</title><link>http://localhost:1313/docs/finale/download/</link><pubDate>Fri, 16 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/download/</guid><description>&lt;h3 id="下載"&gt;下載&lt;/h3&gt;
+&lt;p&gt;強烈建議請先下載，再安裝，不要直接點選連結開啟安裝&lt;/p&gt;</description></item><item><title>我開發了製作模板神器！</title><link>http://localhost:1313/docs/resolve/macrotools/</link><pubDate>Mon, 26 Jan 2026 13:00:00 +0000</pubDate><guid>http://localhost:1313/docs/resolve/macrotools/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
+&lt;p&gt;最近看到了 &lt;strong&gt;錄錄創作中的新影片&lt;/strong&gt; 介紹怎麼製作 &lt;code&gt;.drfx&lt;/code&gt; 模板&amp;hellip;&lt;/p&gt;
+&lt;p&gt;但是身為一個新手可能不知道建立模板時 &lt;em&gt;&lt;strong&gt;到底怎麼勾選&lt;/strong&gt;&lt;/em&gt; ，於是就有這筆記的誕生！&lt;/p&gt;
+&lt;div class="youtube-s"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/VY2YMatWbTM?si=PJ8Pj4nH2wlxeBj-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;免費模板系列/如何設定字幕模板/DRFX檔案 [ Davinci Resolve教學 ]&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="利用-macrolab"&gt;利用 MacroLab&lt;/h2&gt;
+&lt;p&gt;就在我頭痛要怎麼勾選才能不用 &lt;strong&gt;一個一個打勾時&lt;/strong&gt;，我找到一個好工具！&lt;/p&gt;</description></item><item><title>下載及安裝</title><link>http://localhost:1313/docs/finale/download/</link><pubDate>Fri, 16 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/download/</guid><description>&lt;h3 id="下載"&gt;下載&lt;/h3&gt;
 &lt;p&gt;可去官方下載試用版，有三十天免費試用
 :::info 趕快下載！
 &lt;a href="https://makemusic-downloads.makemusic.com/Finale/27.4.1/Mac/en-US/FinaleDemoSetup.dmg"&gt;點我前往下載MacOS 版本！&lt;/a&gt;
@@ -953,6 +961,8 @@ To Next Key Change&lt;/p&gt;</description></item><item><title>小節屬性工具
 &lt;code&gt;Fusion.zip&lt;/code&gt;
 在裡面有 Template 資料夾
 該資料夾裡面有 ResolvePackV2.drfx&lt;/p&gt;</description></item><item><title>更新紀錄</title><link>http://localhost:1313/docs/update/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/update/</guid><description>&lt;h1 id="-更新紀錄-update"&gt;⬆︎ 更新紀錄 &lt;code&gt;/update&lt;/code&gt;&lt;/h1&gt;
+&lt;h2 id="21-2026-11-03"&gt;#21 2026-11-03&lt;/h2&gt;
+&lt;p&gt;更改主題 Docsaurus to HUGO&lt;/p&gt;
 &lt;h2 id="20-2026-10-28"&gt;#20 2026-10-28&lt;/h2&gt;
 &lt;p&gt;新增 BVE Route Studio !&lt;/p&gt;
 &lt;h2 id="19-2026-10-18"&gt;#19 2026-10-18&lt;/h2&gt;
@@ -971,9 +981,7 @@ To Next Key Change&lt;/p&gt;</description></item><item><title>小節屬性工具
 &lt;p&gt;移除 Email + 首頁修改
 kaistudio update !&lt;/p&gt;
 &lt;h2 id="13-2026-08-02"&gt;#13 2026-08-02&lt;/h2&gt;
-&lt;p&gt;新增 ashin.HTML 相片館網頁&lt;/p&gt;
-&lt;h2 id="12-2026-07-30"&gt;#12 2026-07-30&lt;/h2&gt;
-&lt;p&gt;更換網頁顯示字體：Chiron GoRound TC&lt;/p&gt;</description></item><item><title>筆記首頁</title><link>http://localhost:1313/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/</guid><description>&lt;p&gt;歡迎來到 &lt;strong&gt;筆記區&lt;/strong&gt; 📘&lt;/p&gt;
+&lt;p&gt;新增 ashin.HTML 相片館網頁&lt;/p&gt;</description></item><item><title>筆記首頁</title><link>http://localhost:1313/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/</guid><description>&lt;p&gt;歡迎來到 &lt;strong&gt;筆記區&lt;/strong&gt; 📘&lt;/p&gt;
 &lt;h2 id="我的所有網站工具"&gt;我的所有網站工具&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://localhost:1313/docs/tools"&gt;https://kaiblog.is-a.dev/docs/tools&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id="工具"&gt;工具&lt;/h3&gt;

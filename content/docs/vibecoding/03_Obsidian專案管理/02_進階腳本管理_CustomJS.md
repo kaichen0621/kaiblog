@@ -5,6 +5,7 @@ sidebar position: 6
 authors: [Leo]
 tags: [Vibe Coding]
 date: 2026-03-15T08:00:00
+series: ["vibecoding"]
 ---
 ## 這是什麼？
 

@@ -6,7 +6,7 @@ sidebar_label: 我開發了製作模板神器！
 authors: [KAI]
 tags: [達芬奇]
 date: 2026-01-26T13:00:00
-draft: true
+series: ["DaVinci Resolve"]
 ---
 
 ## 前言

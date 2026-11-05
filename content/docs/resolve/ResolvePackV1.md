@@ -6,6 +6,7 @@ sidebar_label: 達芬奇模板V1更新
 authors: [KAI]
 tags: [達芬奇模板]
 date: 2025-12-31T08:30:00
+series: ["DaVinci Resolve"]
 ---
 
 import PaidContent01 from '@site/src/components/PaidContent01';

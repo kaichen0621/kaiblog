@@ -1,29 +1,22 @@
-@import url('https://fontsapi.zeoseven.com/303/main/result.css');
 
-/* --- 1. 全域字型與主題色彩設定 (整合你的源泉圓體與藍色調) --- */
 :root {
-  --ifm-font-family-base: 'GenSenRounded TW', 'GenSenRounded', -apple-system, BlinkMacSystemFont, 'PingFang TC', sans-serif;
-  --theme: #ffffff;
-  --content: #212121;
-  --border: #e0e0e0;
+  /* 核心修復：移除誤導的 --theme 背景變數，讓 PaperMod 恢復預設的乾淨淺色背景 */
+  --border: #e2e8f0;
+
+  /* 自訂全域主色（由原本的 --ifm-color-primary 轉換過來，用於按鈕、連結等點綴） */
+  --kai-primary: #429EEE;
 }
 
-[data-theme='dark'] {
-  --theme: #1d2a3a;
-  --content: #e0e0e0;
-  --border: #334455;
+/* 當 Hugo 切換到深色模式時自動調整主色 */
+.dark {
+  --kai-primary: #6bb4f4;
 }
 
-body {
-  font-family: var(--ifm-font-family-base) !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+b, strong {
+  font-weight: 700 !important;
 }
 
-
-
-
-/* --- 3. 自訂影音與圖片外框樣式 --- */
+/* 2. YouTube 嵌入外框美化（支援深淺色模式切換） */
 .youtube, .youtube-s {
   max-width: 960px;
   margin: 2rem auto;
@@ -32,8 +25,8 @@ body {
   border-radius: 14px;
 }
 
-[data-theme='dark'] .youtube,
-[data-theme='dark'] .youtube-s {
+.dark .youtube,
+.dark .youtube-s {
   background: #2a3b43;
 }
 
@@ -42,8 +35,10 @@ body {
   aspect-ratio: 16/9;
   border-radius: 10px;
   border: 0;
+  display: block;
 }
 
+/* 3. 圖片外框 .photo-border 美化與尺寸修正（支援深淺色） */
 .photo-border {
   display: block;
   margin: 2rem auto;
@@ -55,7 +50,8 @@ body {
   overflow: hidden;
 }
 
-[data-theme='dark'] .photo-border {
+.dark .photo-border,
+.dark img.photo-border {
   background: #2a3b43;
 }
 
@@ -68,14 +64,47 @@ img.photo-border, .photo-border img {
   border-radius: 8px;
 }
 
+/* 4. 萬用按鈕自訂樣式 */
+.custom-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white !important;
+  background: var(--kai-primary);
+  border-radius: 8px;
+  text-decoration: none !important;
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  transition: opacity 0.2s;
+}
+
+.custom-btn:hover {
+  opacity: 0.9;
+}
+
+/* 5. 自動隱藏 Hugo 右側目錄（TOC）中的「付費解鎖」標題 */
+.toc a[href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"] {
+  display: none !important;
+}
+
+.toc li:has(a[href*="%E4%BB%98%E8%B2%BB%E8%A7%A3%E9%8E%96"]) {
+  display: none !important;
+}
+
+/* 6. 行動裝置 RWD 響應式優化 */
 @media (max-width: 768px) {
   .photo-border {
     padding: 0.8rem;
     margin: 1.5rem auto;
   }
+
   img.photo-border, .photo-border img {
-    width: 85% !important;
-    height: 180px !important;
+    width: 100% !important;
+    height: 220px !important;
     border-radius: 6px;
   }
 }

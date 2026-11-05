@@ -7,6 +7,7 @@ pagination_next: null
 authors: [KAI]
 tags: [達芬奇模板]
 date: 2026-04-05T08:00:00
+series: ["DaVinci Resolve"]
 ---
 > 發布時間：04-05
 # 達芬奇模板V4

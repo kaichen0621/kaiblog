@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>DaVinci Resolve on KAI BLOG</title><link>http://localhost:1313/series/davinci-resolve/</link><description>Recent content in DaVinci Resolve on KAI BLOG</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Sun, 05 Apr 2026 08:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/series/davinci-resolve/index.xml" rel="self" type="application/rss+xml"/><item><title>達芬奇模板V4</title><link>http://localhost:1313/docs/resolve/resolve.v4/</link><pubDate>Sun, 05 Apr 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/docs/resolve/resolve.v4/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;發布時間：04-05&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="達芬奇模板v4"&gt;達芬奇模板V4&lt;/h1&gt;
+&lt;p&gt;重磅更新來了！ &lt;code&gt;ResolveV4Pack&lt;/code&gt;
+替達芬奇製作出許多模板，均為免費模板
+:::danger 趕快下載&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://kaiblog.itch.io/resolveV4pack" className="custom-btn" target="_blank"&gt;🔥 ITCH 下載 V4 超推薦！！&lt;/a&gt;&lt;/p&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;&lt;a href="https://www.mediafire.com/file/cc8ipkm9b2az1my/ResolveV4.zip/file"&gt;✨ MediaFire 下載 V4&lt;/a&gt;
+:::&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;相信我，他們都比 Google Drive 好！&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="resolvev4pack-更新紀錄-"&gt;ResolveV4Pack 更新紀錄 🚀&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;修復縮圖大小，減少檔案尺寸&lt;/li&gt;
+&lt;li&gt;新增更多綜藝字卡！！&lt;/li&gt;
+&lt;li&gt;全新設計更加簡單使用&lt;/li&gt;
+&lt;li&gt;完整擴充報保證不無聊&lt;/li&gt;
+&lt;li&gt;全部免費模板不用擔心盜版！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And so much more !&lt;/p&gt;
+&lt;h2 id="resolvev4pack-安裝說明"&gt;ResolveV4Pack 安裝說明&lt;/h2&gt;
+&lt;h2 id="1安裝模板"&gt;1.安裝模板&lt;/h2&gt;
+&lt;h3 id="步驟一找到資料夾內的-kaistudiodrfx"&gt;步驟一：找到資料夾內的 KAISTUDIO.drfx&lt;/h3&gt;
+&lt;h3 id="步驟二安裝"&gt;步驟二：安裝！&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;方式一：直接雙擊 &lt;code&gt;KAISTUDIO.drfx&lt;/code&gt;，這將會開啟 Resolve 。&lt;br&gt;
+接著，選擇安裝，重啟達芬奇
+&lt;strong&gt;可能會出現未知錯誤，可嘗試方式二或著給 Resolve 權限！&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;方式二：將 KAISTUDIO.drfx 拖曳到以下資料夾：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>我開發了製作模板神器！</title><link>http://localhost:1313/docs/resolve/macrotools/</link><pubDate>Mon, 26 Jan 2026 13:00:00 +0000</pubDate><guid>http://localhost:1313/docs/resolve/macrotools/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
+&lt;p&gt;最近看到了 &lt;strong&gt;錄錄創作中的新影片&lt;/strong&gt; 介紹怎麼製作 &lt;code&gt;.drfx&lt;/code&gt; 模板&amp;hellip;&lt;/p&gt;
+&lt;p&gt;但是身為一個新手可能不知道建立模板時 &lt;em&gt;&lt;strong&gt;到底怎麼勾選&lt;/strong&gt;&lt;/em&gt; ，於是就有這筆記的誕生！&lt;/p&gt;
+&lt;div class="youtube-s"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/VY2YMatWbTM?si=PJ8Pj4nH2wlxeBj-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;免費模板系列/如何設定字幕模板/DRFX檔案 [ Davinci Resolve教學 ]&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="利用-macrolab"&gt;利用 MacroLab&lt;/h2&gt;
+&lt;p&gt;就在我頭痛要怎麼勾選才能不用 &lt;strong&gt;一個一個打勾時&lt;/strong&gt;，我找到一個好工具！&lt;/p&gt;</description></item><item><title>達芬奇模板V1</title><link>http://localhost:1313/docs/resolve/resolvepackv1-update/</link><pubDate>Wed, 31 Dec 2025 08:30:00 +0000</pubDate><guid>http://localhost:1313/docs/resolve/resolvepackv1-update/</guid><description>&lt;p&gt;import PaidContent01 from &amp;lsquo;@site/src/components/PaidContent01&amp;rsquo;;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;發布時間：12-13
+:::warning 警告 ！！！
+目前有更新的版本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;請至首頁查看！！！！！！！
+:::&lt;/p&gt;
+&lt;h1 id="達芬奇模板v1"&gt;達芬奇模板V1&lt;/h1&gt;
+&lt;p&gt;我終於製作完成 &lt;code&gt;ResolveV1Pack&lt;/code&gt;
+替達芬奇製作出許多模板，均為免費模板&lt;/p&gt;
+&lt;h3 id="-付費解鎖"&gt;🔐 付費解鎖！&lt;/h3&gt;
+&lt;PaidContent01 id="v1"&gt;
+:::warning 請勿下載
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;MediaFire 下載（建議）:
+&lt;a href="https://www.mediafire.com/file/b2f40dle6ov0cuq/ResolveV1.zip/file"&gt;https://www.mediafire.com/file/b2f40dle6ov0cuq/ResolveV1.zip/file&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Google Drive 下載:
+&lt;a href="https://drive.google.com/file/d/1_u_I4GrImYv5tP2QrKJE5GisnSZHLEEQ/view"&gt;https://drive.google.com/file/d/1_u_I4GrImYv5tP2QrKJE5GisnSZHLEEQ/view&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;:::&lt;/p&gt;
+&lt;/PaidContent01&gt;
+---
+&lt;h1 id="resolvev1pack-安裝說明"&gt;ResolveV1Pack 安裝說明&lt;/h1&gt;
+&lt;h1 id="1安裝模板"&gt;1.安裝模板&lt;/h1&gt;
+&lt;h3 id="步驟一找到-editpackdrfx"&gt;步驟一：找到 EditPack.drfx&lt;/h3&gt;
+&lt;p&gt;先解壓縮
+&lt;code&gt;Fusion.zip&lt;/code&gt;
+在裡面有 Template 資料夾
+該資料夾裡面有 ResolvePackV1.drfx&lt;/p&gt;
+&lt;h3 id="步驟二安裝"&gt;步驟二：安裝！&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;方式一：直接雙擊 ResolvePackV1.drfx，這將會開啟 Resolve 。&lt;br&gt;
+接著，選擇安裝，重啟達芬奇&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;方式二：將 EditPack.drfx 拖曳到以下資料夾：&lt;/p&gt;
+&lt;p&gt;Mac 路徑：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-MarkDown" data-lang="MarkDown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;/Users/使用者名稱/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Templates
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Windows 路徑：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-MarkDown" data-lang="MarkDown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;C:\Users\使用者名稱\AppData\Roaming\Blackmagic Design\DaVinci Resolve\Fusion\Templates
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>達芬奇模板V3</title><link>http://localhost:1313/docs/resolve/resolvepackv3-update/</link><pubDate>Tue, 28 Jan 2025 08:30:00 +0000</pubDate><guid>http://localhost:1313/docs/resolve/resolvepackv3-update/</guid><description>&lt;p&gt;import PaidContent01 from &amp;lsquo;@site/src/components/PaidContent01&amp;rsquo;;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;發布時間：01-28&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;:::warning 超級警告 ！！！
+目前有更新的版本&lt;br&gt;
+請至首頁查看！！！！！！！&lt;br&gt;
+:::&lt;/p&gt;
+&lt;h1 id="達芬奇模板v3"&gt;達芬奇模板V3&lt;/h1&gt;
+&lt;p&gt;我終於製作完成 &lt;code&gt;ResolveV3Pack&lt;/code&gt;
+替達芬奇製作出許多模板，均為免費模板&lt;/p&gt;
+&lt;h3 id="-付費解鎖"&gt;🔐 付費解鎖！&lt;/h3&gt;
+&lt;PaidContent01 id="v3"&gt;
+&lt;p&gt;:::danger 趕快下載&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://kaiblog.itch.io/resolvev3pack"&gt;🔥 ITCH 下載 V3 超推薦！！&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mediafire.com/file/99vzygeozte5suy/ResolveV3.zip/file"&gt;✨ MediaFire 下載 V3&lt;/a&gt;
+:::&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/PaidContent01&gt;
+&lt;p&gt;&lt;strong&gt;相信我，他們都比 Google Drive 好！&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="resolvev3pack-更新紀錄-"&gt;ResolveV3Pack 更新紀錄 🚀&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;修復縮圖大小，減少檔案尺寸&lt;/li&gt;
+&lt;li&gt;更新 Vicco 播放器模板 Mr.ALEX 模板&lt;/li&gt;
+&lt;li&gt;短影音超好用模板&lt;/li&gt;
+&lt;li&gt;閃光 /發光模板&lt;/li&gt;
+&lt;li&gt;雜訊轉場 / 各式豪華轉場&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And so much more !&lt;/p&gt;</description></item><item><title>達芬奇模板V2</title><link>http://localhost:1313/docs/resolve/resolvepackv2-update/</link><pubDate>Fri, 03 Jan 2025 08:30:00 +0000</pubDate><guid>http://localhost:1313/docs/resolve/resolvepackv2-update/</guid><description>&lt;p&gt;import PaidContent01 from &amp;lsquo;@site/src/components/PaidContent01&amp;rsquo;;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;發布時間：01-03&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;:::warning 警告 ！！！
+目前有更新的版本&lt;/p&gt;
+&lt;p&gt;請至首頁查看！！！！！！！
+:::&lt;/p&gt;
+&lt;h1 id="達芬奇模板v2"&gt;達芬奇模板V2&lt;/h1&gt;
+&lt;p&gt;我終於製作完成 &lt;code&gt;ResolveV2Pack&lt;/code&gt;
+替達芬奇製作出許多模板，均為免費模板&lt;/p&gt;
+&lt;h3 id="-付費解鎖"&gt;🔐 付費解鎖！&lt;/h3&gt;
+&lt;PaidContent01 id="v2"&gt;
+:::danger 趕快下載
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.mediafire.com/file/svsbwk2eoxoggqo/ResolveV2.zip/file"&gt;🔥 MediaFire 下載 V2 (建議)&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://drive.google.com/file/d/1oWn9TdF0rIOBHfFIe0iDWotixJoeGAUF/view?usp=sharing"&gt;☁️ Google Drive 下載&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;:::
+&lt;/PaidContent01&gt;&lt;/p&gt;
+&lt;h2 id="resolvev2pack-更新紀錄-"&gt;ResolveV2Pack 更新紀錄 🚀&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;修復縮圖大小&lt;/li&gt;
+&lt;li&gt;新增超多綜藝字卡&lt;/li&gt;
+&lt;li&gt;製作縮圖&lt;/li&gt;
+&lt;li&gt;更新 Vicco Mr.ALEX 模板&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="resolvev2pack-安裝說明"&gt;ResolveV2Pack 安裝說明&lt;/h2&gt;
+&lt;h2 id="1安裝模板"&gt;1.安裝模板&lt;/h2&gt;
+&lt;h3 id="步驟一找到-editpackdrfx"&gt;步驟一：找到 EditPack.drfx&lt;/h3&gt;
+&lt;p&gt;先解壓縮
+&lt;code&gt;Fusion.zip&lt;/code&gt;
+在裡面有 Template 資料夾
+該資料夾裡面有 ResolvePackV2.drfx&lt;/p&gt;</description></item></channel></rss>

@@ -6,6 +6,7 @@ sidebar_label: Dorico DAY02
 authors: [KAI]
 tags: [DAYS]
 date: 2026-10-23T16:00:00
+series: ["learn"]
 ---
 
 今天（2026-10-23）是學習 Dorico 的第二天，距離上次已經有了整整一個多月的時間

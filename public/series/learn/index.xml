@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Learn on KAI BLOG</title><link>http://localhost:1313/series/learn/</link><description>Recent content in Learn on KAI BLOG</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Fri, 23 Oct 2026 16:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/series/learn/index.xml" rel="self" type="application/rss+xml"/><item><title>Dorico 快速上手 DAY02</title><link>http://localhost:1313/docs/learn/dorico02/</link><pubDate>Fri, 23 Oct 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/docs/learn/dorico02/</guid><description>&lt;p&gt;今天（2026-10-23）是學習 Dorico 的第二天，距離上次已經有了整整一個多月的時間&lt;/p&gt;
+&lt;p&gt;簡單的介紹：&lt;/p&gt;
+&lt;h2 id="setup-page"&gt;Setup Page&lt;/h2&gt;
+&lt;div className="photo-border"&gt;
+![Dorico 三選一示例](1_Dorico.png)
+&lt;/div&gt;
+&lt;p&gt;首先開啟 Setup 分頁分成單一樂手、多重樂手、編制模板&lt;/p&gt;
+&lt;h3 id="1add-single-player"&gt;1.Add Single Player&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;支援樂器切換 (Instrument Change)&lt;/strong&gt;：如果你分配給他「長笛」和「短笛」，當樂譜上長笛閒置時，Dorico 會自動幫你在譜上寫「換短笛 (To Piccolo)」，並在同一行五線譜上切換記譜，不需要你手動開兩行。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;獨奏專用&lt;/strong&gt;：適合用於鋼琴（一個人彈雙手譜）、獨奏小提琴、或是管樂團中各別的席次（如 Flute 1、Flute 2）。&lt;/li&gt;
+&lt;li&gt;簡單說：管樂要換不同樂器就用 Single Player&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2add-section-player"&gt;2.Add Section Player&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;不支援轉化多樂器&lt;/strong&gt;：一個 Section 只能指定一種樂器，不能像單一樂手那樣在中途轉換成其他樂器。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;支援分譜 (Divisi)&lt;/strong&gt;：這是它最強大的地方！在交響樂團的「第一小提琴（Violin I）」或合唱團的「女高音（Soprano）」中，當音樂需要一分為二（如外側、內側琴手彈不同音）時，你可以使用 Divisi 功能，Dorico 會在同一個總譜行中漂亮地拉出兩行分譜，並在分譜結束後自動合併。&lt;/li&gt;
+&lt;li&gt;簡單說：弦樂要分兩部不同音就使用 Section Player&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="3add-ensemble"&gt;3.Add Ensemble&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;純粹是模板工具&lt;/strong&gt;：它本身不是一種新的樂手型態。當你點擊它時，它可以讓你一鍵加入「雙管編制木管組」、「銅管五重奏」或「弦樂五部」。&lt;/li&gt;
+&lt;li&gt;點擊並選好後，Dorico 會&lt;strong&gt;自動幫你生成對應的數個 Single Players 或 Section Players&lt;/strong&gt;。例如選擇弦樂組，它就會幫你打包自動建好 Violin I (Section)、Violin II (Section)、Viola (Section) 等，省去你一個一個手動加的時間。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;第三個類似 Template 的概念&lt;/p&gt;</description></item><item><title>Dorico 快速上手 DAY01</title><link>http://localhost:1313/docs/learn/dorico01/</link><pubDate>Sat, 05 Sep 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/docs/learn/dorico01/</guid><description>&lt;p&gt;今天（2026-09-04）是學習 Dorico 的第一天&lt;/p&gt;
+&lt;p&gt;明顯感受到超級難用的氣氛，看了官方的十一分鐘教學，還是看不懂&amp;hellip;&lt;/p&gt;
+&lt;p&gt;簡單的註記一下！&lt;/p&gt;
+&lt;h2 id="輸入音符"&gt;輸入音符&lt;/h2&gt;
+&lt;p&gt;只需按下 &lt;code&gt;Enter 鍵&lt;/code&gt; 即可開始輸入音符&lt;/p&gt;</description></item></channel></rss>

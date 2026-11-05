@@ -1,0 +1,63 @@
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 找出頁面上所有寫著 <PaidContent> 的元素
+    const contents = document.querySelectorAll("PaidContent, paidcontent, PaidContent01, paidcontent01,[id*='sun-piano']");
+
+    contents.forEach((el, index) => {
+        const originalContent = el.innerHTML;
+        const id = el.getAttribute("id") || `paid-${index}`;
+        const storageKey = `kai_blog_unlocked_01_${id}`;
+        const CORRECT_PASSCODE = 'resolve';
+
+        const wrapper = document.createElement("div");
+        wrapper.style.cssText = "margin: 2.5rem 0; padding: 2.5rem 2rem; border-radius: 30px; border: 2px solid var(--border); background: var(--code-bg); text-align: center; box-sizing: border-box;";
+
+        function render(unlocked) {
+            if (unlocked) {
+                wrapper.style.border = "none";
+                wrapper.style.background = "transparent";
+                wrapper.style.padding = "0";
+                wrapper.innerHTML = originalContent;
+            } else {
+                wrapper.innerHTML = `
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">⚠️</div>
+                    <h3 style="font-size: 1.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.2rem; line-height: 1.4;">
+                        目前停止開放下載！<br />
+                        <span style="font-size: 1.5rem; color: #ee4242; font-weight: 900; margin-bottom: 0.8rem; display: inline-block;">請透過 Mail 聯繫</span>
+                    </h3>
+                    <p style="font-size: 0.95rem; opacity: 0.8; margin-bottom: 1.5rem; font-weight: 500; line-height: 1.5; color: var(--secondary);">
+                        輸入密碼才能查看<br />
+                        <span style="font-size: 0.85rem; color: var(--primary); font-weight: bold;">💡 管理員專屬</span>
+                    </p>
+                    <input type="password" class="lock-input" placeholder="5525+2 位數字密碼" style="width: 100%; max-width: 400px; padding: 12px; border-radius: 10px; border: 1px solid var(--border); background: rgba(0,0,0,0.05); color: var(--primary); font-size: 1.1rem; text-align: center; outline: none; margin-bottom: 10px; box-sizing: border-box;" />
+                    <p class="lock-error" style="color: #ff4d4f; font-size: 0.85rem; display: none; margin-bottom: 8px; font-weight: 700;">❌ 密碼錯誤</p>
+                    <br />
+                    <button class="lock-btn" style="width: 100%; max-width: 400px; padding: 14px; font-size: 1rem; font-weight: 700; color: #383838; background: #ffdd00; border: none; border-radius: 20px; cursor: pointer; box-shadow: 0 4px 12px rgba(255, 221, 0, 0.25);">我是管理員！</button>
+                `;
+
+                const input = wrapper.querySelector(".lock-input");
+                const btn = wrapper.querySelector(".lock-btn");
+                const errorMsg = wrapper.querySelector(".lock-error");
+
+                btn.addEventListener("click", () => {
+                    if (input.value === CORRECT_PASSCODE) {
+                        localStorage.setItem(storageKey, "true");
+                        render(true);
+                    } else {
+                        errorMsg.style.display = "block";
+                        setTimeout(() => errorMsg.style.display = "none", 2000);
+                    }
+                });
+
+                input.addEventListener("keypress", (e) => {
+                    if (e.key === 'Enter') btn.click();
+                });
+            }
+        }
+
+        const isUnlocked = localStorage.getItem(storageKey) === 'true';
+        render(isUnlocked);
+        el.parentNode.replaceChild(wrapper, el);
+    });
+});
+</script>

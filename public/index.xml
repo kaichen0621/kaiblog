@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>KAI STUDIO</title><link>http://localhost:1313/</link><description>Recent content on KAI STUDIO</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Wed, 04 Nov 2026 17:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>拜託快點逃離賴</title><link>http://localhost:1313/blog/signal/</link><pubDate>Wed, 04 Nov 2026 17:00:00 +0800</pubDate><guid>http://localhost:1313/blog/signal/</guid><description>&lt;p&gt;當 Line 開始推出一堆服務的時候，我就越想逃離。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>KAI BLOG</title><link>http://localhost:1313/</link><description>Recent content on KAI BLOG</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Thu, 05 Nov 2026 08:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>11-03 日記</title><link>http://localhost:1313/blog/11-03/</link><pubDate>Thu, 05 Nov 2026 08:00:00 +0800</pubDate><guid>http://localhost:1313/blog/11-03/</guid><description>&lt;p&gt;這篇是 11-03 的回顧文，我不是故意的，但草稿一堆，慢慢回顧這樣&lt;/p&gt;
+&lt;p&gt;當我去外送區拿回我的午餐後，先被同學說，啊啊吃這麼好哦，然後再被同學問，我可以吃一口嗎？才能好好的開始享用美味的午餐&lt;/p&gt;
+&lt;p&gt;我們學校的午餐分兩種，一種是去福利社，另一個是點外送，福利社有雙主菜便當 $85，&lt;strong&gt;三菜，兩肉&lt;/strong&gt;，這邊建議點魚排，不然其他的就是看阿姨心情給你隨機肉量&lt;/p&gt;</description></item><item><title>拜託快點逃離賴</title><link>http://localhost:1313/blog/signal/</link><pubDate>Wed, 04 Nov 2026 17:00:00 +0800</pubDate><guid>http://localhost:1313/blog/signal/</guid><description>&lt;p&gt;當 Line 開始推出一堆服務的時候，我就越想逃離。&lt;/p&gt;
 &lt;p&gt;從新聞到影片，從聊天到通話，從PAY到信用卡，Line 憑著一個臃腫軟體，出現在大家的手機裡&lt;/p&gt;
 &lt;p&gt;現在的LINE更是囂張，直接推出訂閱服務讓收回訊息、編輯訊息、照片雲端儲存，變得好像全世界就他一個軟體&lt;strong&gt;一樣一定要付費&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;LINE現在已經是台灣人必備的APP，沒有人能夠拒絕，一開始認識一個人的時候，大家都是說：欸可以加個Line嗎？&lt;/p&gt;</description></item><item><title>11 月了</title><link>http://localhost:1313/blog/time/</link><pubDate>Tue, 03 Nov 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/time/</guid><description>&lt;p&gt;十一月的到來&lt;br&gt;
@@ -44,7 +46,31 @@
 &lt;p&gt;真的很久沒有回去台中了。難得連假但是卻颱風，好不容易找到回來的時間。剛好順便來研究 AirCast&lt;/p&gt;
 &lt;p&gt;其實真的好帥真的成功了&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Google TV 超大" loading="lazy" src="tv-1.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;然後有延遲這好像沒辦法&lt;/p&gt;</description></item><item><title>網站新頁面？</title><link>http://localhost:1313/blog/now/</link><pubDate>Fri, 23 Oct 2026 12:00:00 +0000</pubDate><guid>http://localhost:1313/blog/now/</guid><description>&lt;h2 id="20260905---近況重新更新啦"&gt;2026/09/05 - 近況重新更新啦！&lt;/h2&gt;
+&lt;p&gt;然後有延遲這好像沒辦法&lt;/p&gt;</description></item><item><title>Dorico 快速上手 DAY02</title><link>http://localhost:1313/docs/learn/dorico02/</link><pubDate>Fri, 23 Oct 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/docs/learn/dorico02/</guid><description>&lt;p&gt;今天（2026-10-23）是學習 Dorico 的第二天，距離上次已經有了整整一個多月的時間&lt;/p&gt;
+&lt;p&gt;簡單的介紹：&lt;/p&gt;
+&lt;h2 id="setup-page"&gt;Setup Page&lt;/h2&gt;
+&lt;div className="photo-border"&gt;
+![Dorico 三選一示例](1_Dorico.png)
+&lt;/div&gt;
+&lt;p&gt;首先開啟 Setup 分頁分成單一樂手、多重樂手、編制模板&lt;/p&gt;
+&lt;h3 id="1add-single-player"&gt;1.Add Single Player&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;支援樂器切換 (Instrument Change)&lt;/strong&gt;：如果你分配給他「長笛」和「短笛」，當樂譜上長笛閒置時，Dorico 會自動幫你在譜上寫「換短笛 (To Piccolo)」，並在同一行五線譜上切換記譜，不需要你手動開兩行。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;獨奏專用&lt;/strong&gt;：適合用於鋼琴（一個人彈雙手譜）、獨奏小提琴、或是管樂團中各別的席次（如 Flute 1、Flute 2）。&lt;/li&gt;
+&lt;li&gt;簡單說：管樂要換不同樂器就用 Single Player&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2add-section-player"&gt;2.Add Section Player&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;不支援轉化多樂器&lt;/strong&gt;：一個 Section 只能指定一種樂器，不能像單一樂手那樣在中途轉換成其他樂器。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;支援分譜 (Divisi)&lt;/strong&gt;：這是它最強大的地方！在交響樂團的「第一小提琴（Violin I）」或合唱團的「女高音（Soprano）」中，當音樂需要一分為二（如外側、內側琴手彈不同音）時，你可以使用 Divisi 功能，Dorico 會在同一個總譜行中漂亮地拉出兩行分譜，並在分譜結束後自動合併。&lt;/li&gt;
+&lt;li&gt;簡單說：弦樂要分兩部不同音就使用 Section Player&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="3add-ensemble"&gt;3.Add Ensemble&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;純粹是模板工具&lt;/strong&gt;：它本身不是一種新的樂手型態。當你點擊它時，它可以讓你一鍵加入「雙管編制木管組」、「銅管五重奏」或「弦樂五部」。&lt;/li&gt;
+&lt;li&gt;點擊並選好後，Dorico 會&lt;strong&gt;自動幫你生成對應的數個 Single Players 或 Section Players&lt;/strong&gt;。例如選擇弦樂組，它就會幫你打包自動建好 Violin I (Section)、Violin II (Section)、Viola (Section) 等，省去你一個一個手動加的時間。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;第三個類似 Template 的概念&lt;/p&gt;</description></item><item><title>網站新頁面？</title><link>http://localhost:1313/blog/now/</link><pubDate>Fri, 23 Oct 2026 12:00:00 +0000</pubDate><guid>http://localhost:1313/blog/now/</guid><description>&lt;h2 id="20260905---近況重新更新啦"&gt;2026/09/05 - 近況重新更新啦！&lt;/h2&gt;
 &lt;p&gt;我覺得很長沒空寫文帳就&amp;hellip;用這種方式讓大家知道在幹嘛&lt;/p&gt;</description></item><item><title>Dorico 快速上手 DAY02</title><link>http://localhost:1313/blog/dorico02/</link><pubDate>Thu, 22 Oct 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/blog/dorico02/</guid><description>&lt;p&gt;今天（2026-10-23）是學習 Dorico 的第二天，距離上次已經有了整整一個多月的時間&lt;/p&gt;
 &lt;p&gt;完整文章請參考&lt;a href="http://localhost:1313/docs/Learn/"&gt;這裡&lt;/a&gt;&lt;/p&gt;</description></item><item><title>BVE6 超好用列車</title><link>http://localhost:1313/blog/bve6-nicetrain/</link><pubDate>Tue, 20 Oct 2026 22:00:00 +0000</pubDate><guid>http://localhost:1313/blog/bve6-nicetrain/</guid><description>&lt;p&gt;BVE6 : 超好用車輛&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-md" data-lang="md"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Vehicle = SotoHane/Vehicle/E233系/0-8I.txt
@@ -98,22 +124,97 @@ kai@yangkaichens-MacBook-Pro-0621 ~ % ollama&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;│ what changed on this branch?│
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;-&lt;/span&gt; gemma4:31b-cloud
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;• Thought&lt;/p&gt;</description></item><item><title>這篇要寫什麼？</title><link>http://localhost:1313/blog/random02/</link><pubDate>Fri, 18 Sep 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/random02/</guid><description>這篇要寫什麼？</description></item><item><title>macOS 更新</title><link>http://localhost:1313/blog/mac-27/</link><pubDate>Tue, 15 Sep 2026 10:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mac-27/</guid><description>終於更新新系統了</description></item><item><title>脆</title><link>http://localhost:1313/blog/thread/</link><pubDate>Mon, 14 Sep 2026 15:00:00 +0000</pubDate><guid>http://localhost:1313/blog/thread/</guid><description>今天來聊聊脆吧</description></item><item><title>蘋果發表會</title><link>http://localhost:1313/blog/wwdc26-2/</link><pubDate>Thu, 10 Sep 2026 13:00:00 +0000</pubDate><guid>http://localhost:1313/blog/wwdc26-2/</guid><description>蘋果發表會</description></item><item><title>音創社社課內容</title><link>http://localhost:1313/blog/music-composer/</link><pubDate>Tue, 08 Sep 2026 11:00:00 +0000</pubDate><guid>http://localhost:1313/blog/music-composer/</guid><description>音創社社課內容</description></item><item><title>什麼？</title><link>http://localhost:1313/blog/what/</link><pubDate>Mon, 07 Sep 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/blog/what/</guid><description>什麼</description></item><item><title>花了十年蓋的捷運站</title><link>http://localhost:1313/blog/mrt-tenyear/</link><pubDate>Sat, 05 Sep 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mrt-tenyear/</guid><description>花了十年蓋的捷運站</description></item><item><title>我對理想打掃工作的看法</title><link>http://localhost:1313/blog/swipe/</link><pubDate>Fri, 04 Sep 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/swipe/</guid><description>我對理想打掃工作的看法</description></item><item><title>macOS 小技巧</title><link>http://localhost:1313/blog/mac/</link><pubDate>Fri, 04 Sep 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mac/</guid><description>今天分想幾個小技巧</description></item><item><title>【何同學】庫克時代</title><link>http://localhost:1313/blog/tim-cook-era/</link><pubDate>Thu, 03 Sep 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/tim-cook-era/</guid><description>×本內文有使用ai×觀後感：一位凡人如何接下天才的皇冠？何同學回顧庫克執掌蘋果 15 年的興衰與變革。</description></item><item><title>晚睡早起 ✦BBP9✦</title><link>http://localhost:1313/blog/bbp9/</link><pubDate>Wed, 02 Sep 2026 10:00:00 +0000</pubDate><guid>http://localhost:1313/blog/bbp9/</guid><description>今天和大家分享我的日常作息，內容隨時會更新欸</description></item><item><title>開學日</title><link>http://localhost:1313/blog/school-open/</link><pubDate>Tue, 01 Sep 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/school-open/</guid><description>開學日</description></item><item><title>荒島筆電</title><link>http://localhost:1313/blog/island-notebook/</link><pubDate>Mon, 31 Aug 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/island-notebook/</guid><description>荒島筆電</description></item><item><title>開源軟體推薦</title><link>http://localhost:1313/blog/app-open-source/</link><pubDate>Fri, 28 Aug 2026 02:00:00 +0000</pubDate><guid>http://localhost:1313/blog/app-open-source/</guid><description>開源軟體推薦</description></item><item><title>Roblox刀刃球遊玩心得</title><link>http://localhost:1313/blog/roblox-bladeball/</link><pubDate>Wed, 19 Aug 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/roblox-bladeball/</guid><description>Roblox刀刃球遊玩心得</description></item><item><title>晚安</title><link>http://localhost:1313/blog/goodnight/</link><pubDate>Wed, 12 Aug 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/goodnight/</guid><description>晚安</description></item><item><title>五月天阿信相片館</title><link>http://localhost:1313/blog/ashin/</link><pubDate>Sun, 02 Aug 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/ashin/</guid><description>五月天阿信相片館:一個輕量、響應式且具備 IG 風格的五月天阿信主題相片收藏館。支援圖片自動壓縮儲存、分類標籤管理、愛心按讚互動、檢視/編輯模式切換，以及 Firebase 雲端資料庫全自動實時同步。</description></item><item><title>我換字體了！</title><link>http://localhost:1313/blog/change-font/</link><pubDate>Thu, 30 Jul 2026 20:00:00 +0000</pubDate><guid>http://localhost:1313/blog/change-font/</guid><description>我的網站換字體了！Chiron GoRound TC</description></item><item><title>0726 台北歷險記</title><link>http://localhost:1313/blog/taipei-0726-life/</link><pubDate>Sun, 26 Jul 2026 20:00:00 +0000</pubDate><guid>http://localhost:1313/blog/taipei-0726-life/</guid><description>台北捷運冒險實錄：從中正紀念堂霜淇淋、一風堂百萬玉子拉麵，到永安市場鄧老師音樂課的一日遊紀錄。</description></item><item><title>0726 台北自由行 X 鄧老師上課</title><link>http://localhost:1313/blog/taipei-0726/</link><pubDate>Sun, 26 Jul 2026 10:00:00 +0000</pubDate><guid>http://localhost:1313/blog/taipei-0726/</guid><description>0726 台北自由行與鄧老師上課行程規劃</description></item><item><title>善用 MarkDown / HTML+CSS</title><link>http://localhost:1313/blog/markdown/</link><pubDate>Sat, 25 Jul 2026 20:00:00 +0000</pubDate><guid>http://localhost:1313/blog/markdown/</guid><description>善用 MarkDown</description></item><item><title>整理琴房</title><link>http://localhost:1313/blog/clean/</link><pubDate>Thu, 23 Jul 2026 20:00:00 +0000</pubDate><guid>http://localhost:1313/blog/clean/</guid><description>整理琴房</description></item><item><title>shotcut 剪輯</title><link>http://localhost:1313/blog/shotcut/</link><pubDate>Wed, 22 Jul 2026 20:00:00 +0000</pubDate><guid>http://localhost:1313/blog/shotcut/</guid><description>shotcut 剪輯</description></item><item><title>macOS27</title><link>http://localhost:1313/blog/macos27/</link><pubDate>Tue, 21 Jul 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/macos27/</guid><description>macOS27 超好用？</description></item><item><title>暑期輔導</title><link>http://localhost:1313/blog/school/</link><pubDate>Tue, 21 Jul 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/school/</guid><description>暑期輔導</description></item><item><title>openBVE 架設</title><link>http://localhost:1313/blog/openbve/</link><pubDate>Fri, 17 Jul 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/openbve/</guid><description>openBVE 建立初體驗</description></item><item><title>🌐 架設網站教學</title><link>http://localhost:1313/docs/index/</link><pubDate>Fri, 10 Jul 2026 20:00:00 +0000</pubDate><guid>http://localhost:1313/docs/index/</guid><description>&lt;p&gt;在這裡可以找到最晚整的架設網站教學&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;• Thought&lt;/p&gt;</description></item><item><title>這篇要寫什麼？</title><link>http://localhost:1313/blog/random02/</link><pubDate>Fri, 18 Sep 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/random02/</guid><description>這篇要寫什麼？</description></item><item><title>macOS 更新</title><link>http://localhost:1313/blog/mac-27/</link><pubDate>Tue, 15 Sep 2026 10:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mac-27/</guid><description>終於更新新系統了</description></item><item><title>脆</title><link>http://localhost:1313/blog/thread/</link><pubDate>Mon, 14 Sep 2026 15:00:00 +0000</pubDate><guid>http://localhost:1313/blog/thread/</guid><description>今天來聊聊脆吧</description></item><item><title>蘋果發表會</title><link>http://localhost:1313/blog/wwdc26-2/</link><pubDate>Thu, 10 Sep 2026 13:00:00 +0000</pubDate><guid>http://localhost:1313/blog/wwdc26-2/</guid><description>蘋果發表會</description></item><item><title>音創社社課內容</title><link>http://localhost:1313/blog/music-composer/</link><pubDate>Tue, 08 Sep 2026 11:00:00 +0000</pubDate><guid>http://localhost:1313/blog/music-composer/</guid><description>音創社社課內容</description></item><item><title>什麼？</title><link>http://localhost:1313/blog/what/</link><pubDate>Mon, 07 Sep 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/blog/what/</guid><description>什麼</description></item><item><title>花了十年蓋的捷運站</title><link>http://localhost:1313/blog/mrt-tenyear/</link><pubDate>Sat, 05 Sep 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mrt-tenyear/</guid><description>花了十年蓋的捷運站</description></item><item><title>Dorico 快速上手 DAY01</title><link>http://localhost:1313/docs/learn/dorico01/</link><pubDate>Sat, 05 Sep 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/docs/learn/dorico01/</guid><description>&lt;p&gt;今天（2026-09-04）是學習 Dorico 的第一天&lt;/p&gt;
+&lt;p&gt;明顯感受到超級難用的氣氛，看了官方的十一分鐘教學，還是看不懂&amp;hellip;&lt;/p&gt;
+&lt;p&gt;簡單的註記一下！&lt;/p&gt;
+&lt;h2 id="輸入音符"&gt;輸入音符&lt;/h2&gt;
+&lt;p&gt;只需按下 &lt;code&gt;Enter 鍵&lt;/code&gt; 即可開始輸入音符&lt;/p&gt;</description></item><item><title>我對理想打掃工作的看法</title><link>http://localhost:1313/blog/swipe/</link><pubDate>Fri, 04 Sep 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/swipe/</guid><description>我對理想打掃工作的看法</description></item><item><title>macOS 小技巧</title><link>http://localhost:1313/blog/mac/</link><pubDate>Fri, 04 Sep 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mac/</guid><description>今天分想幾個小技巧</description></item><item><title>【何同學】庫克時代</title><link>http://localhost:1313/blog/tim-cook-era/</link><pubDate>Thu, 03 Sep 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/tim-cook-era/</guid><description>×本內文有使用ai×觀後感：一位凡人如何接下天才的皇冠？何同學回顧庫克執掌蘋果 15 年的興衰與變革。</description></item><item><title>晚睡早起 ✦BBP9✦</title><link>http://localhost:1313/blog/bbp9/</link><pubDate>Wed, 02 Sep 2026 10:00:00 +0000</pubDate><guid>http://localhost:1313/blog/bbp9/</guid><description>今天和大家分享我的日常作息，內容隨時會更新欸</description></item><item><title>開學日</title><link>http://localhost:1313/blog/school-open/</link><pubDate>Tue, 01 Sep 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/school-open/</guid><description>開學日</description></item><item><title>荒島筆電</title><link>http://localhost:1313/blog/island-notebook/</link><pubDate>Mon, 31 Aug 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/island-notebook/</guid><description>荒島筆電</description></item><item><title>開源軟體推薦</title><link>http://localhost:1313/blog/app-open-source/</link><pubDate>Fri, 28 Aug 2026 02:00:00 +0000</pubDate><guid>http://localhost:1313/blog/app-open-source/</guid><description>開源軟體推薦</description></item><item><title>Roblox刀刃球遊玩心得</title><link>http://localhost:1313/blog/roblox-bladeball/</link><pubDate>Wed, 19 Aug 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/roblox-bladeball/</guid><description>Roblox刀刃球遊玩心得</description></item><item><title>晚安</title><link>http://localhost:1313/blog/goodnight/</link><pubDate>Wed, 12 Aug 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/goodnight/</guid><description>晚安</description></item><item><title>五月天阿信相片館</title><link>http://localhost:1313/blog/ashin/</link><pubDate>Sun, 02 Aug 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/ashin/</guid><description>五月天阿信相片館:一個輕量、響應式且具備 IG 風格的五月天阿信主題相片收藏館。支援圖片自動壓縮儲存、分類標籤管理、愛心按讚互動、檢視/編輯模式切換，以及 Firebase 雲端資料庫全自動實時同步。</description></item><item><title>我換字體了！</title><link>http://localhost:1313/blog/change-font/</link><pubDate>Thu, 30 Jul 2026 20:00:00 +0000</pubDate><guid>http://localhost:1313/blog/change-font/</guid><description>我的網站換字體了！Chiron GoRound TC</description></item><item><title>0726 台北歷險記</title><link>http://localhost:1313/blog/taipei-0726-life/</link><pubDate>Sun, 26 Jul 2026 20:00:00 +0000</pubDate><guid>http://localhost:1313/blog/taipei-0726-life/</guid><description>台北捷運冒險實錄：從中正紀念堂霜淇淋、一風堂百萬玉子拉麵，到永安市場鄧老師音樂課的一日遊紀錄。</description></item><item><title>0726 台北自由行 X 鄧老師上課</title><link>http://localhost:1313/blog/taipei-0726/</link><pubDate>Sun, 26 Jul 2026 10:00:00 +0000</pubDate><guid>http://localhost:1313/blog/taipei-0726/</guid><description>0726 台北自由行與鄧老師上課行程規劃</description></item><item><title>善用 MarkDown / HTML+CSS</title><link>http://localhost:1313/blog/markdown/</link><pubDate>Sat, 25 Jul 2026 20:00:00 +0000</pubDate><guid>http://localhost:1313/blog/markdown/</guid><description>善用 MarkDown</description></item><item><title>整理琴房</title><link>http://localhost:1313/blog/clean/</link><pubDate>Thu, 23 Jul 2026 20:00:00 +0000</pubDate><guid>http://localhost:1313/blog/clean/</guid><description>整理琴房</description></item><item><title>shotcut 剪輯</title><link>http://localhost:1313/blog/shotcut/</link><pubDate>Wed, 22 Jul 2026 20:00:00 +0000</pubDate><guid>http://localhost:1313/blog/shotcut/</guid><description>shotcut 剪輯</description></item><item><title>macOS27</title><link>http://localhost:1313/blog/macos27/</link><pubDate>Tue, 21 Jul 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/macos27/</guid><description>macOS27 超好用？</description></item><item><title>暑期輔導</title><link>http://localhost:1313/blog/school/</link><pubDate>Tue, 21 Jul 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/school/</guid><description>暑期輔導</description></item><item><title>openBVE 架設</title><link>http://localhost:1313/blog/openbve/</link><pubDate>Fri, 17 Jul 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/openbve/</guid><description>openBVE 建立初體驗</description></item><item><title>openBVE 架設</title><link>http://localhost:1313/docs/openbve/first/</link><pubDate>Fri, 17 Jul 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/docs/openbve/first/</guid><description>openBVE 建立初體驗</description></item><item><title>🌐 架設網站教學</title><link>http://localhost:1313/docs/docusaurus/</link><pubDate>Fri, 10 Jul 2026 20:00:00 +0000</pubDate><guid>http://localhost:1313/docs/docusaurus/</guid><description>&lt;p&gt;在這裡可以找到最晚整的架設網站教學&lt;/p&gt;
 &lt;h3 id="202607"&gt;2026/07&lt;/h3&gt;
 &lt;p&gt;敬請期待！&lt;/p&gt;
-&lt;h4 id="01-準備步驟相關環境"&gt;&lt;a href="http://localhost:1313/docs/Docusaurus/1"&gt;01. 準備步驟、相關環境&lt;/a&gt;&lt;/h4&gt;</description></item><item><title>🎓 學習新知快速上手</title><link>http://localhost:1313/docs/learn/</link><pubDate>Fri, 10 Jul 2026 20:00:00 +0000</pubDate><guid>http://localhost:1313/docs/learn/</guid><description>&lt;p&gt;在這裡可以找到我學習新知快速上手的紀錄&lt;/p&gt;
+&lt;h4 id="01-準備步驟相關環境"&gt;&lt;a href="http://localhost:1313/docs/Docusaurus/1"&gt;01. 準備步驟、相關環境&lt;/a&gt;&lt;/h4&gt;</description></item><item><title>🎓 學習新知快速上手</title><link>http://localhost:1313/docs/learn/learn/</link><pubDate>Fri, 10 Jul 2026 20:00:00 +0000</pubDate><guid>http://localhost:1313/docs/learn/learn/</guid><description>&lt;p&gt;在這裡可以找到我學習新知快速上手的紀錄&lt;/p&gt;
 &lt;h3 id="dorico-現正進行中"&gt;Dorico 現正進行中！&lt;/h3&gt;
 &lt;h4 id="01-day01"&gt;&lt;a href="http://localhost:1313/docs/Learn/Dorico01"&gt;01. DAY01&lt;/a&gt;&lt;/h4&gt;
 &lt;h4 id="02-day02"&gt;&lt;a href="http://localhost:1313/docs/Learn/Dorico02"&gt;02. DAY02&lt;/a&gt;&lt;/h4&gt;
-&lt;h3 id="其他準備中"&gt;其他準備中！&lt;/h3&gt;</description></item><item><title>颱風假，五迷老師怎麼說</title><link>http://localhost:1313/blog/typhoon/</link><pubDate>Fri, 10 Jul 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/typhoon/</guid><description>北北基放颱風假</description></item><item><title>07-08 電腦企劃</title><link>http://localhost:1313/blog/07-08/</link><pubDate>Thu, 09 Jul 2026 10:00:00 +0000</pubDate><guid>http://localhost:1313/blog/07-08/</guid><description>電腦企劃</description></item><item><title>AI 幫我生成打字練習工具！</title><link>http://localhost:1313/blog/aitype/</link><pubDate>Mon, 06 Jul 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/aitype/</guid><description>AI 幫我生成打字練習工具！</description></item><item><title>這真的有用嗎？</title><link>http://localhost:1313/blog/aitrain/</link><pubDate>Sun, 05 Jul 2026 11:00:00 +0000</pubDate><guid>http://localhost:1313/blog/aitrain/</guid><description>這真的有用嗎？</description></item><item><title>超強翻譜工具 V4</title><link>http://localhost:1313/docs/tools/scoreflow.v4/</link><pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/tools/scoreflow.v4/</guid><description>是真的超強翻譜工具 V4</description></item><item><title>超強翻譜工具 Version 4.0</title><link>http://localhost:1313/blog/scoreflow-ver4/</link><pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate><guid>http://localhost:1313/blog/scoreflow-ver4/</guid><description>超強翻譜工具 V4.0</description></item><item><title>五月天臨時直播限時公開!!</title><link>http://localhost:1313/blog/mayday-live/</link><pubDate>Sat, 04 Jul 2026 21:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mayday-live/</guid><description>五月天 2026.07.04 台北大巨蛋 5525+2 回到那一天 DAY 02/07，臨時直播現實公開</description></item><item><title>台北一日遊</title><link>http://localhost:1313/blog/taipei-75/</link><pubDate>Sat, 04 Jul 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/taipei-75/</guid><description>台北一日遊</description></item><item><title>「偷窺」五月天大雞腿錄音室</title><link>http://localhost:1313/docs/resource/mayday-rec/</link><pubDate>Sat, 04 Jul 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/docs/resource/mayday-rec/</guid><description>是真的超強翻譜工具</description></item><item><title>超強翻譜工具</title><link>http://localhost:1313/blog/scoreflow-intro/</link><pubDate>Sat, 04 Jul 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/blog/scoreflow-intro/</guid><description>超強翻譜工具</description></item><item><title>超強翻譜工具</title><link>http://localhost:1313/docs/tools/scoreflow.v2/</link><pubDate>Sat, 04 Jul 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/docs/tools/scoreflow.v2/</guid><description>是真的超強翻譜工具</description></item><item><title>📱 KAI macOS 電腦裡有什麼</title><link>http://localhost:1313/app/</link><pubDate>Mon, 29 Jun 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/app/</guid><description>我的 Mac 軟體清單</description></item><item><title>我的軟體清單</title><link>http://localhost:1313/blog/allapp/</link><pubDate>Mon, 29 Jun 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/allapp/</guid><description>我的 Mac 軟體清單</description></item><item><title>新歌曲</title><link>http://localhost:1313/blog/newsong-02/</link><pubDate>Tue, 23 Jun 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/newsong-02/</guid><description>我改編了新歌曲</description></item><item><title>OpenBVE 教學筆記</title><link>http://localhost:1313/docs/index/</link><pubDate>Sun, 21 Jun 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/docs/index/</guid><description>&lt;p&gt;在這裡可以找到我的 &lt;strong&gt;OpenBVE 筆記&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id="其他準備中"&gt;其他準備中！&lt;/h3&gt;</description></item><item><title>01. 準備步驟、相關環境</title><link>http://localhost:1313/docs/docusaurus/1/</link><pubDate>Fri, 10 Jul 2026 20:00:00 +0000</pubDate><guid>http://localhost:1313/docs/docusaurus/1/</guid><description>&lt;h2 id="什麼是-docusaurus"&gt;什麼是 Docusaurus？&lt;/h2&gt;
+&lt;p&gt;Document（文件）+ saurus（恐龍）= Docusaurus 一直覺得這名字很難記，透過拆字希望能幫助記憶&lt;/p&gt;
+&lt;p&gt;Docusaurus 是由 Facebook 推出的開源靜態網站生成工具，以 React 技術構建，提供快速建置以文檔內容為核心的網站。&lt;/p&gt;
+&lt;h2 id="為什麼選擇-docusaurus"&gt;為什麼選擇 Docusaurus？&lt;/h2&gt;
+&lt;p&gt;開頭有提到 Docusaurus 幾項特點，再參照官網說明後整理如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;支援 Markdown 擴充格式 MDX&lt;/li&gt;
+&lt;li&gt;可在文檔中編寫 JSX 語法，並渲染為 React 的 component (元件)&lt;/li&gt;
+&lt;li&gt;支援 i18n，可將文檔翻譯成 70 多種語言&lt;/li&gt;
+&lt;li&gt;架設靜態網站 (HTML、CSS、JS)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="環境"&gt;環境&lt;/h2&gt;
+&lt;p&gt;今天我們以較簡單入門的 &lt;code&gt;Docusaurus&lt;/code&gt; 作為網站的基礎，讓沒學過 HTML 的人也可以輕鬆入門&lt;/p&gt;</description></item><item><title>颱風假，五迷老師怎麼說</title><link>http://localhost:1313/blog/typhoon/</link><pubDate>Fri, 10 Jul 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/typhoon/</guid><description>北北基放颱風假</description></item><item><title>07-08 電腦企劃</title><link>http://localhost:1313/blog/07-08/</link><pubDate>Thu, 09 Jul 2026 10:00:00 +0000</pubDate><guid>http://localhost:1313/blog/07-08/</guid><description>電腦企劃</description></item><item><title>AI 幫我生成打字練習工具！</title><link>http://localhost:1313/blog/aitype/</link><pubDate>Mon, 06 Jul 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/aitype/</guid><description>AI 幫我生成打字練習工具！</description></item><item><title>這真的有用嗎？</title><link>http://localhost:1313/blog/aitrain/</link><pubDate>Sun, 05 Jul 2026 11:00:00 +0000</pubDate><guid>http://localhost:1313/blog/aitrain/</guid><description>這真的有用嗎？</description></item><item><title>超強翻譜工具 V4</title><link>http://localhost:1313/docs/tools/scoreflow.v4/</link><pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/tools/scoreflow.v4/</guid><description>是真的超強翻譜工具 V4</description></item><item><title>超強翻譜工具 Version 4.0</title><link>http://localhost:1313/blog/scoreflow-ver4/</link><pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate><guid>http://localhost:1313/blog/scoreflow-ver4/</guid><description>超強翻譜工具 V4.0</description></item><item><title>五月天臨時直播限時公開!!</title><link>http://localhost:1313/blog/mayday-live/</link><pubDate>Sat, 04 Jul 2026 21:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mayday-live/</guid><description>五月天 2026.07.04 台北大巨蛋 5525+2 回到那一天 DAY 02/07，臨時直播現實公開</description></item><item><title>台北一日遊</title><link>http://localhost:1313/blog/taipei-75/</link><pubDate>Sat, 04 Jul 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/taipei-75/</guid><description>台北一日遊</description></item><item><title>「偷窺」五月天大雞腿錄音室</title><link>http://localhost:1313/docs/resource/mayday-rec/</link><pubDate>Sat, 04 Jul 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/docs/resource/mayday-rec/</guid><description>是真的超強翻譜工具</description></item><item><title>超強翻譜工具</title><link>http://localhost:1313/blog/scoreflow-intro/</link><pubDate>Sat, 04 Jul 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/blog/scoreflow-intro/</guid><description>超強翻譜工具</description></item><item><title>超強翻譜工具</title><link>http://localhost:1313/docs/tools/scoreflow.v2/</link><pubDate>Sat, 04 Jul 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/docs/tools/scoreflow.v2/</guid><description>是真的超強翻譜工具</description></item><item><title>📱 KAI macOS 電腦裡有什麼</title><link>http://localhost:1313/app/</link><pubDate>Mon, 29 Jun 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/app/</guid><description>我的 Mac 軟體清單</description></item><item><title>我的軟體清單</title><link>http://localhost:1313/blog/allapp/</link><pubDate>Mon, 29 Jun 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/allapp/</guid><description>我的 Mac 軟體清單</description></item><item><title>新歌曲</title><link>http://localhost:1313/blog/newsong-02/</link><pubDate>Tue, 23 Jun 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/newsong-02/</guid><description>我改編了新歌曲</description></item><item><title>OpenBVE 教學筆記</title><link>http://localhost:1313/docs/openbve/</link><pubDate>Sun, 21 Jun 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/docs/openbve/</guid><description>&lt;p&gt;在這裡可以找到我的 &lt;strong&gt;OpenBVE 筆記&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id="202607"&gt;2026/07&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="first"&gt;架設軌道、初步設定&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>🖥️ macOS 應用程式推薦</title><link>http://localhost:1313/docs/index/</link><pubDate>Sun, 21 Jun 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/docs/index/</guid><description>&lt;p&gt;在這裡可以找到我喜歡或著我推薦的 &lt;code&gt;macOS&lt;/code&gt; 軟個&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>🖥️ macOS 應用程式推薦</title><link>http://localhost:1313/docs/macapps/</link><pubDate>Sun, 21 Jun 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/docs/macapps/</guid><description>&lt;p&gt;在這裡可以找到我喜歡或著我推薦的 &lt;code&gt;macOS&lt;/code&gt; 軟個&lt;/p&gt;
 &lt;h3 id="202606"&gt;2026/06&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="pearcleaner"&gt;清理檔案就用 PearCleaner &lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>今天我生日！</title><link>http://localhost:1313/blog/birth/</link><pubDate>Sun, 21 Jun 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/birth/</guid><description>今天我生日！</description></item><item><title>這篇要寫什麼？</title><link>http://localhost:1313/blog/random01/</link><pubDate>Thu, 18 Jun 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/random01/</guid><description>這篇要寫什麼？</description></item><item><title>讓我們用 E-mail 保持聯絡吧！</title><link>http://localhost:1313/blog/emailme/</link><pubDate>Tue, 09 Jun 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/emailme/</guid><description>正在看這個網站的你，不想跟 KAI 失聯吧？留下你的 E-mail，讓 KAI 可以直接把最新內容，直接寄到你的信箱裡～現在訂閱還可以免費得到小禮物唷！</description></item><item><title>6/6 編曲上課紀錄</title><link>http://localhost:1313/blog/6-6class/</link><pubDate>Sat, 06 Jun 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/6-6class/</guid><description>今日上課編曲紀錄</description></item><item><title>嗨～</title><link>http://localhost:1313/blog/hi06/</link><pubDate>Thu, 04 Jun 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/hi06/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>今天我生日！</title><link>http://localhost:1313/blog/birth/</link><pubDate>Sun, 21 Jun 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/birth/</guid><description>今天我生日！</description></item><item><title>清理檔案就用 PearCleaner</title><link>http://localhost:1313/docs/macapps/pearcleaner/</link><pubDate>Sun, 21 Jun 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/docs/macapps/pearcleaner/</guid><description>&lt;h2 id="解除安裝"&gt;解除安裝&lt;/h2&gt;
+&lt;p&gt;每次解除安裝軟體都是直街把軟體宜到 &lt;del&gt;勒色桶&lt;/del&gt; 垃圾桶嗎？根本槍清不乾淨，甚至可能還會有殘留檔案！&lt;/p&gt;
+&lt;p&gt;這時候就推薦使用 &lt;code&gt;PearCleaner&lt;/code&gt;! &lt;strong&gt;此軟體完全開源免費！&lt;/strong&gt; 該軟體分成 9 個部分～&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;No.&lt;/th&gt;
+&lt;th&gt;English&lt;/th&gt;
+&lt;th&gt;名詞解釋&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1.&lt;/td&gt;
+&lt;td&gt;Apps&lt;/td&gt;
+&lt;td&gt;刪除應用程式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2.&lt;/td&gt;
+&lt;td&gt;Developer&lt;/td&gt;
+&lt;td&gt;刪除開發者殘留檔案&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3.&lt;/td&gt;
+&lt;td&gt;File Search&lt;/td&gt;
+&lt;td&gt;檔案搜尋&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4.&lt;/td&gt;
+&lt;td&gt;Homebrew&lt;/td&gt;
+&lt;td&gt;Brew 套件清理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5.&lt;/td&gt;
+&lt;td&gt;Lipo&lt;/td&gt;
+&lt;td&gt;節省軟個占用空間&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6.&lt;/td&gt;
+&lt;td&gt;Orphans&lt;/td&gt;
+&lt;td&gt;單獨殘留檔案清理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7.&lt;/td&gt;
+&lt;td&gt;Packages&lt;/td&gt;
+&lt;td&gt;套件管理器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8.&lt;/td&gt;
+&lt;td&gt;Plugins&lt;/td&gt;
+&lt;td&gt;外掛程式管理器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;9.&lt;/td&gt;
+&lt;td&gt;Services&lt;/td&gt;
+&lt;td&gt;服務管理器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;希望這樣有比較好懂～&lt;/p&gt;</description></item><item><title>這篇要寫什麼？</title><link>http://localhost:1313/blog/random01/</link><pubDate>Thu, 18 Jun 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/random01/</guid><description>這篇要寫什麼？</description></item><item><title>讓我們用 E-mail 保持聯絡吧！</title><link>http://localhost:1313/blog/emailme/</link><pubDate>Tue, 09 Jun 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/emailme/</guid><description>正在看這個網站的你，不想跟 KAI 失聯吧？留下你的 E-mail，讓 KAI 可以直接把最新內容，直接寄到你的信箱裡～現在訂閱還可以免費得到小禮物唷！</description></item><item><title>6/6 編曲上課紀錄</title><link>http://localhost:1313/blog/6-6class/</link><pubDate>Sat, 06 Jun 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/6-6class/</guid><description>今日上課編曲紀錄</description></item><item><title>嗨～</title><link>http://localhost:1313/blog/hi06/</link><pubDate>Thu, 04 Jun 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/hi06/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
 &lt;p&gt;一下就過去了，現在已經六月了&lt;/p&gt;
 &lt;h2 id="0605-日記"&gt;0605 日記&lt;/h2&gt;
 &lt;ul&gt;
@@ -768,7 +869,15 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 &lt;p&gt;再過兩天（1/29）要出去日本玩了，這次要去長野！！&lt;/p&gt;
 &lt;p&gt;:::danger 行程表：
 &lt;a href="https://docs.google.com/spreadsheets/d/1HFxr9tx_aBgV7wjdqtEdnwl_phat7iaR/edit?usp=drivesdk&amp;amp;ouid=100256338337422178821&amp;amp;rtpof=true&amp;amp;sd=true"&gt;https://docs.google.com/spreadsheets/d/1HFxr9tx_aBgV7wjdqtEdnwl_phat7iaR/edit?usp=drivesdk&amp;amp;ouid=100256338337422178821&amp;amp;rtpof=true&amp;amp;sd=true&lt;/a&gt;
-:::&lt;/p&gt;</description></item><item><title>我的 Mac 軟體清單</title><link>http://localhost:1313/blog/mac-app/</link><pubDate>Mon, 26 Jan 2026 12:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mac-app/</guid><description>&lt;p&gt;:::danger &lt;a href="http://localhost:1313/app"&gt;詳細資訊你可以去這邊看，我全部移到這邊了→&lt;/a&gt;
+:::&lt;/p&gt;</description></item><item><title>我開發了製作模板神器！</title><link>http://localhost:1313/docs/resolve/macrotools/</link><pubDate>Mon, 26 Jan 2026 13:00:00 +0000</pubDate><guid>http://localhost:1313/docs/resolve/macrotools/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
+&lt;p&gt;最近看到了 &lt;strong&gt;錄錄創作中的新影片&lt;/strong&gt; 介紹怎麼製作 &lt;code&gt;.drfx&lt;/code&gt; 模板&amp;hellip;&lt;/p&gt;
+&lt;p&gt;但是身為一個新手可能不知道建立模板時 &lt;em&gt;&lt;strong&gt;到底怎麼勾選&lt;/strong&gt;&lt;/em&gt; ，於是就有這筆記的誕生！&lt;/p&gt;
+&lt;div class="youtube-s"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/VY2YMatWbTM?si=PJ8Pj4nH2wlxeBj-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;免費模板系列/如何設定字幕模板/DRFX檔案 [ Davinci Resolve教學 ]&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="利用-macrolab"&gt;利用 MacroLab&lt;/h2&gt;
+&lt;p&gt;就在我頭痛要怎麼勾選才能不用 &lt;strong&gt;一個一個打勾時&lt;/strong&gt;，我找到一個好工具！&lt;/p&gt;</description></item><item><title>我的 Mac 軟體清單</title><link>http://localhost:1313/blog/mac-app/</link><pubDate>Mon, 26 Jan 2026 12:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mac-app/</guid><description>&lt;p&gt;:::danger &lt;a href="http://localhost:1313/app"&gt;詳細資訊你可以去這邊看，我全部移到這邊了→&lt;/a&gt;
 :::
 以下列出我所有 Mac 上面的軟體&lt;/p&gt;
 &lt;ol&gt;
@@ -906,14 +1015,174 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 &lt;p&gt;最近KAI STUDIO 卡在 &lt;code&gt;23位訂閱者&lt;/code&gt; ，想跳巢到開源平台 &lt;a href="https://odysee.com/"&gt;&lt;code&gt;Odysee&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="老實說"&gt;老實說&amp;hellip;&lt;/h2&gt;
 &lt;p&gt;這次的槍法我真的盡力了&amp;hellip; 雖然最後玩到差點爆氣，&lt;/p&gt;
-&lt;p&gt;但這就是&amp;hellip;這就是&amp;hellip;成長的過程吧！(吧？) 🤣&lt;/p&gt;</description></item><item><title>電腦課成績 !</title><link>http://localhost:1313/blog/computer-score/</link><pubDate>Thu, 15 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/blog/computer-score/</guid><description>&lt;h2 id="電腦課成績-"&gt;電腦課成績 !&lt;/h2&gt;
+&lt;p&gt;但這就是&amp;hellip;這就是&amp;hellip;成長的過程吧！(吧？) 🤣&lt;/p&gt;</description></item><item><title>下載及安裝</title><link>http://localhost:1313/docs/finale/download/</link><pubDate>Fri, 16 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/download/</guid><description>&lt;h3 id="下載"&gt;下載&lt;/h3&gt;
+&lt;p&gt;可去官方下載試用版，有三十天免費試用
+:::info 趕快下載！
+&lt;a href="https://makemusic-downloads.makemusic.com/Finale/27.4.1/Mac/en-US/FinaleDemoSetup.dmg"&gt;點我前往下載MacOS 版本！&lt;/a&gt;
+:::&lt;/p&gt;
+&lt;p&gt;可以在這裡找到所有的資源，但是網站可能會下架也說不定！&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://store.makemusic.com/Downloads/Default.aspx"&gt;點我前往下載！&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="安裝"&gt;安裝&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;首先！打開下載好的檔案&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt="alt text" loading="lazy" src="download/1.jpeg"&gt;&lt;/p&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;接著打開安裝程式&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt="alt text" loading="lazy" src="download/2.jpeg"&gt;&lt;/p&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;按下一步直到結束！&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt="alt text" loading="lazy" src="download/3.jpeg"&gt;&lt;/p&gt;
+&lt;h3 id="開啟並使用"&gt;開啟並使用&lt;/h3&gt;
+&lt;p&gt;好好享受！&lt;/p&gt;</description></item><item><title>調號/拍號屬性工具</title><link>http://localhost:1313/docs/finale/key-tool/</link><pubDate>Fri, 16 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/key-tool/</guid><description>&lt;h2 id="調號"&gt;調號&lt;/h2&gt;
+&lt;p&gt;:::danger 在小節選中的狀態，選中該工具可使用 &lt;code&gt;Enter&lt;/code&gt; 來開啟設定視窗
+:::&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;該工具可以調整 `調號屬性`&lt;/summary&gt;
+&lt;p&gt;&lt;img loading="lazy" src="key/1.jpeg"&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;hr&gt;
+&lt;details&gt;
+&lt;summary&gt;名詞解釋&lt;/summary&gt;
+&lt;p&gt;&lt;img loading="lazy" src="key/2.jpeg"&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3 id="換調號"&gt;換調號&lt;/h3&gt;
+&lt;p&gt;如果你照著我之前一樣不用快速設定，而是直接建立新文件&amp;hellip;&lt;/p&gt;
+&lt;p&gt;這邊就會更加印象怎麼換調號&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;箭頭可以較精準控制調號&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;kbd&gt;Up&lt;/kbd&gt; : 越升&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Down&lt;/kbd&gt; : 越降&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hide Key Signature and Show All Accidentals：隱藏調號顯示臨時記號！&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;:::tip 建議選擇預設不變！
+Measure Region：
+To Next Key Change&lt;/p&gt;</description></item><item><title>小節屬性工具</title><link>http://localhost:1313/docs/finale/measure-tool/</link><pubDate>Thu, 15 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/measure-tool/</guid><description>&lt;p&gt;:::danger 在小節選中的狀態，選中該工具可使用 &lt;code&gt;Enter&lt;/code&gt; 來開啟設定視窗
+:::&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;該工具可以調整 `小節屬性`&lt;/summary&gt;
+&lt;p&gt;&lt;img alt="alt text" loading="lazy" src="measure/messuare.png"&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;hr&gt;
+&lt;h3 id="名詞解釋"&gt;名詞解釋&lt;/h3&gt;
+&lt;details&gt;
+&lt;summary&gt;名詞解釋&lt;/summary&gt;
+&lt;p&gt;&lt;img alt="alt text" loading="lazy" src="measure/MeasureAttributes_SET.png"&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;ul&gt;
+&lt;li&gt;Measure Attributes：小節屬性
+用來控制「指定小節 的外觀、行為與顯示方式」&lt;/li&gt;
+&lt;li&gt;Measure Attributes for Measure：套用小節範圍
+例如：1 through 31，代表第 1 小節到第 31 小節&lt;/li&gt;
+&lt;li&gt;Change Every：每幾小節套用一次
+常用於規律重複的版面設定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Barline（小節線）&lt;/p&gt;</description></item><item><title>電腦課成績 !</title><link>http://localhost:1313/blog/computer-score/</link><pubDate>Thu, 15 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/blog/computer-score/</guid><description>&lt;h2 id="電腦課成績-"&gt;電腦課成績 !&lt;/h2&gt;
 &lt;p&gt;今天終於公佈電腦課成績成績了 ! 原本之前一直說老師的壞話,
 現在不知道&amp;hellip;該怎麼辦哈哈哈哈哈 🤣&lt;/p&gt;
 &lt;p&gt;:::danger 成績
 99 分
 :::&lt;/p&gt;
 &lt;h3 id="之前"&gt;之前&lt;/h3&gt;
-&lt;p&gt;之前老師一直說他不會給很高,但是目前只有一個30分&amp;hellip;&lt;/p&gt;</description></item><item><title>跨界鋼琴 X 張育瑞大師</title><link>http://localhost:1313/blog/crossover-piano/</link><pubDate>Mon, 12 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/blog/crossover-piano/</guid><description>&lt;h2 id="講座由來"&gt;講座由來！&lt;/h2&gt;
+&lt;p&gt;之前老師一直說他不會給很高,但是目前只有一個30分&amp;hellip;&lt;/p&gt;</description></item><item><title>譜表屬性工具</title><link>http://localhost:1313/docs/finale/staff-tool/</link><pubDate>Wed, 14 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/staff-tool/</guid><description>&lt;p&gt;:::danger 在小節選中的狀態，選中該工具可使用 &lt;code&gt;Enter&lt;/code&gt; 來開啟設定視窗
+:::&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;該工具可以調整 `樂譜 (譜表) 屬性`&lt;/summary&gt;
+&lt;p&gt;&lt;img loading="lazy" src="staff/page.jpeg"&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;hr&gt;
+&lt;details&gt;
+&lt;summary&gt;名詞解釋&lt;/summary&gt;
+&lt;p&gt;&lt;img loading="lazy" src="staff/StaffAttributes_SET.png"&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;ul&gt;
+&lt;li&gt;Staff Attributes：譜表屬性
+用來控制「單一譜表 要顯示哪些元素、如何顯示」&lt;/li&gt;
+&lt;li&gt;Staff Attributes For：套用對象（譜表）
+例如：Staff 1、Staff 2，只會影響選到的那一行譜&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Behaviors（行為設定）&lt;/p&gt;</description></item><item><title>選取工具</title><link>http://localhost:1313/docs/finale/select-tool/</link><pubDate>Tue, 13 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/select-tool/</guid><description>&lt;h3 id="select-tools-快捷鍵"&gt;Select Tools 快捷鍵&lt;/h3&gt;
+&lt;details&gt;
+&lt;summary&gt;要從 `Speedy Tool` 切換到選擇模式可以按 `Esc`&lt;/summary&gt;
+&lt;p&gt;&lt;img loading="lazy" src="select/select.jpeg"&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;h4 id="數字鍵"&gt;數字鍵：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1 在下面複製新的一行&lt;/li&gt;
+&lt;li&gt;2 將該行，拆分成不同行&lt;/li&gt;
+&lt;li&gt;4 調窄間距&lt;/li&gt;
+&lt;li&gt;5 調寬間距&lt;/li&gt;
+&lt;li&gt;6 選取範圍 &lt;strong&gt;低一音&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;7 選取範圍 &lt;strong&gt;高一音&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;8 選取範圍 &lt;strong&gt;低八度&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;9 選取範圍 &lt;strong&gt;高八度&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id="其他"&gt;其他：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Enter&lt;/code&gt; 調整小節屬性&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + BackSpace&lt;/code&gt; 在該小節刪除所有音&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Down&lt;/code&gt; 將該小節換成下一行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;UP&lt;/code&gt; 將該小節換成上一行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;</description></item><item><title>快速音符輸入</title><link>http://localhost:1313/docs/finale/note-input/</link><pubDate>Mon, 12 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/note-input/</guid><description>&lt;h2 id="認識介面"&gt;認識介面&lt;/h2&gt;
+&lt;details&gt;
+&lt;summary&gt;先認識介面吧！&lt;/summary&gt;
+&lt;p&gt;&lt;img loading="lazy" src="note-input/window.jpg"&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;blockquote&gt;
+&lt;p&gt;名詞解釋&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;ScoreManager：&lt;code&gt;樂譜管理器&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;:::tip 技巧
+下面你看到的一個大視窗，就是他！它可以讓你新增樂器，甚至載入自己的 &lt;code&gt;VST&lt;/code&gt;
+:::&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Mixer：&lt;code&gt;混音器&lt;/code&gt;
+:::tip 技巧
+在這當中，可以調整個別樂器聲音～
+許多聽寫出題老師會故意把拍點調小聲
+:::&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Playback Controls：&lt;code&gt;播放控制區&lt;/code&gt;
+:::tip 技巧
+在這當中，可以播放樂譜！
+常常會想要重中間聽，就從這裡調整
+:::&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Main Tool Palette ：&lt;code&gt;主要編輯工具&lt;/code&gt;
+:::tip 所有編輯相館都在這裡！
+:::&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Simple Entry Palette：&lt;code&gt;音符工具&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Simple Entry Rests Palette：&lt;code&gt;休止符工具&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Smart Shape Palette：&lt;code&gt;繪製工具&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Special Tools Palette：&lt;code&gt;特殊工具&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>跨界鋼琴 X 張育瑞大師</title><link>http://localhost:1313/blog/crossover-piano/</link><pubDate>Mon, 12 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/blog/crossover-piano/</guid><description>&lt;h2 id="講座由來"&gt;講座由來！&lt;/h2&gt;
 &lt;p&gt;這次能邀請到 &lt;code&gt;Rick Chang&lt;/code&gt; 多虧了我們學校&lt;code&gt;118班導&lt;/code&gt;，班導剛好是 Rick Chang 國中的班導師&lt;/p&gt;
 &lt;h2 id="即興部分"&gt;即興部分&lt;/h2&gt;
 &lt;p&gt;跨界鋼琴簡單來說就是古典風格裡加上流行元素，可以去聽聽看他最厲害的歌曲：&lt;a href="https://youtu.be/e_c2gLnCpZY?si=TL_EeVrgSa7oJ9_g"&gt;Fire!&lt;/a&gt;&lt;/p&gt;
@@ -924,7 +1193,31 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 IG 其實很多，然後我都看過哈哈哈哈哈🤣
 :::&lt;/p&gt;
 &lt;h2 id="求學歷程"&gt;求學歷程&lt;/h2&gt;
-&lt;p&gt;大師有分享他在西班牙讀書時的心得，有放了一段影片是在西班牙上室內樂課的片段，西班牙的室內樂和我們台灣不一樣，西班牙室內樂加上了當地名間音樂風格，是以蘭姆酒來命名，音樂會有種爵士樂的感覺，大師有偷偷講他沒有特別喜歡爵士樂！（其實我也不喜歡🤣&lt;/p&gt;</description></item><item><title>曾老師小故事！</title><link>http://localhost:1313/blog/731pc/</link><pubDate>Sun, 11 Jan 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/731pc/</guid><description>&lt;h2 id="曾老師是誰"&gt;曾老師是誰？&lt;/h2&gt;
+&lt;p&gt;大師有分享他在西班牙讀書時的心得，有放了一段影片是在西班牙上室內樂課的片段，西班牙的室內樂和我們台灣不一樣，西班牙室內樂加上了當地名間音樂風格，是以蘭姆酒來命名，音樂會有種爵士樂的感覺，大師有偷偷講他沒有特別喜歡爵士樂！（其實我也不喜歡🤣&lt;/p&gt;</description></item><item><title>建立新專案</title><link>http://localhost:1313/docs/finale/create/</link><pubDate>Sun, 11 Jan 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/create/</guid><description>&lt;p&gt;:::danger 互動式教學！
+為了讓大家更方便閱讀，因此將圖片方入下拉式選單
+:::&lt;/p&gt;
+&lt;h2 id="怎麼建立新專案"&gt;怎麼建立新專案？&lt;/h2&gt;
+&lt;details&gt;
+&lt;summary&gt;首先開啟 Finale 之後，可透過上面的 Setup-Wizard 建立新專案&lt;/summary&gt;
+&lt;p&gt;&lt;img alt="alt text" loading="lazy" src="./create/create-page.jpeg"&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;h2 id="第一頁為選擇模板"&gt;第一頁為選擇模板&lt;/h2&gt;
+&lt;details&gt;
+&lt;summary&gt;在這邊請先看圖片後往下閱讀！&lt;/summary&gt;
+&lt;p&gt;&lt;img alt="alt text" loading="lazy" src="./create/template.jpeg"&gt;&lt;/p&gt;
+&lt;/details&gt;
+不過建議養成好習慣是：
+:::danger 注意！
+&lt;div className= "red-stroke-text"&gt;**不要使用模板**&lt;/div&gt;
+:::
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;直接&lt;/strong&gt;按 &lt;code&gt;Next&lt;/code&gt; (或著&lt;code&gt;Enter&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="選擇樂器"&gt;選擇樂器&lt;/h2&gt;
+&lt;details&gt;
+&lt;summary&gt;接下來是選擇樂器！選擇要的樂器後按`Add`加入或著`Remove`移除&lt;/summary&gt;
+&lt;p&gt;&lt;img alt="alt text" loading="lazy" src="create/add.jpeg"&gt;&lt;/p&gt;
+&lt;/details&gt;</description></item><item><title>曾老師小故事！</title><link>http://localhost:1313/blog/731pc/</link><pubDate>Sun, 11 Jan 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/731pc/</guid><description>&lt;h2 id="曾老師是誰"&gt;曾老師是誰？&lt;/h2&gt;
 &lt;p&gt;曾老師是一位在新竹高中教學教了三十年的電腦課教學！真的很實用，上課內容超優質，優質到十年不變&lt;/p&gt;
 &lt;p&gt;{/* truncate */}&lt;/p&gt;
 &lt;h2 id="曾老師的課程設計"&gt;曾老師的課程設計&lt;/h2&gt;
@@ -935,7 +1228,7 @@ IG 其實很多，然後我都看過哈哈哈哈哈🤣
 :::&lt;/p&gt;
 &lt;h2 id="搜尋引擎"&gt;搜尋引擎！&lt;/h2&gt;
 &lt;p&gt;曾老師請你比對各大引擎！
-像是：&lt;strong&gt;Google&lt;/strong&gt;、&lt;strong&gt;Bing&lt;/strong&gt;、&lt;strong&gt;Yahoo&lt;/strong&gt;、甚至是&lt;strong&gt;百度&lt;/strong&gt;&amp;hellip;&lt;/p&gt;</description></item><item><title>Finale 教學首頁</title><link>http://localhost:1313/docs/index/</link><pubDate>Sat, 10 Jan 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/docs/index/</guid><description>&lt;h1 id="finale-教學"&gt;Finale 教學&lt;/h1&gt;
+像是：&lt;strong&gt;Google&lt;/strong&gt;、&lt;strong&gt;Bing&lt;/strong&gt;、&lt;strong&gt;Yahoo&lt;/strong&gt;、甚至是&lt;strong&gt;百度&lt;/strong&gt;&amp;hellip;&lt;/p&gt;</description></item><item><title>Finale 教學首頁</title><link>http://localhost:1313/docs/finale/</link><pubDate>Sat, 10 Jan 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/</guid><description>&lt;h1 id="finale-教學"&gt;Finale 教學&lt;/h1&gt;
 &lt;p&gt;哈囉歡迎來到 Finale 教學&lt;/p&gt;
 &lt;p&gt;:::danger 互動式教學！
 為了讓大家更方便閱讀，因此將圖片放入下拉式選單
@@ -1594,6 +1887,8 @@ Podcast 節目！&lt;/p&gt;
 &lt;p&gt;
 請先前往 &lt;a href="http://localhost:1313/verify.html" target="_blank" style={{ fontWeight: 'bold', textDecoration: 'underline' }}&gt;OpnForm 表單&lt;/a&gt; 完成填寫。提交後系統會自動將您導回此頁面解鎖按鈕。
 &lt;/p&gt;</description></item><item><title>更新紀錄</title><link>http://localhost:1313/docs/update/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/update/</guid><description>&lt;h1 id="-更新紀錄-update"&gt;⬆︎ 更新紀錄 &lt;code&gt;/update&lt;/code&gt;&lt;/h1&gt;
+&lt;h2 id="21-2026-11-03"&gt;#21 2026-11-03&lt;/h2&gt;
+&lt;p&gt;更改主題 Docsaurus to HUGO&lt;/p&gt;
 &lt;h2 id="20-2026-10-28"&gt;#20 2026-10-28&lt;/h2&gt;
 &lt;p&gt;新增 BVE Route Studio !&lt;/p&gt;
 &lt;h2 id="19-2026-10-18"&gt;#19 2026-10-18&lt;/h2&gt;
@@ -1612,9 +1907,7 @@ Podcast 節目！&lt;/p&gt;
 &lt;p&gt;移除 Email + 首頁修改
 kaistudio update !&lt;/p&gt;
 &lt;h2 id="13-2026-08-02"&gt;#13 2026-08-02&lt;/h2&gt;
-&lt;p&gt;新增 ashin.HTML 相片館網頁&lt;/p&gt;
-&lt;h2 id="12-2026-07-30"&gt;#12 2026-07-30&lt;/h2&gt;
-&lt;p&gt;更換網頁顯示字體：Chiron GoRound TC&lt;/p&gt;</description></item><item><title>近況</title><link>http://localhost:1313/now/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/now/</guid><description>&lt;h3 id="近況"&gt;近況&lt;/h3&gt;
+&lt;p&gt;新增 ashin.HTML 相片館網頁&lt;/p&gt;</description></item><item><title>近況</title><link>http://localhost:1313/now/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/now/</guid><description>&lt;h3 id="近況"&gt;近況&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;這裡會放我平常的一些簡短紀錄&lt;/li&gt;
 &lt;/ul&gt;
@@ -1694,7 +1987,52 @@ kaistudio update !&lt;/p&gt;
 &lt;h3 id="網站更新紀錄"&gt;網站更新紀錄&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://localhost:1313/docs/update"&gt;更新紀錄&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>隨機文章</title><link>http://localhost:1313/random/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/random/</guid><description>&lt;div id="random-page"&gt;
+&lt;/ul&gt;</description></item><item><title>選項卡</title><link>http://localhost:1313/docs/docusaurus/tabs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/docusaurus/tabs/</guid><description>&lt;h1 id="選項卡-tabs"&gt;選項卡 &lt;code&gt;/tabs&lt;/code&gt;&lt;/h1&gt;
+&lt;p&gt;import Tabs from &amp;lsquo;@theme/Tabs&amp;rsquo;;
+import TabItem from &amp;lsquo;@theme/TabItem&amp;rsquo;;&lt;/p&gt;
+&lt;Tabs&gt;
+&lt;TabItem value="apple" label="Apple" default&gt;
+This is an apple 🍎
+&lt;/TabItem&gt;
+&lt;TabItem value="orange" label="Orange"&gt;
+This is an orange 🍊
+&lt;/TabItem&gt;
+&lt;TabItem value="banana" label="Banana"&gt;
+This is a banana 🍌
+&lt;/TabItem&gt;
+&lt;/Tabs&gt;
+&lt;div className="tip-callout"&gt;
+:::info
+也可以為 Tab 提供值與 defaultValue 道具：
+:::
+&lt;/div&gt;
+&lt;p&gt;&amp;lt;Tabs
+defaultValue=&amp;ldquo;apple&amp;rdquo;
+values={[
+{label: &amp;lsquo;Apple&amp;rsquo;, value: &amp;lsquo;apple&amp;rsquo;},
+{label: &amp;lsquo;Orange&amp;rsquo;, value: &amp;lsquo;orange&amp;rsquo;},
+{label: &amp;lsquo;Banana&amp;rsquo;, value: &amp;lsquo;banana&amp;rsquo;},
+]}&amp;gt;
+&lt;TabItem value="apple"&gt;This is an apple 🍎&lt;/TabItem&gt;
+&lt;TabItem value="orange"&gt;This is an orange 🍊&lt;/TabItem&gt;
+&lt;TabItem value="banana"&gt;This is a banana 🍌&lt;/TabItem&gt;
+&lt;/Tabs&gt;&lt;/p&gt;
+&lt;div className="tip-callout"&gt;
+:::info
+對於所有擁有相同 groupID 的分頁群組，它們的可能值不必完全相同。如果某個分頁群組選取的值，在另一個相同 groupID 的分頁群組中不存在，那麼缺少該值的分頁群組也不會改變其分頁狀態。您可以從下面的例子中清楚看到這一點：嘗試選擇「Linux」，上方的標籤組不會有任何變化。
+:::
+&lt;/div&gt;
+&lt;Tabs groupId="operating-systems"&gt;
+&lt;TabItem value="win" label="Windows"&gt;
+I am Windows.
+&lt;/TabItem&gt;
+&lt;TabItem value="mac" label="macOS"&gt;
+I am macOS.
+&lt;/TabItem&gt;
+&lt;TabItem value="linux" label="Linux"&gt;
+I am Linux.
+&lt;/TabItem&gt;
+&lt;/Tabs&gt;</description></item><item><title>隨機文章</title><link>http://localhost:1313/random/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/random/</guid><description>&lt;div id="random-page"&gt;
 &lt;h2&gt;正在挑選文章...&lt;/h2&gt;
 &lt;p id="random-status"&gt;
 從日記、貼文與文件中隨機挑選
@@ -1742,7 +2080,7 @@ animation: none;
 &lt;/style&gt;
 &lt;script&gt;
 (function () {
-const articles = ["/blog/signal/","/blog/time/","/blog/newweb2/","/posts/link/","/blog/newweb/","/posts/my-first-post/","/blog/bve-studio/","/blog/ms-layout/","/blog/tv/","/blog/now/","/blog/dorico02/","/blog/bve6-nicetrain/","/docs/resource/mayday-software/","/blog/mayday-no4/","/blog/software/","/blog/2048/","/blog/1004-taipei/","/blog/ai-subtitle/","/blog/idea-public/","/blog/nice-commands/","/blog/description/","/blog/moodx/","/blog/random02-ai/","/blog/random02/","/blog/mac-27/","/blog/thread/","/blog/wwdc26-2/","/blog/music-composer/","/blog/what/","/blog/mrt-tenyear/","/blog/swipe/","/blog/mac/","/blog/tim-cook-era/","/blog/bbp9/","/blog/school-open/","/blog/island-notebook/","/blog/app-open-source/","/blog/roblox-bladeball/","/blog/goodnight/","/blog/ashin/","/blog/change-font/","/blog/taipei-0726-life/","/blog/taipei-0726/","/blog/markdown/","/blog/clean/","/blog/shotcut/","/blog/macos27/","/blog/school/","/blog/openbve/","/docs/index/","/docs/learn/","/blog/typhoon/","/blog/07-08/","/blog/aitype/","/blog/aitrain/","/docs/tools/scoreflow.v4/","/blog/scoreflow-ver4/","/blog/mayday-live/","/blog/taipei-75/","/docs/resource/mayday-rec/","/blog/scoreflow-intro/","/docs/tools/scoreflow.v2/","/blog/allapp/","/blog/newsong-02/","/docs/index/","/docs/index/","/blog/birth/","/blog/random01/","/blog/emailme/","/blog/6-6class/","/blog/hi06/","/blog/55253-index/","/blog/55253/","/blog/obsidian-note/","/blog/tango/","/blog/new-song01demo/","/blog/1/","/blog/website-alive/","/blog/website-dead/","/blog/piano/","/blog/sun/","/docs/video-set/video01/roblox02/","/docs/roblox/","/docs/resolve/resolve.v4/","/blog/emu-update-24260403/","/blog/lab/","/blog/synth/","/blog/digital-perform-rc/","/blog/digital-perform/","/blog/my-digital-ideal-routine/","/blog/antigravity-ai/","/blog/typing-prc/","/blog/prizm/","/blog/mayday1/","/docs/vibecoding/01_%E5%B0%88%E6%A1%88%E8%B3%87%E6%96%99%E5%A4%BE%E8%87%AA%E5%8B%95%E5%8C%96/1-1/","/docs/vibecoding/01_%E5%B0%88%E6%A1%88%E8%B3%87%E6%96%99%E5%A4%BE%E8%87%AA%E5%8B%95%E5%8C%96/1-2/","/docs/vibecoding/02_%E4%BA%92%E5%8B%95%E6%8C%87%E4%BB%A4%E5%95%9F%E5%8B%95%E5%99%A8/2-1/","/docs/vibecoding/02_%E4%BA%92%E5%8B%95%E6%8C%87%E4%BB%A4%E5%95%9F%E5%8B%95%E5%99%A8/2-2/","/docs/vibecoding/03_obsidian%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/3-1/","/docs/vibecoding/03_obsidian%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/3-2/","/blog/mayday2/","/docs/vibecoding/","/blog/stop-update/","/blog/all-string-orch/","/blog/thumbnail-info/","/blog/2026-228/","/docs/resource/113tech-music/","/blog/english-name/","/blog/price/","/blog/macos-26/","/blog/borrow-class/","/blog/parallels-desktop-disk/","/blog/tired02/","/blog/ardour9-new/","/blog/chuxi-mayday/","/blog/roblox-nice01/","/blog/happy-new-year-2026/","/blog/happy-214/","/blog/mayday-highlight/","/blog/only-me/","/blog/new-arrange-04/","/blog/rest/","/blog/new-arrange-03/","/blog/install-mac-app/","/blog/ytdownload/","/blog/new-arrange-02/","/blog/pinyin-typing-yt02/","/blog/itch.io/","/docs/video-set/video01/roblox01/","/blog/tokyo.metro/","/blog/buy-oil/","/blog/2026-tokyo-day5/","/blog/2026-tokyo-day4/","/blog/2026-tokyo-day3/","/docs/phone/google-input/","/blog/2026-tokyo-day2/","/blog/2026-tokyo-day1/","/blog/go-abroad/","/blog/new-arrange/","/blog/new-arrange-00/","/blog/mac-app/","/blog/taipei-101-climb/","/blog/winter-2026/","/blog/sing-danger/","/blog/macbook/","/blog/affinity/","/blog/online-day/","/blog/yt-video-01/","/blog/computer-score/","/blog/crossover-piano/","/blog/731pc/","/docs/index/","/blog/test-lable/","/blog/web-change/","/blog/hbd/","/blog/house-yt01/","/blog/happy-new-year/","/docs/resolve/resolvepackv1-update/","/docs/resource/mix/","/docs/resource/nuvio/","/docs/roblox/robloxnew/","/docs/roblox/robloxobbyparty/","/docs/roblox/300robloxgames/","/docs/roblox/roblox/","/docs/resolve/resolvepackv3-update/","/docs/resolve/resolvepackv2-update/","/docs/update/","/docs/"];
+const articles = ["/blog/11-03/","/blog/signal/","/blog/time/","/blog/newweb2/","/posts/link/","/blog/newweb/","/posts/my-first-post/","/blog/bve-studio/","/blog/ms-layout/","/blog/tv/","/docs/learn/dorico02/","/blog/now/","/blog/dorico02/","/blog/bve6-nicetrain/","/docs/resource/mayday-software/","/blog/mayday-no4/","/blog/software/","/blog/2048/","/blog/1004-taipei/","/blog/ai-subtitle/","/blog/idea-public/","/blog/nice-commands/","/blog/description/","/blog/moodx/","/blog/random02-ai/","/blog/random02/","/blog/mac-27/","/blog/thread/","/blog/wwdc26-2/","/blog/music-composer/","/blog/what/","/blog/mrt-tenyear/","/docs/learn/dorico01/","/blog/swipe/","/blog/mac/","/blog/tim-cook-era/","/blog/bbp9/","/blog/school-open/","/blog/island-notebook/","/blog/app-open-source/","/blog/roblox-bladeball/","/blog/goodnight/","/blog/ashin/","/blog/change-font/","/blog/taipei-0726-life/","/blog/taipei-0726/","/blog/markdown/","/blog/clean/","/blog/shotcut/","/blog/macos27/","/blog/school/","/blog/openbve/","/docs/openbve/first/","/docs/docusaurus/","/docs/learn/learn/","/docs/docusaurus/1/","/blog/typhoon/","/blog/07-08/","/blog/aitype/","/blog/aitrain/","/docs/tools/scoreflow.v4/","/blog/scoreflow-ver4/","/blog/mayday-live/","/blog/taipei-75/","/docs/resource/mayday-rec/","/blog/scoreflow-intro/","/docs/tools/scoreflow.v2/","/blog/allapp/","/blog/newsong-02/","/docs/openbve/","/docs/macapps/","/blog/birth/","/docs/macapps/pearcleaner/","/blog/random01/","/blog/emailme/","/blog/6-6class/","/blog/hi06/","/blog/55253-index/","/blog/55253/","/blog/obsidian-note/","/blog/tango/","/blog/new-song01demo/","/blog/1/","/blog/website-alive/","/blog/website-dead/","/blog/piano/","/blog/sun/","/docs/video-set/video01/roblox02/","/docs/roblox/","/docs/resolve/resolve.v4/","/blog/emu-update-24260403/","/blog/lab/","/blog/synth/","/blog/digital-perform-rc/","/blog/digital-perform/","/blog/my-digital-ideal-routine/","/blog/antigravity-ai/","/blog/typing-prc/","/blog/prizm/","/blog/mayday1/","/docs/vibecoding/01_%E5%B0%88%E6%A1%88%E8%B3%87%E6%96%99%E5%A4%BE%E8%87%AA%E5%8B%95%E5%8C%96/1-1/","/docs/vibecoding/01_%E5%B0%88%E6%A1%88%E8%B3%87%E6%96%99%E5%A4%BE%E8%87%AA%E5%8B%95%E5%8C%96/1-2/","/docs/vibecoding/02_%E4%BA%92%E5%8B%95%E6%8C%87%E4%BB%A4%E5%95%9F%E5%8B%95%E5%99%A8/2-1/","/docs/vibecoding/02_%E4%BA%92%E5%8B%95%E6%8C%87%E4%BB%A4%E5%95%9F%E5%8B%95%E5%99%A8/2-2/","/docs/vibecoding/03_obsidian%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/3-1/","/docs/vibecoding/03_obsidian%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/3-2/","/blog/mayday2/","/docs/vibecoding/","/blog/stop-update/","/blog/all-string-orch/","/blog/thumbnail-info/","/blog/2026-228/","/docs/resource/113tech-music/","/blog/english-name/","/blog/price/","/blog/macos-26/","/blog/borrow-class/","/blog/parallels-desktop-disk/","/blog/tired02/","/blog/ardour9-new/","/blog/chuxi-mayday/","/blog/roblox-nice01/","/blog/happy-new-year-2026/","/blog/happy-214/","/blog/mayday-highlight/","/blog/only-me/","/blog/new-arrange-04/","/blog/rest/","/blog/new-arrange-03/","/blog/install-mac-app/","/blog/ytdownload/","/blog/new-arrange-02/","/blog/pinyin-typing-yt02/","/blog/itch.io/","/docs/video-set/video01/roblox01/","/blog/tokyo.metro/","/blog/buy-oil/","/blog/2026-tokyo-day5/","/blog/2026-tokyo-day4/","/blog/2026-tokyo-day3/","/docs/phone/google-input/","/blog/2026-tokyo-day2/","/blog/2026-tokyo-day1/","/blog/go-abroad/","/blog/new-arrange/","/blog/new-arrange-00/","/docs/resolve/macrotools/","/blog/mac-app/","/blog/taipei-101-climb/","/blog/winter-2026/","/blog/sing-danger/","/blog/macbook/","/blog/affinity/","/blog/online-day/","/blog/yt-video-01/","/docs/finale/download/","/docs/finale/key-tool/","/docs/finale/measure-tool/","/blog/computer-score/","/docs/finale/staff-tool/","/docs/finale/select-tool/","/docs/finale/note-input/","/blog/crossover-piano/","/docs/finale/create/","/blog/731pc/","/docs/finale/","/blog/test-lable/","/blog/web-change/","/blog/hbd/","/blog/house-yt01/","/blog/happy-new-year/","/docs/resolve/resolvepackv1-update/","/docs/resource/mix/","/docs/resource/nuvio/","/docs/roblox/robloxnew/","/docs/roblox/robloxobbyparty/","/docs/roblox/300robloxgames/","/docs/roblox/roblox/","/docs/resolve/resolvepackv3-update/","/docs/resolve/resolvepackv2-update/","/docs/update/","/docs/","/docs/docusaurus/tabs/"];
 const status = document.getElementById("random-status");
 if (!articles.length) {
 status.textContent = "目前沒有可閱讀的文章。";

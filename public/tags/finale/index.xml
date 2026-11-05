@@ -1,4 +1,188 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Finale on KAI STUDIO</title><link>http://localhost:1313/tags/finale/</link><description>Recent content in Finale on KAI STUDIO</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Sat, 10 Jan 2026 23:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/finale/index.xml" rel="self" type="application/rss+xml"/><item><title>Finale 教學首頁</title><link>http://localhost:1313/docs/index/</link><pubDate>Sat, 10 Jan 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/docs/index/</guid><description>&lt;h1 id="finale-教學"&gt;Finale 教學&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Finale on KAI BLOG</title><link>http://localhost:1313/tags/finale/</link><description>Recent content in Finale on KAI BLOG</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Fri, 16 Jan 2026 04:30:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/finale/index.xml" rel="self" type="application/rss+xml"/><item><title>下載及安裝</title><link>http://localhost:1313/docs/finale/download/</link><pubDate>Fri, 16 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/download/</guid><description>&lt;h3 id="下載"&gt;下載&lt;/h3&gt;
+&lt;p&gt;可去官方下載試用版，有三十天免費試用
+:::info 趕快下載！
+&lt;a href="https://makemusic-downloads.makemusic.com/Finale/27.4.1/Mac/en-US/FinaleDemoSetup.dmg"&gt;點我前往下載MacOS 版本！&lt;/a&gt;
+:::&lt;/p&gt;
+&lt;p&gt;可以在這裡找到所有的資源，但是網站可能會下架也說不定！&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://store.makemusic.com/Downloads/Default.aspx"&gt;點我前往下載！&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="安裝"&gt;安裝&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;首先！打開下載好的檔案&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt="alt text" loading="lazy" src="download/1.jpeg"&gt;&lt;/p&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;接著打開安裝程式&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt="alt text" loading="lazy" src="download/2.jpeg"&gt;&lt;/p&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;按下一步直到結束！&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt="alt text" loading="lazy" src="download/3.jpeg"&gt;&lt;/p&gt;
+&lt;h3 id="開啟並使用"&gt;開啟並使用&lt;/h3&gt;
+&lt;p&gt;好好享受！&lt;/p&gt;</description></item><item><title>調號/拍號屬性工具</title><link>http://localhost:1313/docs/finale/key-tool/</link><pubDate>Fri, 16 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/key-tool/</guid><description>&lt;h2 id="調號"&gt;調號&lt;/h2&gt;
+&lt;p&gt;:::danger 在小節選中的狀態，選中該工具可使用 &lt;code&gt;Enter&lt;/code&gt; 來開啟設定視窗
+:::&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;該工具可以調整 `調號屬性`&lt;/summary&gt;
+&lt;p&gt;&lt;img loading="lazy" src="key/1.jpeg"&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;hr&gt;
+&lt;details&gt;
+&lt;summary&gt;名詞解釋&lt;/summary&gt;
+&lt;p&gt;&lt;img loading="lazy" src="key/2.jpeg"&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3 id="換調號"&gt;換調號&lt;/h3&gt;
+&lt;p&gt;如果你照著我之前一樣不用快速設定，而是直接建立新文件&amp;hellip;&lt;/p&gt;
+&lt;p&gt;這邊就會更加印象怎麼換調號&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;箭頭可以較精準控制調號&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;kbd&gt;Up&lt;/kbd&gt; : 越升&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Down&lt;/kbd&gt; : 越降&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hide Key Signature and Show All Accidentals：隱藏調號顯示臨時記號！&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;:::tip 建議選擇預設不變！
+Measure Region：
+To Next Key Change&lt;/p&gt;</description></item><item><title>小節屬性工具</title><link>http://localhost:1313/docs/finale/measure-tool/</link><pubDate>Thu, 15 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/measure-tool/</guid><description>&lt;p&gt;:::danger 在小節選中的狀態，選中該工具可使用 &lt;code&gt;Enter&lt;/code&gt; 來開啟設定視窗
+:::&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;該工具可以調整 `小節屬性`&lt;/summary&gt;
+&lt;p&gt;&lt;img alt="alt text" loading="lazy" src="measure/messuare.png"&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;hr&gt;
+&lt;h3 id="名詞解釋"&gt;名詞解釋&lt;/h3&gt;
+&lt;details&gt;
+&lt;summary&gt;名詞解釋&lt;/summary&gt;
+&lt;p&gt;&lt;img alt="alt text" loading="lazy" src="measure/MeasureAttributes_SET.png"&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;ul&gt;
+&lt;li&gt;Measure Attributes：小節屬性
+用來控制「指定小節 的外觀、行為與顯示方式」&lt;/li&gt;
+&lt;li&gt;Measure Attributes for Measure：套用小節範圍
+例如：1 through 31，代表第 1 小節到第 31 小節&lt;/li&gt;
+&lt;li&gt;Change Every：每幾小節套用一次
+常用於規律重複的版面設定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Barline（小節線）&lt;/p&gt;</description></item><item><title>譜表屬性工具</title><link>http://localhost:1313/docs/finale/staff-tool/</link><pubDate>Wed, 14 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/staff-tool/</guid><description>&lt;p&gt;:::danger 在小節選中的狀態，選中該工具可使用 &lt;code&gt;Enter&lt;/code&gt; 來開啟設定視窗
+:::&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;該工具可以調整 `樂譜 (譜表) 屬性`&lt;/summary&gt;
+&lt;p&gt;&lt;img loading="lazy" src="staff/page.jpeg"&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;hr&gt;
+&lt;details&gt;
+&lt;summary&gt;名詞解釋&lt;/summary&gt;
+&lt;p&gt;&lt;img loading="lazy" src="staff/StaffAttributes_SET.png"&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;ul&gt;
+&lt;li&gt;Staff Attributes：譜表屬性
+用來控制「單一譜表 要顯示哪些元素、如何顯示」&lt;/li&gt;
+&lt;li&gt;Staff Attributes For：套用對象（譜表）
+例如：Staff 1、Staff 2，只會影響選到的那一行譜&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Behaviors（行為設定）&lt;/p&gt;</description></item><item><title>選取工具</title><link>http://localhost:1313/docs/finale/select-tool/</link><pubDate>Tue, 13 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/select-tool/</guid><description>&lt;h3 id="select-tools-快捷鍵"&gt;Select Tools 快捷鍵&lt;/h3&gt;
+&lt;details&gt;
+&lt;summary&gt;要從 `Speedy Tool` 切換到選擇模式可以按 `Esc`&lt;/summary&gt;
+&lt;p&gt;&lt;img loading="lazy" src="select/select.jpeg"&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;h4 id="數字鍵"&gt;數字鍵：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1 在下面複製新的一行&lt;/li&gt;
+&lt;li&gt;2 將該行，拆分成不同行&lt;/li&gt;
+&lt;li&gt;4 調窄間距&lt;/li&gt;
+&lt;li&gt;5 調寬間距&lt;/li&gt;
+&lt;li&gt;6 選取範圍 &lt;strong&gt;低一音&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;7 選取範圍 &lt;strong&gt;高一音&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;8 選取範圍 &lt;strong&gt;低八度&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;9 選取範圍 &lt;strong&gt;高八度&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id="其他"&gt;其他：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Enter&lt;/code&gt; 調整小節屬性&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Command + BackSpace&lt;/code&gt; 在該小節刪除所有音&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Down&lt;/code&gt; 將該小節換成下一行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;UP&lt;/code&gt; 將該小節換成上一行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;</description></item><item><title>快速音符輸入</title><link>http://localhost:1313/docs/finale/note-input/</link><pubDate>Mon, 12 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/note-input/</guid><description>&lt;h2 id="認識介面"&gt;認識介面&lt;/h2&gt;
+&lt;details&gt;
+&lt;summary&gt;先認識介面吧！&lt;/summary&gt;
+&lt;p&gt;&lt;img loading="lazy" src="note-input/window.jpg"&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;blockquote&gt;
+&lt;p&gt;名詞解釋&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;ScoreManager：&lt;code&gt;樂譜管理器&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;:::tip 技巧
+下面你看到的一個大視窗，就是他！它可以讓你新增樂器，甚至載入自己的 &lt;code&gt;VST&lt;/code&gt;
+:::&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Mixer：&lt;code&gt;混音器&lt;/code&gt;
+:::tip 技巧
+在這當中，可以調整個別樂器聲音～
+許多聽寫出題老師會故意把拍點調小聲
+:::&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Playback Controls：&lt;code&gt;播放控制區&lt;/code&gt;
+:::tip 技巧
+在這當中，可以播放樂譜！
+常常會想要重中間聽，就從這裡調整
+:::&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Main Tool Palette ：&lt;code&gt;主要編輯工具&lt;/code&gt;
+:::tip 所有編輯相館都在這裡！
+:::&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Simple Entry Palette：&lt;code&gt;音符工具&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Simple Entry Rests Palette：&lt;code&gt;休止符工具&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Smart Shape Palette：&lt;code&gt;繪製工具&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Special Tools Palette：&lt;code&gt;特殊工具&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>建立新專案</title><link>http://localhost:1313/docs/finale/create/</link><pubDate>Sun, 11 Jan 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/create/</guid><description>&lt;p&gt;:::danger 互動式教學！
+為了讓大家更方便閱讀，因此將圖片方入下拉式選單
+:::&lt;/p&gt;
+&lt;h2 id="怎麼建立新專案"&gt;怎麼建立新專案？&lt;/h2&gt;
+&lt;details&gt;
+&lt;summary&gt;首先開啟 Finale 之後，可透過上面的 Setup-Wizard 建立新專案&lt;/summary&gt;
+&lt;p&gt;&lt;img alt="alt text" loading="lazy" src="./create/create-page.jpeg"&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;h2 id="第一頁為選擇模板"&gt;第一頁為選擇模板&lt;/h2&gt;
+&lt;details&gt;
+&lt;summary&gt;在這邊請先看圖片後往下閱讀！&lt;/summary&gt;
+&lt;p&gt;&lt;img alt="alt text" loading="lazy" src="./create/template.jpeg"&gt;&lt;/p&gt;
+&lt;/details&gt;
+不過建議養成好習慣是：
+:::danger 注意！
+&lt;div className= "red-stroke-text"&gt;**不要使用模板**&lt;/div&gt;
+:::
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;直接&lt;/strong&gt;按 &lt;code&gt;Next&lt;/code&gt; (或著&lt;code&gt;Enter&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="選擇樂器"&gt;選擇樂器&lt;/h2&gt;
+&lt;details&gt;
+&lt;summary&gt;接下來是選擇樂器！選擇要的樂器後按`Add`加入或著`Remove`移除&lt;/summary&gt;
+&lt;p&gt;&lt;img alt="alt text" loading="lazy" src="create/add.jpeg"&gt;&lt;/p&gt;
+&lt;/details&gt;</description></item><item><title>Finale 教學首頁</title><link>http://localhost:1313/docs/finale/</link><pubDate>Sat, 10 Jan 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/</guid><description>&lt;h1 id="finale-教學"&gt;Finale 教學&lt;/h1&gt;
 &lt;p&gt;哈囉歡迎來到 Finale 教學&lt;/p&gt;
 &lt;p&gt;:::danger 互動式教學！
 為了讓大家更方便閱讀，因此將圖片放入下拉式選單

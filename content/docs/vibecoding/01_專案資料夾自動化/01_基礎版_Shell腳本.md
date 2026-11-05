@@ -5,6 +5,7 @@ sidebar_position: 2
 authors: [KAI]
 tags: [Vibe Coding]
 date: 2026-03-15T08:00:00
+series: ["vibecoding"]
 ---
 ## 💡 解決什麼問題？
 每次開啟新專案時，都要手動按右鍵新建一堆重複的資料夾（如素材、專案檔、輸出），既浪費時間又容易不統一。這個工具可以讓你「一鍵」完成所有準備工作！

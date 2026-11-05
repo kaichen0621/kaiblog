@@ -5,6 +5,7 @@ sidebar position: 3
 authors: [Leo]
 tags: [Vibe Coding]
 date: 2026-03-15T08:00:00
+series: ["vibecoding"]
 ---
 # 02. 互動式終端啟動器
 

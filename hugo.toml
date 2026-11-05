@@ -53,7 +53,7 @@ summaryLength = 140
 
     [[menu.main]]
       identifier = "random"
-      name = "🎲"
+      name = "隨機"
       url = "/random/"
       weight = 50
 
@@ -92,6 +92,7 @@ summaryLength = 140
       name = "關於"
       url = "/about/"
       weight = 110
+
 
 [params]
 
@@ -144,18 +145,18 @@ summaryLength = 140
     keys = ["title", "permalink", "summary"]
 
   # 頁腳版權年份 (修正為整數)
-  StartYear = 2026
+  StartYear = 2025
   EndYear = 2026
   [params.assets]
-      favicon = "/favicon.ico"
-      favicon16x16 = "/img/KAI_LOGO_B.png"
-      favicon32x32 = "/img/KAI_LOGO_B.png"
+      favicon = "/img/favicon_io/favicon.ico"
+      favicon16x16 = "/img/favicon_io/favicon-16x16.png"
+      favicon32x32 = "/img/favicon_io/favicon-32x32.png"
 
 # 允許在 Markdown 中使用原始 HTML
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true
+      unsafe = true # 允許 Markdown 檔案中直接解析 HTML 標籤
 
 # 添加 series（系列）與 tag 作為分類方式
 [taxonomies]
