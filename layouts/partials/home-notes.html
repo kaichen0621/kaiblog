@@ -1,6 +1,6 @@
 <div id="home-sticky-note" class="sticky-note-banner" style="display: none;">
   <div class="note-content-wrapper">
-    <span class="note-badge">便利貼</span>
+    <span class="note-badge">📌 便利貼</span>
     <p id="note-text-display"></p>
     <a href="/notes" class="note-more-link">動態牆 &rarr;</a>
   </div>
@@ -8,18 +8,16 @@
 
 <style>
 .sticky-note-banner {
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 14px;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   padding: 12px 18px;
-  margin: 10px 0 20px 0;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  margin: 15px 0;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
 }
-.dark .sticky-note-banner {
-  background: rgba(40, 40, 42, 0.75);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+.sticky-note-banner:hover {
+  transform: translateY(-2px);
 }
 .note-content-wrapper {
   display: flex;
@@ -28,11 +26,12 @@
   font-size: 14px;
 }
 .note-badge {
-  background: #007aff;
-  color: white;
+  background: var(--primary);
+  color: var(--theme);
   font-size: 11px;
-  padding: 2px 8px;
+  padding: 3px 8px;
   border-radius: 20px;
+  font-weight: 600;
   white-space: nowrap;
 }
 #note-text-display {
@@ -41,12 +40,16 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  color: var(--content);
 }
 .note-more-link {
-  color: #007aff;
+  color: var(--primary);
   text-decoration: none;
   font-weight: 500;
   white-space: nowrap;
+}
+.note-more-link:hover {
+  text-decoration: underline;
 }
 </style>
 
@@ -54,7 +57,11 @@
 fetch('/notes.txt')
   .then(res => res.text())
   .then(data => {
-    // 取得 --- 上面的第一行內容
+    // 確保抓到的不是整頁 HTML，而是以純文字處理
+    if (data.includes('<!DOCTYPE html>') || data.includes('<html')) {
+      console.error("錯誤：抓到 HTML 網頁，請檢查 notes.txt 路徑是否正確");
+      return;
+    }
     const parts = data.split('---');
     if (parts.length > 0) {
       const nowContent = parts[0].trim();
@@ -63,5 +70,6 @@ fetch('/notes.txt')
         document.getElementById('home-sticky-note').style.display = 'block';
       }
     }
-  });
+  })
+  .catch(err => console.error("無法載入 notes.txt", err));
 </script>
