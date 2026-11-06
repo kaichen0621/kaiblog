@@ -14,10 +14,6 @@
   padding: 12px 18px;
   margin: 15px 0;
   box-shadow: var(--shadow);
-  transition: transform 0.2s ease;
-}
-.sticky-note-banner:hover {
-  transform: translateY(-2px);
 }
 .note-content-wrapper {
   display: flex;
@@ -48,28 +44,31 @@
   font-weight: 500;
   white-space: nowrap;
 }
-.note-more-link:hover {
-  text-decoration: underline;
-}
 </style>
 
 <script>
-fetch('/notes.txt')
-  .then(res => res.text())
-  .then(data => {
-    // 確保抓到的不是整頁 HTML，而是以純文字處理
-    if (data.includes('<!DOCTYPE html>') || data.includes('<html')) {
-      console.error("錯誤：抓到 HTML 網頁，請檢查 notes.txt 路徑是否正確");
-      return;
-    }
-    const parts = data.split('---');
-    if (parts.length > 0) {
-      const nowContent = parts[0].trim();
-      if (nowContent) {
-        document.getElementById('note-text-display').innerText = nowContent;
-        document.getElementById('home-sticky-note').style.display = 'block';
+// 自動把便利貼搬到社交圖示下方、文章列表上方
+document.addEventListener("DOMContentLoaded", function() {
+  const socialIcons = document.querySelector('.social-icons');
+  const stickyNote = document.getElementById('home-sticky-note');
+  
+  if (socialIcons && stickyNote) {
+    socialIcons.parentNode.insertBefore(stickyNote, socialIcons.nextSibling);
+  }
+
+  // 讀取 notes.txt 內容
+  fetch('/notes.txt')
+    .then(res => res.text())
+    .then(data => {
+      if (data.includes('<!DOCTYPE html>') || data.includes('<html')) return;
+      const parts = data.split('---');
+      if (parts.length > 0) {
+        const nowContent = parts[0].trim();
+        if (nowContent) {
+          document.getElementById('note-text-display').innerText = nowContent;
+          stickyNote.style.display = 'block';
+        }
       }
-    }
-  })
-  .catch(err => console.error("無法載入 notes.txt", err));
+    });
+});
 </script>
