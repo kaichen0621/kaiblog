@@ -47,28 +47,17 @@
 </style>
 
 <script>
-// 自動把便利貼搬到社交圖示下方、文章列表上方
-document.addEventListener("DOMContentLoaded", function() {
-  const socialIcons = document.querySelector('.social-icons');
-  const stickyNote = document.getElementById('home-sticky-note');
-  
-  if (socialIcons && stickyNote) {
-    socialIcons.parentNode.insertBefore(stickyNote, socialIcons.nextSibling);
-  }
-
-  // 讀取 notes.txt 內容
-  fetch('/notes.txt')
-    .then(res => res.text())
-    .then(data => {
-      if (data.includes('<!DOCTYPE html>') || data.includes('<html')) return;
-      const parts = data.split('---');
-      if (parts.length > 0) {
-        const nowContent = parts[0].trim();
-        if (nowContent) {
-          document.getElementById('note-text-display').innerText = nowContent;
-          stickyNote.style.display = 'block';
-        }
+fetch('/notes.txt')
+  .then(res => res.text())
+  .then(data => {
+    if (data.includes('<!DOCTYPE html>') || data.includes('<html')) return;
+    const parts = data.split('---');
+    if (parts.length > 0) {
+      const nowContent = parts[0].trim();
+      if (nowContent) {
+        document.getElementById('note-text-display').innerText = nowContent;
+        document.getElementById('home-sticky-note').style.display = 'block';
       }
-    });
-});
+    }
+  });
 </script>
