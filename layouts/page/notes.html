@@ -1,9 +1,11 @@
 {{ define "main" }}
 <header class="page-header">
-  <h1>文字牆</h1>
+  <h1>{{ .Title }}</h1>
 </header>
 
-<div id="notes-grid" class="notes-grid-container"></div>
+<div class="post-content">
+  <div id="notes-grid" class="notes-grid-container"></div>
+</div>
 
 <style>
 .notes-grid-container {
@@ -13,27 +15,21 @@
   margin-top: 20px;
 }
 .note-card {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 18px; /* 圓角設計 */
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   padding: 18px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--shadow);
   font-size: 15px;
   line-height: 1.6;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: var(--content);
+  transition: transform 0.2s ease;
 }
 .note-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
-}
-.dark .note-card {
-  background: rgba(32, 32, 34, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 .note-card.is-now {
-  border: 1.5px solid #007aff; /* 24小時內的最新便利貼醒目外框 */
+  border: 1.5px solid var(--primary);
 }
 </style>
 
@@ -42,17 +38,18 @@ fetch('/notes.txt')
   .then(res => res.text())
   .then(data => {
     const container = document.getElementById('notes-grid');
+    if (!container) return;
     const parts = data.split('---');
     
     let allNotes = [];
     
-    // 處理最新便利貼
+    // 取得最新便利貼
     if (parts[0]) {
       const nowText = parts[0].trim();
       if (nowText) allNotes.push({ text: nowText, isNow: true });
     }
     
-    // 處理歷史便利貼 (按 - 符號拆分)
+    // 取得歷史便利貼
     if (parts[1]) {
       const archiveLines = parts[1].split('\n');
       archiveLines.forEach(line => {
@@ -64,7 +61,7 @@ fetch('/notes.txt')
       });
     }
     
-    // 渲染卡片牆
+    // 渲染卡片
     allNotes.forEach(note => {
       const card = document.createElement('div');
       card.className = `note-card ${note.isNow ? 'is-now' : ''}`;
