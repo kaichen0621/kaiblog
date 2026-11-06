@@ -1,1 +1,27 @@
+{{- define "main" -}}
+
 {{ partial "home-notes.html" . }}
+
+{{- if (.Param "profileMode") | and (.Site.Params.profileMode.enabled) -}}
+{{- partial "index_profile.html" . -}}
+{{- else -}}
+
+{{- if .IsHome -}}
+{{- range .Site.Menus.main -}}
+{{- end -}}
+{{- end -}}
+
+{{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections -}}
+
+{{- if .Site.Params.homeInfoParams -}}
+{{- partial "home_info.html" . -}}
+{{- end -}}
+
+{{- $paginator := .Paginate $pages -}}
+
+{{- range $index, $page := $paginator.Pages -}}
+  {{- .Render "summary" -}}
+{{- end -}}
+
+{{- end -}}
+{{- end -}}
