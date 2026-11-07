@@ -100,6 +100,7 @@ summaryLength = 140
   description = "KAI BLOG 撰寫每日筆記"
   author = "Kai"
   defaultTheme = "auto"
+  disableThemeToggle= false
   ShowCodeCopyButtons = true
   ShowReadingTime = true
   ShowPostNavLinks = true

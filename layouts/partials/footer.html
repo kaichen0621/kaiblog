@@ -1,7 +1,7 @@
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     // 找出頁面上所有寫著 <PaidContent> 的元素
-    const contents = document.querySelectorAll("PaidContent, paidcontent, PaidContent01, paidcontent01,[id*='sun-piano']");
+    const contents = document.querySelectorAll("PaidContent, paidcontent, PaidContent01, paidcontent01");
 
     contents.forEach((el, index) => {
         const originalContent = el.innerHTML;
