@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>DAYS on KAI BLOG</title><link>http://localhost:1313/tags/days/</link><description>Recent content in DAYS on KAI BLOG</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Fri, 23 Oct 2026 16:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/days/index.xml" rel="self" type="application/rss+xml"/><item><title>Dorico 快速上手 DAY02</title><link>http://localhost:1313/docs/learn/dorico02/</link><pubDate>Fri, 23 Oct 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/docs/learn/dorico02/</guid><description>&lt;p&gt;今天（2026-10-23）是學習 Dorico 的第二天，距離上次已經有了整整一個多月的時間&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>DAYS on KAI BLOG</title><link>https://kaiblog.is-a.dev/tags/days/</link><description>Recent content in DAYS on KAI BLOG</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Fri, 23 Oct 2026 16:00:00 +0000</lastBuildDate><atom:link href="https://kaiblog.is-a.dev/tags/days/index.xml" rel="self" type="application/rss+xml"/><item><title>Dorico 快速上手 DAY02</title><link>https://kaiblog.is-a.dev/docs/learn/dorico02/</link><pubDate>Fri, 23 Oct 2026 16:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/docs/learn/dorico02/</guid><description>&lt;p&gt;今天（2026-10-23）是學習 Dorico 的第二天，距離上次已經有了整整一個多月的時間&lt;/p&gt;
 &lt;p&gt;簡單的介紹：&lt;/p&gt;
 &lt;h2 id="setup-page"&gt;Setup Page&lt;/h2&gt;
 &lt;div className="photo-border"&gt;
@@ -22,7 +22,7 @@
 &lt;li&gt;&lt;strong&gt;純粹是模板工具&lt;/strong&gt;：它本身不是一種新的樂手型態。當你點擊它時，它可以讓你一鍵加入「雙管編制木管組」、「銅管五重奏」或「弦樂五部」。&lt;/li&gt;
 &lt;li&gt;點擊並選好後，Dorico 會&lt;strong&gt;自動幫你生成對應的數個 Single Players 或 Section Players&lt;/strong&gt;。例如選擇弦樂組，它就會幫你打包自動建好 Violin I (Section)、Violin II (Section)、Viola (Section) 等，省去你一個一個手動加的時間。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;第三個類似 Template 的概念&lt;/p&gt;</description></item><item><title>Dorico 快速上手 DAY01</title><link>http://localhost:1313/docs/learn/dorico01/</link><pubDate>Sat, 05 Sep 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/docs/learn/dorico01/</guid><description>&lt;p&gt;今天（2026-09-04）是學習 Dorico 的第一天&lt;/p&gt;
+&lt;p&gt;第三個類似 Template 的概念&lt;/p&gt;</description></item><item><title>Dorico 快速上手 DAY01</title><link>https://kaiblog.is-a.dev/docs/learn/dorico01/</link><pubDate>Sat, 05 Sep 2026 16:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/docs/learn/dorico01/</guid><description>&lt;p&gt;今天（2026-09-04）是學習 Dorico 的第一天&lt;/p&gt;
 &lt;p&gt;明顯感受到超級難用的氣氛，看了官方的十一分鐘教學，還是看不懂&amp;hellip;&lt;/p&gt;
 &lt;p&gt;簡單的註記一下！&lt;/p&gt;
 &lt;h2 id="輸入音符"&gt;輸入音符&lt;/h2&gt;
