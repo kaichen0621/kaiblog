@@ -1,8 +1,9 @@
 ---
-title: "文字牆"
+title: "便利貼"
 date: 2026-11-07T12:00:00+08:00
 weight: 1
 hideMeta: true
+TocOpen: false
 ---
 
 ### 我居然在新竹火車站聽到高鐵的發車鈴聲欸！！！
