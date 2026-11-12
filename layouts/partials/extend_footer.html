@@ -1,0 +1,33 @@
+<script>
+// 獨立包裝，絕不汙染全域變數與主體 DOM
+window.addEventListener('DOMContentLoaded', () => {
+    // 直接抓取舊文章自訂標籤
+    document.querySelectorAll("PaidContent, paidcontent, PaidContent01, paidcontent01").forEach((el, i) => {
+        const key = `kai_unlocked_${i}`;
+        if (localStorage.getItem(key) === 'true') return; // 已解鎖就放行
+
+        const original = el.innerHTML;
+        el.innerHTML = `
+            <div style="margin: 2.5rem 0; padding: 2.5rem 2rem; border-radius: 30px; border: 2px solid var(--border); background: var(--code-bg); text-align: center;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">⚠️</div>
+                <h3 style="color: var(--primary); font-size: 1.5rem; font-weight: 800;">目前停止開放下載！<br><span style="color: #ee4242;">請至首頁查看最新版本</span></h3>
+                <input type="password" placeholder="輸入密碼" class="p-input" style="width: 100%; max-width: 400px; padding: 12px; border-radius: 10px; border: 1px solid var(--border); background: rgba(0,0,0,0.05); color: var(--primary); text-align: center; margin: 10px 0; outline: none;" />
+                <br>
+                <button class="p-btn" style="width: 100%; max-width: 400px; padding: 14px; background: #ffdd00; border: none; border-radius: 20px; font-weight: 700; cursor: pointer;">我是管理員！</button>
+            </div>
+        `;
+
+        const btn = el.querySelector('.p-btn');
+        const input = el.querySelector('.p-input');
+
+        btn.onclick = () => {
+            if (input.value.trim() === 'resolve') {
+                localStorage.setItem(key, 'true');
+                el.innerHTML = original; // 瞬間還原，不破壞結構
+            } else {
+                alert('密碼錯誤');
+            }
+        };
+    });
+});
+</script>
