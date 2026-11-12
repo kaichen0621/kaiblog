@@ -40,15 +40,13 @@ https://www.youtube.com/playlist?list=PLw0lv3mQaNYn3-FKEZLZJkygYxeAEnW0X
 [點我前往：WIWI BLOG](https://wiwi.blog/)
 
 
-本網站使用 `Docusaurus` 撰寫
-
 ## 我會著重在KAI BLOG
 1. 記錄生活
 2. 定期投稿 🤣
 3. 做筆記！！！
 
 ## 2025 / 11 正式啟用 KAI WIKI
-在 10月我嘗試用 HUGO 架設 KAI STUDIO
+在 10 月我嘗試用 HUGO 架設 KAI STUDIO
 
 當我認為一切都順利時...  
 結果後台掛掉了
@@ -56,7 +54,7 @@ https://www.youtube.com/playlist?list=PLw0lv3mQaNYn3-FKEZLZJkygYxeAEnW0X
 因此我轉向到`HUGO`的主題 BlowFish  
 在 2025 / 11 月架設 KAI WIKI
 
-[點我前往：KAI WIKI](https://kaistudio-tan.vercel.app/ )
+[暫不公開]
 
 
 目前持續更新直到 2025 / 12 / 30 
@@ -64,7 +62,7 @@ https://www.youtube.com/playlist?list=PLw0lv3mQaNYn3-FKEZLZJkygYxeAEnW0X
 WIWI 發佈了新網站，讓我更想繼續製作新的網站，超好笑🤣
 
 ## 2025 / 12 本站建立完成！
-本網站**之前**使用 `Docusaurus` 撰寫，
+本網站**之前**使用 `Docusauru` 撰寫，
 然後架設時非常不順利！  
 **我花了 2 小時研究
 試了至少3版才成功，**  
