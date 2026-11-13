@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>BLOG on KAI BLOG</title><link>http://localhost:1313/blog/</link><description>Recent content in BLOG on KAI BLOG</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Wed, 11 Nov 2026 17:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>便利貼</title><link>http://localhost:1313/blog/notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/blog/notes/</guid><description>&lt;blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h3 id="我居然在新竹火車站聽到高鐵的發車鈴聲欸"&gt;我居然在新竹火車站聽到高鐵的發車鈴聲欸！！！&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>BLOG on KAI BLOG</title><link>https://kaiblog.is-a.dev/blog/</link><description>Recent content in BLOG on KAI BLOG</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Fri, 13 Nov 2026 10:00:00 +0800</lastBuildDate><atom:link href="https://kaiblog.is-a.dev/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>便利貼</title><link>https://kaiblog.is-a.dev/blog/notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/notes/</guid><description>&lt;p&gt;我覺得很假&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;2026.11.09 22:41&lt;/p&gt;
+&lt;p&gt;2026.11.12 17：11&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id="-archive-"&gt;== Archive ==&lt;/h2&gt;
+&lt;p&gt;我居然在新竹火車站聽到高鐵的發車鈴聲欸！！！&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2026.11.09 22：41&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;跑 1600 m 是誰發明的&lt;/li&gt;
 &lt;/ul&gt;
@@ -15,20 +17,33 @@
 &lt;li&gt;拍畢業照&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;2026.11.09 08:50&lt;/p&gt;
+&lt;p&gt;2026.11.09 08：50&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;音樂會順利結束啦 ~&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;2026.11.07 12：33&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title>雙十一</title><link>http://localhost:1313/blog/11-11/</link><pubDate>Wed, 11 Nov 2026 17:00:00 +0800</pubDate><guid>http://localhost:1313/blog/11-11/</guid><description>&lt;p&gt;身為一個不太會花錢的我，跟你們保證雙11一定不會亂買，今天呢就下載蝦皮來看看吧&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>部落格文章 (與他們的產地) ✦BBP11✦</title><link>https://kaiblog.is-a.dev/blog/bbp11/</link><pubDate>Fri, 13 Nov 2026 10:00:00 +0800</pubDate><guid>https://kaiblog.is-a.dev/blog/bbp11/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;這是我在「&lt;a href="https://blogblog.club/party/"&gt;BlogBlog 同樂會 - 2026 年 11 月&lt;/a&gt;」的投稿文章。本月主題是「&lt;a href="https://blog.giveanornot.com/blogblogparty-blog-posts"&gt;部落格文章（與他們的產地）&lt;/a&gt;」，由 &lt;a href="https://blog.giveanornot.com/"&gt;資工小廢物 - JN&lt;/a&gt; 主持。如果你有自己的部落格，歡迎一起來參加！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="-第-11-期部落格文章與他們的產地2026-年-11-月熱烈進行中"&gt;📝 第 11 期：部落格文章（與他們的產地）（2026 年 11 月，熱烈進行中！）&lt;/h3&gt;
+&lt;p&gt;在寫這篇文章之前，我想先特別感謝 JN，你開發的 &lt;a href="https://indieping.giveanornot.com/"&gt;IndiePing&lt;/a&gt; 真的超級厲害！！&lt;/p&gt;
+&lt;p&gt;他讓我知道，原來有人會認真的看文章，這個等之後再說好了&lt;/p&gt;
+&lt;h2 id="動機"&gt;動機&lt;/h2&gt;
+&lt;p&gt;首先，讓我想開始寫一篇文章的原因是因為看到 wiwi 他不在YouTube了，原本是抱著想看更多編曲教學才開始訂閱 wiwi.blog 的哈哈哈～ 至於在我小的時候就很想要架設一個自己的網站，曾經走過過 Google site、WIX 甚至 WordPress&lt;br&gt;
+後來才慢慢認識 Hugo 跟 Docsuarus。 &lt;strong&gt;很好到現在還是記不得 Docsuarus 怎麼拼&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Discord 新程式</title><link>https://kaiblog.is-a.dev/blog/discord/</link><pubDate>Thu, 12 Nov 2026 12:00:00 +0800</pubDate><guid>https://kaiblog.is-a.dev/blog/discord/</guid><description>&lt;p&gt;今天被 YouTube 影片推銷，Discord 將由 Electrion 框架轉型 Rust&lt;/p&gt;
+&lt;p&gt;他們號稱 Rust 更快、記憶體佔用更小&lt;/p&gt;
+&lt;p&gt;手機也會一併轉換，其實我蠻期待的，畢竟視訊會快很多&lt;/p&gt;
+&lt;p&gt;網站終於修好了，切換主題的部分&lt;/p&gt;
+&lt;p&gt;至於 RSS 等之後在修吧&amp;hellip;&lt;/p&gt;
+&lt;p&gt;對了 ~ 新 logo 好看嗎？&lt;/p&gt;</description></item><item><title>雙十一</title><link>https://kaiblog.is-a.dev/blog/11-11/</link><pubDate>Wed, 11 Nov 2026 17:00:00 +0800</pubDate><guid>https://kaiblog.is-a.dev/blog/11-11/</guid><description>&lt;p&gt;身為一個不太會花錢的我，跟你們保證雙11一定不會亂買，今天呢就下載蝦皮來看看吧&lt;/p&gt;
 &lt;p&gt;一打開購物平台，原來現在的廣告這麼多，好了可以刪掉了&lt;/p&gt;
-&lt;p&gt;果然什麼都沒有買&lt;/p&gt;</description></item><item><title>最後一次跑 1600m</title><link>http://localhost:1313/blog/1109run/</link><pubDate>Tue, 10 Nov 2026 08:00:00 +0800</pubDate><guid>http://localhost:1313/blog/1109run/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;果然什麼都沒有買&lt;/p&gt;</description></item><item><title>最後一次跑 1600m</title><link>https://kaiblog.is-a.dev/blog/1109run/</link><pubDate>Tue, 10 Nov 2026 08:00:00 +0800</pubDate><guid>https://kaiblog.is-a.dev/blog/1109run/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;本文撰寫時間為 11.09 17：30&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;今天體育課跑 1600，身為本班最會手勢舞的人。跑步，肯定 &lt;strong&gt;有！問！題！&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;聽完老師講完規則，然後就衝了，原本想說慢慢跑的說，結果三個年紀的男生 &lt;strong&gt;沒有半個在慢的&lt;/strong&gt;，我們班三劍客以 &lt;strong&gt;三個家豪為主題&lt;/strong&gt;，用它們同心協力的力量跑了出去，另外兩個不是家豪，是火箭人，我只好跟著他們的步伐，努力向前衝刺&lt;/p&gt;</description></item><item><title>日本音樂</title><link>http://localhost:1313/blog/japan-ms/</link><pubDate>Mon, 09 Nov 2026 00:08:00 +0800</pubDate><guid>http://localhost:1313/blog/japan-ms/</guid><description>&lt;p&gt;日本的音樂分四種&lt;/p&gt;
+&lt;p&gt;聽完老師講完規則，然後就衝了，原本想說慢慢跑的說，結果三個年紀的男生 &lt;strong&gt;沒有半個在慢的&lt;/strong&gt;，我們班三劍客以 &lt;strong&gt;三個家豪為主題&lt;/strong&gt;，用它們同心協力的力量跑了出去，另外兩個不是家豪，是火箭人，我只好跟著他們的步伐，努力向前衝刺&lt;/p&gt;</description></item><item><title>日本音樂</title><link>https://kaiblog.is-a.dev/blog/japan-ms/</link><pubDate>Mon, 09 Nov 2026 00:08:00 +0800</pubDate><guid>https://kaiblog.is-a.dev/blog/japan-ms/</guid><description>&lt;p&gt;日本的音樂分四種&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;能劇&lt;/li&gt;
 &lt;li&gt;狂言&lt;/li&gt;
@@ -40,30 +55,30 @@
 &lt;li&gt;尺八&lt;/li&gt;
 &lt;li&gt;三味線&lt;/li&gt;
 &lt;li&gt;日本箏&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>趕快逃離 Line</title><link>http://localhost:1313/blog/line-escape/</link><pubDate>Sun, 08 Nov 2026 00:00:00 +0800</pubDate><guid>http://localhost:1313/blog/line-escape/</guid><description>&lt;p&gt;我不是&lt;a href="http://localhost:1313/blog/signal"&gt;前幾天才發文說別再用 Line 嗎？&lt;/a&gt;結果剛好又看到新的新聞 • 新的限制&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>趕快逃離 Line</title><link>https://kaiblog.is-a.dev/blog/line-escape/</link><pubDate>Sun, 08 Nov 2026 00:00:00 +0800</pubDate><guid>https://kaiblog.is-a.dev/blog/line-escape/</guid><description>&lt;p&gt;我不是&lt;a href="https://kaiblog.is-a.dev/blog/signal"&gt;前幾天才發文說別再用 Line 嗎？&lt;/a&gt;結果剛好又看到新的新聞 • 新的限制&lt;/p&gt;
 &lt;p&gt;LINE「無聲訊息」免費試用倒數！11/16起改付費、想續用得符合1條件&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;2026/11/06 11:09&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;LINE「無聲訊息」免費試用倒數，11/16起改列Premium專屬功能。&lt;/p&gt;
-&lt;p&gt;LINE今（6）日發布最新公告，宣布目前在LINE Labs開放體驗的「無聲訊息」功能已完成階段性測試，將自11月16日起正式轉為LINE Premium訂閱會員專屬功能，這項原本開放用戶免費使用的功能，即將改為付費會員才能使用。&lt;/p&gt;</description></item><item><title>1106-心情札記</title><link>http://localhost:1313/blog/1106-bad/</link><pubDate>Sat, 07 Nov 2026 10:00:00 +0800</pubDate><guid>http://localhost:1313/blog/1106-bad/</guid><description>&lt;p&gt;反正昨天是音樂會啦&lt;br&gt;
+&lt;p&gt;LINE今（6）日發布最新公告，宣布目前在LINE Labs開放體驗的「無聲訊息」功能已完成階段性測試，將自11月16日起正式轉為LINE Premium訂閱會員專屬功能，這項原本開放用戶免費使用的功能，即將改為付費會員才能使用。&lt;/p&gt;</description></item><item><title>1106-心情札記</title><link>https://kaiblog.is-a.dev/blog/1106-bad/</link><pubDate>Sat, 07 Nov 2026 10:00:00 +0800</pubDate><guid>https://kaiblog.is-a.dev/blog/1106-bad/</guid><description>&lt;p&gt;反正昨天是音樂會啦&lt;br&gt;
 我不開心&lt;/p&gt;
 &lt;p&gt;然後歐陽還來關心我，嗚嗚嗚謝謝他&lt;br&gt;
 話說音樂會倒是挺順利的，我也不知道在緊張什麼&lt;br&gt;
 彈得精彩，拉的也開心&lt;/p&gt;
-&lt;h5 id="然後學校的錄音室都不肯借我用嗚嗚嗚嗚"&gt;然後學校的錄音室都不肯借我用嗚嗚嗚嗚&amp;hellip;&lt;/h5&gt;</description></item><item><title>規劃行程</title><link>http://localhost:1313/blog/travel/</link><pubDate>Sat, 07 Nov 2026 08:00:00 +0800</pubDate><guid>http://localhost:1313/blog/travel/</guid><description>&lt;p&gt;印象最深刻的事情是我國中的時候去雪梨歌劇院，然後走遠了，迷路了&lt;/p&gt;
+&lt;h5 id="然後學校的錄音室都不肯借我用嗚嗚嗚嗚"&gt;然後學校的錄音室都不肯借我用嗚嗚嗚嗚&amp;hellip;&lt;/h5&gt;</description></item><item><title>規劃行程</title><link>https://kaiblog.is-a.dev/blog/travel/</link><pubDate>Sat, 07 Nov 2026 08:00:00 +0800</pubDate><guid>https://kaiblog.is-a.dev/blog/travel/</guid><description>&lt;p&gt;印象最深刻的事情是我國中的時候去雪梨歌劇院，然後走遠了，迷路了&lt;/p&gt;
 &lt;p&gt;在我高中之前都還沒有手機，那時候完全找不到人，後來好像是內心的直覺才找到遊覽車&lt;/p&gt;
 &lt;p&gt;這也是為什麼後來只喜歡日本東京，因為我很熟，即使走錯也是知道怎麼回去，到了後來 &lt;strong&gt;我爸媽甚至直接叫我規劃行程，變成行程規劃大師&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;但是！自從 ai 的出現，我們家的旅遊博士從我變成了 GemiXX、 ChatGXX ，很好我只需學會怎麼打行程表就好&lt;/p&gt;</description></item><item><title>台中一日遊</title><link>http://localhost:1313/blog/taichung-one/</link><pubDate>Fri, 06 Nov 2026 08:00:00 +0800</pubDate><guid>http://localhost:1313/blog/taichung-one/</guid><description>&lt;p&gt;這篇是 10-25 的回顧文，我不是故意的，但草稿一堆，慢慢回顧這樣，這篇真的超久，那時候 10.23 剛好颱風假，讓我們高三班級畢業音樂會延後到 11.06&lt;/p&gt;
+&lt;p&gt;但是！自從 ai 的出現，我們家的旅遊博士從我變成了 GemiXX、 ChatGXX ，很好我只需學會怎麼打行程表就好&lt;/p&gt;</description></item><item><title>台中一日遊</title><link>https://kaiblog.is-a.dev/blog/taichung-one/</link><pubDate>Fri, 06 Nov 2026 08:00:00 +0800</pubDate><guid>https://kaiblog.is-a.dev/blog/taichung-one/</guid><description>&lt;p&gt;這篇是 10-25 的回顧文，我不是故意的，但草稿一堆，慢慢回顧這樣，這篇真的超久，那時候 10.23 剛好颱風假，讓我們高三班級畢業音樂會延後到 11.06&lt;/p&gt;
 &lt;h3 id="940-出發"&gt;9：40 出發&lt;/h3&gt;
 &lt;p&gt;我們搭乘 300號公車出發了，第一關隱藏關卡是拍頭然後呢？？？？呃討論拍頭的同時，我們居然直接掠過了，導致，後來排隊等了 40分鐘&lt;/p&gt;
 &lt;h3 id="1000搶一蘭拉麵位置"&gt;10：00搶一蘭拉麵位置&lt;/h3&gt;
-&lt;p&gt;可使用 app. 先佔位，我們打開時進去到 5 號，但是&amp;hellip; 我們領道 43 號&lt;/p&gt;</description></item><item><title>11-03 日記</title><link>http://localhost:1313/blog/11-03/</link><pubDate>Thu, 05 Nov 2026 08:00:00 +0800</pubDate><guid>http://localhost:1313/blog/11-03/</guid><description>&lt;p&gt;這篇是 11-03 的回顧文，我不是故意的，但草稿一堆，慢慢回顧這樣&lt;/p&gt;
+&lt;p&gt;可使用 app. 先佔位，我們打開時進去到 5 號，但是&amp;hellip; 我們領道 43 號&lt;/p&gt;</description></item><item><title>11-03 日記</title><link>https://kaiblog.is-a.dev/blog/11-03/</link><pubDate>Thu, 05 Nov 2026 08:00:00 +0800</pubDate><guid>https://kaiblog.is-a.dev/blog/11-03/</guid><description>&lt;p&gt;這篇是 11-03 的回顧文，我不是故意的，但草稿一堆，慢慢回顧這樣&lt;/p&gt;
 &lt;p&gt;當我去外送區拿回我的午餐後，先被同學說，啊啊吃這麼好哦，然後再被同學問，我可以吃一口嗎？才能好好的開始享用美味的午餐&lt;/p&gt;
-&lt;p&gt;我們學校的午餐分兩種，一種是去福利社，另一個是點外送，福利社有雙主菜便當 $85，&lt;strong&gt;三菜，兩肉&lt;/strong&gt;，這邊建議點魚排，不然其他的就是看阿姨心情給你隨機肉量&lt;/p&gt;</description></item><item><title>拜託快點逃離賴</title><link>http://localhost:1313/blog/signal/</link><pubDate>Wed, 04 Nov 2026 17:00:00 +0800</pubDate><guid>http://localhost:1313/blog/signal/</guid><description>&lt;p&gt;當 Line 開始推出一堆服務的時候，我就越想逃離。&lt;/p&gt;
+&lt;p&gt;我們學校的午餐分兩種，一種是去福利社，另一個是點外送，福利社有雙主菜便當 $85，&lt;strong&gt;三菜，兩肉&lt;/strong&gt;，這邊建議點魚排，不然其他的就是看阿姨心情給你隨機肉量&lt;/p&gt;</description></item><item><title>拜託快點逃離賴</title><link>https://kaiblog.is-a.dev/blog/signal/</link><pubDate>Wed, 04 Nov 2026 17:00:00 +0800</pubDate><guid>https://kaiblog.is-a.dev/blog/signal/</guid><description>&lt;p&gt;當 Line 開始推出一堆服務的時候，我就越想逃離。&lt;/p&gt;
 &lt;p&gt;從新聞到影片，從聊天到通話，從PAY到信用卡，Line 憑著一個臃腫軟體，出現在大家的手機裡&lt;/p&gt;
 &lt;p&gt;現在的LINE更是囂張，直接推出訂閱服務讓收回訊息、編輯訊息、照片雲端儲存，變得好像全世界就他一個軟體&lt;strong&gt;一樣一定要付費&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;LINE現在已經是台灣人必備的APP，沒有人能夠拒絕，一開始認識一個人的時候，大家都是說：欸可以加個Line嗎？&lt;/p&gt;</description></item><item><title>11 月了</title><link>http://localhost:1313/blog/time/</link><pubDate>Tue, 03 Nov 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/time/</guid><description>&lt;p&gt;十一月的到來&lt;br&gt;
+&lt;p&gt;LINE現在已經是台灣人必備的APP，沒有人能夠拒絕，一開始認識一個人的時候，大家都是說：欸可以加個Line嗎？&lt;/p&gt;</description></item><item><title>11 月了</title><link>https://kaiblog.is-a.dev/blog/time/</link><pubDate>Tue, 03 Nov 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/time/</guid><description>&lt;p&gt;十一月的到來&lt;br&gt;
 草稿已堆滿了資料夾&lt;br&gt;
 想法也堆滿了腦袋&lt;br&gt;
 卻始終沒時間寫完一篇&lt;br&gt;
@@ -72,7 +87,7 @@
 從書中找尋曾經的記憶&lt;br&gt;
 也許是那時未看清的憧憬&lt;br&gt;
 追尋著美麗和孤獨的夕夏&lt;br&gt;
-迎來的卻是冷漠和錯過的冬夜&lt;/p&gt;</description></item><item><title>完蛋</title><link>http://localhost:1313/blog/newweb2/</link><pubDate>Mon, 02 Nov 2026 12:58:00 +0000</pubDate><guid>http://localhost:1313/blog/newweb2/</guid><description>&lt;p&gt;即將重新啟用新網站&lt;/p&gt;
+迎來的卻是冷漠和錯過的冬夜&lt;/p&gt;</description></item><item><title>完蛋</title><link>https://kaiblog.is-a.dev/blog/newweb2/</link><pubDate>Mon, 02 Nov 2026 12:58:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/newweb2/</guid><description>&lt;p&gt;即將重新啟用新網站&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://kaistudio2.vercel.app/"&gt;https://kaistudio2.vercel.app/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;結果根本不行部署，所以暫時連結&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://kaichen0621.github.io/kaistudio/"&gt;https://kaichen0621.github.io/kaistudio/&lt;/a&gt;&lt;/p&gt;
@@ -88,25 +103,25 @@
 &lt;li&gt;
 &lt;p&gt;Kai studio 影片相關文章 / 教學文&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>即將開通</title><link>http://localhost:1313/blog/newweb/</link><pubDate>Sun, 01 Nov 2026 23:58:00 +0000</pubDate><guid>http://localhost:1313/blog/newweb/</guid><description>&lt;p&gt;即將重新啟用新網站&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://kaistudio2.vercel.app/"&gt;https://kaistudio2.vercel.app/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>BVE STUDIO 正式上線</title><link>http://localhost:1313/blog/bve-studio/</link><pubDate>Thu, 29 Oct 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/bve-studio/</guid><description>&lt;p&gt;BVE STUDIO V1.5.0 正式上線，詳細資訊稍後公開&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>即將開通</title><link>https://kaiblog.is-a.dev/blog/newweb/</link><pubDate>Sun, 01 Nov 2026 23:58:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/newweb/</guid><description>&lt;p&gt;即將重新啟用新網站&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://kaistudio2.vercel.app/"&gt;https://kaistudio2.vercel.app/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>BVE STUDIO 正式上線</title><link>https://kaiblog.is-a.dev/blog/bve-studio/</link><pubDate>Thu, 29 Oct 2026 23:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/bve-studio/</guid><description>&lt;p&gt;BVE STUDIO V1.5.0 正式上線，詳細資訊稍後公開&lt;/p&gt;
 &lt;div className="youtube-s" style={{ textAlign: 'center', padding: '3rem 1rem' }}&gt;
 &lt;h2 style={{ margin: '0.5rem', fontSize: '1.5rem' }}&gt;立即線上體驗！&lt;/h2&gt;
-&lt;p&gt;&lt;a href="http://localhost:1313/BVE.html " className="custom-btn" target="_blank"&gt;🎉 立即搶先體驗&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</description></item><item><title>musescore 超強排版教學</title><link>http://localhost:1313/blog/ms-layout/</link><pubDate>Tue, 27 Oct 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/blog/ms-layout/</guid><description>&lt;h3 id="1-檢查排版"&gt;1. 檢查排版：&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://kaiblog.is-a.dev/BVE.html " className="custom-btn" target="_blank"&gt;🎉 立即搶先體驗&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;</description></item><item><title>musescore 超強排版教學</title><link>https://kaiblog.is-a.dev/blog/ms-layout/</link><pubDate>Tue, 27 Oct 2026 16:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/ms-layout/</guid><description>&lt;h3 id="1-檢查排版"&gt;1. 檢查排版：&lt;/h3&gt;
 &lt;p&gt;確認第 19-25 小節在一行，第 26 小節因換行移到下一行。&lt;/p&gt;
 &lt;h3 id="2-調整樣式"&gt;2. 調整樣式：&lt;/h3&gt;
 &lt;p&gt;點擊「格式」&amp;gt;「樣式」&lt;code&gt;(快捷鍵：Ctrl+M)&lt;/code&gt; ，在「頁面」或「小節」中減小「小節間距」（如從 1.0 調到 0.8）或「最小小節寬度」，讓更多小節適合同一行。也可減小「譜表間距」(如從 1.75 mm 調到 1.15 mm)。&lt;/p&gt;
 &lt;h3 id="3-手動調整小節"&gt;3. 手動調整小節：&lt;/h3&gt;
-&lt;p&gt;選第 25 小節最後音符，按 Shift + } 縮小寬度，或選第 26 小節按 &lt;code&gt;Shift + { &lt;/code&gt; &lt;strong&gt;來增加寬度&lt;/strong&gt;。或在「連續視圖」中拖曳藍色斷點調整。&lt;/p&gt;</description></item><item><title>Google TV 搭配 AirPlay 超強</title><link>http://localhost:1313/blog/tv/</link><pubDate>Sat, 24 Oct 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/blog/tv/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
+&lt;p&gt;選第 25 小節最後音符，按 Shift + } 縮小寬度，或選第 26 小節按 &lt;code&gt;Shift + { &lt;/code&gt; &lt;strong&gt;來增加寬度&lt;/strong&gt;。或在「連續視圖」中拖曳藍色斷點調整。&lt;/p&gt;</description></item><item><title>Google TV 搭配 AirPlay 超強</title><link>https://kaiblog.is-a.dev/blog/tv/</link><pubDate>Sat, 24 Oct 2026 16:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/tv/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
 &lt;p&gt;真的很久沒有回去台中了。難得連假但是卻颱風，好不容易找到回來的時間。剛好順便來研究 AirCast&lt;/p&gt;
 &lt;p&gt;其實真的好帥真的成功了&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Google TV 超大" loading="lazy" src="tv-1.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;然後有延遲這好像沒辦法&lt;/p&gt;</description></item><item><title>網站新頁面？</title><link>http://localhost:1313/blog/now/</link><pubDate>Fri, 23 Oct 2026 12:00:00 +0000</pubDate><guid>http://localhost:1313/blog/now/</guid><description>&lt;h2 id="20260905---近況重新更新啦"&gt;2026/09/05 - 近況重新更新啦！&lt;/h2&gt;
-&lt;p&gt;我覺得很長沒空寫文帳就&amp;hellip;用這種方式讓大家知道在幹嘛&lt;/p&gt;</description></item><item><title>Dorico 快速上手 DAY02</title><link>http://localhost:1313/blog/dorico02/</link><pubDate>Thu, 22 Oct 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/blog/dorico02/</guid><description>&lt;p&gt;今天（2026-10-23）是學習 Dorico 的第二天，距離上次已經有了整整一個多月的時間&lt;/p&gt;
-&lt;p&gt;完整文章請參考&lt;a href="http://localhost:1313/docs/Learn/"&gt;這裡&lt;/a&gt;&lt;/p&gt;</description></item><item><title>BVE6 超好用列車</title><link>http://localhost:1313/blog/bve6-nicetrain/</link><pubDate>Tue, 20 Oct 2026 22:00:00 +0000</pubDate><guid>http://localhost:1313/blog/bve6-nicetrain/</guid><description>&lt;p&gt;BVE6 : 超好用車輛&lt;/p&gt;
+&lt;p&gt;然後有延遲這好像沒辦法&lt;/p&gt;</description></item><item><title>網站新頁面？</title><link>https://kaiblog.is-a.dev/blog/now/</link><pubDate>Fri, 23 Oct 2026 12:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/now/</guid><description>&lt;h2 id="20260905---近況重新更新啦"&gt;2026/09/05 - 近況重新更新啦！&lt;/h2&gt;
+&lt;p&gt;我覺得很長沒空寫文帳就&amp;hellip;用這種方式讓大家知道在幹嘛&lt;/p&gt;</description></item><item><title>Dorico 快速上手 DAY02</title><link>https://kaiblog.is-a.dev/blog/dorico02/</link><pubDate>Thu, 22 Oct 2026 16:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/dorico02/</guid><description>&lt;p&gt;今天（2026-10-23）是學習 Dorico 的第二天，距離上次已經有了整整一個多月的時間&lt;/p&gt;
+&lt;p&gt;完整文章請參考&lt;a href="https://kaiblog.is-a.dev/docs/Learn/"&gt;這裡&lt;/a&gt;&lt;/p&gt;</description></item><item><title>BVE6 超好用列車</title><link>https://kaiblog.is-a.dev/blog/bve6-nicetrain/</link><pubDate>Tue, 20 Oct 2026 22:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/bve6-nicetrain/</guid><description>&lt;p&gt;BVE6 : 超好用車輛&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-md" data-lang="md"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Vehicle = SotoHane/Vehicle/E233系/0-8I.txt
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="atp-不會卡死而且不會-a-到無法-release"&gt;ATP 不會卡死，而且不會 A 到無法 Release&lt;/h3&gt;</description></item><item><title>MAYDAY ETUDES NO.04</title><link>http://localhost:1313/blog/mayday-no4/</link><pubDate>Sun, 18 Oct 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mayday-no4/</guid><description>這次又來了哈哈哈</description></item><item><title>軟體不能多，要精</title><link>http://localhost:1313/blog/software/</link><pubDate>Thu, 15 Oct 2026 12:00:00 +0000</pubDate><guid>http://localhost:1313/blog/software/</guid><description>這篇文章紀錄了一位音樂與影片創作者清理 1TB 儲存空間時，對打譜、編曲、剪輯與文書軟體的心得評價。</description></item><item><title>2048 雙人版</title><link>http://localhost:1313/blog/2048/</link><pubDate>Mon, 05 Oct 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/2048/</guid><description>2048 雙人版來啦！</description></item><item><title>台北一日遊 - 雙北自由行</title><link>http://localhost:1313/blog/1004-taipei/</link><pubDate>Sun, 04 Oct 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/1004-taipei/</guid><description>這是一趟新竹台北兩日快閃旅，作者品嚐了驥園雞湯並驚嘆媽媽在明曜百貨的逛街戰力；隨後體驗三鶯線絕美風景、造訪新北美術館與大安森林公園，最後幸運搶到高鐵對號座飽足歸賦。</description></item><item><title>AI 影音字幕工作流，打造 98% 精準度的影片字幕</title><link>http://localhost:1313/blog/ai-subtitle/</link><pubDate>Fri, 02 Oct 2026 22:00:00 +0000</pubDate><guid>http://localhost:1313/blog/ai-subtitle/</guid><description>AI 影音字幕工作流：用 Gemini 2.5 Pro 搭配剪映「文稿匹配」，打造 98% 精準度的影片字幕~本文介紹一套高效的 AI 字幕工作流：透過 Google AI Studio 的 Gemini 2.5 Pro 進行智慧校正與排版，再結合剪映的「文稿匹配」功能自動對齊時間碼，讓你輕鬆輸出高品質的 SRT 字幕檔。</description></item><item><title>當想法被公開</title><link>http://localhost:1313/blog/idea-public/</link><pubDate>Tue, 29 Sep 2026 10:00:00 +0000</pubDate><guid>http://localhost:1313/blog/idea-public/</guid><description>當科技能讀取並公開大腦中的所有想法，隱私將徹底蕩然無存。本文記錄了在面對作文題目《當想法被公開》時的創作困境與隨筆歌詞創作，抒發對隱私喪失的擔憂以及對國文課密集寫作的無奈與壓迫感。</description></item><item><title>好用指令</title><link>http://localhost:1313/blog/nice-commands/</link><pubDate>Sun, 27 Sep 2026 13:00:00 +0000</pubDate><guid>http://localhost:1313/blog/nice-commands/</guid><description>分享一些我常用的特殊指令</description></item><item><title>說明欄</title><link>http://localhost:1313/blog/description/</link><pubDate>Fri, 25 Sep 2026 13:00:00 +0000</pubDate><guid>http://localhost:1313/blog/description/</guid><description>&lt;h1 id="中秋節特別企劃"&gt;中秋節特別企劃~&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="atp-不會卡死而且不會-a-到無法-release"&gt;ATP 不會卡死，而且不會 A 到無法 Release&lt;/h3&gt;</description></item><item><title>MAYDAY ETUDES NO.04</title><link>https://kaiblog.is-a.dev/blog/mayday-no4/</link><pubDate>Sun, 18 Oct 2026 18:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/mayday-no4/</guid><description>這次又來了哈哈哈</description></item><item><title>軟體不能多，要精</title><link>https://kaiblog.is-a.dev/blog/software/</link><pubDate>Thu, 15 Oct 2026 12:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/software/</guid><description>這篇文章紀錄了一位音樂與影片創作者清理 1TB 儲存空間時，對打譜、編曲、剪輯與文書軟體的心得評價。</description></item><item><title>2048 雙人版</title><link>https://kaiblog.is-a.dev/blog/2048/</link><pubDate>Mon, 05 Oct 2026 23:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/2048/</guid><description>2048 雙人版來啦！</description></item><item><title>台北一日遊 - 雙北自由行</title><link>https://kaiblog.is-a.dev/blog/1004-taipei/</link><pubDate>Sun, 04 Oct 2026 23:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/1004-taipei/</guid><description>這是一趟新竹台北兩日快閃旅，作者品嚐了驥園雞湯並驚嘆媽媽在明曜百貨的逛街戰力；隨後體驗三鶯線絕美風景、造訪新北美術館與大安森林公園，最後幸運搶到高鐵對號座飽足歸賦。</description></item><item><title>AI 影音字幕工作流，打造 98% 精準度的影片字幕</title><link>https://kaiblog.is-a.dev/blog/ai-subtitle/</link><pubDate>Fri, 02 Oct 2026 22:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/ai-subtitle/</guid><description>AI 影音字幕工作流：用 Gemini 2.5 Pro 搭配剪映「文稿匹配」，打造 98% 精準度的影片字幕~本文介紹一套高效的 AI 字幕工作流：透過 Google AI Studio 的 Gemini 2.5 Pro 進行智慧校正與排版，再結合剪映的「文稿匹配」功能自動對齊時間碼，讓你輕鬆輸出高品質的 SRT 字幕檔。</description></item><item><title>當想法被公開</title><link>https://kaiblog.is-a.dev/blog/idea-public/</link><pubDate>Tue, 29 Sep 2026 10:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/idea-public/</guid><description>當科技能讀取並公開大腦中的所有想法，隱私將徹底蕩然無存。本文記錄了在面對作文題目《當想法被公開》時的創作困境與隨筆歌詞創作，抒發對隱私喪失的擔憂以及對國文課密集寫作的無奈與壓迫感。</description></item><item><title>好用指令</title><link>https://kaiblog.is-a.dev/blog/nice-commands/</link><pubDate>Sun, 27 Sep 2026 13:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/nice-commands/</guid><description>分享一些我常用的特殊指令</description></item><item><title>說明欄</title><link>https://kaiblog.is-a.dev/blog/description/</link><pubDate>Fri, 25 Sep 2026 13:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/description/</guid><description>&lt;h1 id="中秋節特別企劃"&gt;中秋節特別企劃~&lt;/h1&gt;
 &lt;h2 id="youtube-說明欄文本"&gt;Youtube 說明欄文本&lt;/h2&gt;
 &lt;p&gt;利益相關聲明：&lt;br&gt;
 為了使觀眾更好的判斷內容，不論 KAI 是否認為其內容獨立於贊助商，發布時都會披露利益相關情況。&lt;/p&gt;
@@ -120,10 +135,10 @@
 &lt;p&gt;►隨時都有可能下架的直播存檔：&lt;br&gt;
 &lt;a href="https://youtube.com/playlist?list=PLORqhlO3IryQ&amp;amp;si=3IUEHp5EwHafMfde"&gt;https://youtube.com/playlist?list=PLORqhlO3IryQ&amp;amp;si=3IUEHp5EwHafMfde&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;✉️業務合作：kaiyt0621@gmail.com &lt;br&gt;
-✉️意見來信：kaigithub0621@gmail.com&lt;/p&gt;</description></item><item><title>破防</title><link>http://localhost:1313/blog/moodx/</link><pubDate>Mon, 21 Sep 2026 13:00:00 +0000</pubDate><guid>http://localhost:1313/blog/moodx/</guid><description>&lt;h3 id="就破防啊想怎樣"&gt;就破防啊想怎樣&lt;/h3&gt;
+✉️意見來信：kaigithub0621@gmail.com&lt;/p&gt;</description></item><item><title>破防</title><link>https://kaiblog.is-a.dev/blog/moodx/</link><pubDate>Mon, 21 Sep 2026 13:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/moodx/</guid><description>&lt;h3 id="就破防啊想怎樣"&gt;就破防啊想怎樣&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;2026.09.21 14：00&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>AI 參考文</title><link>http://localhost:1313/blog/random02-ai/</link><pubDate>Fri, 18 Sep 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/random02-ai/</guid><description>&lt;p&gt;Last login: Fri Sep 18 21:10:57 on ttys000
+&lt;/ul&gt;</description></item><item><title>AI 參考文</title><link>https://kaiblog.is-a.dev/blog/random02-ai/</link><pubDate>Fri, 18 Sep 2026 18:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/random02-ai/</guid><description>&lt;p&gt;Last login: Fri Sep 18 21:10:57 on ttys000
 kai@yangkaichens-MacBook-Pro-0621 ~ % ollama&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-md" data-lang="md"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;這是我的新文章請參考，然後我等等給你舊文章
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -156,7 +171,7 @@ kai@yangkaichens-MacBook-Pro-0621 ~ % ollama&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;│ what changed on this branch?│
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;-&lt;/span&gt; gemma4:31b-cloud
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;• Thought&lt;/p&gt;</description></item><item><title>這篇要寫什麼？</title><link>http://localhost:1313/blog/random02/</link><pubDate>Fri, 18 Sep 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/random02/</guid><description>這篇要寫什麼？</description></item><item><title>macOS 更新</title><link>http://localhost:1313/blog/mac-27/</link><pubDate>Tue, 15 Sep 2026 10:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mac-27/</guid><description>終於更新新系統了</description></item><item><title>脆</title><link>http://localhost:1313/blog/thread/</link><pubDate>Mon, 14 Sep 2026 15:00:00 +0000</pubDate><guid>http://localhost:1313/blog/thread/</guid><description>今天來聊聊脆吧</description></item><item><title>蘋果發表會</title><link>http://localhost:1313/blog/wwdc26-2/</link><pubDate>Thu, 10 Sep 2026 13:00:00 +0000</pubDate><guid>http://localhost:1313/blog/wwdc26-2/</guid><description>蘋果發表會</description></item><item><title>音創社社課內容</title><link>http://localhost:1313/blog/music-composer/</link><pubDate>Tue, 08 Sep 2026 11:00:00 +0000</pubDate><guid>http://localhost:1313/blog/music-composer/</guid><description>音創社社課內容</description></item><item><title>什麼？</title><link>http://localhost:1313/blog/what/</link><pubDate>Mon, 07 Sep 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/blog/what/</guid><description>什麼</description></item><item><title>花了十年蓋的捷運站</title><link>http://localhost:1313/blog/mrt-tenyear/</link><pubDate>Sat, 05 Sep 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mrt-tenyear/</guid><description>花了十年蓋的捷運站</description></item><item><title>我對理想打掃工作的看法</title><link>http://localhost:1313/blog/swipe/</link><pubDate>Fri, 04 Sep 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/swipe/</guid><description>我對理想打掃工作的看法</description></item><item><title>macOS 小技巧</title><link>http://localhost:1313/blog/mac/</link><pubDate>Fri, 04 Sep 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mac/</guid><description>今天分想幾個小技巧</description></item><item><title>【何同學】庫克時代</title><link>http://localhost:1313/blog/tim-cook-era/</link><pubDate>Thu, 03 Sep 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/tim-cook-era/</guid><description>×本內文有使用ai×觀後感：一位凡人如何接下天才的皇冠？何同學回顧庫克執掌蘋果 15 年的興衰與變革。</description></item><item><title>晚睡早起 ✦BBP9✦</title><link>http://localhost:1313/blog/bbp9/</link><pubDate>Wed, 02 Sep 2026 10:00:00 +0000</pubDate><guid>http://localhost:1313/blog/bbp9/</guid><description>今天和大家分享我的日常作息，內容隨時會更新欸</description></item><item><title>開學日</title><link>http://localhost:1313/blog/school-open/</link><pubDate>Tue, 01 Sep 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/school-open/</guid><description>開學日</description></item><item><title>荒島筆電</title><link>http://localhost:1313/blog/island-notebook/</link><pubDate>Mon, 31 Aug 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/island-notebook/</guid><description>荒島筆電</description></item><item><title>開源軟體推薦</title><link>http://localhost:1313/blog/app-open-source/</link><pubDate>Fri, 28 Aug 2026 02:00:00 +0000</pubDate><guid>http://localhost:1313/blog/app-open-source/</guid><description>開源軟體推薦</description></item><item><title>Roblox刀刃球遊玩心得</title><link>http://localhost:1313/blog/roblox-bladeball/</link><pubDate>Wed, 19 Aug 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/roblox-bladeball/</guid><description>Roblox刀刃球遊玩心得</description></item><item><title>晚安</title><link>http://localhost:1313/blog/goodnight/</link><pubDate>Wed, 12 Aug 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/goodnight/</guid><description>晚安</description></item><item><title>五月天阿信相片館</title><link>http://localhost:1313/blog/ashin/</link><pubDate>Sun, 02 Aug 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/ashin/</guid><description>五月天阿信相片館:一個輕量、響應式且具備 IG 風格的五月天阿信主題相片收藏館。支援圖片自動壓縮儲存、分類標籤管理、愛心按讚互動、檢視/編輯模式切換，以及 Firebase 雲端資料庫全自動實時同步。</description></item><item><title>我換字體了！</title><link>http://localhost:1313/blog/change-font/</link><pubDate>Thu, 30 Jul 2026 20:00:00 +0000</pubDate><guid>http://localhost:1313/blog/change-font/</guid><description>我的網站換字體了！Chiron GoRound TC</description></item><item><title>0726 台北歷險記</title><link>http://localhost:1313/blog/taipei-0726-life/</link><pubDate>Sun, 26 Jul 2026 20:00:00 +0000</pubDate><guid>http://localhost:1313/blog/taipei-0726-life/</guid><description>台北捷運冒險實錄：從中正紀念堂霜淇淋、一風堂百萬玉子拉麵，到永安市場鄧老師音樂課的一日遊紀錄。</description></item><item><title>0726 台北自由行 X 鄧老師上課</title><link>http://localhost:1313/blog/taipei-0726/</link><pubDate>Sun, 26 Jul 2026 10:00:00 +0000</pubDate><guid>http://localhost:1313/blog/taipei-0726/</guid><description>0726 台北自由行與鄧老師上課行程規劃</description></item><item><title>善用 MarkDown / HTML+CSS</title><link>http://localhost:1313/blog/markdown/</link><pubDate>Sat, 25 Jul 2026 20:00:00 +0000</pubDate><guid>http://localhost:1313/blog/markdown/</guid><description>善用 MarkDown</description></item><item><title>整理琴房</title><link>http://localhost:1313/blog/clean/</link><pubDate>Thu, 23 Jul 2026 20:00:00 +0000</pubDate><guid>http://localhost:1313/blog/clean/</guid><description>整理琴房</description></item><item><title>shotcut 剪輯</title><link>http://localhost:1313/blog/shotcut/</link><pubDate>Wed, 22 Jul 2026 20:00:00 +0000</pubDate><guid>http://localhost:1313/blog/shotcut/</guid><description>shotcut 剪輯</description></item><item><title>macOS27</title><link>http://localhost:1313/blog/macos27/</link><pubDate>Tue, 21 Jul 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/macos27/</guid><description>macOS27 超好用？</description></item><item><title>暑期輔導</title><link>http://localhost:1313/blog/school/</link><pubDate>Tue, 21 Jul 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/school/</guid><description>暑期輔導</description></item><item><title>openBVE 架設</title><link>http://localhost:1313/blog/openbve/</link><pubDate>Fri, 17 Jul 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/openbve/</guid><description>openBVE 建立初體驗</description></item><item><title>颱風假，五迷老師怎麼說</title><link>http://localhost:1313/blog/typhoon/</link><pubDate>Fri, 10 Jul 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/typhoon/</guid><description>北北基放颱風假</description></item><item><title>07-08 電腦企劃</title><link>http://localhost:1313/blog/07-08/</link><pubDate>Thu, 09 Jul 2026 10:00:00 +0000</pubDate><guid>http://localhost:1313/blog/07-08/</guid><description>電腦企劃</description></item><item><title>AI 幫我生成打字練習工具！</title><link>http://localhost:1313/blog/aitype/</link><pubDate>Mon, 06 Jul 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/aitype/</guid><description>AI 幫我生成打字練習工具！</description></item><item><title>這真的有用嗎？</title><link>http://localhost:1313/blog/aitrain/</link><pubDate>Sun, 05 Jul 2026 11:00:00 +0000</pubDate><guid>http://localhost:1313/blog/aitrain/</guid><description>這真的有用嗎？</description></item><item><title>超強翻譜工具 Version 4.0</title><link>http://localhost:1313/blog/scoreflow-ver4/</link><pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate><guid>http://localhost:1313/blog/scoreflow-ver4/</guid><description>超強翻譜工具 V4.0</description></item><item><title>五月天臨時直播限時公開!!</title><link>http://localhost:1313/blog/mayday-live/</link><pubDate>Sat, 04 Jul 2026 21:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mayday-live/</guid><description>五月天 2026.07.04 台北大巨蛋 5525+2 回到那一天 DAY 02/07，臨時直播現實公開</description></item><item><title>台北一日遊</title><link>http://localhost:1313/blog/taipei-75/</link><pubDate>Sat, 04 Jul 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/taipei-75/</guid><description>台北一日遊</description></item><item><title>超強翻譜工具</title><link>http://localhost:1313/blog/scoreflow-intro/</link><pubDate>Sat, 04 Jul 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/blog/scoreflow-intro/</guid><description>超強翻譜工具</description></item><item><title>我的軟體清單</title><link>http://localhost:1313/blog/allapp/</link><pubDate>Mon, 29 Jun 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/allapp/</guid><description>我的 Mac 軟體清單</description></item><item><title>新歌曲</title><link>http://localhost:1313/blog/newsong-02/</link><pubDate>Tue, 23 Jun 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/newsong-02/</guid><description>我改編了新歌曲</description></item><item><title>今天我生日！</title><link>http://localhost:1313/blog/birth/</link><pubDate>Sun, 21 Jun 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/birth/</guid><description>今天我生日！</description></item><item><title>這篇要寫什麼？</title><link>http://localhost:1313/blog/random01/</link><pubDate>Thu, 18 Jun 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/random01/</guid><description>這篇要寫什麼？</description></item><item><title>讓我們用 E-mail 保持聯絡吧！</title><link>http://localhost:1313/blog/emailme/</link><pubDate>Tue, 09 Jun 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/emailme/</guid><description>正在看這個網站的你，不想跟 KAI 失聯吧？留下你的 E-mail，讓 KAI 可以直接把最新內容，直接寄到你的信箱裡～現在訂閱還可以免費得到小禮物唷！</description></item><item><title>6/6 編曲上課紀錄</title><link>http://localhost:1313/blog/6-6class/</link><pubDate>Sat, 06 Jun 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/6-6class/</guid><description>今日上課編曲紀錄</description></item><item><title>嗨～</title><link>http://localhost:1313/blog/hi06/</link><pubDate>Thu, 04 Jun 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/hi06/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;• Thought&lt;/p&gt;</description></item><item><title>這篇要寫什麼？</title><link>https://kaiblog.is-a.dev/blog/random02/</link><pubDate>Fri, 18 Sep 2026 18:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/random02/</guid><description>這篇要寫什麼？</description></item><item><title>macOS 更新</title><link>https://kaiblog.is-a.dev/blog/mac-27/</link><pubDate>Tue, 15 Sep 2026 10:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/mac-27/</guid><description>終於更新新系統了</description></item><item><title>脆</title><link>https://kaiblog.is-a.dev/blog/thread/</link><pubDate>Mon, 14 Sep 2026 15:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/thread/</guid><description>今天來聊聊脆吧</description></item><item><title>蘋果發表會</title><link>https://kaiblog.is-a.dev/blog/wwdc26-2/</link><pubDate>Thu, 10 Sep 2026 13:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/wwdc26-2/</guid><description>蘋果發表會</description></item><item><title>音創社社課內容</title><link>https://kaiblog.is-a.dev/blog/music-composer/</link><pubDate>Tue, 08 Sep 2026 11:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/music-composer/</guid><description>音創社社課內容</description></item><item><title>什麼？</title><link>https://kaiblog.is-a.dev/blog/what/</link><pubDate>Mon, 07 Sep 2026 16:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/what/</guid><description>什麼</description></item><item><title>花了十年蓋的捷運站</title><link>https://kaiblog.is-a.dev/blog/mrt-tenyear/</link><pubDate>Sat, 05 Sep 2026 23:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/mrt-tenyear/</guid><description>花了十年蓋的捷運站</description></item><item><title>我對理想打掃工作的看法</title><link>https://kaiblog.is-a.dev/blog/swipe/</link><pubDate>Fri, 04 Sep 2026 18:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/swipe/</guid><description>我對理想打掃工作的看法</description></item><item><title>macOS 小技巧</title><link>https://kaiblog.is-a.dev/blog/mac/</link><pubDate>Fri, 04 Sep 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/mac/</guid><description>今天分想幾個小技巧</description></item><item><title>【何同學】庫克時代</title><link>https://kaiblog.is-a.dev/blog/tim-cook-era/</link><pubDate>Thu, 03 Sep 2026 23:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/tim-cook-era/</guid><description>×本內文有使用ai×觀後感：一位凡人如何接下天才的皇冠？何同學回顧庫克執掌蘋果 15 年的興衰與變革。</description></item><item><title>晚睡早起 ✦BBP9✦</title><link>https://kaiblog.is-a.dev/blog/bbp9/</link><pubDate>Wed, 02 Sep 2026 10:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/bbp9/</guid><description>今天和大家分享我的日常作息，內容隨時會更新欸</description></item><item><title>開學日</title><link>https://kaiblog.is-a.dev/blog/school-open/</link><pubDate>Tue, 01 Sep 2026 23:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/school-open/</guid><description>開學日</description></item><item><title>荒島筆電</title><link>https://kaiblog.is-a.dev/blog/island-notebook/</link><pubDate>Mon, 31 Aug 2026 23:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/island-notebook/</guid><description>荒島筆電</description></item><item><title>開源軟體推薦</title><link>https://kaiblog.is-a.dev/blog/app-open-source/</link><pubDate>Fri, 28 Aug 2026 02:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/app-open-source/</guid><description>開源軟體推薦</description></item><item><title>Roblox刀刃球遊玩心得</title><link>https://kaiblog.is-a.dev/blog/roblox-bladeball/</link><pubDate>Wed, 19 Aug 2026 23:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/roblox-bladeball/</guid><description>Roblox刀刃球遊玩心得</description></item><item><title>晚安</title><link>https://kaiblog.is-a.dev/blog/goodnight/</link><pubDate>Wed, 12 Aug 2026 23:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/goodnight/</guid><description>晚安</description></item><item><title>五月天阿信相片館</title><link>https://kaiblog.is-a.dev/blog/ashin/</link><pubDate>Sun, 02 Aug 2026 18:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/ashin/</guid><description>五月天阿信相片館:一個輕量、響應式且具備 IG 風格的五月天阿信主題相片收藏館。支援圖片自動壓縮儲存、分類標籤管理、愛心按讚互動、檢視/編輯模式切換，以及 Firebase 雲端資料庫全自動實時同步。</description></item><item><title>我換字體了！</title><link>https://kaiblog.is-a.dev/blog/change-font/</link><pubDate>Thu, 30 Jul 2026 20:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/change-font/</guid><description>我的網站換字體了！Chiron GoRound TC</description></item><item><title>0726 台北歷險記</title><link>https://kaiblog.is-a.dev/blog/taipei-0726-life/</link><pubDate>Sun, 26 Jul 2026 20:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/taipei-0726-life/</guid><description>台北捷運冒險實錄：從中正紀念堂霜淇淋、一風堂百萬玉子拉麵，到永安市場鄧老師音樂課的一日遊紀錄。</description></item><item><title>0726 台北自由行 X 鄧老師上課</title><link>https://kaiblog.is-a.dev/blog/taipei-0726/</link><pubDate>Sun, 26 Jul 2026 10:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/taipei-0726/</guid><description>0726 台北自由行與鄧老師上課行程規劃</description></item><item><title>善用 MarkDown / HTML+CSS</title><link>https://kaiblog.is-a.dev/blog/markdown/</link><pubDate>Sat, 25 Jul 2026 20:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/markdown/</guid><description>善用 MarkDown</description></item><item><title>整理琴房</title><link>https://kaiblog.is-a.dev/blog/clean/</link><pubDate>Thu, 23 Jul 2026 20:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/clean/</guid><description>整理琴房</description></item><item><title>shotcut 剪輯</title><link>https://kaiblog.is-a.dev/blog/shotcut/</link><pubDate>Wed, 22 Jul 2026 20:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/shotcut/</guid><description>shotcut 剪輯</description></item><item><title>macOS27</title><link>https://kaiblog.is-a.dev/blog/macos27/</link><pubDate>Tue, 21 Jul 2026 18:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/macos27/</guid><description>macOS27 超好用？</description></item><item><title>暑期輔導</title><link>https://kaiblog.is-a.dev/blog/school/</link><pubDate>Tue, 21 Jul 2026 18:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/school/</guid><description>暑期輔導</description></item><item><title>openBVE 架設</title><link>https://kaiblog.is-a.dev/blog/openbve/</link><pubDate>Fri, 17 Jul 2026 18:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/openbve/</guid><description>openBVE 建立初體驗</description></item><item><title>颱風假，五迷老師怎麼說</title><link>https://kaiblog.is-a.dev/blog/typhoon/</link><pubDate>Fri, 10 Jul 2026 18:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/typhoon/</guid><description>北北基放颱風假</description></item><item><title>07-08 電腦企劃</title><link>https://kaiblog.is-a.dev/blog/07-08/</link><pubDate>Thu, 09 Jul 2026 10:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/07-08/</guid><description>電腦企劃</description></item><item><title>AI 幫我生成打字練習工具！</title><link>https://kaiblog.is-a.dev/blog/aitype/</link><pubDate>Mon, 06 Jul 2026 18:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/aitype/</guid><description>AI 幫我生成打字練習工具！</description></item><item><title>這真的有用嗎？</title><link>https://kaiblog.is-a.dev/blog/aitrain/</link><pubDate>Sun, 05 Jul 2026 11:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/aitrain/</guid><description>這真的有用嗎？</description></item><item><title>超強翻譜工具 Version 4.0</title><link>https://kaiblog.is-a.dev/blog/scoreflow-ver4/</link><pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/scoreflow-ver4/</guid><description>超強翻譜工具 V4.0</description></item><item><title>五月天臨時直播限時公開!!</title><link>https://kaiblog.is-a.dev/blog/mayday-live/</link><pubDate>Sat, 04 Jul 2026 21:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/mayday-live/</guid><description>五月天 2026.07.04 台北大巨蛋 5525+2 回到那一天 DAY 02/07，臨時直播現實公開</description></item><item><title>台北一日遊</title><link>https://kaiblog.is-a.dev/blog/taipei-75/</link><pubDate>Sat, 04 Jul 2026 18:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/taipei-75/</guid><description>台北一日遊</description></item><item><title>超強翻譜工具</title><link>https://kaiblog.is-a.dev/blog/scoreflow-intro/</link><pubDate>Sat, 04 Jul 2026 16:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/scoreflow-intro/</guid><description>超強翻譜工具</description></item><item><title>我的軟體清單</title><link>https://kaiblog.is-a.dev/blog/allapp/</link><pubDate>Mon, 29 Jun 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/allapp/</guid><description>我的 Mac 軟體清單</description></item><item><title>新歌曲</title><link>https://kaiblog.is-a.dev/blog/newsong-02/</link><pubDate>Tue, 23 Jun 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/newsong-02/</guid><description>我改編了新歌曲</description></item><item><title>今天我生日！</title><link>https://kaiblog.is-a.dev/blog/birth/</link><pubDate>Sun, 21 Jun 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/birth/</guid><description>今天我生日！</description></item><item><title>這篇要寫什麼？</title><link>https://kaiblog.is-a.dev/blog/random01/</link><pubDate>Thu, 18 Jun 2026 18:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/random01/</guid><description>這篇要寫什麼？</description></item><item><title>讓我們用 E-mail 保持聯絡吧！</title><link>https://kaiblog.is-a.dev/blog/emailme/</link><pubDate>Tue, 09 Jun 2026 18:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/emailme/</guid><description>正在看這個網站的你，不想跟 KAI 失聯吧？留下你的 E-mail，讓 KAI 可以直接把最新內容，直接寄到你的信箱裡～現在訂閱還可以免費得到小禮物唷！</description></item><item><title>6/6 編曲上課紀錄</title><link>https://kaiblog.is-a.dev/blog/6-6class/</link><pubDate>Sat, 06 Jun 2026 18:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/6-6class/</guid><description>今日上課編曲紀錄</description></item><item><title>嗨～</title><link>https://kaiblog.is-a.dev/blog/hi06/</link><pubDate>Thu, 04 Jun 2026 18:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/hi06/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
 &lt;p&gt;一下就過去了，現在已經六月了&lt;/p&gt;
 &lt;h2 id="0605-日記"&gt;0605 日記&lt;/h2&gt;
 &lt;ul&gt;
@@ -172,7 +187,7 @@ kai@yangkaichens-MacBook-Pro-0621 ~ % ollama&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;使用：&lt;code&gt;Resolume Arena&lt;/code&gt;
 &lt;a href="https://4download.net/3159-resolume-arena-for-macos.html"&gt;https://4download.net/3159-resolume-arena-for-macos.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>5525+3 巡迴紀錄</title><link>http://localhost:1313/blog/55253-index/</link><pubDate>Thu, 28 May 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/55253-index/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>5525+3 巡迴紀錄</title><link>https://kaiblog.is-a.dev/blog/55253-index/</link><pubDate>Thu, 28 May 2026 18:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/55253-index/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
 &lt;p&gt;這 10 場的巡迴讓我感覺我在開演唱會，真的很不容易！五月天跟阿信也要多休息哦～&lt;/p&gt;
 &lt;p&gt;{/* truncate */}&lt;/p&gt;
 &lt;h2 id="巡迴奉獻--青春-表演場數10-場"&gt;巡迴：奉獻 · 青春 (表演場數：10 場)&lt;/h2&gt;
@@ -195,7 +210,7 @@ kai@yangkaichens-MacBook-Pro-0621 ~ % ollama&lt;/p&gt;
 &lt;li&gt;6/02 118 科技音樂成發 (4F)&lt;/li&gt;
 &lt;li&gt;6/12 竹北高中聯合舞蹈班表演展演 (竹北高中實驗劇場)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;5525+5&lt;/p&gt;</description></item><item><title>5525+3 新舞台，新主題</title><link>http://localhost:1313/blog/55253/</link><pubDate>Wed, 13 May 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/55253/</guid><description>&lt;h2 id="表演場次"&gt;表演場次&lt;/h2&gt;
+&lt;p&gt;5525+5&lt;/p&gt;</description></item><item><title>5525+3 新舞台，新主題</title><link>https://kaiblog.is-a.dev/blog/55253/</link><pubDate>Wed, 13 May 2026 18:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/55253/</guid><description>&lt;h2 id="表演場次"&gt;表演場次&lt;/h2&gt;
 &lt;p&gt;5525+1 啟用&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;5/21 自強國中 科技音樂入門&lt;/li&gt;
@@ -215,7 +230,7 @@ kai@yangkaichens-MacBook-Pro-0621 ~ % ollama&lt;/p&gt;
 &lt;h2 id="更新內容"&gt;更新內容&lt;/h2&gt;
 &lt;p&gt;嘿嘿才不跟你們說勒，自己來聽！！&lt;/p&gt;
 &lt;h2 id="製作初衷"&gt;製作初衷&lt;/h2&gt;
-&lt;p&gt;開始接觸科技音樂的時候是在高一的時候，當初只是因為聽到五月天 2023 線上跨年演唱會，覺得編曲超厲害的，才開始想學怎麼編曲、做出屬於自己的東西&lt;/p&gt;</description></item><item><title>Obsidian X 最強筆記</title><link>http://localhost:1313/blog/obsidian-note/</link><pubDate>Sun, 10 May 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/obsidian-note/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
+&lt;p&gt;開始接觸科技音樂的時候是在高一的時候，當初只是因為聽到五月天 2023 線上跨年演唱會，覺得編曲超厲害的，才開始想學怎麼編曲、做出屬於自己的東西&lt;/p&gt;</description></item><item><title>Obsidian X 最強筆記</title><link>https://kaiblog.is-a.dev/blog/obsidian-note/</link><pubDate>Sun, 10 May 2026 18:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/obsidian-note/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
 &lt;p&gt;在之前我一直都是使用 Anytype ，其實我是有接觸過 &lt;code&gt;Notion&lt;/code&gt; 啦，但是老實說：&lt;code&gt;Notion&lt;/code&gt; 的速度是真的超慢，網路弱的時候靈感都跑光了&lt;/p&gt;
 &lt;p&gt;後來用 Anytype 用了一年，&lt;strong&gt;我才意識到一個問題：AI&lt;/strong&gt;
 {/* truncate */}&lt;/p&gt;
@@ -225,7 +240,7 @@ kai@yangkaichens-MacBook-Pro-0621 ~ % ollama&lt;/p&gt;
 &lt;p&gt;為了使&lt;strong&gt;讀者&lt;/strong&gt;更好的判斷內容，不論KAI是否認為其內容獨立於贊助商，發布時都會披露利益相關情況。&lt;/p&gt;
 &lt;h4 id="本文章無利益相關"&gt;【本文章無利益相關。】&lt;/h4&gt;
 &lt;p&gt;:::&lt;/p&gt;
-&lt;p&gt;是的，你沒看錯!從&lt;a href="http://localhost:1313/blog/house-yt01"&gt;這篇文章&lt;/a&gt;開始，我就沒有任何的利益，單純只是分享，想讓更多人看見 這個軟體&lt;/p&gt;</description></item><item><title>Tango 曲 DEMO 大公開！</title><link>http://localhost:1313/blog/tango/</link><pubDate>Wed, 06 May 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/tango/</guid><description>流行音樂製作 :終於完成 Demo 製作，未來有時間會再修改這首歌曲的編曲</description></item><item><title>流行音樂製作 DAY 02 | 完成 Demo 製作</title><link>http://localhost:1313/blog/new-song01demo/</link><pubDate>Tue, 05 May 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/new-song01demo/</guid><description>流行音樂製作 :終於完成 Demo 製作，未來有時間會再修改這首歌曲的編曲</description></item><item><title>流行音樂製作 DAY 01 | musescore 打譜速記</title><link>http://localhost:1313/blog/1/</link><pubDate>Sat, 02 May 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/1/</guid><description>流行音樂製作 : 最近有了合作關係，情急之下寫出了一首歌曲...這只算是 `Demo` 版本，未來有時間會再修改這首歌曲的編曲</description></item><item><title>KAI BLOG 網站復活了！</title><link>http://localhost:1313/blog/website-alive/</link><pubDate>Fri, 01 May 2026 10:00:00 +0000</pubDate><guid>http://localhost:1313/blog/website-alive/</guid><description>KAI BLOG 網站復活了!</description></item><item><title>KAI BLOG 網站掛掉了？</title><link>http://localhost:1313/blog/website-dead/</link><pubDate>Thu, 23 Apr 2026 10:00:00 +0000</pubDate><guid>http://localhost:1313/blog/website-dead/</guid><description>KAI BLOG 網站掛掉了？</description></item><item><title>我從未公開的自創曲？極度致敬古典樂曲？</title><link>http://localhost:1313/blog/piano/</link><pubDate>Tue, 21 Apr 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/piano/</guid><description>我從未公開的自創曲？極度致敬古典樂曲？</description></item><item><title>太陽之子 鋼琴版</title><link>http://localhost:1313/blog/sun/</link><pubDate>Sat, 11 Apr 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/sun/</guid><description>&lt;p&gt;import PaidContent from &amp;lsquo;@site/src/components/PaidContent&amp;rsquo;;&lt;/p&gt;
+&lt;p&gt;是的，你沒看錯!從&lt;a href="https://kaiblog.is-a.dev/blog/house-yt01"&gt;這篇文章&lt;/a&gt;開始，我就沒有任何的利益，單純只是分享，想讓更多人看見 這個軟體&lt;/p&gt;</description></item><item><title>Tango 曲 DEMO 大公開！</title><link>https://kaiblog.is-a.dev/blog/tango/</link><pubDate>Wed, 06 May 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/tango/</guid><description>流行音樂製作 :終於完成 Demo 製作，未來有時間會再修改這首歌曲的編曲</description></item><item><title>流行音樂製作 DAY 02 | 完成 Demo 製作</title><link>https://kaiblog.is-a.dev/blog/new-song01demo/</link><pubDate>Tue, 05 May 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/new-song01demo/</guid><description>流行音樂製作 :終於完成 Demo 製作，未來有時間會再修改這首歌曲的編曲</description></item><item><title>流行音樂製作 DAY 01 | musescore 打譜速記</title><link>https://kaiblog.is-a.dev/blog/1/</link><pubDate>Sat, 02 May 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/1/</guid><description>流行音樂製作 : 最近有了合作關係，情急之下寫出了一首歌曲...這只算是 `Demo` 版本，未來有時間會再修改這首歌曲的編曲</description></item><item><title>KAI BLOG 網站復活了！</title><link>https://kaiblog.is-a.dev/blog/website-alive/</link><pubDate>Fri, 01 May 2026 10:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/website-alive/</guid><description>KAI BLOG 網站復活了!</description></item><item><title>KAI BLOG 網站掛掉了？</title><link>https://kaiblog.is-a.dev/blog/website-dead/</link><pubDate>Thu, 23 Apr 2026 10:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/website-dead/</guid><description>KAI BLOG 網站掛掉了？</description></item><item><title>我從未公開的自創曲？極度致敬古典樂曲？</title><link>https://kaiblog.is-a.dev/blog/piano/</link><pubDate>Tue, 21 Apr 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/piano/</guid><description>我從未公開的自創曲？極度致敬古典樂曲？</description></item><item><title>太陽之子 鋼琴版</title><link>https://kaiblog.is-a.dev/blog/sun/</link><pubDate>Sat, 11 Apr 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/sun/</guid><description>&lt;p&gt;import PaidContent from &amp;lsquo;@site/src/components/PaidContent&amp;rsquo;;&lt;/p&gt;
 &lt;h2 id="久違的更新"&gt;久違的更新&lt;/h2&gt;
 &lt;p&gt;花了我 &lt;code&gt;2小時&lt;/code&gt;的時間製作：太陽之子 鋼琴版&lt;/p&gt;
 &lt;PaidContent id="sun-piano"&gt;
@@ -250,13 +265,13 @@ kai@yangkaichens-MacBook-Pro-0621 ~ % ollama&lt;/p&gt;
 &lt;li&gt;達芬奇剪輯&lt;/li&gt;
 &lt;li&gt;Affinity 縮圖製作
 :::&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Train EMU 模擬器更新：更真實的手動駕駛體驗</title><link>http://localhost:1313/blog/emu-update-24260403/</link><pubDate>Fri, 03 Apr 2026 13:10:00 +0000</pubDate><guid>http://localhost:1313/blog/emu-update-24260403/</guid><description>&lt;p&gt;今天針對 &lt;strong&gt;Train EMU 模擬器&lt;/strong&gt; 進行了一系列重要的優化，主要是為了提升手動駕駛的真實感，並修正了一些數據讀取上的邏輯問題。&lt;/p&gt;
+&lt;/ol&gt;</description></item><item><title>Train EMU 模擬器更新：更真實的手動駕駛體驗</title><link>https://kaiblog.is-a.dev/blog/emu-update-24260403/</link><pubDate>Fri, 03 Apr 2026 13:10:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/emu-update-24260403/</guid><description>&lt;p&gt;今天針對 &lt;strong&gt;Train EMU 模擬器&lt;/strong&gt; 進行了一系列重要的優化，主要是為了提升手動駕駛的真實感，並修正了一些數據讀取上的邏輯問題。&lt;/p&gt;
 &lt;div className = "photo-border"&gt;
 ![EMU Simulator Interface](emu.png)
 &lt;/div&gt;
 &lt;h3 id="-主要更新亮點"&gt;🚂 主要更新亮點&lt;/h3&gt;
 &lt;h4 id="1-門控與影片暫停邏輯優化"&gt;1. 門控與影片暫停邏輯優化&lt;/h4&gt;
-&lt;p&gt;為了讓離站過程更自然，我調整了影片暫停的邏輯。現在當門完全關閉後，系統會等待 &lt;strong&gt;10 秒鐘&lt;/strong&gt; 再暫停影片（或是繼續播放），這讓列車在出發時的視角切換更加平滑，不會有突然中斷的感覺。&lt;/p&gt;</description></item><item><title>探究課</title><link>http://localhost:1313/blog/lab/</link><pubDate>Thu, 02 Apr 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/lab/</guid><description>&lt;h2 id="探究課"&gt;探究課&lt;/h2&gt;
+&lt;p&gt;為了讓離站過程更自然，我調整了影片暫停的邏輯。現在當門完全關閉後，系統會等待 &lt;strong&gt;10 秒鐘&lt;/strong&gt; 再暫停影片（或是繼續播放），這讓列車在出發時的視角切換更加平滑，不會有突然中斷的感覺。&lt;/p&gt;</description></item><item><title>探究課</title><link>https://kaiblog.is-a.dev/blog/lab/</link><pubDate>Thu, 02 Apr 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/lab/</guid><description>&lt;h2 id="探究課"&gt;探究課&lt;/h2&gt;
 &lt;p&gt;今天探究課要在 &lt;strong&gt;熱縮片上&lt;/strong&gt; 畫出自己喜歡的圖案，然後用熱風槍把它縮小，再用熱熔膠黏在鑰匙圈上，超酷的！&lt;/p&gt;
 &lt;p&gt;結果&amp;hellip;&lt;/p&gt;
 &lt;p&gt;我把熱縮片放在電腦上繪製，想要用電腦繪圖軟體畫出圖案，結果奇異筆畫上去後，&lt;strong&gt;電腦上面就出現我畫的圖片&lt;/strong&gt;，我還以為擦不掉！&lt;/p&gt;
@@ -265,7 +280,7 @@ kai@yangkaichens-MacBook-Pro-0621 ~ % ollama&lt;/p&gt;
 ![alt text](1.jpeg)
 &lt;/div&gt;
 &lt;h2 id="拯救"&gt;拯救！&lt;/h2&gt;
-&lt;p&gt;當時沒有可以擦掉奇異筆的工具，所以老師就叫我拿酒精擦&amp;hellip;&lt;/p&gt;</description></item><item><title>合成器超強講座</title><link>http://localhost:1313/blog/synth/</link><pubDate>Sun, 29 Mar 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/synth/</guid><description>蛋老師在北流的免費講座，超級精彩</description></item><item><title>科技音樂成果發表</title><link>http://localhost:1313/blog/digital-perform-rc/</link><pubDate>Fri, 27 Mar 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/digital-perform-rc/</guid><description>從五線譜的邏輯架構，到數位音訊工作站的音色渲染，見證科技與音樂的碰撞。</description></item><item><title>科技音樂成果發表搶先看</title><link>http://localhost:1313/blog/digital-perform/</link><pubDate>Tue, 24 Mar 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/digital-perform/</guid><description>從五線譜的邏輯架構，到數位音訊工作站的音色渲染，見證科技與音樂的碰撞。</description></item><item><title>理想的日常：可以不要有手機，但不能沒有電腦</title><link>http://localhost:1313/blog/my-digital-ideal-routine/</link><pubDate>Mon, 23 Mar 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/my-digital-ideal-routine/</guid><description>這是我的「BlogBlog 同樂會 - 2026 年 3 月」的投稿文章。對我來說，電腦才是通往理想生活的入口。</description></item><item><title>我唯一在用的 AI 工具 - Antigravity 是什麼？</title><link>http://localhost:1313/blog/antigravity-ai/</link><pubDate>Sun, 22 Mar 2026 17:00:00 +0000</pubDate><guid>http://localhost:1313/blog/antigravity-ai/</guid><description>最近開始用一個叫 Antigravity 的 AI coding 工具，說真的用了之後有點回不去了。</description></item><item><title>打字練習!鈔哥的不敗筆記</title><link>http://localhost:1313/blog/typing-prc/</link><pubDate>Thu, 19 Mar 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/typing-prc/</guid><description>打字打了 7 年，結果高中電腦課要求每秒要 15 以上！這篇文章跟你聊聊我是怎麼練打字的，以及我發現的超讚練習網站。</description></item><item><title>三稜鏡prizm</title><link>http://localhost:1313/blog/prizm/</link><pubDate>Tue, 17 Mar 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/prizm/</guid><description>三稜鏡prizm 的 Anytype 系列課程終於來了</description></item><item><title>MAYDAY Etude No.1</title><link>http://localhost:1313/blog/mayday1/</link><pubDate>Mon, 16 Mar 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mayday1/</guid><description>&lt;p&gt;import PaidContent from &amp;lsquo;@site/src/components/PaidContent&amp;rsquo;;&lt;/p&gt;
+&lt;p&gt;當時沒有可以擦掉奇異筆的工具，所以老師就叫我拿酒精擦&amp;hellip;&lt;/p&gt;</description></item><item><title>合成器超強講座</title><link>https://kaiblog.is-a.dev/blog/synth/</link><pubDate>Sun, 29 Mar 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/synth/</guid><description>蛋老師在北流的免費講座，超級精彩</description></item><item><title>科技音樂成果發表</title><link>https://kaiblog.is-a.dev/blog/digital-perform-rc/</link><pubDate>Fri, 27 Mar 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/digital-perform-rc/</guid><description>從五線譜的邏輯架構，到數位音訊工作站的音色渲染，見證科技與音樂的碰撞。</description></item><item><title>科技音樂成果發表搶先看</title><link>https://kaiblog.is-a.dev/blog/digital-perform/</link><pubDate>Tue, 24 Mar 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/digital-perform/</guid><description>從五線譜的邏輯架構，到數位音訊工作站的音色渲染，見證科技與音樂的碰撞。</description></item><item><title>理想的日常：可以不要有手機，但不能沒有電腦</title><link>https://kaiblog.is-a.dev/blog/my-digital-ideal-routine/</link><pubDate>Mon, 23 Mar 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/my-digital-ideal-routine/</guid><description>這是我的「BlogBlog 同樂會 - 2026 年 3 月」的投稿文章。對我來說，電腦才是通往理想生活的入口。</description></item><item><title>我唯一在用的 AI 工具 - Antigravity 是什麼？</title><link>https://kaiblog.is-a.dev/blog/antigravity-ai/</link><pubDate>Sun, 22 Mar 2026 17:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/antigravity-ai/</guid><description>最近開始用一個叫 Antigravity 的 AI coding 工具，說真的用了之後有點回不去了。</description></item><item><title>打字練習!鈔哥的不敗筆記</title><link>https://kaiblog.is-a.dev/blog/typing-prc/</link><pubDate>Thu, 19 Mar 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/typing-prc/</guid><description>打字打了 7 年，結果高中電腦課要求每秒要 15 以上！這篇文章跟你聊聊我是怎麼練打字的，以及我發現的超讚練習網站。</description></item><item><title>三稜鏡prizm</title><link>https://kaiblog.is-a.dev/blog/prizm/</link><pubDate>Tue, 17 Mar 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/prizm/</guid><description>三稜鏡prizm 的 Anytype 系列課程終於來了</description></item><item><title>MAYDAY Etude No.1</title><link>https://kaiblog.is-a.dev/blog/mayday1/</link><pubDate>Mon, 16 Mar 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/mayday1/</guid><description>&lt;p&gt;import PaidContent from &amp;lsquo;@site/src/components/PaidContent&amp;rsquo;;&lt;/p&gt;
 &lt;h2 id="no01-終於來了"&gt;No.01 終於來了&lt;/h2&gt;
 &lt;p&gt;花了我一週的時間製作：MAYDAY Etude No.01&lt;br&gt;
 &lt;code&gt;使用軟體：Finale&lt;/code&gt;&lt;/p&gt;
@@ -274,7 +289,7 @@ kai@yangkaichens-MacBook-Pro-0621 ~ % ollama&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.mediafire.com/file/8pe205nawbqh0bm/MAYDAY1.pdf/file" className="custom-btn" target="_blank"&gt;🔒 前往下載&lt;/a&gt;&lt;/p&gt;
 &lt;/PaidContent&gt;
 &lt;p&gt;請不要擔心有病毒&lt;/p&gt;
-&lt;h1 id="no03-製作中"&gt;No.03 製作中&lt;/h1&gt;</description></item><item><title>MAYDAY Etude No.2</title><link>http://localhost:1313/blog/mayday2/</link><pubDate>Sun, 15 Mar 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mayday2/</guid><description>&lt;p&gt;import PaidContent from &amp;lsquo;@site/src/components/PaidContent&amp;rsquo;;&lt;/p&gt;
+&lt;h1 id="no03-製作中"&gt;No.03 製作中&lt;/h1&gt;</description></item><item><title>MAYDAY Etude No.2</title><link>https://kaiblog.is-a.dev/blog/mayday2/</link><pubDate>Sun, 15 Mar 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/mayday2/</guid><description>&lt;p&gt;import PaidContent from &amp;lsquo;@site/src/components/PaidContent&amp;rsquo;;&lt;/p&gt;
 &lt;h2 id="久違的更新"&gt;久違的更新&lt;/h2&gt;
 &lt;p&gt;花了我一週的時間製作：MAYDAY Etude No.02&lt;br&gt;
 為了上手 Dorico 也是拼了&lt;/p&gt;
@@ -282,14 +297,14 @@ kai@yangkaichens-MacBook-Pro-0621 ~ % ollama&lt;/p&gt;
 &lt;PaidContent id="mayday-etude-02"&gt;
 &lt;p&gt;&lt;a href="https://www.mediafire.com/file/eu9nen3txsu05er/MAYDAY2.pdf/file" className="custom-btn" target="_blank"&gt;🔒 前往下載&lt;/a&gt;&lt;/p&gt;
 &lt;/PaidContent&gt;
-&lt;h1 id="no01-等等我"&gt;No.01 等等我&lt;/h1&gt;</description></item><item><title>停止更新</title><link>http://localhost:1313/blog/stop-update/</link><pubDate>Mon, 09 Mar 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/stop-update/</guid><description>&lt;h2 id="網站停更"&gt;網站停更&lt;/h2&gt;
+&lt;h1 id="no01-等等我"&gt;No.01 等等我&lt;/h1&gt;</description></item><item><title>停止更新</title><link>https://kaiblog.is-a.dev/blog/stop-update/</link><pubDate>Mon, 09 Mar 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/stop-update/</guid><description>&lt;h2 id="網站停更"&gt;網站停更&lt;/h2&gt;
 &lt;p&gt;為了準備學測，所以此網站停止更新&lt;/p&gt;
 &lt;p&gt;我真的不是故意的哈哈哈&lt;/p&gt;
-&lt;p&gt;不過有空的話還是會寫啦，歡迎訂閱 RSS&lt;/p&gt;</description></item><item><title>弦樂團全國賽</title><link>http://localhost:1313/blog/all-string-orch/</link><pubDate>Fri, 06 Mar 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/all-string-orch/</guid><description>&lt;h2 id="住宿"&gt;住宿&lt;/h2&gt;
+&lt;p&gt;不過有空的話還是會寫啦，歡迎訂閱 RSS&lt;/p&gt;</description></item><item><title>弦樂團全國賽</title><link>https://kaiblog.is-a.dev/blog/all-string-orch/</link><pubDate>Fri, 06 Mar 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/all-string-orch/</guid><description>&lt;h2 id="住宿"&gt;住宿&lt;/h2&gt;
 &lt;p&gt;去宜蘭比全國賽,住宿超好的 !
 還拿了特優 ~&lt;/p&gt;
 &lt;p&gt;其實這裡很多故事可寫，但那時很忙
-然後還在脆遇到了第一位五迷&lt;/p&gt;</description></item><item><title>縮圖對一部影片來講超級重要!</title><link>http://localhost:1313/blog/thumbnail-info/</link><pubDate>Tue, 03 Mar 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/thumbnail-info/</guid><description>縮圖對一部影片來講超級重要!</description></item><item><title>228 日記</title><link>http://localhost:1313/blog/2026-228/</link><pubDate>Sat, 28 Feb 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/2026-228/</guid><description>做了好多事情的 228</description></item><item><title>英文名字</title><link>http://localhost:1313/blog/english-name/</link><pubDate>Thu, 26 Feb 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/english-name/</guid><description>英文名字</description></item><item><title>高二上期末考進步獎</title><link>http://localhost:1313/blog/price/</link><pubDate>Wed, 25 Feb 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/price/</guid><description>高二上期末考進步獎</description></item><item><title>macOS 26，我後悔了</title><link>http://localhost:1313/blog/macos-26/</link><pubDate>Tue, 24 Feb 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/macos-26/</guid><description>macOS 26，我後悔了</description></item><item><title>借課</title><link>http://localhost:1313/blog/borrow-class/</link><pubDate>Sun, 22 Feb 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/borrow-class/</guid><description>PD 虛擬機怎麼擴充磁碟空間?</description></item><item><title>PD 虛擬機怎麼擴充磁碟空間?</title><link>http://localhost:1313/blog/parallels-desktop-disk/</link><pubDate>Sat, 21 Feb 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/parallels-desktop-disk/</guid><description>PD 虛擬機怎麼擴充磁碟空間?</description></item><item><title>今天好累啊 !</title><link>http://localhost:1313/blog/tired02/</link><pubDate>Thu, 19 Feb 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/tired02/</guid><description>今天值得好累嗎?!</description></item><item><title>Ardour9 超強大編曲軟體</title><link>http://localhost:1313/blog/ardour9-new/</link><pubDate>Wed, 18 Feb 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/ardour9-new/</guid><description>這可能是目前最強的開源音樂軟體！ Ardour 9 更新了！很多人對開源 DAW 的印象還停留在「功能陽春」或「介面難用」，但 Ardour 9 這次真的不一樣。它把原本就很強的錄音混音功能，結合了現在流行的 Clip Launcher 循環剪輯，創作起來超級直覺。 最棒的是它支援 Linux / Mac / Windows，而且沒有那種討厭的強制訂閱制。如果你想找一個 Pro Tools 之外的選擇，或是想試試看不同的創作流，Ardour 9 真的很可以</description></item><item><title>五月天除夕陪你守歲</title><link>http://localhost:1313/blog/chuxi-mayday/</link><pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate><guid>http://localhost:1313/blog/chuxi-mayday/</guid><description>&lt;h1 id="五月天-2026-除夕陪你守歲精彩筆記"&gt;五月天 2026 除夕陪你守歲：精彩筆記&lt;/h1&gt;
+然後還在脆遇到了第一位五迷&lt;/p&gt;</description></item><item><title>縮圖對一部影片來講超級重要!</title><link>https://kaiblog.is-a.dev/blog/thumbnail-info/</link><pubDate>Tue, 03 Mar 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/thumbnail-info/</guid><description>縮圖對一部影片來講超級重要!</description></item><item><title>228 日記</title><link>https://kaiblog.is-a.dev/blog/2026-228/</link><pubDate>Sat, 28 Feb 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/2026-228/</guid><description>做了好多事情的 228</description></item><item><title>英文名字</title><link>https://kaiblog.is-a.dev/blog/english-name/</link><pubDate>Thu, 26 Feb 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/english-name/</guid><description>英文名字</description></item><item><title>高二上期末考進步獎</title><link>https://kaiblog.is-a.dev/blog/price/</link><pubDate>Wed, 25 Feb 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/price/</guid><description>高二上期末考進步獎</description></item><item><title>macOS 26，我後悔了</title><link>https://kaiblog.is-a.dev/blog/macos-26/</link><pubDate>Tue, 24 Feb 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/macos-26/</guid><description>macOS 26，我後悔了</description></item><item><title>借課</title><link>https://kaiblog.is-a.dev/blog/borrow-class/</link><pubDate>Sun, 22 Feb 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/borrow-class/</guid><description>PD 虛擬機怎麼擴充磁碟空間?</description></item><item><title>PD 虛擬機怎麼擴充磁碟空間?</title><link>https://kaiblog.is-a.dev/blog/parallels-desktop-disk/</link><pubDate>Sat, 21 Feb 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/parallels-desktop-disk/</guid><description>PD 虛擬機怎麼擴充磁碟空間?</description></item><item><title>今天好累啊 !</title><link>https://kaiblog.is-a.dev/blog/tired02/</link><pubDate>Thu, 19 Feb 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/tired02/</guid><description>今天值得好累嗎?!</description></item><item><title>Ardour9 超強大編曲軟體</title><link>https://kaiblog.is-a.dev/blog/ardour9-new/</link><pubDate>Wed, 18 Feb 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/ardour9-new/</guid><description>這可能是目前最強的開源音樂軟體！ Ardour 9 更新了！很多人對開源 DAW 的印象還停留在「功能陽春」或「介面難用」，但 Ardour 9 這次真的不一樣。它把原本就很強的錄音混音功能，結合了現在流行的 Clip Launcher 循環剪輯，創作起來超級直覺。 最棒的是它支援 Linux / Mac / Windows，而且沒有那種討厭的強制訂閱制。如果你想找一個 Pro Tools 之外的選擇，或是想試試看不同的創作流，Ardour 9 真的很可以</description></item><item><title>五月天除夕陪你守歲</title><link>https://kaiblog.is-a.dev/blog/chuxi-mayday/</link><pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/chuxi-mayday/</guid><description>&lt;h1 id="五月天-2026-除夕陪你守歲精彩筆記"&gt;五月天 2026 除夕陪你守歲：精彩筆記&lt;/h1&gt;
 &lt;div class="youtube-s"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/NU6eY7RYkbo?si=_ZcWsW9gB6klgHXq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;五月天陪你守歲2026&lt;/p&gt;
@@ -305,7 +320,7 @@ kai@yangkaichens-MacBook-Pro-0621 ~ % ollama&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;冠佑的小粉絲 Henry&lt;/strong&gt;：一位名叫 Henry 的小朋友上台互動，當被問到最喜歡誰時，他回答是冠佑，讓冠佑非常驚喜且有品味。 [&lt;a href="http://www.youtube.com/watch?v=NU6eY7RYkbo&amp;amp;t=440"&gt;07:20&lt;/a&gt;]&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;給歌迷的溫馨承諾&lt;/strong&gt;：阿信溫柔地告訴小朋友，人生中還有很多功課要做，但來到五月天的演唱會不需要做任何準備，甚至不需要螢光棒，只要人來到現場，就是最重要的貴賓。 [&lt;a href="http://www.youtube.com/watch?v=NU6eY7RYkbo&amp;amp;t=521"&gt;08:41&lt;/a&gt;]&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;感性演唱與祝福&lt;/strong&gt;：影片最後在音樂聲中總結，帶給歌迷滿滿的感動與新年祝福。 [&lt;a href="http://www.youtube.com/watch?v=NU6eY7RYkbo&amp;amp;t=547"&gt;09:07&lt;/a&gt;]&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Kevin 最愛的五個roblox遊戲</title><link>http://localhost:1313/blog/roblox-nice01/</link><pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate><guid>http://localhost:1313/blog/roblox-nice01/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>Kevin 最愛的五個roblox遊戲</title><link>https://kaiblog.is-a.dev/blog/roblox-nice01/</link><pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/roblox-nice01/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
 &lt;p&gt;大家好！我是 &lt;code&gt;KEVIN&lt;/code&gt; ，我是一名國中二年級的學生，簡稱中二生，我這篇文章想介紹一下我最愛的五款羅布熱斯，希望大家按個讚！&lt;br&gt;
 {/* truncate */}&lt;/p&gt;
 &lt;h2 id="競速跑酷-update"&gt;競速跑酷 [UPDATE]&lt;/h2&gt;
@@ -313,7 +328,7 @@ kai@yangkaichens-MacBook-Pro-0621 ~ % ollama&lt;/p&gt;
 &lt;li&gt;推薦指數: ⭐⭐⭐⭐⭐&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;這款遊戲遊戲具有非常多的關卡，而且因為這款遊戲沒有中繼點，所以一次失誤都不能有，非常刺激，&lt;strong&gt;熱愛玩跑酷遊戲的人一定要上手&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;這款遊戲的每一個關卡都設計得十分精美，&lt;strong&gt;且難度適中&lt;/strong&gt;，小朋友不會&lt;code&gt;玩到哭&lt;/code&gt;，這種 &lt;code&gt;Roblox&lt;/code&gt; 跑酷遊戲，還會玩到上癮，會忍不住的一直玩下去，像是有什麼不可告人的成癮計一樣，&lt;code&gt;十分耐玩&lt;/code&gt;&lt;/p&gt;</description></item><item><title>過年特別企劃！</title><link>http://localhost:1313/blog/happy-new-year-2026/</link><pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate><guid>http://localhost:1313/blog/happy-new-year-2026/</guid><description>&lt;h1 id="過年特別企劃"&gt;過年特別企劃&lt;/h1&gt;
+&lt;p&gt;這款遊戲的每一個關卡都設計得十分精美，&lt;strong&gt;且難度適中&lt;/strong&gt;，小朋友不會&lt;code&gt;玩到哭&lt;/code&gt;，這種 &lt;code&gt;Roblox&lt;/code&gt; 跑酷遊戲，還會玩到上癮，會忍不住的一直玩下去，像是有什麼不可告人的成癮計一樣，&lt;code&gt;十分耐玩&lt;/code&gt;&lt;/p&gt;</description></item><item><title>過年特別企劃！</title><link>https://kaiblog.is-a.dev/blog/happy-new-year-2026/</link><pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/happy-new-year-2026/</guid><description>&lt;h1 id="過年特別企劃"&gt;過年特別企劃&lt;/h1&gt;
 &lt;hr&gt;
 &lt;div class="photo-border"&gt;
 ![alt text](1.png)
@@ -327,14 +342,14 @@ kai@yangkaichens-MacBook-Pro-0621 ~ % ollama&lt;/p&gt;
 &lt;li&gt;&lt;input checked="" disabled="" type="checkbox"&gt; &lt;code&gt;10:00&lt;/code&gt; 打籃球 🏀&lt;/li&gt;
 &lt;li&gt;&lt;input checked="" disabled="" type="checkbox"&gt; &lt;code&gt;12:00&lt;/code&gt; 午餐&lt;/li&gt;
 &lt;li&gt;&lt;input checked="" disabled="" type="checkbox"&gt; &lt;code&gt;13:00&lt;/code&gt; 練琴 🎹&lt;/li&gt;
-&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; &lt;code&gt;15:00&lt;/code&gt; &lt;a href="http://localhost:1313/docs/video-set/video01/roblox01"&gt;Roblox 第一集錄製&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; &lt;code&gt;15:00&lt;/code&gt; &lt;a href="https://kaiblog.is-a.dev/docs/video-set/video01/roblox01"&gt;Roblox 第一集錄製&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled="" type="checkbox"&gt; &lt;code&gt;17:00&lt;/code&gt; 大掃除&lt;/li&gt;
 &lt;li&gt;&lt;input checked="" disabled="" type="checkbox"&gt; &lt;code&gt;19:00&lt;/code&gt; 吃晚餐&lt;/li&gt;
 &lt;li&gt;&lt;input checked="" disabled="" type="checkbox"&gt; &lt;code&gt;20:00&lt;/code&gt; 練琴 🎻&lt;/li&gt;
 &lt;li&gt;&lt;input disabled="" type="checkbox"&gt; &lt;code&gt;22:00&lt;/code&gt; 洗澡 🛀&lt;/li&gt;
 &lt;li&gt;&lt;input disabled="" type="checkbox"&gt; &lt;code&gt;23:00&lt;/code&gt; 準備睡覺&lt;/li&gt;
 &lt;li&gt;&lt;input disabled="" type="checkbox"&gt; &lt;code&gt;00:00&lt;/code&gt; Party 🎉&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>情人節快樂</title><link>http://localhost:1313/blog/happy-214/</link><pubDate>Sat, 14 Feb 2026 12:00:00 +0000</pubDate><guid>http://localhost:1313/blog/happy-214/</guid><description>&lt;p&gt;嗯&amp;hellip; 情人節快樂
+&lt;/ul&gt;</description></item><item><title>情人節快樂</title><link>https://kaiblog.is-a.dev/blog/happy-214/</link><pubDate>Sat, 14 Feb 2026 12:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/happy-214/</guid><description>&lt;p&gt;嗯&amp;hellip; 情人節快樂
 :::tip 祝 : 每天都可以快快樂樂的 !
 :::&lt;/p&gt;
 &lt;p&gt;寫一下今日筆記&lt;/p&gt;
@@ -367,14 +382,14 @@ Pitch Bend&lt;/li&gt;
 &lt;h2 id="how-to-解決問題"&gt;HOW TO 解決問題&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;參考 User Manual&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title>五月天螢光棒超厲害</title><link>http://localhost:1313/blog/mayday-highlight/</link><pubDate>Fri, 13 Feb 2026 12:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mayday-highlight/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
+&lt;/blockquote&gt;</description></item><item><title>五月天螢光棒超厲害</title><link>https://kaiblog.is-a.dev/blog/mayday-highlight/</link><pubDate>Fri, 13 Feb 2026 12:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/mayday-highlight/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
 &lt;p&gt;今天看到手機上的 &lt;code&gt;相信音樂 APP&lt;/code&gt; ，第一個念頭想把他刪了，因為說真的&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;試験の準備をしなければならない人は、メーデーコンサートに行くことができません。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;{/* truncate */}&lt;/p&gt;
 &lt;h2 id="懷念"&gt;懷念&lt;/h2&gt;
-&lt;p&gt;但是當我看到裡面 &lt;strong&gt;去線上&lt;/strong&gt; 的功能的時候，我就有興趣了 ！ 裡面可以看五月天的線上跨年演唱會，重點是&lt;strong&gt;可以跟螢光棒連動&lt;/strong&gt;超厲害，雖然說藍牙有延遲 &lt;strong&gt;比不上現場&lt;/strong&gt; ，但是至少 &lt;del&gt;阿信音是準的，聲音說好聽的&lt;/del&gt; 很嗨，搭配我的藍牙音響，真不錯&lt;/p&gt;</description></item><item><title>只有我這樣嗎？</title><link>http://localhost:1313/blog/only-me/</link><pubDate>Thu, 12 Feb 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/only-me/</guid><description>不知道為什麼我非常喜歡看影片，以前很喜歡看長影片像是：好和弦 / 音樂製作 ... 遊戲之類的，這篇文章會告訴你我選了很久的軟體以及為什麼？</description></item><item><title>大成本大製作：盛夏光年</title><link>http://localhost:1313/blog/new-arrange-04/</link><pubDate>Wed, 11 Feb 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/blog/new-arrange-04/</guid><description>&lt;h2 id="新編曲"&gt;新編曲&lt;/h2&gt;
+&lt;p&gt;但是當我看到裡面 &lt;strong&gt;去線上&lt;/strong&gt; 的功能的時候，我就有興趣了 ！ 裡面可以看五月天的線上跨年演唱會，重點是&lt;strong&gt;可以跟螢光棒連動&lt;/strong&gt;超厲害，雖然說藍牙有延遲 &lt;strong&gt;比不上現場&lt;/strong&gt; ，但是至少 &lt;del&gt;阿信音是準的，聲音說好聽的&lt;/del&gt; 很嗨，搭配我的藍牙音響，真不錯&lt;/p&gt;</description></item><item><title>只有我這樣嗎？</title><link>https://kaiblog.is-a.dev/blog/only-me/</link><pubDate>Thu, 12 Feb 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/only-me/</guid><description>不知道為什麼我非常喜歡看影片，以前很喜歡看長影片像是：好和弦 / 音樂製作 ... 遊戲之類的，這篇文章會告訴你我選了很久的軟體以及為什麼？</description></item><item><title>大成本大製作：盛夏光年</title><link>https://kaiblog.is-a.dev/blog/new-arrange-04/</link><pubDate>Wed, 11 Feb 2026 16:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/new-arrange-04/</guid><description>&lt;h2 id="新編曲"&gt;新編曲&lt;/h2&gt;
 &lt;p&gt;再次花了&lt;code&gt;兩小時&lt;/code&gt; 重本還原 &lt;strong&gt;盛夏光年&lt;/strong&gt; 的新編曲 ~
 :::danger 光是縮圖就製作了快一個小時
 :::&lt;/p&gt;
@@ -399,9 +414,10 @@ Pitch Bend&lt;/li&gt;
 :::&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="我的製作過程"&gt;我的製作過程&lt;/h2&gt;
-&lt;p&gt;這次製作當中，簡單的去進行兩個版本的混合&amp;hellip; 為了避免被YouTube版權宣告，所以我只放了前奏&lt;/p&gt;</description></item><item><title>休息</title><link>http://localhost:1313/blog/rest/</link><pubDate>Wed, 11 Feb 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/rest/</guid><description>&lt;p&gt;:::danger 超級榮幸
-讓我稍微休息一下 • 好忙啊
-:::&lt;/p&gt;</description></item><item><title>新編曲：勇敢</title><link>http://localhost:1313/blog/new-arrange-03/</link><pubDate>Tue, 10 Feb 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/new-arrange-03/</guid><description>&lt;h2 id="新編曲"&gt;新編曲&lt;/h2&gt;
+&lt;p&gt;這次製作當中，簡單的去進行兩個版本的混合&amp;hellip; 為了避免被YouTube版權宣告，所以我只放了前奏&lt;/p&gt;</description></item><item><title>休息</title><link>https://kaiblog.is-a.dev/blog/rest/</link><pubDate>Wed, 11 Feb 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/rest/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;超級榮幸 &lt;br&gt;
+讓我稍微休息一下 • 好忙啊&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>新編曲：勇敢</title><link>https://kaiblog.is-a.dev/blog/new-arrange-03/</link><pubDate>Tue, 10 Feb 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/new-arrange-03/</guid><description>&lt;h2 id="新編曲"&gt;新編曲&lt;/h2&gt;
 &lt;p&gt;再次花了&lt;code&gt;一小時&lt;/code&gt;重本製作 &lt;strong&gt;勇敢&lt;/strong&gt; 的新編曲，重點是還得寫 Blog ，饒過我吧！🤣🤣&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;KAI STUDIO (最後更新：2026-02-10)&lt;/p&gt;
@@ -425,8 +441,8 @@ Pitch Bend&lt;/li&gt;
 :::&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="我的製作過程"&gt;我的製作過程&lt;/h2&gt;
-&lt;p&gt;這次製作當中，最頭痛的是 &lt;strong&gt;配置音樂&lt;/strong&gt; ,盡可能跳脫原版風格&lt;/p&gt;</description></item><item><title>怎麼安裝 Mac 應用程式 ?</title><link>http://localhost:1313/blog/install-mac-app/</link><pubDate>Mon, 09 Feb 2026 11:00:00 +0000</pubDate><guid>http://localhost:1313/blog/install-mac-app/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
-&lt;p&gt;之前不是說過我設計了 &lt;a href="http://localhost:1313/blog/YTdownload"&gt;Youtube 下載神器 ↺&lt;/a&gt; 嗎 ? 結果意外發現更好用的 :&lt;/p&gt;
+&lt;p&gt;這次製作當中，最頭痛的是 &lt;strong&gt;配置音樂&lt;/strong&gt; ,盡可能跳脫原版風格&lt;/p&gt;</description></item><item><title>怎麼安裝 Mac 應用程式 ?</title><link>https://kaiblog.is-a.dev/blog/install-mac-app/</link><pubDate>Mon, 09 Feb 2026 11:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/install-mac-app/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
+&lt;p&gt;之前不是說過我設計了 &lt;a href="https://kaiblog.is-a.dev/blog/YTdownload"&gt;Youtube 下載神器 ↺&lt;/a&gt; 嗎 ? 結果意外發現更好用的 :&lt;/p&gt;
 &lt;p&gt;:::danger 🔗 &lt;a href="https://github.com/aandrew-me/ytDownloader"&gt;https://github.com/aandrew-me/ytDownloader&lt;/a&gt;
 :::&lt;/p&gt;
 &lt;p&gt;安裝的時候居然跳出 &lt;code&gt;「YTDownloader」已損毀，無法打開。 你應該將其丟到「垃圾桶」。&lt;/code&gt;&lt;/p&gt;
@@ -452,7 +468,7 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 );&lt;/p&gt;
 &lt;p&gt;&lt;Highlight color="#454c4a"&gt;取消&lt;/Highlight&gt; | &lt;Highlight color="#3c3d3f"&gt;丟到垃圾桶&lt;/Highlight&gt;&lt;/p&gt;
 &lt;h3 id="慌張的我"&gt;慌張的我&lt;/h3&gt;
-&lt;p&gt;當然馬上找朋友求救啊 ～&lt;/p&gt;</description></item><item><title>YouTube 下載神奇工具！</title><link>http://localhost:1313/blog/ytdownload/</link><pubDate>Sun, 08 Feb 2026 11:00:00 +0000</pubDate><guid>http://localhost:1313/blog/ytdownload/</guid><description>&lt;p&gt;:::danger 直接下載
+&lt;p&gt;當然馬上找朋友求救啊 ～&lt;/p&gt;</description></item><item><title>YouTube 下載神奇工具！</title><link>https://kaiblog.is-a.dev/blog/ytdownload/</link><pubDate>Sun, 08 Feb 2026 11:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/ytdownload/</guid><description>&lt;p&gt;:::danger 直接下載
 &lt;a href="https://kaiblog.itch.io/ytdownloader"&gt;ITCH.IO 超高速下載&lt;/a&gt;
 :::&lt;/p&gt;
 &lt;p&gt;:::danger 找了老半天&amp;hellip; 還是被我找到了 💩
@@ -471,7 +487,7 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 &lt;div class="youtube-s"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/6FFiUREaHS4?si=Mft3IOdOZhha7NfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;沒學過程式也能上架？用 AI 「講中文」結果竟然真的上架一款 App！【附模板】｜⊿&lt;/p&gt;
-&lt;/div&gt;</description></item><item><title>新編曲：2012</title><link>http://localhost:1313/blog/new-arrange-02/</link><pubDate>Sat, 07 Feb 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/new-arrange-02/</guid><description>&lt;h2 id="新編曲"&gt;新編曲&lt;/h2&gt;
+&lt;/div&gt;</description></item><item><title>新編曲：2012</title><link>https://kaiblog.is-a.dev/blog/new-arrange-02/</link><pubDate>Sat, 07 Feb 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/new-arrange-02/</guid><description>&lt;h2 id="新編曲"&gt;新編曲&lt;/h2&gt;
 &lt;p&gt;再次花了&lt;code&gt;30分鐘&lt;/code&gt;重本製作 &lt;strong&gt;2012&lt;/strong&gt; 的新編曲，重點是還得寫 Blog ，饒過我吧！🤣🤣&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;KAI STUDIO (最後更新：2026-02-06)&lt;/p&gt;
@@ -494,7 +510,7 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 :::&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="我的製作過程"&gt;我的製作過程&lt;/h2&gt;
-&lt;p&gt;這次製作當中，最頭痛的是 &lt;strong&gt;要做出震撼的感覺&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>打字拼音</title><link>http://localhost:1313/blog/pinyin-typing-yt02/</link><pubDate>Fri, 06 Feb 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/pinyin-typing-yt02/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
+&lt;p&gt;這次製作當中，最頭痛的是 &lt;strong&gt;要做出震撼的感覺&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>打字拼音</title><link>https://kaiblog.is-a.dev/blog/pinyin-typing-yt02/</link><pubDate>Fri, 06 Feb 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/pinyin-typing-yt02/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
 &lt;p&gt;我是一個使用注音使用 &lt;strong&gt;16年&lt;/strong&gt; 的人了 ! 老樣子，因為看到這部影片，我開始學習拼音 😃&lt;/p&gt;
 &lt;div class="youtube"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/NtsDisAE7TU?si=9FcvC4Ze1d0lP79B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
@@ -506,14 +522,14 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 &lt;p&gt;為了使&lt;strong&gt;讀者&lt;/strong&gt;更好的判斷內容，不論KAI是否認為其內容獨立於贊助商，發布時都會披露利益相關情況。&lt;/p&gt;
 &lt;h4 id="本文章無利益相關"&gt;【本文章無利益相關。】&lt;/h4&gt;
 &lt;p&gt;:::&lt;/p&gt;
-&lt;p&gt;是的，你沒看錯!從&lt;a href="http://localhost:1313/blog/house-yt01"&gt;這篇文章&lt;/a&gt;開始，我就沒有任何的利益，單純只是分享，想讓更多人看見這個好頻道&lt;/p&gt;
+&lt;p&gt;是的，你沒看錯!從&lt;a href="https://kaiblog.is-a.dev/blog/house-yt01"&gt;這篇文章&lt;/a&gt;開始，我就沒有任何的利益，單純只是分享，想讓更多人看見這個好頻道&lt;/p&gt;
 &lt;h2 id="為什麼發現-"&gt;為什麼發現 ?&lt;/h2&gt;
 &lt;p&gt;其實當初只是想找到 &lt;a href="https://anytype.io/"&gt;&lt;code&gt;Anytype&lt;/code&gt;&lt;/a&gt; 的教學，就意外的發現&lt;a href="https://youtube.com/playlist?list=PL8hRa_yxy1s357hLJfzMnzfMjSqTf3GNM&amp;amp;si=zWoHDkCXGPzWqD31"&gt;這個頻道&lt;/a&gt;~~
-之後有空再介紹 &lt;a href="https://anytype.io/"&gt;&lt;code&gt;Anytype&lt;/code&gt;&lt;/a&gt; ， 今天先饒過我啦 !&lt;/p&gt;</description></item><item><title>itch.io 是什麼 ?</title><link>http://localhost:1313/blog/itch.io/</link><pubDate>Thu, 05 Feb 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/itch.io/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
+之後有空再介紹 &lt;a href="https://anytype.io/"&gt;&lt;code&gt;Anytype&lt;/code&gt;&lt;/a&gt; ， 今天先饒過我啦 !&lt;/p&gt;</description></item><item><title>itch.io 是什麼 ?</title><link>https://kaiblog.is-a.dev/blog/itch.io/</link><pubDate>Thu, 05 Feb 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/itch.io/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
 &lt;p&gt;他是一個超級好用的網站！原本是提供給那些&lt;strong&gt;想放自己做的遊戲給其他人玩的平台&lt;/strong&gt;，讓他們可以在該平台賺取一些小費！不同於 &lt;code&gt;Gumroad&lt;/code&gt; 這種抽成平台，itch.io 是完全開源的！&lt;/p&gt;
-&lt;p&gt;結果他被我拿來放我給大家的素材，像是這幾天筆記更新的：&lt;a href="http://localhost:1313/docs/phone/google-input"&gt;Google 注音輸入法超好用 APP&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;結果他被我拿來放我給大家的素材，像是這幾天筆記更新的：&lt;a href="https://kaiblog.is-a.dev/docs/phone/google-input"&gt;Google 注音輸入法超好用 APP&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="為什麼要用"&gt;為什麼要用？&lt;/h2&gt;
-&lt;p&gt;其實我都是提供免費的給大家下載，但是用這種買賣平台的原因：&lt;/p&gt;</description></item><item><title>日本火車離站音樂</title><link>http://localhost:1313/blog/tokyo.metro/</link><pubDate>Wed, 04 Feb 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/tokyo.metro/</guid><description>&lt;h2 id="日本"&gt;日本&lt;/h2&gt;
+&lt;p&gt;其實我都是提供免費的給大家下載，但是用這種買賣平台的原因：&lt;/p&gt;</description></item><item><title>日本火車離站音樂</title><link>https://kaiblog.is-a.dev/blog/tokyo.metro/</link><pubDate>Wed, 04 Feb 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/tokyo.metro/</guid><description>&lt;h2 id="日本"&gt;日本&lt;/h2&gt;
 &lt;p&gt;日本火車的音樂超好聽！
 會有轉調，或者附屬和弦&lt;/p&gt;
 &lt;p&gt;我舉幾個我喜歡的！
@@ -542,7 +558,7 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 &lt;li&gt;舞兵 會有迪士尼專屬新編曲音樂&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="其他"&gt;其他&lt;/h3&gt;
-&lt;p&gt;是真的，未來會補充，最近再好好好的&amp;hellip;嗯&lt;/p&gt;</description></item><item><title>怎麼在東京買京都辣油</title><link>http://localhost:1313/blog/buy-oil/</link><pubDate>Tue, 03 Feb 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/buy-oil/</guid><description>&lt;h3 id="早安"&gt;早安&lt;/h3&gt;
+&lt;p&gt;是真的，未來會補充，最近再好好好的&amp;hellip;嗯&lt;/p&gt;</description></item><item><title>怎麼在東京買京都辣油</title><link>https://kaiblog.is-a.dev/blog/buy-oil/</link><pubDate>Tue, 03 Feb 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/buy-oil/</guid><description>&lt;h3 id="早安"&gt;早安&lt;/h3&gt;
 &lt;p&gt;今天這篇相當輕鬆，要來教我媽怎麼買順利地&lt;strong&gt;在東京淺草買京都辣油&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id="第一步"&gt;第一步&lt;/h3&gt;
 &lt;p&gt;首先，搭&lt;strong&gt;銀座線&lt;/strong&gt;前往淺草！&lt;/p&gt;
@@ -551,11 +567,11 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 &lt;p&gt;不論那台車讓你在第一月台或者第二月台下車，請注意：&lt;strong&gt;直直的往車頭前進&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;:::danger 直到你看到樓梯
 :::&lt;/p&gt;
-&lt;p&gt;&lt;img alt="車站蘋面圖" loading="lazy" src="http://localhost:1313/blog/buy-oil/102-02-23-02.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="車站蘋面圖" loading="lazy" src="https://kaiblog.is-a.dev/blog/buy-oil/102-02-23-02.jpg"&gt;&lt;/p&gt;
 &lt;h3 id="請出站"&gt;請出站&lt;/h3&gt;
 &lt;p&gt;接著，拿出珍貴的 西瓜卡，出站&lt;/p&gt;
-&lt;p&gt;向左轉或者找這重要的指標！&lt;strong&gt;出口 7&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>日本自由行 第五天</title><link>http://localhost:1313/blog/2026-tokyo-day5/</link><pubDate>Mon, 02 Feb 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/2026-tokyo-day5/</guid><description>&lt;h3 id="早安"&gt;早安&lt;/h3&gt;
-&lt;p&gt;我只能說我拖延症相當嚴重，今天先這樣了，沒關係，謝謝大家&lt;/p&gt;</description></item><item><title>日本自由行 第四天</title><link>http://localhost:1313/blog/2026-tokyo-day4/</link><pubDate>Sun, 01 Feb 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/2026-tokyo-day4/</guid><description>&lt;h3 id="早安"&gt;早安&lt;/h3&gt;
+&lt;p&gt;向左轉或者找這重要的指標！&lt;strong&gt;出口 7&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>日本自由行 第五天</title><link>https://kaiblog.is-a.dev/blog/2026-tokyo-day5/</link><pubDate>Mon, 02 Feb 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/2026-tokyo-day5/</guid><description>&lt;h3 id="早安"&gt;早安&lt;/h3&gt;
+&lt;p&gt;我只能說我拖延症相當嚴重，今天先這樣了，沒關係，謝謝大家&lt;/p&gt;</description></item><item><title>日本自由行 第四天</title><link>https://kaiblog.is-a.dev/blog/2026-tokyo-day4/</link><pubDate>Sun, 01 Feb 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/2026-tokyo-day4/</guid><description>&lt;h3 id="早安"&gt;早安&lt;/h3&gt;
 &lt;p&gt;不好意思，早上睡不好，忘記說因為上間飯店太晚訂，所以變成 &lt;strong&gt;一張床+兩個人睡&lt;/strong&gt;，所以整晚跟我爸爸睡，嗯…&lt;/p&gt;
 &lt;p&gt;他三點起來上廁所，我以為 六點了，結果&lt;strong&gt;才凌晨三點🤣&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;接著我就變成睡睡醒醒，根本睡不好哈哈哈&lt;/p&gt;
@@ -563,15 +579,15 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 &lt;p&gt;早餐是昨天 7-11 買的 蛋沙拉麵包+野果果汁&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;不要問我為什麼都喝 野果果汁 ，因為便宜吧哈哈哈哈哈&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id="高速巴士"&gt;高速巴士&lt;/h3&gt;
-&lt;p&gt;接著就搭乘高速巴士前往 &lt;code&gt;戶隱奧社&lt;/code&gt;，整趟車程我聽音樂聽超久的，因為要一小時😥&lt;/p&gt;</description></item><item><title>日本自由行 第三天</title><link>http://localhost:1313/blog/2026-tokyo-day3/</link><pubDate>Sat, 31 Jan 2026 22:00:00 +0000</pubDate><guid>http://localhost:1313/blog/2026-tokyo-day3/</guid><description>&lt;h3 id="早安"&gt;早安&lt;/h3&gt;
+&lt;p&gt;接著就搭乘高速巴士前往 &lt;code&gt;戶隱奧社&lt;/code&gt;，整趟車程我聽音樂聽超久的，因為要一小時😥&lt;/p&gt;</description></item><item><title>日本自由行 第三天</title><link>https://kaiblog.is-a.dev/blog/2026-tokyo-day3/</link><pubDate>Sat, 31 Jan 2026 22:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/2026-tokyo-day3/</guid><description>&lt;h3 id="早安"&gt;早安&lt;/h3&gt;
 &lt;p&gt;我今天早上日本時間 &lt;code&gt;07：05&lt;/code&gt; 起床，然後我爸還沒醒來，就想說給他多睡一點…結果 &lt;code&gt;07：18&lt;/code&gt; 叫他起床，&lt;strong&gt;我們匆匆忙忙&lt;/strong&gt;換好衣服去吃早餐🤣&lt;/p&gt;
 &lt;h3 id="飯店早餐"&gt;飯店早餐&lt;/h3&gt;
 &lt;p&gt;不知道為什麼日本 好像&lt;strong&gt;都吃的很鹹&lt;/strong&gt;，今天的早餐就是簡單的飯+很多配菜🤣&lt;/p&gt;
 &lt;p&gt;那一顆梅子吃下去之後，&lt;strong&gt;不管誰都一樣（吧？&lt;/strong&gt;，開始狂吃飯，可能梅子可以開胃&lt;/p&gt;
-&lt;p&gt;然後除了那一碗豆腐湯之外，其他真的都很鹹🤣&lt;/p&gt;</description></item><item><title>日本自由行 第二天</title><link>http://localhost:1313/blog/2026-tokyo-day2/</link><pubDate>Fri, 30 Jan 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/2026-tokyo-day2/</guid><description>&lt;h2 id="差點來不及"&gt;差點來不及&lt;/h2&gt;
+&lt;p&gt;然後除了那一碗豆腐湯之外，其他真的都很鹹🤣&lt;/p&gt;</description></item><item><title>日本自由行 第二天</title><link>https://kaiblog.is-a.dev/blog/2026-tokyo-day2/</link><pubDate>Fri, 30 Jan 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/2026-tokyo-day2/</guid><description>&lt;h2 id="差點來不及"&gt;差點來不及&lt;/h2&gt;
 &lt;p&gt;早餐吃 銅鑼燒 x2 +蔬果汁&lt;/p&gt;
 &lt;div className="photo-border"&gt;
-&lt;p&gt;&lt;img alt="超簡單早餐" loading="lazy" src="http://localhost:1313/blog/2026-tokyo-day2/IMG20260130073404.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="超簡單早餐" loading="lazy" src="https://kaiblog.is-a.dev/blog/2026-tokyo-day2/IMG20260130073404.jpg"&gt;&lt;/p&gt;
 &lt;/div&gt;
 搭 09：26 的新幹線，然後讓我想到：
 昨天去領車票的時候，一位中年大叔問說有沒有 `reservation` ，因為真的很即時，完全忘記是甚麼意思🤣
@@ -581,11 +597,11 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 &lt;p&gt;喔對然後新幹線在上野站，所以我們必須進去 JR 改札&lt;/p&gt;
 &lt;p&gt;:::danger 注意
 當初我們還以為要進去人工驗票，後來問站幅員，他說要把乘車票放入 &lt;strong&gt;改札&lt;/strong&gt;
-:::&lt;/p&gt;</description></item><item><title>日本自由行 第一天</title><link>http://localhost:1313/blog/2026-tokyo-day1/</link><pubDate>Thu, 29 Jan 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/2026-tokyo-day1/</guid><description>&lt;h2 id="規劃已久的旅行"&gt;規劃已久的旅行&lt;/h2&gt;
+:::&lt;/p&gt;</description></item><item><title>日本自由行 第一天</title><link>https://kaiblog.is-a.dev/blog/2026-tokyo-day1/</link><pubDate>Thu, 29 Jan 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/2026-tokyo-day1/</guid><description>&lt;h2 id="規劃已久的旅行"&gt;規劃已久的旅行&lt;/h2&gt;
 &lt;p&gt;這次花了我 &lt;strong&gt;一週的時間&lt;/strong&gt; 規劃旅行，在我們家當中我就是負責排行程… 😢&lt;/p&gt;
 &lt;h2 id="to-桃機一航"&gt;To 桃機一航&lt;/h2&gt;
 &lt;p&gt;今天在前往 &lt;del&gt;新竹&lt;/del&gt; 桃園的 路上，真的好慘，司機大哥的左手很奇怪，是很黏的手套 （好奇寶寶先抱歉）然後，總共花了 一個半小時到！&lt;/p&gt;
-&lt;p&gt;我們家四個人 搭大車，司機大哥說：&lt;strong&gt;相信他的專業&lt;/strong&gt;🤣🤣，然後大車是 &lt;strong&gt;九人座&lt;/strong&gt;的，終於知道飢餓遊戲怎麼錄影的了&lt;/p&gt;</description></item><item><title>出國了！</title><link>http://localhost:1313/blog/go-abroad/</link><pubDate>Wed, 28 Jan 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/go-abroad/</guid><description>&lt;h2 id="規劃已久的旅行"&gt;規劃已久的旅行&lt;/h2&gt;
+&lt;p&gt;我們家四個人 搭大車，司機大哥說：&lt;strong&gt;相信他的專業&lt;/strong&gt;🤣🤣，然後大車是 &lt;strong&gt;九人座&lt;/strong&gt;的，終於知道飢餓遊戲怎麼錄影的了&lt;/p&gt;</description></item><item><title>出國了！</title><link>https://kaiblog.is-a.dev/blog/go-abroad/</link><pubDate>Wed, 28 Jan 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/go-abroad/</guid><description>&lt;h2 id="規劃已久的旅行"&gt;規劃已久的旅行&lt;/h2&gt;
 &lt;p&gt;這次花了我 &lt;strong&gt;一週的時間&lt;/strong&gt; 規劃旅行，在我們家當中我就是負責排行程… 😢&lt;/p&gt;
 &lt;p&gt;剩下的之後說.🤣🤣🤣&lt;/p&gt;
 &lt;h3 id="班級合唱事件"&gt;班級合唱事件&lt;/h3&gt;
@@ -593,7 +609,7 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 &lt;p&gt;但是，因為是合唱，所以要設計合音，想看譜的可以下面連結看哈哈哈哈，目前只有人聲&lt;/p&gt;
 &lt;p&gt;:::tip Vical 01 更新&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://drive.google.com/file/d/1o0I7t3qJx8dYl-rPTNUP6VcC-QfYqvp1/view?usp=drivesdk"&gt;點我下載&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;</description></item><item><title>新編曲：星空</title><link>http://localhost:1313/blog/new-arrange/</link><pubDate>Wed, 28 Jan 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/new-arrange/</guid><description>&lt;h2 id="新編曲"&gt;新編曲&lt;/h2&gt;
+&lt;p&gt;:::&lt;/p&gt;</description></item><item><title>新編曲：星空</title><link>https://kaiblog.is-a.dev/blog/new-arrange/</link><pubDate>Wed, 28 Jan 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/new-arrange/</guid><description>&lt;h2 id="新編曲"&gt;新編曲&lt;/h2&gt;
 &lt;p&gt;再次花了兩天重本製作 &lt;strong&gt;星空&lt;/strong&gt; 的新編曲，重點是還得寫 Blog ，饒過我吧！🤣🤣&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;KAI STUDIO (最後更新：2026-01-26)&lt;/p&gt;
@@ -615,7 +631,7 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 :::&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="我的製作過程"&gt;我的製作過程&lt;/h2&gt;
-&lt;p&gt;這次製作當中，最頭痛的是 &lt;strong&gt;開頭的弦樂&lt;/strong&gt; 跟 &lt;strong&gt;後面副歌的搖滾感&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>新編曲 :前傳</title><link>http://localhost:1313/blog/new-arrange-00/</link><pubDate>Tue, 27 Jan 2026 12:00:00 +0000</pubDate><guid>http://localhost:1313/blog/new-arrange-00/</guid><description>&lt;h2 id="新編曲"&gt;新編曲&lt;/h2&gt;
+&lt;p&gt;這次製作當中，最頭痛的是 &lt;strong&gt;開頭的弦樂&lt;/strong&gt; 跟 &lt;strong&gt;後面副歌的搖滾感&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>新編曲 :前傳</title><link>https://kaiblog.is-a.dev/blog/new-arrange-00/</link><pubDate>Tue, 27 Jan 2026 12:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/new-arrange-00/</guid><description>&lt;h2 id="新編曲"&gt;新編曲&lt;/h2&gt;
 &lt;p&gt;最近花了兩小時製作 後來的我們 的新編曲，重點是還有寫 Blog ，饒過我吧！&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;KAI STUDIO (最後更新：2026-01-26)&lt;/p&gt;
@@ -639,11 +655,11 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 &lt;p&gt;再過兩天（1/29）要出去日本玩了，這次要去長野！！&lt;/p&gt;
 &lt;p&gt;:::danger 行程表：
 &lt;a href="https://docs.google.com/spreadsheets/d/1HFxr9tx_aBgV7wjdqtEdnwl_phat7iaR/edit?usp=drivesdk&amp;amp;ouid=100256338337422178821&amp;amp;rtpof=true&amp;amp;sd=true"&gt;https://docs.google.com/spreadsheets/d/1HFxr9tx_aBgV7wjdqtEdnwl_phat7iaR/edit?usp=drivesdk&amp;amp;ouid=100256338337422178821&amp;amp;rtpof=true&amp;amp;sd=true&lt;/a&gt;
-:::&lt;/p&gt;</description></item><item><title>我的 Mac 軟體清單</title><link>http://localhost:1313/blog/mac-app/</link><pubDate>Mon, 26 Jan 2026 12:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mac-app/</guid><description>&lt;p&gt;:::danger &lt;a href="http://localhost:1313/app"&gt;詳細資訊你可以去這邊看，我全部移到這邊了→&lt;/a&gt;
+:::&lt;/p&gt;</description></item><item><title>我的 Mac 軟體清單</title><link>https://kaiblog.is-a.dev/blog/mac-app/</link><pubDate>Mon, 26 Jan 2026 12:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/mac-app/</guid><description>&lt;p&gt;:::danger &lt;a href="https://kaiblog.is-a.dev/app"&gt;詳細資訊你可以去這邊看，我全部移到這邊了→&lt;/a&gt;
 :::
 以下列出我所有 Mac 上面的軟體&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Affinity Studio ㄧ 製作縮圖常用，免費，&lt;a href="http://localhost:1313/blog/affinity"&gt;可以看這篇文章&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Affinity Studio ㄧ 製作縮圖常用，免費，&lt;a href="https://kaiblog.is-a.dev/blog/affinity"&gt;可以看這篇文章&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Anytype ㄧ 超好用開源筆記軟體，可以看看&lt;a href="https://youtube.com/playlist?list=PL8hRa_yxy1s357hLJfzMnzfMjSqTf3GNM"&gt;這部影片&lt;/a&gt;的說明，載入速度超快，這是為什麼我離開 Notion 的原因&lt;/li&gt;
 &lt;li&gt;Arena ㄧ 製作舞美 (VJ) 專用，目前還在初學階段&lt;/li&gt;
 &lt;li&gt;Aria Player ㄧ Finale 的音樂播放器&lt;/li&gt;
@@ -659,7 +675,7 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 &lt;li&gt;Discord ㄧ 在某些時候聊天會用，視訊不卡頓，我覺得很不錯&lt;/li&gt;
 &lt;li&gt;Dorico ㄧ 想跳槽，但完全不會用！快捷鍵需熟練&lt;/li&gt;
 &lt;li&gt;Finale 27 ㄧ 習慣了，但是…停止提供更新了！&lt;/li&gt;
-&lt;li&gt;GIMP ㄧ &lt;a href="http://localhost:1313/blog/731pc"&gt;曾老師堅持使用的修圖軟體&lt;/a&gt;，&lt;strong&gt;而且還堅持用 2.6&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;GIMP ㄧ &lt;a href="https://kaiblog.is-a.dev/blog/731pc"&gt;曾老師堅持使用的修圖軟體&lt;/a&gt;，&lt;strong&gt;而且還堅持用 2.6&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Github Destop ㄧ 在發布新文章時很好用，本網站就是使用 Github 架站的&lt;/li&gt;
 &lt;li&gt;Groove Agent SE ㄧ Cubase 內建的鼓機，還蠻好用的&lt;/li&gt;
 &lt;li&gt;HALion Sonic ㄧ Cubase 內建的虛擬音源，不真實，但耗電量低就是了&lt;/li&gt;
@@ -692,7 +708,7 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 &lt;li&gt;VSCodium ㄧ 超好用文字編輯器，開源而且不會被微軟綁架&lt;/li&gt;
 &lt;li&gt;WhisperTRANS ㄧ 我與 AI 開發的語音轉文字工具，但要自己部署&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://kaiblog.itch.io/ytdownloader"&gt;YTDownloader&lt;/a&gt; ㄧ 我與 AI 開發的YouTube 影片下載神器，超級好用！！！！&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>震撼直播：挑戰 101 爬塔！</title><link>http://localhost:1313/blog/taipei-101-climb/</link><pubDate>Sun, 25 Jan 2026 12:00:00 +0000</pubDate><guid>http://localhost:1313/blog/taipei-101-climb/</guid><description>&lt;h3 id="關於這次挑戰"&gt;關於這次挑戰&lt;/h3&gt;
+&lt;/ol&gt;</description></item><item><title>震撼直播：挑戰 101 爬塔！</title><link>https://kaiblog.is-a.dev/blog/taipei-101-climb/</link><pubDate>Sun, 25 Jan 2026 12:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/taipei-101-climb/</guid><description>&lt;h3 id="關於這次挑戰"&gt;關於這次挑戰&lt;/h3&gt;
 &lt;p&gt;今天上午，台北信義區的上空非常不平靜。因為昨日降雨而延期的 &lt;strong&gt;「台北 101 徒手攀爬」&lt;/strong&gt; 活動，終於在今天正式登場。這次的主角是全球知名的極限運動員，他嘗試在完全不依賴繩索的情況下，征服這座 508 公尺高的地標。&lt;/p&gt;
 &lt;p&gt;{/* truncate */}&lt;/p&gt;
 &lt;h3 id="現場直擊與亮點"&gt;現場直擊與亮點&lt;/h3&gt;
@@ -703,7 +719,7 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 &lt;li&gt;&lt;strong&gt;直播插曲&lt;/strong&gt;：鏡頭甚至拍到了觀景台內的遊客，與外牆的攀爬者僅有一窗之隔，畫面相當震撼。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="觀後心得"&gt;觀後心得&lt;/h3&gt;
-&lt;p&gt;雖然這類極限運動極具爭議，但不得不承認，這需要超乎常人的體力與心理素質。&lt;/p&gt;</description></item><item><title>寒假計畫✨</title><link>http://localhost:1313/blog/winter-2026/</link><pubDate>Sat, 24 Jan 2026 20:30:00 +0000</pubDate><guid>http://localhost:1313/blog/winter-2026/</guid><description>&lt;h2 id="115-高二上-寒假計畫"&gt;115 高二上 寒假計畫&lt;/h2&gt;
+&lt;p&gt;雖然這類極限運動極具爭議，但不得不承認，這需要超乎常人的體力與心理素質。&lt;/p&gt;</description></item><item><title>寒假計畫✨</title><link>https://kaiblog.is-a.dev/blog/winter-2026/</link><pubDate>Sat, 24 Jan 2026 20:30:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/winter-2026/</guid><description>&lt;h2 id="115-高二上-寒假計畫"&gt;115 高二上 寒假計畫&lt;/h2&gt;
 &lt;p&gt;以下列出我想達成的寒假目標&lt;/p&gt;
 &lt;p&gt;{/* truncate */}&lt;/p&gt;
 &lt;h3 id="音樂製作"&gt;音樂製作&lt;/h3&gt;
@@ -729,7 +745,7 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;還是不喜歡 Musescore 把所有東西都放在 左手邊的位置…要一個一個找&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title>合唱危機！😦</title><link>http://localhost:1313/blog/sing-danger/</link><pubDate>Fri, 23 Jan 2026 08:30:00 +0000</pubDate><guid>http://localhost:1313/blog/sing-danger/</guid><description>&lt;h2 id="選曲目"&gt;選曲目&lt;/h2&gt;
+&lt;/blockquote&gt;</description></item><item><title>合唱危機！😦</title><link>https://kaiblog.is-a.dev/blog/sing-danger/</link><pubDate>Fri, 23 Jan 2026 08:30:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/sing-danger/</guid><description>&lt;h2 id="選曲目"&gt;選曲目&lt;/h2&gt;
 &lt;p&gt;原則上沒有什麼差別，選什麼都可以，只是要改編成：人聲＋鋼琴，這時候班長跟導師來找我，希望我能幫忙參與製作&lt;/p&gt;
 &lt;p&gt;:::info 前情提要
 為了新竹高中班際合唱比賽，音樂班須先示範，這作為我們音樂會的結尾大型節目！
@@ -737,7 +753,7 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 &lt;h2 id="初步設想"&gt;初步設想&lt;/h2&gt;
 &lt;p&gt;導師希望透過『投票的方式』進行選曲目 (但這引發了後續事件)&lt;/p&gt;
 &lt;p&gt;班上提名歌曲的人真的少之又少！
-只有兩個人：&lt;strong&gt;一個是我，一個是班長&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>蘋果電腦</title><link>http://localhost:1313/blog/macbook/</link><pubDate>Thu, 22 Jan 2026 08:30:00 +0000</pubDate><guid>http://localhost:1313/blog/macbook/</guid><description>&lt;h2 id="五年前電腦"&gt;五年前電腦&lt;/h2&gt;
+只有兩個人：&lt;strong&gt;一個是我，一個是班長&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>蘋果電腦</title><link>https://kaiblog.is-a.dev/blog/macbook/</link><pubDate>Thu, 22 Jan 2026 08:30:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/macbook/</guid><description>&lt;h2 id="五年前電腦"&gt;五年前電腦&lt;/h2&gt;
 &lt;p&gt;我在大概 &lt;code&gt;2020&lt;/code&gt; 買了一台電腦：Dell inspire 5000 i5 8GB 512GB 的電腦&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;當時還夠用直到我開始剪輯…&lt;/li&gt;
@@ -745,7 +761,7 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 &lt;p&gt;&lt;strong&gt;達芬奇超級卡，即使我開了代理&lt;/strong&gt;，整體來說使用體驗不太好！直到&lt;code&gt;2023&lt;/code&gt;我終於把記憶體升級到 32GB 了！&lt;/p&gt;
 &lt;p&gt;結果後來到了2024年開始，用沒30分鐘就沒電，重點是&lt;strong&gt;我已經降級到 windows 10 了！&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id="買新電腦"&gt;買新電腦&lt;/h3&gt;
-&lt;p&gt;我是一個&lt;strong&gt;討厭一成不變的人&lt;/strong&gt;，所以想嘗試 macOS ，原本想說螢幕要大！選擇M4 Macbook Air，但是後來越看越覺得剪輯根本不夠，所以後來我終於買 &lt;strong&gt;M4 Pro MacBook Pro 24 GB / 1 TB&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>超好用！修圖不用再砸大錢！</title><link>http://localhost:1313/blog/affinity/</link><pubDate>Tue, 20 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/blog/affinity/</guid><description>&lt;h2 id="十年前"&gt;十年前&amp;hellip;&lt;/h2&gt;
+&lt;p&gt;我是一個&lt;strong&gt;討厭一成不變的人&lt;/strong&gt;，所以想嘗試 macOS ，原本想說螢幕要大！選擇M4 Macbook Air，但是後來越看越覺得剪輯根本不夠，所以後來我終於買 &lt;strong&gt;M4 Pro MacBook Pro 24 GB / 1 TB&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>超好用！修圖不用再砸大錢！</title><link>https://kaiblog.is-a.dev/blog/affinity/</link><pubDate>Tue, 20 Jan 2026 04:30:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/affinity/</guid><description>&lt;h2 id="十年前"&gt;十年前&amp;hellip;&lt;/h2&gt;
 &lt;p&gt;在十年前，要修圖的話要花至少兩萬吧&amp;hellip;
 而且只有大名鼎鼎的 &lt;a href="https://www.adobe.com/"&gt;Adobe&lt;/a&gt; 公司 專業等級的軟體 在網路上&lt;/p&gt;
 &lt;div className="photo-border"&gt;
@@ -758,13 +774,13 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 &lt;/div&gt;
 &lt;h2 id="現在"&gt;現在&lt;/h2&gt;
 &lt;p&gt;我自己是使用 &lt;code&gt;Affinity&lt;/code&gt; 啦！雖然我沒用過 (或著說我很討厭) Adobe 的產品 &amp;hellip;&lt;/p&gt;
-&lt;p&gt;像是剪輯我用 &lt;code&gt;DaVinci Resolve&lt;/code&gt;、製圖我用&lt;code&gt;Affinity&lt;/code&gt;&lt;/p&gt;</description></item><item><title>線上上課？</title><link>http://localhost:1313/blog/online-day/</link><pubDate>Mon, 19 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/blog/online-day/</guid><description>&lt;h2 id="新竹高中借考場舉辦學測久違的線上上課"&gt;新竹高中借考場舉辦學測，久違的線上上課！&lt;/h2&gt;
+&lt;p&gt;像是剪輯我用 &lt;code&gt;DaVinci Resolve&lt;/code&gt;、製圖我用&lt;code&gt;Affinity&lt;/code&gt;&lt;/p&gt;</description></item><item><title>線上上課？</title><link>https://kaiblog.is-a.dev/blog/online-day/</link><pubDate>Mon, 19 Jan 2026 04:30:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/online-day/</guid><description>&lt;h2 id="新竹高中借考場舉辦學測久違的線上上課"&gt;新竹高中借考場舉辦學測，久違的線上上課！&lt;/h2&gt;
 &lt;h3 id="英文"&gt;英文&lt;/h3&gt;
 &lt;p&gt;超好笑我以為是 &lt;strong&gt;國文課&lt;/strong&gt; 想說怎麼沒人，但是老師也太水了吧&amp;hellip;&lt;/p&gt;
 &lt;p&gt;叫我們自己寫段考解析，不過我在下課馬上繳交老師還給我額外加分，不錯！&lt;/p&gt;
 &lt;p&gt;以下為今日英文線上上課的筆記：&lt;/p&gt;
 &lt;h1 id="114-1-新竹高中高二期末考英文科-試題解析"&gt;114-1 新竹高中高二期末考—英文科 試題解析&lt;/h1&gt;
-&lt;p&gt;各位同學，這份文件是你的期末考個人化檢討工具。請根據以下兩個階段的指引，利用 Google 文件的編輯功能進行學習與反思。這不只是一個核對答案的過程，更是你找出學習盲點的機會。&lt;/p&gt;</description></item><item><title>新影片來了！</title><link>http://localhost:1313/blog/yt-video-01/</link><pubDate>Sun, 18 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/blog/yt-video-01/</guid><description>&lt;h1 id="歡迎來到-kai-studio-"&gt;歡迎來到 KAI STUDIO 🎮🎹&lt;/h1&gt;
+&lt;p&gt;各位同學，這份文件是你的期末考個人化檢討工具。請根據以下兩個階段的指引，利用 Google 文件的編輯功能進行學習與反思。這不只是一個核對答案的過程，更是你找出學習盲點的機會。&lt;/p&gt;</description></item><item><title>新影片來了！</title><link>https://kaiblog.is-a.dev/blog/yt-video-01/</link><pubDate>Sun, 18 Jan 2026 04:30:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/yt-video-01/</guid><description>&lt;h1 id="歡迎來到-kai-studio-"&gt;歡迎來到 KAI STUDIO 🎮🎹&lt;/h1&gt;
 &lt;p&gt;:::danger [創作者筆記]
 &lt;strong&gt;目前頻道成長中：23 / 100 訂閱目標&lt;/strong&gt; 🚀
 :::&lt;/p&gt;
@@ -777,14 +793,14 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 &lt;p&gt;最近KAI STUDIO 卡在 &lt;code&gt;23位訂閱者&lt;/code&gt; ，想跳巢到開源平台 &lt;a href="https://odysee.com/"&gt;&lt;code&gt;Odysee&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="老實說"&gt;老實說&amp;hellip;&lt;/h2&gt;
 &lt;p&gt;這次的槍法我真的盡力了&amp;hellip; 雖然最後玩到差點爆氣，&lt;/p&gt;
-&lt;p&gt;但這就是&amp;hellip;這就是&amp;hellip;成長的過程吧！(吧？) 🤣&lt;/p&gt;</description></item><item><title>電腦課成績 !</title><link>http://localhost:1313/blog/computer-score/</link><pubDate>Thu, 15 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/blog/computer-score/</guid><description>&lt;h2 id="電腦課成績-"&gt;電腦課成績 !&lt;/h2&gt;
+&lt;p&gt;但這就是&amp;hellip;這就是&amp;hellip;成長的過程吧！(吧？) 🤣&lt;/p&gt;</description></item><item><title>電腦課成績 !</title><link>https://kaiblog.is-a.dev/blog/computer-score/</link><pubDate>Thu, 15 Jan 2026 04:30:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/computer-score/</guid><description>&lt;h2 id="電腦課成績-"&gt;電腦課成績 !&lt;/h2&gt;
 &lt;p&gt;今天終於公佈電腦課成績成績了 ! 原本之前一直說老師的壞話,
 現在不知道&amp;hellip;該怎麼辦哈哈哈哈哈 🤣&lt;/p&gt;
 &lt;p&gt;:::danger 成績
 99 分
 :::&lt;/p&gt;
 &lt;h3 id="之前"&gt;之前&lt;/h3&gt;
-&lt;p&gt;之前老師一直說他不會給很高,但是目前只有一個30分&amp;hellip;&lt;/p&gt;</description></item><item><title>跨界鋼琴 X 張育瑞大師</title><link>http://localhost:1313/blog/crossover-piano/</link><pubDate>Mon, 12 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/blog/crossover-piano/</guid><description>&lt;h2 id="講座由來"&gt;講座由來！&lt;/h2&gt;
+&lt;p&gt;之前老師一直說他不會給很高,但是目前只有一個30分&amp;hellip;&lt;/p&gt;</description></item><item><title>跨界鋼琴 X 張育瑞大師</title><link>https://kaiblog.is-a.dev/blog/crossover-piano/</link><pubDate>Mon, 12 Jan 2026 04:30:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/crossover-piano/</guid><description>&lt;h2 id="講座由來"&gt;講座由來！&lt;/h2&gt;
 &lt;p&gt;這次能邀請到 &lt;code&gt;Rick Chang&lt;/code&gt; 多虧了我們學校&lt;code&gt;118班導&lt;/code&gt;，班導剛好是 Rick Chang 國中的班導師&lt;/p&gt;
 &lt;h2 id="即興部分"&gt;即興部分&lt;/h2&gt;
 &lt;p&gt;跨界鋼琴簡單來說就是古典風格裡加上流行元素，可以去聽聽看他最厲害的歌曲：&lt;a href="https://youtu.be/e_c2gLnCpZY?si=TL_EeVrgSa7oJ9_g"&gt;Fire!&lt;/a&gt;&lt;/p&gt;
@@ -795,7 +811,7 @@ alert(&lt;code&gt;You clicked the color ${color} with label ${children}&lt;/code
 IG 其實很多，然後我都看過哈哈哈哈哈🤣
 :::&lt;/p&gt;
 &lt;h2 id="求學歷程"&gt;求學歷程&lt;/h2&gt;
-&lt;p&gt;大師有分享他在西班牙讀書時的心得，有放了一段影片是在西班牙上室內樂課的片段，西班牙的室內樂和我們台灣不一樣，西班牙室內樂加上了當地名間音樂風格，是以蘭姆酒來命名，音樂會有種爵士樂的感覺，大師有偷偷講他沒有特別喜歡爵士樂！（其實我也不喜歡🤣&lt;/p&gt;</description></item><item><title>曾老師小故事！</title><link>http://localhost:1313/blog/731pc/</link><pubDate>Sun, 11 Jan 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/731pc/</guid><description>&lt;h2 id="曾老師是誰"&gt;曾老師是誰？&lt;/h2&gt;
+&lt;p&gt;大師有分享他在西班牙讀書時的心得，有放了一段影片是在西班牙上室內樂課的片段，西班牙的室內樂和我們台灣不一樣，西班牙室內樂加上了當地名間音樂風格，是以蘭姆酒來命名，音樂會有種爵士樂的感覺，大師有偷偷講他沒有特別喜歡爵士樂！（其實我也不喜歡🤣&lt;/p&gt;</description></item><item><title>曾老師小故事！</title><link>https://kaiblog.is-a.dev/blog/731pc/</link><pubDate>Sun, 11 Jan 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/731pc/</guid><description>&lt;h2 id="曾老師是誰"&gt;曾老師是誰？&lt;/h2&gt;
 &lt;p&gt;曾老師是一位在新竹高中教學教了三十年的電腦課教學！真的很實用，上課內容超優質，優質到十年不變&lt;/p&gt;
 &lt;h2 id="曾老師的課程設計"&gt;曾老師的課程設計&lt;/h2&gt;
 &lt;p&gt;首先教你怎麼使用搜尋引擎！
@@ -806,7 +822,7 @@ IG 其實很多，然後我都看過哈哈哈哈哈🤣
 &lt;/blockquote&gt;
 &lt;h2 id="搜尋引擎"&gt;搜尋引擎！&lt;/h2&gt;
 &lt;p&gt;曾老師請你比對各大引擎！
-像是：&lt;strong&gt;Google&lt;/strong&gt;、&lt;strong&gt;Bing&lt;/strong&gt;、&lt;strong&gt;Yahoo&lt;/strong&gt;、甚至是&lt;strong&gt;百度&lt;/strong&gt;&amp;hellip;&lt;/p&gt;</description></item><item><title>測試 列表 / 列舉</title><link>http://localhost:1313/blog/test-lable/</link><pubDate>Sat, 10 Jan 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/test-lable/</guid><description>&lt;p&gt;:::warning 注意！！！！
+像是：&lt;strong&gt;Google&lt;/strong&gt;、&lt;strong&gt;Bing&lt;/strong&gt;、&lt;strong&gt;Yahoo&lt;/strong&gt;、甚至是&lt;strong&gt;百度&lt;/strong&gt;&amp;hellip;&lt;/p&gt;</description></item><item><title>測試 列表 / 列舉</title><link>https://kaiblog.is-a.dev/blog/test-lable/</link><pubDate>Sat, 10 Jan 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/test-lable/</guid><description>&lt;p&gt;:::warning 注意！！！！
 最近發現 • 顯示不出來
 :::&lt;/p&gt;
 &lt;h2 id="測試"&gt;測試&lt;/h2&gt;
@@ -859,7 +875,7 @@ IG 其實很多，然後我都看過哈哈哈哈哈🤣
 &lt;p&gt;有效果嗎？&lt;/p&gt;
 &lt;p&gt;:::tip 答案
 有耶！
-:::&lt;/p&gt;</description></item><item><title>我終於搬家了！</title><link>http://localhost:1313/blog/web-change/</link><pubDate>Wed, 07 Jan 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/web-change/</guid><description>&lt;h2 id="我終於換網址"&gt;我終於換網址：&lt;/h2&gt;
+:::&lt;/p&gt;</description></item><item><title>我終於搬家了！</title><link>https://kaiblog.is-a.dev/blog/web-change/</link><pubDate>Wed, 07 Jan 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/web-change/</guid><description>&lt;h2 id="我終於換網址"&gt;我終於換網址：&lt;/h2&gt;
 &lt;p&gt;從 GitHub Pages 搬到 is-a.dev
 我的部落格換網址了。&lt;/p&gt;
 &lt;p&gt;舊的網址是 kaihchs118.github.io/kaiblog，&lt;/p&gt;
@@ -874,7 +890,7 @@ kaiblog.is-a.dev&lt;/p&gt;
 如果你之前有把我的部落格加入書籤（雖然我覺得機率不高），現在可以手動更新一下了。
 :::&lt;/p&gt;
 &lt;h2 id="為什麼換"&gt;為什麼換？&lt;/h2&gt;
-&lt;p&gt;原本用 GitHub 預設網址時，網址後面一定要帶你的專案名稱，還有尷尬的使用者名稱在前面 &lt;code&gt;/kaiblog&lt;/code&gt;，這在設定網站的時候其實挺煩的。有時候圖片路徑沒抓好，或者是設定一些靜態工具時，那個斜槓（/）的位置沒弄對，圖片就直接死給你看。&lt;/p&gt;</description></item><item><title>生日快樂！</title><link>http://localhost:1313/blog/hbd/</link><pubDate>Tue, 06 Jan 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/hbd/</guid><description>&lt;h2 id="生日快樂"&gt;生日快樂！&lt;/h2&gt;
+&lt;p&gt;原本用 GitHub 預設網址時，網址後面一定要帶你的專案名稱，還有尷尬的使用者名稱在前面 &lt;code&gt;/kaiblog&lt;/code&gt;，這在設定網站的時候其實挺煩的。有時候圖片路徑沒抓好，或者是設定一些靜態工具時，那個斜槓（/）的位置沒弄對，圖片就直接死給你看。&lt;/p&gt;</description></item><item><title>生日快樂！</title><link>https://kaiblog.is-a.dev/blog/hbd/</link><pubDate>Tue, 06 Jan 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/hbd/</guid><description>&lt;h2 id="生日快樂"&gt;生日快樂！&lt;/h2&gt;
 &lt;p&gt;我真的跟一月蠻有緣分的&amp;hellip;🤣&lt;/p&gt;
 &lt;p&gt;{/* truncate */}&lt;/p&gt;
 &lt;p&gt;我認識的人：&lt;/p&gt;
@@ -892,13 +908,13 @@ kaiblog.is-a.dev&lt;/p&gt;
 &lt;li&gt;1/8 國中美術班同學！他畫畫超級厲害&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="我們班"&gt;我們班&lt;/h2&gt;
-&lt;p&gt;最多星座的人是：雙子！&lt;/p&gt;</description></item><item><title>告別家事焦慮：小坪數家電升級指南</title><link>http://localhost:1313/blog/house-yt01/</link><pubDate>Fri, 02 Jan 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/house-yt01/</guid><description>&lt;p&gt;:::tip 超級榮幸
+&lt;p&gt;最多星座的人是：雙子！&lt;/p&gt;</description></item><item><title>告別家事焦慮：小坪數家電升級指南</title><link>https://kaiblog.is-a.dev/blog/house-yt01/</link><pubDate>Fri, 02 Jan 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/house-yt01/</guid><description>&lt;p&gt;:::tip 超級榮幸
 &lt;a href="https://blogblog.club/blog/first-blogblog-party"&gt;這是我的 2026 年 1 月份 BlogBlog 同樂會投稿&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;主題是：推坑
 :::&lt;/p&gt;
 &lt;h2 id="-告別家事焦慮小坪數家電升級指南影評筆記"&gt;🏠 告別家事焦慮：小坪數家電升級指南（影評筆記）&lt;/h2&gt;
 &lt;p&gt;這幾天我一直在思考如何優化自己的居住空間，突然看到 &lt;a href="https://youtube.com/channel/UCgMdGtg4EP3Ti7p2tz8ch3A"&gt;三稜鏡 Prizm&lt;/a&gt; 的這部 &lt;a href="https://youtu.be/Ohtn2OsonpA"&gt;新影片&lt;/a&gt; 後非常有感觸。他花二十萬買的教訓，剛好解開了我對許多「家電」的迷思。&lt;/p&gt;
-&lt;p&gt;這部影片最打動我的一句話是：「小坪數最大的問題不在於空間小，而是沒有容錯空間。」因為這句話，我重新檢視了家裡的佈局。以下是我整理影片內容後的深度筆記。&lt;/p&gt;</description></item><item><title>2026，新年快樂!</title><link>http://localhost:1313/blog/happy-new-year/</link><pubDate>Thu, 01 Jan 2026 08:00:00 +0000</pubDate><guid>http://localhost:1313/blog/happy-new-year/</guid><description>&lt;h1 id="新年快樂一起飛向-2026-"&gt;新年快樂！一起飛向 2026 ✨&lt;/h1&gt;
+&lt;p&gt;這部影片最打動我的一句話是：「小坪數最大的問題不在於空間小，而是沒有容錯空間。」因為這句話，我重新檢視了家裡的佈局。以下是我整理影片內容後的深度筆記。&lt;/p&gt;</description></item><item><title>2026，新年快樂!</title><link>https://kaiblog.is-a.dev/blog/happy-new-year/</link><pubDate>Thu, 01 Jan 2026 08:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/blog/happy-new-year/</guid><description>&lt;h1 id="新年快樂一起飛向-2026-"&gt;新年快樂！一起飛向 2026 ✨&lt;/h1&gt;
 &lt;p&gt;2025 年的最後一刻，你我或許都在螢幕前按下最後一個儲存、完成最後一封信，或是靜靜聽著直播跨年的倒數。我們一起邁入了 &lt;strong&gt;2026 年&lt;/strong&gt; !&lt;/p&gt;
 &lt;p&gt;{/* truncate */}&lt;/p&gt;
 &lt;h2 id="-五月天-fly-to-2026跨年夜的音樂"&gt;🎵 五月天 &lt;em&gt;FLY TO 2026&lt;/em&gt;：跨年夜的音樂&lt;/h2&gt;
