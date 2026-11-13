@@ -1,6 +1,6 @@
 ---
 slug: bbp11
-title: 部落格文章 (與他們的產地) ✦BBP11✦
+title: 部落格？那是什麼...
 date: 2026-11-13T10:00:00+08:00
 ---
 
@@ -9,7 +9,10 @@ date: 2026-11-13T10:00:00+08:00
 > 這是我在「[BlogBlog 同樂會 - 2026 年 11 月](https://blogblog.club/party/)」的投稿文章。本月主題是「[部落格文章（與他們的產地）](https://blog.giveanornot.com/blogblogparty-blog-posts)」，由 [資工小廢物 - JN](https://blog.giveanornot.com/) 主持。如果你有自己的部落格，歡迎一起來參加！
 
 
-### 📝 第 11 期：部落格文章（與他們的產地）（2026 年 11 月，熱烈進行中！）
+部落格？那是什麼...   
+我朋友常常問我，部落格是什麼，用 Instagram 就好了啦～   
+我今天就是來分享的
+
 
 在寫這篇文章之前，我想先特別感謝 JN，你開發的 [IndiePing](https://indieping.giveanornot.com/) 真的超級厲害！！
 
