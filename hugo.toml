@@ -59,7 +59,7 @@ summaryLength = 140
 
     [[menu.main]]
       identifier = "notes"
-      name = "NOTES"
+      name = "note"
       url = "/blog/notes"
       weight = 100
 
