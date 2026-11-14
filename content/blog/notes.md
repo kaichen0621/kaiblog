@@ -36,7 +36,7 @@ TocOpen: false
     border-radius: 24px;
     overflow: hidden;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    border: 3px solid #7DA5CD;
+    border: 0px solid #767676;
     background: #1e1e1e;
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
   }
