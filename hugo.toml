@@ -58,10 +58,10 @@ summaryLength = 140
       weight = 50
 
     [[menu.main]]
-      identifier = "app"
-      name = "APP"
-      url = "/app/"
-      weight = 60
+      identifier = "notes"
+      name = "NOTES"
+      url = "/blog/notes"
+      weight = 100
 
    # [[menu.main]]
    #   identifier = "use"
