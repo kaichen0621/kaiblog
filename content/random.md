@@ -4,6 +4,7 @@ url: "/random/"
 draft: false
 showReadingTime: false
 showAuthor: false
+TocOpen: false
 ---
 
 {{< random >}}
