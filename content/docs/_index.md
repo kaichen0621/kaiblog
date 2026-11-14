@@ -1,6 +1,7 @@
 ---
 title: "文件"
 description: "所有文件與筆記"
+TocOpen: false
 ---
 
 
@@ -45,7 +46,6 @@ description: "所有文件與筆記"
 ### Docsaurus 架網站教學
 - [首頁](/docs/Docusaurus/index)
 - [1. 準備環境](/docs/Docusaurus/1)
-- [選項卡](/docs/tabs)
 ### 快速上手
 - [Dorico 速戰](/docs/Learn/dorico01)
 

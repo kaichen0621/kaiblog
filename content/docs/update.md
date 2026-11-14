@@ -1,6 +1,7 @@
 ---
 title: 更新紀錄
 slug: /update
+TocOpen: false
 ---
 
 # ⬆︎ 更新紀錄 `/update`
