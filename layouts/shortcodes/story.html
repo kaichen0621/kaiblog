@@ -1,0 +1,7 @@
+{{ $src := .Get 0 }}
+{{ $time := .Get 1 }}
+{{ $id := .Get 2 | default (now.Format "20060102150405") }}
+<div class="story-card" data-id="story-{{ $id }}">
+  <img src="{{ $src | relURL }}" alt="快照" loading="lazy">
+  {{ with $time }}<span class="story-time">{{ . }}</span>{{ end }}
+</div>

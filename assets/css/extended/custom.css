@@ -108,3 +108,104 @@ img.photo-border, .photo-border img {
     border-radius: 6px;
   }
 }
+
+
+
+/* 便利貼堆疊容器 */
+.story-stack-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 280px;
+  margin: 20px 0;
+}
+
+.story-stack {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.story-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  background: #1e1e1e;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease, filter 0.3s ease;
+  z-index: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 動態階層樣式（由 JS 控制） */
+.story-card.is-top {
+  transform: rotate(-4deg) translateY(0px) scale(1);
+  z-index: 3;
+  opacity: 1;
+  filter: brightness(1);
+  pointer-events: auto;
+}
+
+.story-card.is-second {
+  transform: rotate(6deg) translateY(8px) scale(0.95);
+  z-index: 2;
+  opacity: 1;
+  filter: brightness(0.85);
+}
+
+.story-card.is-third {
+  transform: rotate(-2deg) translateY(14px) scale(0.9);
+  z-index: 1;
+  opacity: 0.6;
+  filter: brightness(0.7);
+}
+
+/* 點擊滑出動畫 */
+.story-card.fade-out {
+  transform: translateY(120px) rotate(15deg) scale(0.9) !important;
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+.story-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0 !important;
+}
+
+.story-time {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  font-size: 11px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  padding: 4px 8px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* 全部看完後的提示框 */
+.story-empty {
+  display: none;
+  width: 220px;
+  height: 220px;
+  border-radius: 24px;
+  border: 2px dashed rgba(128, 128, 128, 0.45);
+  justify-content: center;
+  align-items: center;
+  color: #767676;
+  font-size: 13px;
+  text-align: center;
+}
