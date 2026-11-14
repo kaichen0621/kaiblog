@@ -36,7 +36,7 @@ TocOpen: false
     border-radius: 24px;
     overflow: hidden;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    border: 3px solid #ff7a00;
+    border: 3px solid #7DA5CD;
     background: #1e1e1e;
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
   }
@@ -80,35 +80,40 @@ TocOpen: false
     text-align: center;
   }
 
-  /* 全部看完後的提示 */
-  .story-empty {
-    display: none;
-    width: 220px;
-    height: 220px;
-    border-radius: 24px;
-    border: 2px dashed rgba(255, 255, 255, 0.2);
-    justify-content: center;
-    align-items: center;
-    color: rgba(255, 255, 255, 0.4);
-    font-size: 13px;
-    text-align: center;
-  }
+/* 全部看完後的提示 */
+.story-empty {
+  display: none;
+  width: 220px;
+  height: 220px;
+  border-radius: 24px;
+  border: 2px dashed rgba(128, 128, 128, 0.45);
+  justify-content: center;
+  align-items: center;
+  color: #767676;
+  font-size: 13px;
+  text-align: center;
+}
 </style>
 
 <div class="story-stack-container">
   <div class="story-stack" id="storyStack" title="點擊切換下一張快照">
     <!-- 第一張卡片 (最上層) -->
-    <div class="story-card" data-id="story-20261114-3">
+    <div class="story-card" data-id="story-202611143">
+        <img src="/img/instant/20261114.jpg" alt="快照" loading="lazy">
+        <span class="story-time">好用的衛生紙</span>
+    </div>
+    <!-- Archive -->
+    <div class="story-card" data-id="story-202611142">
       <img src="/img/mayday/mayday_map.png" alt="快照" loading="lazy">
       <span class="story-time">2026.11.14 10:40</span>
     </div>
     <!-- 第二張卡片 (被疊在底下) -->
-    <div class="story-card" data-id="story-20261114-2">
+    <div class="story-card" data-id="story-202611141">
       <img src="/img/KAI_LOGO_B.png" alt="快照" loading="lazy">
       <span class="story-time">2026.11.14 09:15</span>
     </div>
     <!-- 全部看完的預留框 -->
-    <div class="story-empty" id="storyEmpty">已看完所有今日快照 ✨</div>
+    <div class="story-empty" id="storyEmpty">已看完所有今日快照</div>
   </div>
 </div>
 
