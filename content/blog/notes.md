@@ -97,6 +97,12 @@ TocOpen: false
 
 <div class="story-stack-container">
   <div class="story-stack" id="storyStack" title="點擊切換下一張快照">
+<!-- 第一張卡片 (最上層) -->
+    <div class="story-card" data-id="story-20261114-4">
+        <img src="/img/instant/202611141258.jpg" alt="快照" loading="lazy">
+        <span class="story-time">大推這間家常菜，超好吃</span>
+    </div>
+
     <!-- 第一張卡片 (最上層) -->
     <div class="story-card" data-id="story-202611143">
         <img src="/img/instant/20261114.jpg" alt="快照" loading="lazy">
