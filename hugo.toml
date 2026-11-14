@@ -97,7 +97,7 @@ summaryLength = 140
 [params]
 
   env = "production"
-  description = "KAI BLOG 撰寫每日筆記"
+  description = "KAI BLOG 每日筆記"
   author = "Kai"
   defaultTheme = "auto"
   disableThemeToggle= false
@@ -115,7 +115,8 @@ summaryLength = 140
     Title = "歡迎來到 KAI BLOG"
     Content = """
 往下滑看看吧
-**2026.11**
+**第一次來這裡嗎？** 
+先去[關於](/about) 看看
 """
 
   # 網站左上角標籤配置
