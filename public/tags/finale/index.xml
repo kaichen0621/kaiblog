@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Finale on KAI BLOG</title><link>http://localhost:1313/tags/finale/</link><description>Recent content in Finale on KAI BLOG</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Fri, 16 Jan 2026 04:30:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/finale/index.xml" rel="self" type="application/rss+xml"/><item><title>下載及安裝</title><link>http://localhost:1313/docs/finale/download/</link><pubDate>Fri, 16 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/download/</guid><description>&lt;h3 id="下載"&gt;下載&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Finale on KAI BLOG</title><link>https://kaiblog.is-a.dev/tags/finale/</link><description>Recent content in Finale on KAI BLOG</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Fri, 16 Jan 2026 04:30:00 +0000</lastBuildDate><atom:link href="https://kaiblog.is-a.dev/tags/finale/index.xml" rel="self" type="application/rss+xml"/><item><title>下載及安裝</title><link>https://kaiblog.is-a.dev/docs/finale/download/</link><pubDate>Fri, 16 Jan 2026 04:30:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/docs/finale/download/</guid><description>&lt;h3 id="下載"&gt;下載&lt;/h3&gt;
 &lt;p&gt;可去官方下載試用版，有三十天免費試用
 :::info 趕快下載！
 &lt;a href="https://makemusic-downloads.makemusic.com/Finale/27.4.1/Mac/en-US/FinaleDemoSetup.dmg"&gt;點我前往下載MacOS 版本！&lt;/a&gt;
@@ -19,7 +19,7 @@
 &lt;/ol&gt;
 &lt;p&gt;&lt;img alt="alt text" loading="lazy" src="download/3.jpeg"&gt;&lt;/p&gt;
 &lt;h3 id="開啟並使用"&gt;開啟並使用&lt;/h3&gt;
-&lt;p&gt;好好享受！&lt;/p&gt;</description></item><item><title>調號/拍號屬性工具</title><link>http://localhost:1313/docs/finale/key-tool/</link><pubDate>Fri, 16 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/key-tool/</guid><description>&lt;h2 id="調號"&gt;調號&lt;/h2&gt;
+&lt;p&gt;好好享受！&lt;/p&gt;</description></item><item><title>調號/拍號屬性工具</title><link>https://kaiblog.is-a.dev/docs/finale/key-tool/</link><pubDate>Fri, 16 Jan 2026 04:30:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/docs/finale/key-tool/</guid><description>&lt;h2 id="調號"&gt;調號&lt;/h2&gt;
 &lt;p&gt;:::danger 在小節選中的狀態，選中該工具可使用 &lt;code&gt;Enter&lt;/code&gt; 來開啟設定視窗
 :::&lt;/p&gt;
 &lt;details&gt;
@@ -49,7 +49,7 @@
 &lt;hr&gt;
 &lt;p&gt;:::tip 建議選擇預設不變！
 Measure Region：
-To Next Key Change&lt;/p&gt;</description></item><item><title>小節屬性工具</title><link>http://localhost:1313/docs/finale/measure-tool/</link><pubDate>Thu, 15 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/measure-tool/</guid><description>&lt;p&gt;:::danger 在小節選中的狀態，選中該工具可使用 &lt;code&gt;Enter&lt;/code&gt; 來開啟設定視窗
+To Next Key Change&lt;/p&gt;</description></item><item><title>小節屬性工具</title><link>https://kaiblog.is-a.dev/docs/finale/measure-tool/</link><pubDate>Thu, 15 Jan 2026 04:30:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/docs/finale/measure-tool/</guid><description>&lt;p&gt;:::danger 在小節選中的狀態，選中該工具可使用 &lt;code&gt;Enter&lt;/code&gt; 來開啟設定視窗
 :::&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;該工具可以調整 `小節屬性`&lt;/summary&gt;
@@ -70,7 +70,7 @@ To Next Key Change&lt;/p&gt;</description></item><item><title>小節屬性工具
 常用於規律重複的版面設定&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;Barline（小節線）&lt;/p&gt;</description></item><item><title>譜表屬性工具</title><link>http://localhost:1313/docs/finale/staff-tool/</link><pubDate>Wed, 14 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/staff-tool/</guid><description>&lt;p&gt;:::danger 在小節選中的狀態，選中該工具可使用 &lt;code&gt;Enter&lt;/code&gt; 來開啟設定視窗
+&lt;p&gt;Barline（小節線）&lt;/p&gt;</description></item><item><title>譜表屬性工具</title><link>https://kaiblog.is-a.dev/docs/finale/staff-tool/</link><pubDate>Wed, 14 Jan 2026 04:30:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/docs/finale/staff-tool/</guid><description>&lt;p&gt;:::danger 在小節選中的狀態，選中該工具可使用 &lt;code&gt;Enter&lt;/code&gt; 來開啟設定視窗
 :::&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;該工具可以調整 `樂譜 (譜表) 屬性`&lt;/summary&gt;
@@ -88,7 +88,7 @@ To Next Key Change&lt;/p&gt;</description></item><item><title>小節屬性工具
 例如：Staff 1、Staff 2，只會影響選到的那一行譜&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;Behaviors（行為設定）&lt;/p&gt;</description></item><item><title>選取工具</title><link>http://localhost:1313/docs/finale/select-tool/</link><pubDate>Tue, 13 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/select-tool/</guid><description>&lt;h3 id="select-tools-快捷鍵"&gt;Select Tools 快捷鍵&lt;/h3&gt;
+&lt;p&gt;Behaviors（行為設定）&lt;/p&gt;</description></item><item><title>選取工具</title><link>https://kaiblog.is-a.dev/docs/finale/select-tool/</link><pubDate>Tue, 13 Jan 2026 04:30:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/docs/finale/select-tool/</guid><description>&lt;h3 id="select-tools-快捷鍵"&gt;Select Tools 快捷鍵&lt;/h3&gt;
 &lt;details&gt;
 &lt;summary&gt;要從 `Speedy Tool` 切換到選擇模式可以按 `Esc`&lt;/summary&gt;
 &lt;p&gt;&lt;img loading="lazy" src="select/select.jpeg"&gt;&lt;/p&gt;
@@ -112,7 +112,7 @@ To Next Key Change&lt;/p&gt;</description></item><item><title>小節屬性工具
 &lt;li&gt;&lt;code&gt;Down&lt;/code&gt; 將該小節換成下一行&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;UP&lt;/code&gt; 將該小節換成上一行&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;</description></item><item><title>快速音符輸入</title><link>http://localhost:1313/docs/finale/note-input/</link><pubDate>Mon, 12 Jan 2026 04:30:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/note-input/</guid><description>&lt;h2 id="認識介面"&gt;認識介面&lt;/h2&gt;
+&lt;hr&gt;</description></item><item><title>快速音符輸入</title><link>https://kaiblog.is-a.dev/docs/finale/note-input/</link><pubDate>Mon, 12 Jan 2026 04:30:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/docs/finale/note-input/</guid><description>&lt;h2 id="認識介面"&gt;認識介面&lt;/h2&gt;
 &lt;details&gt;
 &lt;summary&gt;先認識介面吧！&lt;/summary&gt;
 &lt;p&gt;&lt;img loading="lazy" src="note-input/window.jpg"&gt;&lt;/p&gt;
@@ -158,7 +158,7 @@ To Next Key Change&lt;/p&gt;</description></item><item><title>小節屬性工具
 &lt;li&gt;
 &lt;p&gt;Special Tools Palette：&lt;code&gt;特殊工具&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>建立新專案</title><link>http://localhost:1313/docs/finale/create/</link><pubDate>Sun, 11 Jan 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/create/</guid><description>&lt;p&gt;:::danger 互動式教學！
+&lt;/ul&gt;</description></item><item><title>建立新專案</title><link>https://kaiblog.is-a.dev/docs/finale/create/</link><pubDate>Sun, 11 Jan 2026 23:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/docs/finale/create/</guid><description>&lt;p&gt;:::danger 互動式教學！
 為了讓大家更方便閱讀，因此將圖片方入下拉式選單
 :::&lt;/p&gt;
 &lt;h2 id="怎麼建立新專案"&gt;怎麼建立新專案？&lt;/h2&gt;
@@ -182,20 +182,20 @@ To Next Key Change&lt;/p&gt;</description></item><item><title>小節屬性工具
 &lt;details&gt;
 &lt;summary&gt;接下來是選擇樂器！選擇要的樂器後按`Add`加入或著`Remove`移除&lt;/summary&gt;
 &lt;p&gt;&lt;img alt="alt text" loading="lazy" src="create/add.jpeg"&gt;&lt;/p&gt;
-&lt;/details&gt;</description></item><item><title>Finale 教學首頁</title><link>http://localhost:1313/docs/finale/</link><pubDate>Sat, 10 Jan 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/docs/finale/</guid><description>&lt;h1 id="finale-教學"&gt;Finale 教學&lt;/h1&gt;
+&lt;/details&gt;</description></item><item><title>Finale 教學首頁</title><link>https://kaiblog.is-a.dev/docs/finale/</link><pubDate>Sat, 10 Jan 2026 23:00:00 +0000</pubDate><guid>https://kaiblog.is-a.dev/docs/finale/</guid><description>&lt;h1 id="finale-教學"&gt;Finale 教學&lt;/h1&gt;
 &lt;p&gt;哈囉歡迎來到 Finale 教學&lt;/p&gt;
 &lt;p&gt;:::danger 互動式教學！
 為了讓大家更方便閱讀，因此將圖片放入下拉式選單
 :::
 這邊會不定期更新教學，先簡單列出來好了&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://localhost:1313/docs/Finale/download"&gt;下載與安裝&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:1313/docs/Finale/create"&gt;建立新專案&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:1313/docs/Finale/note-input"&gt;快速音符輸入&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:1313/docs/Finale/select-tool"&gt;選擇工具&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:1313/docs/Finale/staff-tool"&gt;譜表屬性工具&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:1313/docs/Finale/measure-tool"&gt;小節屬性工具&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:1313/docs/Finale/key-tool"&gt;調號/拍號屬性工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kaiblog.is-a.dev/docs/Finale/download"&gt;下載與安裝&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kaiblog.is-a.dev/docs/Finale/create"&gt;建立新專案&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kaiblog.is-a.dev/docs/Finale/note-input"&gt;快速音符輸入&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kaiblog.is-a.dev/docs/Finale/select-tool"&gt;選擇工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kaiblog.is-a.dev/docs/Finale/staff-tool"&gt;譜表屬性工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kaiblog.is-a.dev/docs/Finale/measure-tool"&gt;小節屬性工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kaiblog.is-a.dev/docs/Finale/key-tool"&gt;調號/拍號屬性工具&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;:::info 未來更新&lt;/p&gt;
 &lt;ul&gt;
