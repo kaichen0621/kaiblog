@@ -38,30 +38,54 @@ b, strong {
   display: block;
 }
 
-/* 3. 圖片外框 .photo-border 美化與尺寸修正（支援深淺色） */
+/* 3. 圖片外框 .photo-border 美化與尺寸修正（提高權重以覆蓋主題預設值） */
+.post-content .photo-border,
 .photo-border {
-  display: block;
+  display: table;
+  max-width: 55%;
   margin: 2rem auto;
   padding: 1rem;
   background: #def5ff;
   border-radius: 16px;
-  max-width: 100%;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
-.dark .photo-border,
-.dark img.photo-border {
+.dark .post-content .photo-border,
+.dark .photo-border {
   background: #2a3b43;
 }
 
-img.photo-border, .photo-border img {
+/* 加上 .post-content 提高權重，強制解除主題預設的 220px 高度限制 */
+.post-content .photo-border img,
+.photo-border img,
+img.photo-border {
   display: block;
-  width: 100% !important;
-  height: 400px !important;
-  object-fit: cover;
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 450px !important;
+  object-fit: contain !important; /* 確保圖片永遠完整呈現、不裁切 */
   margin: 0 auto;
   border-radius: 8px;
+}
+
+/* 手機版設定（螢幕寬度小於 768px） */
+@media (max-width: 768px) {
+  .post-content .photo-border,
+  .photo-border {
+    display: block;
+    width: 95% !important;
+    max-width: 95% !important;
+    padding: 0.75rem;
+  }
+
+  .post-content .photo-border img,
+  .photo-border img,
+  img.photo-border {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important; /* 徹底解除手機版的高度上限 */
+  }
 }
 
 /* 4. 萬用按鈕自訂樣式 */

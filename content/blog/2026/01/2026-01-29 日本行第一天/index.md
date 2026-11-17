@@ -23,12 +23,13 @@ date: 2026-01-29T08:00:00
 ## 機場候機
 
 在候機時，看了好多部影片🤣 ，學習了怎麼打鍵盤鼓！
-:::tip 建議
+> 建議
+
 - 這部影片很不錯，建議慢慢看！
 https://www.youtube.com/watch?v=TxD30s4jvcw
 - 好和弦的影片不用說，超級好看！
 https://wiwi.video/videos/watch/92131ef7-1587-4630-a108-f00a40faf8cb
-:::
+
 
 另外還處理了班上[合唱曲目](/blog/sing-danger)的事情 😢
 
