@@ -6,7 +6,7 @@ sidebar_label: Dorico DAY01
 authors: [KAI]
 tags: [DAYS]
 date: 2026-09-05T16:00:00
-series: ["learn"]
+series: ["learn","Dorico"]
 ---
 
 今天（2026-09-04）是學習 Dorico 的第一天

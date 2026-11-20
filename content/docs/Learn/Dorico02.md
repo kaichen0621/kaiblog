@@ -6,17 +6,17 @@ sidebar_label: Dorico DAY02
 authors: [KAI]
 tags: [DAYS]
 date: 2026-10-23T16:00:00
-series: ["learn"]
+series: ["learn","Dorico"]
 ---
 
 今天（2026-10-23）是學習 Dorico 的第二天，距離上次已經有了整整一個多月的時間
 
 簡單的介紹：
 
-## Setup Page
-
+## Setup Pagec
 <div className="photo-border">
-![Dorico 三選一示例](1_Dorico.png)
+
+![Dorico 三選一示例](/docs/1_Dorico.png)
 </div>
 
 

@@ -1,4 +1,84 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>KAI BLOG</title><link>http://localhost:1313/</link><description>Recent content on KAI BLOG</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Tue, 17 Nov 2026 08:20:39 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>1116日記</title><link>http://localhost:1313/blog/11-16d/</link><pubDate>Tue, 17 Nov 2026 08:20:39 +0800</pubDate><guid>http://localhost:1313/blog/11-16d/</guid><description>&lt;p&gt;這篇是 11-16 的回顧文，我不是故意的，但草稿一堆，請容許我慢慢回顧&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>KAI BLOG</title><link>http://localhost:1313/</link><description>Recent content on KAI BLOG</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Fri, 20 Nov 2026 11:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>Dorico 快速上手 DAY03</title><link>http://localhost:1313/blog/dorico02/</link><pubDate>Fri, 20 Nov 2026 11:00:00 +0800</pubDate><guid>http://localhost:1313/blog/dorico02/</guid><description>&lt;p&gt;今天（2026-11-20）是學習 Dorico 的第三天，距離上次已經有了整整一個多月的時間&lt;/p&gt;
+&lt;p&gt;簡單的介紹：&lt;/p&gt;
+&lt;h2 id="setup-page"&gt;Setup Page&lt;/h2&gt;
+&lt;div class="photo-border"&gt;
+&lt;p&gt;&lt;img alt="Dorico 三選一示例" loading="lazy" src="http://localhost:1313/docs/1_Dorico.png"&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id="write-page"&gt;Write Page&lt;/h3&gt;
+&lt;p&gt;先列出會用到的快捷鍵：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Enter (Shift + N) : 輸入音符模式&lt;/li&gt;
+&lt;li&gt;Shift + K : 換調號 (K = Key Signature)
+輸入：G / g / 1# / 3b / 1s / 6f 都可以 (大寫代表大調、小寫代表小調、S = Sharp、f = flate)&lt;/li&gt;
+&lt;li&gt;Shift + M : 更改拍號 (M = Measure)
+輸入：3/4 代表四分音符為一拍、一小節有三拍&lt;/li&gt;
+&lt;li&gt;Shift + B : 新增小節 (B = Bar)
+選中 &lt;strong&gt;小節線&lt;/strong&gt; 後，輸入數字即可&lt;/li&gt;
+&lt;li&gt;Shift + D : 輸入 Dynamic (力度)
+f、ff、mf、mp&amp;hellip;、crec、dim.、&amp;lt;、&amp;gt; 皆可&lt;/li&gt;
+&lt;li&gt;Ctrl / Command + 滑鼠滾輪 : 放大縮小&lt;/li&gt;
+&lt;li&gt;Shift + 滑鼠滾輪 : 左右平移移動&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="第一種輸入模式-音符輸入模式"&gt;第一種輸入模式 (音符輸入模式)&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;按快捷鍵：Shift + N (或按下 Enter) 開啟音符輸入模式&lt;/li&gt;
+&lt;li&gt;8 是全音符、7 是二分音符、6 是四分音符、5 是八分音符、4 是十六分音符 &amp;hellip; 依此類推&lt;/li&gt;
+&lt;li&gt;若需要休止符，則使用 Space 代替&lt;/li&gt;
+&lt;li&gt;若需加入負點，則按下 . 鍵&lt;/li&gt;
+&lt;li&gt;若需加入升降記號，則使用 0 - = (分別代表：還原記號 / 降記號 / 升記號)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;目前學到第九課：&lt;/p&gt;</description></item><item><title>Dorico 快速上手 DAY03</title><link>http://localhost:1313/docs/learn/dorico02/</link><pubDate>Fri, 20 Nov 2026 11:00:00 +0800</pubDate><guid>http://localhost:1313/docs/learn/dorico02/</guid><description>&lt;p&gt;ㄋ&lt;/p&gt;
+&lt;p&gt;今天（2026-11-20）是學習 Dorico 的第三天，距離上次已經有了整整一個多月的時間&lt;/p&gt;
+&lt;p&gt;簡單的介紹：&lt;/p&gt;
+&lt;h2 id="setup-page"&gt;Setup Page&lt;/h2&gt;
+&lt;div class="photo-border"&gt;
+&lt;p&gt;&lt;img alt="Dorico 三選一示例" loading="lazy" src="http://localhost:1313/docs/1_Dorico.png"&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id="write-page"&gt;Write Page&lt;/h3&gt;
+&lt;p&gt;先列出會用到的快捷鍵：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Enter (Shift + N) : 輸入音符模式&lt;/li&gt;
+&lt;li&gt;Shift + K : 換調號 (K = Key Signature)
+輸入：G / g / 1# / 3b / 1s / 6f 都可以 (大寫代表大調、小寫代表小調、S = Sharp、f = flate)&lt;/li&gt;
+&lt;li&gt;Shift + M : 更改拍號 (M = Measure)
+輸入：3/4 代表四分音符為一拍、一小節有三拍&lt;/li&gt;
+&lt;li&gt;Shift + B : 新增小節 (B = Bar)
+選中 &lt;strong&gt;小節線&lt;/strong&gt; 後，輸入數字即可&lt;/li&gt;
+&lt;li&gt;Shift + D : 輸入 Dynamic (力度)
+f、ff、mf、mp&amp;hellip;、crec、dim.、&amp;lt;、&amp;gt; 皆可&lt;/li&gt;
+&lt;li&gt;Ctrl / Command + 滑鼠滾輪 : 放大縮小&lt;/li&gt;
+&lt;li&gt;Shift + 滑鼠滾輪 : 左右平移移動&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="第一種輸入模式-音符輸入模式"&gt;第一種輸入模式 (音符輸入模式)&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;按快捷鍵：Shift + N (或按下 Enter) 開啟音符輸入模式&lt;/li&gt;
+&lt;li&gt;8 是全音符、7 是二分音符、6 是四分音符、5 是八分音符、4 是十六分音符 &amp;hellip; 依此類推&lt;/li&gt;
+&lt;li&gt;若需要休止符，則使用 Space 代替&lt;/li&gt;
+&lt;li&gt;若需加入負點，則按下 . 鍵&lt;/li&gt;
+&lt;li&gt;若需加入升降記號，則使用 0 - = (分別代表：還原記號 / 降記號 / 升記號)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;目前學到第九課：&lt;/p&gt;</description></item><item><title>打掃回顧</title><link>http://localhost:1313/blog/sweep/</link><pubDate>Thu, 19 Nov 2026 10:00:00 +0800</pubDate><guid>http://localhost:1313/blog/sweep/</guid><description>&lt;p&gt;看到 Noa 的 &lt;a href="https://noa.bearblog.dev/cleaner/"&gt;這篇&lt;/a&gt; 我發現，我之前有寫過類似的耶！&lt;/p&gt;
+&lt;p&gt;這裡👉 &lt;br&gt;
+&lt;a href="https://kaiblog.is-a.dev/blog/swipe/"&gt;https://kaiblog.is-a.dev/blog/swipe/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;然後他們學校跟我們完全相反耶！他們是有請打掃團隊清理，我們都是自己清理&lt;/p&gt;
+&lt;p&gt;然後就會爆出很多事件，像是洗到刷子壞掉的，或者開始了第一屆水仗大戰&lt;/p&gt;
+&lt;p&gt;然後刷廁所會有超好笑的畫面就是刷一刷然後棒子不見的，或者甚至馬桶旁邊一堆用完的清潔劑瓶子&lt;/p&gt;
+&lt;p&gt;讓我想到以前都是用清潔劑，然後甚至到一堆進去刷一刷就好了&lt;/p&gt;</description></item><item><title>文案</title><link>http://localhost:1313/blog/621/</link><pubDate>Wed, 18 Nov 2026 10:00:00 +0800</pubDate><guid>http://localhost:1313/blog/621/</guid><description>&lt;p&gt;再那璀璨奪目的空間&lt;br&gt;
+寂靜貫徹了整個房間&lt;/p&gt;
+&lt;p&gt;我獨自躺在地上目視&lt;br&gt;
+天花板上的完美殘缺&lt;/p&gt;
+&lt;p&gt;這段漫長的故事還沒結束&lt;br&gt;
+這些腦海中的回憶還沒消散&lt;/p&gt;
+&lt;p&gt;現在這個時代&lt;br&gt;
+要創作真的越來越難了&lt;br&gt;
+要越寫越高了&lt;br&gt;
+越唱越賣力&lt;br&gt;
+我快發瘋了&lt;br&gt;
+我做的歌都好爛&lt;br&gt;
+我覺得我活不下去欸&lt;br&gt;
+會沒出入&lt;br&gt;
+這世界紛紛擾擾&lt;br&gt;
+好煩啊啊啊啊&lt;/p&gt;</description></item><item><title>1116日記</title><link>http://localhost:1313/blog/11-16d/</link><pubDate>Tue, 17 Nov 2026 08:20:39 +0800</pubDate><guid>http://localhost:1313/blog/11-16d/</guid><description>&lt;p&gt;這篇是 11-16 的回顧文，我不是故意的，但草稿一堆，請容許我慢慢回顧&lt;/p&gt;
 &lt;h2 id="夢"&gt;夢&lt;/h2&gt;
 &lt;p&gt;這個夢超級恐怖，一定是我昨天偷說太多壞話了，一定要看到最後&lt;/p&gt;
 &lt;h2 id="第一節國文課"&gt;第一節國文課&lt;/h2&gt;
@@ -124,12 +204,14 @@
 &lt;p&gt;選第 25 小節最後音符，按 Shift + } 縮小寬度，或選第 26 小節按 &lt;code&gt;Shift + { &lt;/code&gt; &lt;strong&gt;來增加寬度&lt;/strong&gt;。或在「連續視圖」中拖曳藍色斷點調整。&lt;/p&gt;</description></item><item><title>Google TV 搭配 AirPlay 超強</title><link>http://localhost:1313/blog/tv/</link><pubDate>Sat, 24 Oct 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/blog/tv/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
 &lt;p&gt;真的很久沒有回去台中了。難得連假但是卻颱風，好不容易找到回來的時間。剛好順便來研究 AirCast&lt;/p&gt;
 &lt;p&gt;其實真的好帥真的成功了&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Google TV 超大" loading="lazy" src="tv-1.jpg"&gt;&lt;/p&gt;
+&lt;div className="photo-border"&gt;
+&lt;p&gt;![Google TV 超大](tv-1.jpgs&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;然後有延遲這好像沒辦法&lt;/p&gt;</description></item><item><title>Dorico 快速上手 DAY02</title><link>http://localhost:1313/docs/learn/dorico02/</link><pubDate>Fri, 23 Oct 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/docs/learn/dorico02/</guid><description>&lt;p&gt;今天（2026-10-23）是學習 Dorico 的第二天，距離上次已經有了整整一個多月的時間&lt;/p&gt;
 &lt;p&gt;簡單的介紹：&lt;/p&gt;
-&lt;h2 id="setup-page"&gt;Setup Page&lt;/h2&gt;
+&lt;h2 id="setup-pagec"&gt;Setup Pagec&lt;/h2&gt;
 &lt;div className="photo-border"&gt;
-![Dorico 三選一示例](1_Dorico.png)
+&lt;p&gt;&lt;img alt="Dorico 三選一示例" loading="lazy" src="http://localhost:1313/docs/1_Dorico.png"&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;首先開啟 Setup 分頁分成單一樂手、多重樂手、編制模板&lt;/p&gt;
 &lt;h3 id="1add-single-player"&gt;1.Add Single Player&lt;/h3&gt;
@@ -151,7 +233,7 @@
 &lt;/ul&gt;
 &lt;p&gt;第三個類似 Template 的概念&lt;/p&gt;</description></item><item><title>網站新頁面？</title><link>http://localhost:1313/blog/now/</link><pubDate>Fri, 23 Oct 2026 12:00:00 +0000</pubDate><guid>http://localhost:1313/blog/now/</guid><description>&lt;h2 id="20260905---近況重新更新啦"&gt;2026/09/05 - 近況重新更新啦！&lt;/h2&gt;
 &lt;p&gt;我覺得很長沒空寫文帳就&amp;hellip;用這種方式讓大家知道在幹嘛&lt;/p&gt;</description></item><item><title>Dorico 快速上手 DAY02</title><link>http://localhost:1313/blog/dorico02/</link><pubDate>Thu, 22 Oct 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/blog/dorico02/</guid><description>&lt;p&gt;今天（2026-10-23）是學習 Dorico 的第二天，距離上次已經有了整整一個多月的時間&lt;/p&gt;
-&lt;p&gt;完整文章請參考&lt;a href="http://localhost:1313/docs/Learn/"&gt;這裡&lt;/a&gt;&lt;/p&gt;</description></item><item><title>BVE6 超好用列車</title><link>http://localhost:1313/blog/bve6-nicetrain/</link><pubDate>Tue, 20 Oct 2026 22:00:00 +0000</pubDate><guid>http://localhost:1313/blog/bve6-nicetrain/</guid><description>&lt;p&gt;BVE6 : 超好用車輛&lt;/p&gt;
+&lt;p&gt;完整文章請參考&lt;a href="http://localhost:1313/docs/Learn/dorico02/"&gt;這裡&lt;/a&gt;&lt;/p&gt;</description></item><item><title>BVE6 超好用列車</title><link>http://localhost:1313/blog/bve6-nicetrain/</link><pubDate>Tue, 20 Oct 2026 22:00:00 +0000</pubDate><guid>http://localhost:1313/blog/bve6-nicetrain/</guid><description>&lt;p&gt;BVE6 : 超好用車輛&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-md" data-lang="md"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Vehicle = SotoHane/Vehicle/E233系/0-8I.txt
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="atp-不會卡死而且不會-a-到無法-release"&gt;ATP 不會卡死，而且不會 A 到無法 Release&lt;/h3&gt;</description></item><item><title>關於主唱阿信使用的編曲軟體及相關外掛程式</title><link>http://localhost:1313/docs/resource/mayday-software/</link><pubDate>Mon, 19 Oct 2026 12:00:00 +0000</pubDate><guid>http://localhost:1313/docs/resource/mayday-software/</guid><description>關於主唱阿信使用的編曲軟體及相關外掛程式</description></item><item><title>MAYDAY ETUDES NO.04</title><link>http://localhost:1313/blog/mayday-no4/</link><pubDate>Sun, 18 Oct 2026 18:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mayday-no4/</guid><description>這次又來了哈哈哈</description></item><item><title>軟體不能多，要精</title><link>http://localhost:1313/blog/software/</link><pubDate>Thu, 15 Oct 2026 12:00:00 +0000</pubDate><guid>http://localhost:1313/blog/software/</guid><description>這篇文章紀錄了一位音樂與影片創作者清理 1TB 儲存空間時，對打譜、編曲、剪輯與文書軟體的心得評價。</description></item><item><title>我的網站工具</title><link>http://localhost:1313/tools/</link><pubDate>Tue, 13 Oct 2026 16:00:00 +0000</pubDate><guid>http://localhost:1313/tools/</guid><description>把所有工具都聚集在這裡了</description></item><item><title>2048 雙人版</title><link>http://localhost:1313/blog/2048/</link><pubDate>Mon, 05 Oct 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/2048/</guid><description>2048 雙人版來啦！</description></item><item><title>台北一日遊 - 雙北自由行</title><link>http://localhost:1313/blog/1004-taipei/</link><pubDate>Sun, 04 Oct 2026 23:00:00 +0000</pubDate><guid>http://localhost:1313/blog/1004-taipei/</guid><description>這是一趟新竹台北兩日快閃旅，作者品嚐了驥園雞湯並驚嘆媽媽在明曜百貨的逛街戰力；隨後體驗三鶯線絕美風景、造訪新北美術館與大安森林公園，最後幸運搶到高鐵對號座飽足歸賦。</description></item><item><title>AI 影音字幕工作流，打造 98% 精準度的影片字幕</title><link>http://localhost:1313/blog/ai-subtitle/</link><pubDate>Fri, 02 Oct 2026 22:00:00 +0000</pubDate><guid>http://localhost:1313/blog/ai-subtitle/</guid><description>AI 影音字幕工作流：用 Gemini 2.5 Pro 搭配剪映「文稿匹配」，打造 98% 精準度的影片字幕~本文介紹一套高效的 AI 字幕工作流：透過 Google AI Studio 的 Gemini 2.5 Pro 進行智慧校正與排版，再結合剪映的「文稿匹配」功能自動對齊時間碼，讓你輕鬆輸出高品質的 SRT 字幕檔。</description></item><item><title>當想法被公開</title><link>http://localhost:1313/blog/idea-public/</link><pubDate>Tue, 29 Sep 2026 10:00:00 +0000</pubDate><guid>http://localhost:1313/blog/idea-public/</guid><description>當科技能讀取並公開大腦中的所有想法，隱私將徹底蕩然無存。本文記錄了在面對作文題目《當想法被公開》時的創作困境與隨筆歌詞創作，抒發對隱私喪失的擔憂以及對國文課密集寫作的無奈與壓迫感。</description></item><item><title>好用指令</title><link>http://localhost:1313/blog/nice-commands/</link><pubDate>Sun, 27 Sep 2026 13:00:00 +0000</pubDate><guid>http://localhost:1313/blog/nice-commands/</guid><description>分享一些我常用的特殊指令</description></item><item><title>說明欄</title><link>http://localhost:1313/blog/description/</link><pubDate>Fri, 25 Sep 2026 13:00:00 +0000</pubDate><guid>http://localhost:1313/blog/description/</guid><description>&lt;h1 id="中秋節特別企劃"&gt;中秋節特別企劃~&lt;/h1&gt;
 &lt;h2 id="youtube-說明欄文本"&gt;Youtube 說明欄文本&lt;/h2&gt;
@@ -623,10 +705,7 @@ As time goes by流行鋼琴樂譜輸入。二聲部、三連音、圓滑線、�
 &lt;div class="photo-border"&gt;
 ![alt text](1.png)
 &lt;/div&gt;
-## 2/14 情人節 💌
-已過完
-## 2/15 小年夜
-&lt;p&gt;{/* truncate */}&lt;/p&gt;
+&lt;h2 id="215-小年夜"&gt;2/15 小年夜&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input checked="" disabled="" type="checkbox"&gt; &lt;code&gt;9:00&lt;/code&gt; 起床&lt;/li&gt;
 &lt;li&gt;&lt;input checked="" disabled="" type="checkbox"&gt; &lt;code&gt;10:00&lt;/code&gt; 打籃球 🏀&lt;/li&gt;
@@ -639,11 +718,7 @@ As time goes by流行鋼琴樂譜輸入。二聲部、三連音、圓滑線、�
 &lt;li&gt;&lt;input disabled="" type="checkbox"&gt; &lt;code&gt;22:00&lt;/code&gt; 洗澡 🛀&lt;/li&gt;
 &lt;li&gt;&lt;input disabled="" type="checkbox"&gt; &lt;code&gt;23:00&lt;/code&gt; 準備睡覺&lt;/li&gt;
 &lt;li&gt;&lt;input disabled="" type="checkbox"&gt; &lt;code&gt;00:00&lt;/code&gt; Party 🎉&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>情人節快樂</title><link>http://localhost:1313/blog/happy-214/</link><pubDate>Sat, 14 Feb 2026 12:00:00 +0000</pubDate><guid>http://localhost:1313/blog/happy-214/</guid><description>&lt;p&gt;嗯&amp;hellip; 情人節快樂
-:::tip 祝 : 每天都可以快快樂樂的 !
-:::&lt;/p&gt;
-&lt;p&gt;寫一下今日筆記&lt;/p&gt;
-&lt;p&gt;{/* truncate */}&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>貝斯製作</title><link>http://localhost:1313/blog/bass/</link><pubDate>Sat, 14 Feb 2026 12:00:00 +0000</pubDate><guid>http://localhost:1313/blog/bass/</guid><description>&lt;p&gt;寫一下今日筆記&lt;/p&gt;
 &lt;h3 id="編曲-bass-製作"&gt;編曲: Bass 製作&lt;/h3&gt;
 &lt;p&gt;使用 &lt;code&gt;The Rain Must Fall&lt;/code&gt; 的 Bass SOLO 練習&lt;/p&gt;
 &lt;div class="youtube-s"&gt;
@@ -672,7 +747,12 @@ Pitch Bend&lt;/li&gt;
 &lt;h2 id="how-to-解決問題"&gt;HOW TO 解決問題&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;參考 User Manual&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title>五月天螢光棒超厲害</title><link>http://localhost:1313/blog/mayday-highlight/</link><pubDate>Fri, 13 Feb 2026 12:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mayday-highlight/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
+&lt;/blockquote&gt;
+&lt;div class="photo-border"&gt;
+&lt;p&gt;&lt;img alt="User Manual" loading="lazy" src="http://localhost:1313/blog/bass/1.png"&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id="其他"&gt;其他&lt;/h3&gt;
+&lt;p&gt;快樂過年 🧨&lt;/p&gt;</description></item><item><title>五月天螢光棒超厲害</title><link>http://localhost:1313/blog/mayday-highlight/</link><pubDate>Fri, 13 Feb 2026 12:00:00 +0000</pubDate><guid>http://localhost:1313/blog/mayday-highlight/</guid><description>&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
 &lt;p&gt;今天看到手機上的 &lt;code&gt;相信音樂 APP&lt;/code&gt; ，第一個念頭想把他刪了，因為說真的&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;試験の準備をしなければならない人は、メーデーコンサートに行くことができません。&lt;/strong&gt;&lt;/p&gt;
@@ -2115,7 +2195,7 @@ animation: none;
 &lt;/style&gt;
 &lt;script&gt;
 (function () {
-const articles = ["/blog/11-16d/","/blog/522/","/blog/white-black-line/","/blog/weird-people/","/blog/bbp11/","/blog/discord/","/blog/11-11/","/blog/1109run/","/blog/japan-ms/","/posts/roblox-live/","/blog/line-escape/","/blog/1106-bad/","/blog/travel/","/blog/taichung-one/","/blog/11-03/","/blog/signal/","/blog/time/","/blog/newweb2/","/posts/link/","/blog/newweb/","/posts/my-first-post/","/blog/bve-studio/","/blog/ms-layout/","/blog/tv/","/docs/learn/dorico02/","/blog/now/","/blog/dorico02/","/blog/bve6-nicetrain/","/docs/resource/mayday-software/","/blog/mayday-no4/","/blog/software/","/blog/2048/","/blog/1004-taipei/","/blog/ai-subtitle/","/blog/idea-public/","/blog/nice-commands/","/blog/description/","/blog/moodx/","/blog/random02-ai/","/blog/random02/","/blog/mac-27/","/blog/thread/","/blog/wwdc26-2/","/blog/music-composer/","/blog/what/","/blog/mrt-tenyear/","/docs/learn/dorico01/","/blog/swipe/","/blog/mac/","/blog/tim-cook-era/","/blog/bbp9/","/blog/school-open/","/blog/island-notebook/","/blog/app-open-source/","/blog/roblox-bladeball/","/blog/goodnight/","/blog/ashin/","/blog/change-font/","/blog/taipei-0726-life/","/blog/taipei-0726/","/blog/markdown/","/blog/clean/","/blog/shotcut/","/blog/macos27/","/blog/school/","/blog/openbve/","/docs/openbve/first/","/docs/docusaurus/","/docs/learn/learn/","/docs/docusaurus/1/","/blog/typhoon/","/blog/07-08/","/blog/aitype/","/blog/aitrain/","/docs/tools/scoreflow.v4/","/blog/scoreflow-ver4/","/blog/mayday-live/","/blog/taipei-75/","/docs/resource/mayday-rec/","/blog/scoreflow-intro/","/docs/tools/scoreflow.v2/","/blog/allapp/","/blog/newsong-02/","/docs/openbve/","/docs/macapps/","/blog/birth/","/docs/macapps/pearcleaner/","/blog/random01/","/blog/emailme/","/blog/6-6class/","/blog/hi06/","/blog/55253-index/","/blog/55253/","/blog/obsidian-note/","/blog/tango/","/blog/new-song01demo/","/blog/1/","/blog/website-alive/","/blog/website-dead/","/blog/piano/","/blog/sun/","/docs/video-set/video01/roblox02/","/docs/roblox/","/docs/resolve/resolve.v4/","/blog/emu-update-24260403/","/blog/lab/","/blog/synth/","/blog/digital-perform-rc/","/blog/digital-perform/","/blog/my-digital-ideal-routine/","/blog/antigravity-ai/","/blog/typing-prc/","/blog/prizm/","/blog/mayday1/","/docs/vibecoding/01_%E5%B0%88%E6%A1%88%E8%B3%87%E6%96%99%E5%A4%BE%E8%87%AA%E5%8B%95%E5%8C%96/1-1/","/docs/vibecoding/01_%E5%B0%88%E6%A1%88%E8%B3%87%E6%96%99%E5%A4%BE%E8%87%AA%E5%8B%95%E5%8C%96/1-2/","/docs/vibecoding/02_%E4%BA%92%E5%8B%95%E6%8C%87%E4%BB%A4%E5%95%9F%E5%8B%95%E5%99%A8/2-1/","/docs/vibecoding/02_%E4%BA%92%E5%8B%95%E6%8C%87%E4%BB%A4%E5%95%9F%E5%8B%95%E5%99%A8/2-2/","/docs/vibecoding/03_obsidian%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/3-1/","/docs/vibecoding/03_obsidian%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/3-2/","/blog/mayday2/","/docs/vibecoding/","/blog/stop-update/","/blog/all-string-orch/","/blog/thumbnail-info/","/blog/2026-228/","/docs/resource/113tech-music/","/blog/english-name/","/blog/price/","/blog/macos-26/","/blog/borrow-class/","/blog/parallels-desktop-disk/","/blog/tired02/","/blog/ardour9-new/","/blog/chuxi-mayday/","/blog/roblox-nice01/","/blog/happy-new-year-2026/","/blog/happy-214/","/blog/mayday-highlight/","/blog/only-me/","/blog/new-arrange-04/","/blog/rest/","/blog/new-arrange-03/","/blog/install-mac-app/","/blog/ytdownload/","/blog/new-arrange-02/","/blog/pinyin-typing-yt02/","/blog/itch.io/","/docs/video-set/video01/roblox01/","/blog/tokyo.metro/","/blog/buy-oil/","/blog/2026-tokyo-day5/","/blog/2026-tokyo-day4/","/blog/2026-tokyo-day3/","/docs/phone/google-input/","/blog/2026-tokyo-day2/","/blog/2026-tokyo-day1/","/blog/go-abroad/","/blog/new-arrange/","/blog/new-arrange-00/","/docs/resolve/macrotools/","/blog/mac-app/","/blog/taipei-101-climb/","/blog/winter-2026/","/blog/sing-danger/","/blog/macbook/","/blog/affinity/","/blog/online-day/","/blog/yt-video-01/","/docs/finale/download/","/docs/finale/key-tool/","/docs/finale/measure-tool/","/blog/computer-score/","/docs/finale/staff-tool/","/docs/finale/select-tool/","/docs/finale/note-input/","/blog/crossover-piano/","/docs/finale/create/","/blog/731pc/","/docs/finale/","/blog/test-lable/","/blog/web-change/","/blog/hbd/","/blog/house-yt01/","/blog/happy-new-year/","/docs/resolve/resolvepackv1-update/","/docs/resource/mix/","/docs/resource/nuvio/","/docs/roblox/robloxnew/","/docs/roblox/robloxobbyparty/","/docs/roblox/300robloxgames/","/docs/roblox/roblox/","/docs/resolve/resolvepackv3-update/","/docs/resolve/resolvepackv2-update/","/docs/update/","/docs/"];
+const articles = ["/blog/dorico02/","/docs/learn/dorico02/","/blog/sweep/","/blog/621/","/blog/11-16d/","/blog/522/","/blog/white-black-line/","/blog/weird-people/","/blog/bbp11/","/blog/discord/","/blog/11-11/","/blog/1109run/","/blog/japan-ms/","/posts/roblox-live/","/blog/line-escape/","/blog/1106-bad/","/blog/travel/","/blog/taichung-one/","/blog/11-03/","/blog/signal/","/blog/time/","/blog/newweb2/","/posts/link/","/blog/newweb/","/posts/my-first-post/","/blog/bve-studio/","/blog/ms-layout/","/blog/tv/","/docs/learn/dorico02/","/blog/now/","/blog/dorico02/","/blog/bve6-nicetrain/","/docs/resource/mayday-software/","/blog/mayday-no4/","/blog/software/","/blog/2048/","/blog/1004-taipei/","/blog/ai-subtitle/","/blog/idea-public/","/blog/nice-commands/","/blog/description/","/blog/moodx/","/blog/random02-ai/","/blog/random02/","/blog/mac-27/","/blog/thread/","/blog/wwdc26-2/","/blog/music-composer/","/blog/what/","/blog/mrt-tenyear/","/docs/learn/dorico01/","/blog/swipe/","/blog/mac/","/blog/tim-cook-era/","/blog/bbp9/","/blog/school-open/","/blog/island-notebook/","/blog/app-open-source/","/blog/roblox-bladeball/","/blog/goodnight/","/blog/ashin/","/blog/change-font/","/blog/taipei-0726-life/","/blog/taipei-0726/","/blog/markdown/","/blog/clean/","/blog/shotcut/","/blog/macos27/","/blog/school/","/blog/openbve/","/docs/openbve/first/","/docs/docusaurus/","/docs/learn/learn/","/docs/docusaurus/1/","/blog/typhoon/","/blog/07-08/","/blog/aitype/","/blog/aitrain/","/docs/tools/scoreflow.v4/","/blog/scoreflow-ver4/","/blog/mayday-live/","/blog/taipei-75/","/docs/resource/mayday-rec/","/blog/scoreflow-intro/","/docs/tools/scoreflow.v2/","/blog/allapp/","/blog/newsong-02/","/docs/openbve/","/docs/macapps/","/blog/birth/","/docs/macapps/pearcleaner/","/blog/random01/","/blog/emailme/","/blog/6-6class/","/blog/hi06/","/blog/55253-index/","/blog/55253/","/blog/obsidian-note/","/blog/tango/","/blog/new-song01demo/","/blog/1/","/blog/website-alive/","/blog/website-dead/","/blog/piano/","/blog/sun/","/docs/video-set/video01/roblox02/","/docs/roblox/","/docs/resolve/resolve.v4/","/blog/emu-update-24260403/","/blog/lab/","/blog/synth/","/blog/digital-perform-rc/","/blog/digital-perform/","/blog/my-digital-ideal-routine/","/blog/antigravity-ai/","/blog/typing-prc/","/blog/prizm/","/blog/mayday1/","/docs/vibecoding/01_%E5%B0%88%E6%A1%88%E8%B3%87%E6%96%99%E5%A4%BE%E8%87%AA%E5%8B%95%E5%8C%96/1-1/","/docs/vibecoding/01_%E5%B0%88%E6%A1%88%E8%B3%87%E6%96%99%E5%A4%BE%E8%87%AA%E5%8B%95%E5%8C%96/1-2/","/docs/vibecoding/02_%E4%BA%92%E5%8B%95%E6%8C%87%E4%BB%A4%E5%95%9F%E5%8B%95%E5%99%A8/2-1/","/docs/vibecoding/02_%E4%BA%92%E5%8B%95%E6%8C%87%E4%BB%A4%E5%95%9F%E5%8B%95%E5%99%A8/2-2/","/docs/vibecoding/03_obsidian%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/3-1/","/docs/vibecoding/03_obsidian%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/3-2/","/blog/mayday2/","/docs/vibecoding/","/blog/stop-update/","/blog/all-string-orch/","/blog/thumbnail-info/","/blog/2026-228/","/docs/resource/113tech-music/","/blog/english-name/","/blog/price/","/blog/macos-26/","/blog/borrow-class/","/blog/parallels-desktop-disk/","/blog/tired02/","/blog/ardour9-new/","/blog/chuxi-mayday/","/blog/roblox-nice01/","/blog/happy-new-year-2026/","/blog/bass/","/blog/mayday-highlight/","/blog/only-me/","/blog/new-arrange-04/","/blog/rest/","/blog/new-arrange-03/","/blog/install-mac-app/","/blog/ytdownload/","/blog/new-arrange-02/","/blog/pinyin-typing-yt02/","/blog/itch.io/","/docs/video-set/video01/roblox01/","/blog/tokyo.metro/","/blog/buy-oil/","/blog/2026-tokyo-day5/","/blog/2026-tokyo-day4/","/blog/2026-tokyo-day3/","/docs/phone/google-input/","/blog/2026-tokyo-day2/","/blog/2026-tokyo-day1/","/blog/go-abroad/","/blog/new-arrange/","/blog/new-arrange-00/","/docs/resolve/macrotools/","/blog/mac-app/","/blog/taipei-101-climb/","/blog/winter-2026/","/blog/sing-danger/","/blog/macbook/","/blog/affinity/","/blog/online-day/","/blog/yt-video-01/","/docs/finale/download/","/docs/finale/key-tool/","/docs/finale/measure-tool/","/blog/computer-score/","/docs/finale/staff-tool/","/docs/finale/select-tool/","/docs/finale/note-input/","/blog/crossover-piano/","/docs/finale/create/","/blog/731pc/","/docs/finale/","/blog/test-lable/","/blog/web-change/","/blog/hbd/","/blog/house-yt01/","/blog/happy-new-year/","/docs/resolve/resolvepackv1-update/","/docs/resource/mix/","/docs/resource/nuvio/","/docs/roblox/robloxnew/","/docs/roblox/robloxobbyparty/","/docs/roblox/300robloxgames/","/docs/roblox/roblox/","/docs/resolve/resolvepackv3-update/","/docs/resolve/resolvepackv2-update/","/docs/update/","/docs/"];
 const status = document.getElementById("random-status");
 if (!articles.length) {
 status.textContent = "目前沒有可閱讀的文章。";
