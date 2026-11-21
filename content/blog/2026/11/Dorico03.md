@@ -1,7 +1,6 @@
 ---
 slug: dorico02
 title: Dorico 快速上手 DAY03
-authors: [KAI]
 date: 2026-11-20T10:00:00+08:00
 ---
 
