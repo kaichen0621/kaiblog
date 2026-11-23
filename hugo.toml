@@ -29,7 +29,7 @@ summaryLength = 140
   [menu]
     [[menu.main]]
       identifier = "blog"
-      name = "BLOG"
+      name = "貼文"
       url = "/blog/"
       weight = 10
 
