@@ -1,13 +1,3 @@
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; margin-bottom: 1rem;">
-  <iframe
-    src="https://www.youtube.com/embed/videoseries?list=UUO46ZMleJZsNyZnpKYVYWLw"
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
-</div>
-
-
 ---
 slug: "youtube"
 title: "YouTube 最新影片"
@@ -109,7 +99,7 @@ TocOpen: false
       const safeTitle = item.title.replace(/"/g, "&quot;");
       return `
         <div class="yt-item">
-          <div class="yt-media" data-vid="${vid}" data-title="${safeTitle}">
+          <div class="yt-media" data-vid="${vid}">
             <img src="https://i.ytimg.com/vi/${vid}/hqdefault.jpg" alt="${safeTitle}" loading="lazy">
             <div class="yt-play-btn"></div>
           </div>
@@ -121,10 +111,11 @@ TocOpen: false
 
     list.querySelectorAll(".yt-media").forEach(box => {
       box.addEventListener("click", () => {
-        if (box.dataset.loaded) return;
+        const vid = box.dataset.vid;
+        if (!vid || box.dataset.loaded) return;
         box.dataset.loaded = "1";
         box.style.cursor = "default";
-        box.innerHTML = `<iframe src="https://www.youtube.com/embed/${box.dataset.vid}?autoplay=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        box.innerHTML = `<iframe src="https://www.youtube.com/embed/${vid}?autoplay=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
       }, { once: true });
     });
   } catch {
