@@ -3,7 +3,7 @@ slug: "youtube"
 title: "YouTube 最新影片"
 weight: 1
 hideMeta: true
-hideToc: true
+ShowToc: false
 TocOpen: false
 ShowPostNavLinks: false
 ---
