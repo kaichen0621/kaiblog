@@ -39,17 +39,17 @@ summaryLength = 140
       url = "/archives/"
       weight = 20
 
-    [[menu.main]]
-      identifier = "docs"
-      name = "文件"
-      url = "/docs/"
-      weight = 30
+   # [[menu.main]]
+   #   identifier = "docs"
+   #   name = "文件"
+   #   url = "/docs/"
+   #   weight = 30
 
-    #[[menu.main]]
+     # [[menu.main]]
      # identifier = "tools"
      # name = "工具"
-    #  url = "/tools/"
-    #  weight = 40
+     #  url = "/tools/"
+     #  weight = 40
 
     [[menu.main]]
       identifier = "random"
