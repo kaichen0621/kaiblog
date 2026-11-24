@@ -4,6 +4,7 @@ title: "YouTube 最新影片"
 weight: 1
 hideMeta: true
 TocOpen: false
+ShowPostNavLinks: false
 ---
 
 <style>
