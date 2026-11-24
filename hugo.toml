@@ -58,7 +58,7 @@ summaryLength = 140
       weight = 50
     [[menu.main]]
   identifier = "guestbook"
-  name = "留言"
+  name = "留言板"
   url = "/guestbook/"
   weight = 60
 
