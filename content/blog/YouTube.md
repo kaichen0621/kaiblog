@@ -3,6 +3,7 @@ slug: "youtube"
 title: "YouTube 最新影片"
 weight: 1
 hideMeta: true
+hideToc: true
 TocOpen: false
 ShowPostNavLinks: false
 ---
@@ -86,7 +87,7 @@ ShowPostNavLinks: false
 <script>
 (async () => {
   const CHANNEL_ID = "UCO46ZMleJZsNyZnpKYVYWLw";
-  const COUNT = 5;
+  const COUNT = 10;
   const list = document.getElementById("yt-list");
   const rssUrl = encodeURIComponent(`https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`);
 
