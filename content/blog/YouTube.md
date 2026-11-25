@@ -6,8 +6,7 @@ hideMeta: true
 ShowToc: false
 TocOpen: false
 ShowPostNavLinks: false
-description: "點進來看看吧！搞不好有你喜歡的影片～"
-description: "KAI STUDIO YouTube 頻道最新影片。"
+description: "YouTube 最新影片，馬上更新"
 ---
 
 #### 點進來看看吧！搞不好有你喜歡的影片～
