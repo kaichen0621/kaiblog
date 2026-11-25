@@ -1,16 +1,10 @@
 
+/*
 :root {
-  /* 核心修復：移除誤導的 --theme 背景變數，讓 PaperMod 恢復預設的乾淨淺色背景 */
-  --border: #e2e8f0;
-
-  /* 自訂全域主色（由原本的 --ifm-color-primary 轉換過來，用於按鈕、連結等點綴） */
-  --kai-primary: #429EEE;
+    --main-width: 60%;
+    --nav-width: 80%;
 }
-
-/* 當 Hugo 切換到深色模式時自動調整主色 */
-.dark {
-  --kai-primary: #6bb4f4;
-}
+*/
 
 b, strong {
   font-weight: 700 !important;
