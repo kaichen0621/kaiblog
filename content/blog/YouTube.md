@@ -1,3 +1,4 @@
+
 ---
 slug: "youtube"
 title: "YouTube 最新影片"
@@ -15,83 +16,98 @@ description: "KAI STUDIO YouTube 頻道最新影片。"
 <!--more-->
 
 <div class="kai-youtube">
+<div class="kai-youtube-header">
+<div class="kai-youtube-heading">
+<span class="kai-youtube-label">KAI STUDIO · YOUTUBE</span>
+<h3>最新上傳</h3>
+<p>最近的影片，都在這裡。</p>
+</div>
+<a href="https://www.youtube.com/channel/UCO46ZMleJZsNyZnpKYVYWLw" target="_blank" rel="noopener noreferrer" class="kai-youtube-link">YouTube ↗</a>
+</div>
 
-  <div class="kai-youtube-header">
-    <div>
-      <span class="kai-youtube-label">KAI STUDIO · YOUTUBE</span>
-      <h3>最新上傳</h3>
-      <p>最近的影片，都在這裡。</p>
-    </div>
+<div class="kai-youtube-player">
+<div id="kai-youtube-player"></div>
+</div>
 
-    <a href="https://www.youtube.com/channel/UCO46ZMleJZsNyZnpKYVYWLw"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="kai-youtube-link">
-      YouTube ↗
-    </a>
-  </div>
+<div class="kai-youtube-info">
+<span class="kai-youtube-info-label">NOW PLAYING</span>
+<div id="kai-youtube-title">正在載入影片資訊……</div>
+</div>
 
-  <div class="kai-youtube-player">
-    <div id="kai-youtube-player"></div>
-  </div>
-
-  <div class="kai-youtube-info">
-    <span class="kai-youtube-info-label">NOW PLAYING</span>
-    <div id="kai-youtube-title">正在載入影片資訊……</div>
-  </div>
-
-  <div class="kai-youtube-footer">
-    <span>KAI STUDIO</span>
-    <span>更多精彩影片，持續更新中。</span>
-  </div>
-
+<div class="kai-youtube-footer">
+<span>KAI STUDIO</span>
+<span>更多精彩影片，持續更新中。</span>
+</div>
 </div>
 
 <style>
 .kai-youtube {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   margin-top: 1.5rem;
   border: 1px solid var(--border);
   border-radius: 16px;
   overflow: hidden;
   background: var(--entry);
   color: var(--primary);
+  box-sizing: border-box;
+}
+
+.kai-youtube * {
+  box-sizing: border-box;
 }
 
 .kai-youtube-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 16px;
   padding: 20px 22px;
 }
 
+.kai-youtube-heading {
+  flex: 1 1 200px;
+  min-width: 0;
+}
+
 .kai-youtube-label {
+  display: block;
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 1.2px;
   color: var(--secondary);
+  overflow-wrap: normal;
 }
 
-.kai-youtube-header h3 {
-  margin: 7px 0 3px;
+.kai-youtube-heading h3 {
+  margin: 8px 0 4px;
   font-size: 1.35rem;
+  line-height: 1.5;
   color: var(--primary);
+  overflow-wrap: normal;
+  word-break: keep-all;
 }
 
-.kai-youtube-header p {
+.kai-youtube-heading p {
   margin: 0;
   font-size: 0.88rem;
   color: var(--secondary);
 }
 
 .kai-youtube-link {
-  flex-shrink: 0;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 8px 13px;
   border: 1px solid var(--border);
   border-radius: 9px;
   color: var(--primary) !important;
   font-size: 0.85rem;
   text-decoration: none !important;
+  white-space: nowrap;
   transition: background 0.2s ease;
 }
 
@@ -111,6 +127,7 @@ description: "KAI STUDIO YouTube 頻道最新影片。"
 #kai-youtube-player iframe {
   position: absolute;
   inset: 0;
+  display: block;
   width: 100%;
   height: 100%;
   border: 0;
@@ -118,6 +135,7 @@ description: "KAI STUDIO YouTube 頻道最新影片。"
 }
 
 .kai-youtube-info {
+  min-width: 0;
   padding: 17px 22px;
   border-top: 1px solid var(--border);
 }
@@ -143,7 +161,8 @@ description: "KAI STUDIO YouTube 頻道最新影片。"
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
   padding: 13px 20px;
   border-top: 1px solid var(--border);
   font-size: 0.78rem;
@@ -153,6 +172,15 @@ description: "KAI STUDIO YouTube 頻道最新影片。"
 @media (max-width: 480px) {
   .kai-youtube-header {
     padding: 17px;
+    gap: 12px;
+  }
+
+  .kai-youtube-heading {
+    flex-basis: 100%;
+  }
+
+  .kai-youtube-link {
+    margin-top: 2px;
   }
 
   .kai-youtube-info {
@@ -167,25 +195,31 @@ description: "KAI STUDIO YouTube 頻道最新影片。"
 
 <script>
 (function () {
-  const titleElement = document.getElementById("kai-youtube-title");
-  const playerElement = document.getElementById("kai-youtube-player");
+  const titleElement =
+    document.getElementById("kai-youtube-title");
+
+  const playerElement =
+    document.getElementById("kai-youtube-player");
 
   if (!titleElement || !playerElement) return;
 
   const PLAYLIST_ID = "UUO46ZMleJZsNyZnpKYVYWLw";
 
   let player;
-  let attempts = 0;
   let titleTimer;
 
   function updateTitle() {
     if (!player || !player.getVideoData) return;
 
-    const video = player.getVideoData();
+    try {
+      const video = player.getVideoData();
 
-    if (video && video.title) {
-      titleElement.textContent = video.title;
-      return true;
+      if (video && video.title) {
+        titleElement.textContent = video.title;
+        return true;
+      }
+    } catch (error) {
+      console.warn("YouTube title loading:", error);
     }
 
     return false;
@@ -194,12 +228,12 @@ description: "KAI STUDIO YouTube 頻道最新影片。"
   function startTitleCheck() {
     clearInterval(titleTimer);
 
-    attempts = 0;
+    let attempts = 0;
 
-    titleTimer = setInterval(() => {
+    titleTimer = setInterval(function () {
       attempts++;
 
-      if (updateTitle() || attempts >= 20) {
+      if (updateTitle() || attempts >= 30) {
         clearInterval(titleTimer);
       }
     }, 500);
@@ -221,7 +255,6 @@ description: "KAI STUDIO YouTube 頻道最新影片。"
 
       events: {
         onReady: function () {
-          titleElement.textContent = "正在載入影片資訊……";
           startTitleCheck();
         },
 
@@ -235,7 +268,8 @@ description: "KAI STUDIO YouTube 頻道最新影片。"
         },
 
         onError: function () {
-          titleElement.textContent = "目前無法載入影片，請稍後再試。";
+          titleElement.textContent =
+            "目前無法載入影片資訊。";
         }
       }
     });
