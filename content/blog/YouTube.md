@@ -8,7 +8,8 @@ TocOpen: false
 ShowPostNavLinks: false
 ---
 
-#### 點進來看看吧 ！搞不好有你喜歡的影片
+#### 點進來看看吧 ！搞不好有你喜歡的影片 ~
+
 <style>
   .yt-list {
     display: grid;
