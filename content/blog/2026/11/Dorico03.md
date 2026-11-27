@@ -1,5 +1,5 @@
 ---
-slug: dorico02
+slug: dorico03
 title: Dorico 快速上手 DAY03
 date: 2026-11-20T10:00:00+08:00
 ---

@@ -1,5 +1,5 @@
 ---
-slug: dorico02
+slug: dorico03
 title: Dorico 快速上手 DAY03
 sidebar_position: 3
 sidebar_label: Dorico DAY03
